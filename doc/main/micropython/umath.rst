@@ -76,4 +76,4 @@ Other math functions
 
 .. autofunction:: umath.ldexp
 
-.. _math module: https://docs.python.org/3.5/library/math.html#module-math
+.. _math module: https://docs.python.org/ja/3.5/library/math.html#module-math

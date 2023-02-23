@@ -1,0 +1,741 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2021 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-16 22:02+0900\n"
+"PO-Revision-Date: 2023-02-23 10:12+0900\n"
+"Last-Translator: Minoru INACHI\n"
+"Language-Team: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../parameters/button.rst:4
+msgid "Button"
+msgstr "ボタン"
+
+#: ../../parameters/button.rst:8
+msgid "Buttons on a hub or remote."
+msgstr "ハブまたはリモートコントロール上のボタン"
+
+#: ../../parameters/color.rst:4
+msgid "Color"
+msgstr "色"
+
+#: of pybricks.parameters.Color:1
+msgid "Light or surface color."
+msgstr "ライトまたは表面の色。"
+
+#: of pybricks.parameters.Color
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: of pybricks.parameters.Color:3
+msgid "Hue."
+msgstr "色相。"
+
+#: of pybricks.parameters.Color:5
+msgid "Saturation."
+msgstr "彩度。"
+
+#: of pybricks.parameters.Color:7
+msgid "Brightness value."
+msgstr "明度。"
+
+#: ../../parameters/color.rst:9
+msgid "Saturated colors"
+msgstr "彩度の高い色"
+
+#: ../../parameters/color.rst:10
+msgid ""
+"These colors have maximum saturation and brightness value. They differ "
+"only in hue."
+msgstr ""
+"彩度と明度の値が最大のカラーです。色相の違いだけです。"
+
+#: ../../parameters/color.rst:46
+msgid "Unsaturated colors"
+msgstr "彩度の低い色"
+
+#: ../../parameters/color.rst:47
+msgid ""
+"These colors have zero hue and saturation. They differ only in brightness"
+" value."
+msgstr ""
+"これらの色は、色相と彩度がゼロです。明度のみが異なります。"
+
+#: ../../parameters/color.rst:50
+msgid ""
+"When detecting these colors using sensors, their values depend a lot on "
+"the distance to the object. If the distance between the sensor and the "
+"object is not constant in your robot, it is better to use only one of "
+"these colors in your programs."
+msgstr ""
+"これらの色をセンサーで検出する場合、その値は対象物までの距離に大きく依存します。"
+"センサーと対象物の距離が一定でないロボットの場合、これらの色のうちの１色のみを使った"
+"方がよいでしょう。"
+
+#: ../../parameters/color.rst:65
+msgid ""
+"This represents dark objects that still reflect a very small amount of "
+"light."
+msgstr ""
+"これは、まだごくわずかな光を反射している暗い物体を表しています。"
+
+#: ../../parameters/color.rst:72
+msgid "This is total darkness, with no reflection or light at all."
+msgstr "これは、反射も光もまったくない、真っ暗闇です。"
+
+#: ../../parameters/color.rst:77
+msgid "Making your own colors"
+msgstr "独自色の作成方法"
+
+#: ../../parameters/color.rst:78
+msgid ""
+"This example shows the basics of color properties, and how to define new "
+"colors."
+msgstr ""
+"この例では、カラープロパティの基本的な使い方と、新しいカラーの定義方法を紹介します。"
+
+#: ../../parameters/color.rst:80
+msgid ""
+"from pybricks.parameters import Color\n"
+"\n"
+"# You can print colors. Colors may be obtained from the Color class, or\n"
+"# from sensors that return color measurements.\n"
+"print(Color.RED)\n"
+"\n"
+"# You can read hue, saturation, and value properties.\n"
+"print(Color.RED.h, Color.RED.s, Color.RED.v)\n"
+"\n"
+"# You can make your own colors. Saturation and value are 100 by default.\n"
+"my_green = Color(h=125)\n"
+"my_dark_green = Color(h=125, s=80, v=30)\n"
+"\n"
+"# When you print custom colors, you see exactly how they were defined.\n"
+"print(my_dark_green)\n"
+"\n"
+"# You can also add colors to the builtin colors.\n"
+"Color.MY_DARK_BLUE = Color(h=235, s=80, v=30)\n"
+"\n"
+"# When you add them like this, printing them only shows its name. But you"
+" can\n"
+"# still read h, s, v by reading its attributes.\n"
+"print(Color.MY_DARK_BLUE)\n"
+"print(Color.MY_DARK_BLUE.h, Color.MY_DARK_BLUE.s, Color.MY_DARK_BLUE.v)\n"
+msgstr ""
+"from pybricks.parameters import Color\n"
+"\n"
+"# カラーはプリントできる。カラーは Color クラスから取得することも、"
+"# 色の測定値を返すセンサーから取得することもできる。\n"
+"print(Color.RED)\n"
+"\n"
+"# 色相、彩度、明度のプロパティを読み取ることができる。\n"
+"print(Color.RED.h, Color.RED.s, Color.RED.v)\n"
+"\n"
+"# 独自色を作ることができる。彩度と明度はデフォルトで100。\n"
+"my_green = Color(h=125)\n"
+"my_dark_green = Color(h=125, s=80, v=30)\n"
+"\n"
+"# 独自色をプリントすると、その色がどのように定義されたかが正確にわかる。\n"
+"print(my_dark_green)\n"
+"\n"
+"# 独自色を組込み色として追加することも可能。\n"
+"Color.MY_DARK_BLUE = Color(h=235, s=80, v=30)\n"
+"\n"
+"# このように追加した場合、プリントするとその名前しか表示されない。\n"
+"# しかし、その属性を読めば、h, s, v を読むことはできる。\n"
+"print(Color.MY_DARK_BLUE)\n"
+"print(Color.MY_DARK_BLUE.h, Color.MY_DARK_BLUE.s, Color.MY_DARK_BLUE.v)\n"
+
+#: ../../parameters/color.rst:83
+msgid "This example shows more advanced use cases of the ``Color`` class."
+msgstr "この例では ``Color`` クラスのより高度な使用例を示しています。"
+
+#: ../../parameters/color.rst:85
+msgid ""
+"from pybricks.parameters import Color\n"
+"\n"
+"# Two colors are equal if their h, s, and v attributes are equal.\n"
+"if Color.BLUE == Color(240, 100, 100):\n"
+"    print(\"Yes, these colors are the same.\")\n"
+"\n"
+"# You can scale colors to change their brightness value.\n"
+"red_dark = Color.RED * 0.5\n"
+"\n"
+"# You can shift colors to change their hue.\n"
+"red_shifted = Color.RED >> 30\n"
+"\n"
+"# Colors are immutable, so you can't change h, s, or v of an existing "
+"object.\n"
+"try:\n"
+"    Color.GREEN.h = 125\n"
+"except AttributeError:\n"
+"    print(\"Sorry, can't change the hue of an existing color object!\")\n"
+"\n"
+"# But you can override builtin colors by defining a whole new color.\n"
+"Color.GREEN = Color(h=125)\n"
+"\n"
+"# You can access and store colors as class attributes, or as a "
+"dictionary.\n"
+"print(Color.BLUE)\n"
+"print(Color[\"BLUE\"])\n"
+"print(Color[\"BLUE\"] is Color.BLUE)\n"
+"print(Color)\n"
+"print([c for c in Color])\n"
+"\n"
+"# This allows you to update existing colors in a loop.\n"
+"for name in (\"BLUE\", \"RED\", \"GREEN\"):\n"
+"    Color[name] = Color(1, 2, 3)\n"
+msgstr ""
+"from pybricks.parameters import Color\n"
+"\n"
+"# 2つのカラーは h、s、v 属性が等しい場合、等しいと言える。\n"
+"if Color.BLUE == Color(240, 100, 100):\n"
+"    print(\"Yes, these colors are the same.\")\n"
+"\n"
+"# カラーをスケーリングして明度を変えられる。\n"
+"red_dark = Color.RED * 0.5\n"
+"\n"
+"# カラーをシフトして色相を変更できる。\n"
+"red_shifted = Color.RED >> 30\n"
+"\n"
+"# カラーは不変なので、既存のオブジェクトの h、s、v は変更できない。\n"
+"try:\n"
+"    Color.GREEN.h = 125\n"
+"except AttributeError:\n"
+"    print(\"Sorry, can't change the hue of an existing color object!\")\n"
+"\n"
+"# しかし、全く新しいカラーを定義することで、組込みカラーを上書きできる。\n"
+"Color.GREEN = Color(h=125)\n"
+"\n"
+"# クラスの属性または辞書としてカラーにアクセス、保存できる。\n"
+"print(Color.BLUE)\n"
+"print(Color[\"BLUE\"])\n"
+"print(Color[\"BLUE\"] is Color.BLUE)\n"
+"print(Color)\n"
+"print([c for c in Color])\n"
+"\n"
+"# これにより、既存のカラーをループで更新できる。\n"
+"for name in (\"BLUE\", \"RED\", \"GREEN\"):\n"
+"    Color[name] = Color(1, 2, 3)\n"
+
+#: ../../parameters/direction.rst:4
+msgid "Direction"
+msgstr "方向"
+
+#: ../../parameters/direction.rst:8
+msgid "Rotational direction for positive speed or angle values."
+msgstr "速度や角度の値が正の場合の回転方向。"
+
+#: ../../../docstring of pybricks.parameters.Direction.CLOCKWISE:1
+msgid "A positive speed value should make the motor move clockwise."
+msgstr "速度が正の値の場合、モーターは時計回りに動きます。"
+
+#: ../../../docstring of pybricks.parameters.Direction.COUNTERCLOCKWISE:1
+msgid "A positive speed value should make the motor move counterclockwise."
+msgstr "速度が正の値の場合、モーターを反時計回りに動作させます。"
+
+#: ../../parameters/direction.rst:17
+msgid "``positive_direction =``"
+msgstr ""
+
+#: ../../parameters/direction.rst:17
+msgid "Positive speed:"
+msgstr "正のスピード:"
+
+#: ../../parameters/direction.rst:17
+msgid "Negative speed:"
+msgstr "負のスピード:"
+
+#: ../../parameters/direction.rst:19
+msgid "``Direction.CLOCKWISE``"
+msgstr ""
+
+#: ../../parameters/direction.rst:19 ../../parameters/direction.rst:21
+msgid "clockwise"
+msgstr "時計回り"
+
+#: ../../parameters/direction.rst:19 ../../parameters/direction.rst:21
+msgid "counterclockwise"
+msgstr "反時計回り"
+
+#: ../../parameters/direction.rst:21
+msgid "``Direction.COUNTERCLOCKWISE``"
+msgstr ""
+
+#: ../../parameters/direction.rst:24
+msgid ""
+"In general, clockwise is defined by **looking at the motor shaft, just "
+"like looking at a clock**. Some motors have two shafts. If in doubt, "
+"refer to the diagram in the ``Motor`` class documentation."
+msgstr ""
+"一般的に時計回りは、時計を見るようにモーターの軸を見て定義します。"
+"モーターには２つのシャフトがあるものもあります。"
+"疑問があれば ``Motor`` クラスのドキュメントにある図を参照してください。"
+
+#: ../../parameters/icon.rst:4
+msgid "Icon"
+msgstr "アイコン"
+
+#: of pybricks.parameters.Icon:1
+msgid "Icons to display on a light matrix."
+msgstr "ライトマトリックスに表示するアイコン。"
+
+#: of pybricks.parameters.Icon:3
+msgid ""
+"Each of the following attributes are matrices. This means you can scale "
+"icons to adjust the brightness or add icons to make composites."
+msgstr ""
+"以下の各属性はマトリックスです。つまり、アイコンをスケーリングして明るさを調整したり、"
+"アイコンを追加して合成できます。"
+
+#: ../../parameters/icon.rst:8
+msgid "See the :ref:`make_icons` section for examples."
+msgstr "例については :ref:`make_icons` の章を参照してください。"
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_DOWN:1
+#: pybricks.parameters.Icon.ARROW_DOWN:2 pybricks.parameters.Icon.ARROW_DOWN:5
+#: pybricks.parameters.Icon.ARROW_LEFT:1 pybricks.parameters.Icon.ARROW_LEFT:5
+#: pybricks.parameters.Icon.ARROW_RIGHT:1
+#: pybricks.parameters.Icon.ARROW_RIGHT:5 pybricks.parameters.Icon.ARROW_UP:1
+#: pybricks.parameters.Icon.ARROW_UP:4 pybricks.parameters.Icon.ARROW_UP:5
+#: pybricks.parameters.Icon.DOWN:5 pybricks.parameters.Icon.FALSE:3
+#: pybricks.parameters.Icon.HEART:5 pybricks.parameters.Icon.LEFT:1
+#: pybricks.parameters.Icon.LEFT:5 pybricks.parameters.Icon.RIGHT:1
+#: pybricks.parameters.Icon.RIGHT:5 pybricks.parameters.Icon.TRIANGLE_DOWN:4
+#: pybricks.parameters.Icon.TRIANGLE_UP:2 pybricks.parameters.Icon.UP:1
+msgid "⬜⬜🟨⬜⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_DOWN:4
+#: pybricks.parameters.Icon.ARROW_UP:2 pybricks.parameters.Icon.CIRCLE:1
+#: pybricks.parameters.Icon.CIRCLE:5 pybricks.parameters.Icon.DOWN:1
+#: pybricks.parameters.Icon.DOWN:2 pybricks.parameters.Icon.DOWN:4
+#: pybricks.parameters.Icon.HAPPY:5 pybricks.parameters.Icon.HEART:4
+#: pybricks.parameters.Icon.SAD:4 pybricks.parameters.Icon.SQUARE:2
+#: pybricks.parameters.Icon.SQUARE:3 pybricks.parameters.Icon.SQUARE:4
+#: pybricks.parameters.Icon.TRIANGLE_DOWN:3
+#: pybricks.parameters.Icon.TRIANGLE_LEFT:3
+#: pybricks.parameters.Icon.TRIANGLE_RIGHT:3
+#: pybricks.parameters.Icon.TRIANGLE_UP:3 pybricks.parameters.Icon.UP:2
+#: pybricks.parameters.Icon.UP:4 pybricks.parameters.Icon.UP:5
+msgid "⬜🟨🟨🟨⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_LEFT:3
+#: pybricks.parameters.Icon.ARROW_RIGHT:3 pybricks.parameters.Icon.CIRCLE:2
+#: pybricks.parameters.Icon.CIRCLE:3 pybricks.parameters.Icon.CIRCLE:4
+#: pybricks.parameters.Icon.DOWN:3 pybricks.parameters.Icon.FULL:1
+#: pybricks.parameters.Icon.FULL:2 pybricks.parameters.Icon.FULL:3
+#: pybricks.parameters.Icon.FULL:4 pybricks.parameters.Icon.FULL:5
+#: pybricks.parameters.Icon.HEART:2 pybricks.parameters.Icon.HEART:3
+#: pybricks.parameters.Icon.LEFT:3 pybricks.parameters.Icon.RIGHT:3
+#: pybricks.parameters.Icon.TRIANGLE_DOWN:2
+#: pybricks.parameters.Icon.TRIANGLE_UP:4 pybricks.parameters.Icon.UP:3
+msgid "🟨🟨🟨🟨🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.COUNTERCLOCKWISE:1
+#: pybricks.parameters.Icon.LEFT:2 pybricks.parameters.Icon.LEFT:4
+msgid "⬜🟨🟨🟨🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.CLOCKWISE:1
+#: pybricks.parameters.Icon.RIGHT:2 pybricks.parameters.Icon.RIGHT:4
+msgid "🟨🟨🟨🟨⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_RIGHT_DOWN:5
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:1
+msgid "⬜⬜🟨🟨🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_RIGHT_DOWN:4
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:2
+#: pybricks.parameters.Icon.EYE_RIGHT:3 pybricks.parameters.Icon.EYE_RIGHT:4
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:4
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:2
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:1
+msgid "⬜⬜⬜🟨🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_RIGHT_DOWN:3
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:3
+msgid "⬜⬜🟨⬜🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_LEFT:2
+#: pybricks.parameters.Icon.ARROW_LEFT:4
+#: pybricks.parameters.Icon.ARROW_RIGHT_DOWN:2
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:4
+#: pybricks.parameters.Icon.COUNTERCLOCKWISE:5
+#: pybricks.parameters.Icon.TRIANGLE_RIGHT:1
+#: pybricks.parameters.Icon.TRIANGLE_RIGHT:5 pybricks.parameters.Icon.TRUE:4
+msgid "⬜🟨⬜⬜⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_RIGHT_DOWN:1
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:5
+msgid "🟨⬜⬜⬜⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_LEFT_DOWN:5
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:1
+msgid "🟨🟨🟨⬜⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_LEFT_DOWN:4
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:2 pybricks.parameters.Icon.EYE_LEFT:3
+#: pybricks.parameters.Icon.EYE_LEFT:4
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:4
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:2
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:1
+msgid "🟨🟨⬜⬜⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_LEFT_DOWN:3
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:3 pybricks.parameters.Icon.TRUE:3
+msgid "🟨⬜🟨⬜⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_LEFT_DOWN:2
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:4
+#: pybricks.parameters.Icon.ARROW_RIGHT:2
+#: pybricks.parameters.Icon.ARROW_RIGHT:4 pybricks.parameters.Icon.CLOCKWISE:5
+#: pybricks.parameters.Icon.TRIANGLE_LEFT:1
+#: pybricks.parameters.Icon.TRIANGLE_LEFT:5 pybricks.parameters.Icon.TRUE:2
+msgid "⬜⬜⬜🟨⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_LEFT_DOWN:1
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:5 pybricks.parameters.Icon.TRUE:1
+msgid "⬜⬜⬜⬜🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.ARROW_DOWN:3
+#: pybricks.parameters.Icon.ARROW_UP:3
+msgid "🟨⬜🟨⬜🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.HAPPY:1
+#: pybricks.parameters.Icon.HAPPY:2 pybricks.parameters.Icon.SAD:1
+#: pybricks.parameters.Icon.SAD:2
+msgid "🟨🟨⬜🟨🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.EMPTY:1
+#: pybricks.parameters.Icon.EMPTY:2 pybricks.parameters.Icon.EMPTY:3
+#: pybricks.parameters.Icon.EMPTY:4 pybricks.parameters.Icon.EMPTY:5
+#: pybricks.parameters.Icon.EYE_LEFT:1 pybricks.parameters.Icon.EYE_LEFT:2
+#: pybricks.parameters.Icon.EYE_LEFT:5
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:1
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:2
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:3
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:5
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:1
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:3
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:4
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:5
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:2
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:3
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:4
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:5
+#: pybricks.parameters.Icon.EYE_RIGHT:1 pybricks.parameters.Icon.EYE_RIGHT:2
+#: pybricks.parameters.Icon.EYE_RIGHT:5
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:1
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:2
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:3
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:5
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:1
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:3
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:4
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:5
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:2
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:3
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:4
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:5
+#: pybricks.parameters.Icon.HAPPY:3 pybricks.parameters.Icon.PAUSE:1
+#: pybricks.parameters.Icon.PAUSE:5 pybricks.parameters.Icon.SAD:3
+#: pybricks.parameters.Icon.SQUARE:1 pybricks.parameters.Icon.SQUARE:5
+#: pybricks.parameters.Icon.TRIANGLE_DOWN:1
+#: pybricks.parameters.Icon.TRIANGLE_DOWN:5
+#: pybricks.parameters.Icon.TRIANGLE_UP:1
+#: pybricks.parameters.Icon.TRIANGLE_UP:5 pybricks.parameters.Icon.TRUE:5
+msgid "⬜⬜⬜⬜⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.FALSE:1
+#: pybricks.parameters.Icon.FALSE:5 pybricks.parameters.Icon.HAPPY:4
+#: pybricks.parameters.Icon.SAD:5
+msgid "🟨⬜⬜⬜🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.FALSE:2
+#: pybricks.parameters.Icon.FALSE:4 pybricks.parameters.Icon.HEART:1
+#: pybricks.parameters.Icon.PAUSE:2 pybricks.parameters.Icon.PAUSE:3
+#: pybricks.parameters.Icon.PAUSE:4
+msgid "⬜🟨⬜🟨⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.TRIANGLE_RIGHT:2
+#: pybricks.parameters.Icon.TRIANGLE_RIGHT:4
+msgid "⬜🟨🟨⬜⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.TRIANGLE_LEFT:2
+#: pybricks.parameters.Icon.TRIANGLE_LEFT:4
+msgid "⬜⬜🟨🟨⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.CLOCKWISE:2
+#: pybricks.parameters.Icon.CLOCKWISE:3
+msgid "🟨⬜⬜🟨⬜"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.CLOCKWISE:4
+msgid "🟨⬜🟨🟨🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.COUNTERCLOCKWISE:2
+#: pybricks.parameters.Icon.COUNTERCLOCKWISE:3
+msgid "⬜🟨⬜⬜🟨"
+msgstr ""
+
+#: ../../../docstring of pybricks.parameters.Icon.COUNTERCLOCKWISE:4
+msgid "🟨🟨🟨⬜🟨"
+msgstr ""
+
+#: ../../parameters/index.rst:4
+msgid ":mod:`parameters <pybricks.parameters>` -- Parameters and constants"
+msgstr ":mod:`parameters <pybricks.parameters>` -- パラメータと定数"
+
+#: of pybricks.parameters:1
+msgid "Constant parameters/arguments for the Pybricks API."
+msgstr "Pybricks API 用の定数パラメータ/引数。"
+
+#: ../../parameters/port.rst:4
+msgid "Port"
+msgstr "ポート"
+
+#: ../../parameters/port.rst:8
+msgid "Input and output ports:"
+msgstr "入出力ポート:"
+
+#: ../../parameters/side.rst:4
+msgid "Side"
+msgstr "側面"
+
+#: ../../parameters/side.rst:8
+msgid ""
+"Side of a hub or a sensor. These devices are mostly rectangular boxes "
+"with six sides:"
+msgstr ""
+"ハブやセンサーの側面。これらのデバイスは、ほとんどが6つの側面を持つ直方体のボックスです。"
+
+#: ../../parameters/side.rst:30
+msgid ""
+"Screens or light matrices have only four sides. For those, ``TOP`` is "
+"treated the same as ``FRONT``, and ``BOTTOM`` is treated the same as "
+"``BACK``. The diagrams below define the sides for relevant devices."
+msgstr ""
+"スクリーンやライトマトリクスは4面しかない。これらの場合、 ``TOP`` は ``FRONT`` "
+"と同じ扱いになり、 ``BOTTOM`` は ``BACK`` と同じ扱いになります。"
+"下図は、関連するデバイスの側面を定義したものです。"
+
+#: ../../parameters/side.rst:34
+msgid "**Prime Hub**"
+msgstr "**プライム ラージハブ**"
+
+msgid ".. image:: ../main/diagrams/orientation_primehub.png"
+msgstr ""
+
+#: ../../parameters/side.rst:39
+msgid "**Inventor Hub**"
+msgstr "**Inventor ハブ**"
+
+msgid ".. image:: ../main/diagrams/orientation_inventorhub.png"
+msgstr ""
+
+#: ../../parameters/side.rst:44
+msgid "**Essential Hub**"
+msgstr "**プライム スモールハブ**"
+
+msgid ".. image:: ../main/diagrams/orientation_essentialhub.png"
+msgstr ""
+
+#: ../../parameters/side.rst:49
+msgid "**Move Hub**"
+msgstr "**ムーブハブ**"
+
+msgid ".. image:: ../main/diagrams/orientation_movehub.png"
+msgstr ""
+
+#: ../../parameters/side.rst:54
+msgid "**Technic Hub**"
+msgstr "**テクニックハブ**"
+
+msgid ".. image:: ../main/diagrams/orientation_technichub.png"
+msgstr ""
+
+#: ../../parameters/side.rst:61
+msgid "Changed which side is the front."
+msgstr "どちらがフロントかを変更。"
+
+#: ../../parameters/side.rst:63
+msgid "**Tilt Sensor**"
+msgstr "**チルトセンサー**"
+
+msgid ".. image:: ../main/diagrams/orientation_tiltsensor.png"
+msgstr ""
+
+#: ../../parameters/stop.rst:4
+msgid "Stop"
+msgstr "停止"
+
+#: ../../parameters/stop.rst:8
+msgid "Action after the motor stops."
+msgstr "モーター停止後の動作。"
+
+#: ../../../docstring of pybricks.parameters.Stop.COAST:1
+msgid "Let the motor move freely."
+msgstr "モータを惰性で動くままにする。"
+
+#: ../../../docstring of pybricks.parameters.Stop.COAST_SMART:1
+msgid ""
+"Let the motor move freely. For the next relative angle maneuver, take the"
+" last target angle (instead of the current angle) as the new starting "
+"point. This reduces cumulative errors. This will apply only if the "
+"current angle is less than twice the configured position tolerance."
+msgstr ""
+"モーターを惰性で動くままにする。次の相対角度操作では(現在の角度ではなく)、"
+"前回の目標角度を新たな出発点とします。累積誤差が少なくなります。"
+"現在の角度が設定した位置公差の2倍以下の場合のみ適用されます。"
+
+#: ../../../docstring of pybricks.parameters.Stop.BRAKE:1
+msgid "Passively resist small external forces."
+msgstr "小さな外力に対して受動的に抵抗します。"
+
+#: ../../../docstring of pybricks.parameters.Stop.HOLD:1
+msgid "Keep controlling the motor to hold it at the commanded angle."
+msgstr "モータを制御し続け、指令された角度に保持します。"
+
+#: ../../../docstring of pybricks.parameters.Stop.NONE:1
+msgid ""
+"Do not decelerate when approaching the target position. This can be used "
+"to concatenate multiple motor or drive base maneuvers without stopping. "
+"If no further commands are given, the motor will proceed to run "
+"indefinitely at the given speed."
+msgstr ""
+"目標位置に近づいても減速しません。複数のモーターやドライブベースの操作を停止させずに"
+"連続して使えます。それ以上指令がない場合は、指定された速度で無限にモーターを動かし続けます。"
+
+#: ../../parameters/stop.rst:25
+msgid ""
+"The following table shows how each of the basic stop types add an extra "
+"level of resistance to motion. In these examples, ``m`` is a "
+":class:`Motor <pybricks.pupdevices.Motor>` and and ``d`` is a "
+":class:`DriveBase <pybricks.robotics.DriveBase>`. The examples also show "
+"how running at zero speed compares to these stop types."
+msgstr ""
+"次の表は、基本的な停止タイプのそれぞれが、動きに対してどのように追加の抵抗力を"
+"加えるかを示しています。これらの例で、 ``m`` は :class:`Motor "
+"<pybricks.pupdevices.Motor>` 、 ``d`` は :class:`DriveBase "
+"<pybricks.robotics.DriveBase>` 。また、ゼロ速度での走行がこれらの"
+"停止タイプとどのように比較されるかを示しています。"
+
+#: ../../parameters/stop.rst
+msgid "Type"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "Friction"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "Back"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "EMF"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "Speed"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "kept at 0"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "Angle kept"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "at target"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "Examples"
+msgstr ""
+
+#: ../../parameters/stop.rst:35
+msgid "Coast"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``m.stop()``"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``m.run_target(500, 90, Stop.COAST)``"
+msgstr ""
+
+#: ../../parameters/stop.rst:38
+msgid "Brake"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``m.brake()``"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``m.run_target(500, 90, Stop.BRAKE)``"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``m.run(0)``"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``d.drive(0, 0)``"
+msgstr ""
+
+#: ../../parameters/stop.rst:44
+msgid "Hold"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``m.hold()``"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``m.run_target(500, 90, Stop.HOLD)``"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``d.straight(0)``"
+msgstr ""
+
+#: ../../parameters/stop.rst
+msgid "``d.straight(100)``"
+msgstr ""
+

@@ -51,4 +51,4 @@ This approach can be extended to exchange data with any `other device`_ as well.
 .. _keyboard input: https://pybricks.com/projects/tutorials/wireless/hub-to-device/pc-keyboard/
 .. _other device: https://pybricks.com/projects/tutorials/wireless/hub-to-device/
 
-.. _sys module: https://docs.python.org/3.5/library/sys.html
+.. _sys module: https://docs.python.org/ja/3.5/library/sys.html

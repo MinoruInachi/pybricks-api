@@ -1,0 +1,564 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2021 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-16 22:02+0900\n"
+"PO-Revision-Date: 2023-02-23 10:12+0900\n"
+"Last-Translator: Minoru INACHI\n"
+"Language-Team: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../signaltypes.rst:2
+msgid "Signals and Units"
+msgstr "物理量と単位"
+
+#: ../../signaltypes.rst:4
+msgid ""
+"Many commands allow you to specify arguments in terms of well-known "
+"physical quantities. This page gives an overview of each quantity and its"
+" unit."
+msgstr ""
+"多くのコマンドでは、よく知られた物理量を単位として引数を指定できます。"
+"このページでは、各物理量の概要とその単位を説明します。"
+
+#: ../../signaltypes.rst:8
+msgid "Numbers"
+msgstr "数値"
+
+#: ../../../docstring of typing.Union:5
+msgid "Numbers can be represented as integers or floating point values:"
+msgstr "数値は、整数と浮動小数点数で表すことができます。"
+
+#: ../../../docstring of typing.Union:7
+msgid ""
+"Integers (:class:`int <ubuiltins.int>`) are whole numbers like ``15`` or "
+"``-123``."
+msgstr ""
+"整数(:class:`int <ubuiltins.int>`)は ``15`` や ``-123`` のような全数です。"
+
+#: ../../../docstring of typing.Union:9
+msgid ""
+"Floating point values (:class:`float <ubuiltins.float>`) are decimal "
+"numbers like ``3.14`` or ``-123.45``."
+msgstr ""
+"浮動小数点数(:class:`float <ubuiltins.float>`)は ``3.14`` や "
+"``-123.45`` のような10進数です。"
+
+#: ../../../docstring of typing.Union:12
+msgid ""
+"If you see :class:`Number` as the argument type, both :class:`int "
+"<ubuiltins.int>` and :class:`float <ubuiltins.float>` may be used."
+msgstr ""
+"引数の型が :class:`Number` の場合、 :class:`int <ubuiltins.int>` と "
+":class:`float <ubuiltins.float>` のどちらでも指定できます。"
+
+#: ../../../docstring of typing.Union:15
+msgid ""
+"For example, :func:`wait(15) <pybricks.tools.wait>` and "
+":func:`wait(15.75) <pybricks.tools.wait>` are both allowed. In most "
+"functions, however, your input value will be truncated to a whole number "
+"anyway. In this example, either command makes the program pause for just "
+"15 milliseconds."
+msgstr ""
+"たとえば、 :func:`wait(15) <pybricks.tools.wait>` と "
+":func:`wait(15.75) <pybricks.tools.wait>` はどちらも使えます。"
+"しかし、ほとんどの関数では、入力値はいずれにせよ整数に切り捨てられます。"
+"この例では、どちらのコマンドもプログラムを15ミリ秒だけ一時停止させます。"
+
+#: ../../../docstring of typing.Union:21
+msgid ""
+"The BOOST Move hub doesn't support floating point numbers due to limited "
+"system resources. Only integers can be used on that hub."
+msgstr ""
+"ブースト ムーブハブは、システムリソースが限られているため、浮動小数点数を"
+"サポートしていません。このハブでは整数値のみを使えます。"
+
+#: ../../signaltypes.rst:14
+msgid "Time"
+msgstr "時間"
+
+#: ../../signaltypes.rst:19
+msgid "time: ms"
+msgstr "時間: ms"
+
+#: ../../signaltypes.rst:20
+msgid "All time and duration values are measured in milliseconds (ms)."
+msgstr "時間や継続時間の値は、すべてミリ秒(ms)単位です。"
+
+#: ../../signaltypes.rst:22
+msgid ""
+"For example, the duration of motion with ``run_time``, and the duration "
+"of :func:`wait <.tools.wait>` are specified in milliseconds."
+msgstr ""
+"たとえば、 ``run_time`` による動作の持続時間や、 :func:`wait <.tools.wait>` "
+"の持続時間はミリ秒単位で指定されます。"
+
+#: ../../signaltypes.rst:27
+msgid "Angles and angular motion"
+msgstr "角度と角運動"
+
+#: ../../signaltypes.rst:32
+msgid "angle: deg"
+msgstr "角度: deg"
+
+#: ../../signaltypes.rst:34
+msgid ""
+"All angles are measured in degrees (deg). One full rotation corresponds "
+"to 360 degrees."
+msgstr ""
+"角度の単位はすべて度(deg)です。一回転は360度に相当します。"
+
+#: ../../signaltypes.rst:37
+msgid ""
+"For example, the angle values of a ``Motor`` or the ``GyroSensor`` are "
+"expressed in degrees."
+msgstr ""
+"たとえば、 ``Motor`` や ``GyroSensor`` の角度の値は度で表されます。"
+
+#: ../../signaltypes.rst:43
+msgid "rotational speed: deg/s"
+msgstr "回転速度: deg/s"
+
+#: ../../signaltypes.rst:45
+msgid ""
+"Rotational speed, or *angular velocity* describes how fast something "
+"rotates, expressed as the number of degrees per second (deg/s)."
+msgstr ""
+"回転速度、または角速度は、何かが回転する速さを表すもので、"
+"1秒間に何度回転するか(deg/s)で表されます。"
+
+#: ../../signaltypes.rst:48
+msgid ""
+"For example, the rotational speed values of a ``Motor`` or the "
+"``GyroSensor`` are expressed in degrees per second."
+msgstr ""
+"たとえば、 ``Motor`` や ``GyroSensor`` の回転速度の値は deg/s で表されます。"
+
+#: ../../signaltypes.rst:52
+msgid ""
+"While we recommend working with degrees per second in your programs, you "
+"can use the following table to convert between commonly used units."
+msgstr ""
+"プログラムでは deg/s を使うことをお勧めしますが、以下の表にしたがって一般的な単位に"
+"変換できます。"
+
+#: ../../signaltypes.rst:56
+msgid "deg/s"
+msgstr ""
+
+#: ../../signaltypes.rst:56
+msgid "rpm"
+msgstr ""
+
+#: ../../signaltypes.rst:58
+msgid "1 deg/s ="
+msgstr ""
+
+#: ../../signaltypes.rst:58 ../../signaltypes.rst:60 ../../signaltypes.rst:96
+#: ../../signaltypes.rst:98 ../../signaltypes.rst:100 ../../signaltypes.rst:187
+#: ../../signaltypes.rst:189 ../../signaltypes.rst:191
+msgid "1"
+msgstr ""
+
+#: ../../signaltypes.rst:58
+msgid "1/6=0.167"
+msgstr ""
+
+#: ../../signaltypes.rst:60
+msgid "1 rpm ="
+msgstr ""
+
+#: ../../signaltypes.rst:60
+msgid "6"
+msgstr ""
+
+#: ../../signaltypes.rst:66
+msgid "rotational acceleration: deg/s²"
+msgstr "回転加速度: deg/s²"
+
+#: ../../signaltypes.rst:68
+msgid ""
+"Rotational acceleration, or *angular acceleration* describes how fast the"
+" rotational speed changes. This is expressed as the change of the number "
+"of degrees per second, during one second (deg/s²). This is also commonly "
+"written as  :math:`deg/s^2`."
+msgstr ""
+"回転加速度、または *角加速度* は、回転速度の変化の速さを表します。"
+"これは、1秒間に何度変化するか(deg/s²)で表されます。"
+"一般的には :math:`deg/s^2` とも表記されます。
+
+#: ../../signaltypes.rst:73
+msgid ""
+"For example, you can adjust the rotational acceleration setting of a "
+"``Motor`` to change how smoothly or how quickly it reaches the constant "
+"speed set point."
+msgstr ""
+"たとえば、モーターの回転加速度の設定を調整することで、"
+"一定速度の設定値に到達するまでのスムーズさや速さを変えられます。"
+
+#: ../../signaltypes.rst:79
+msgid "Distance and linear motion"
+msgstr "距離と線運動"
+
+#: ../../signaltypes.rst:84
+msgid "distance: mm"
+msgstr "距離: mm"
+
+#: ../../signaltypes.rst:85
+msgid "Distances are expressed in millimeters (mm) whenever possible."
+msgstr "距離は可能な限りミリメートル(mm)で表現されます。"
+
+#: ../../signaltypes.rst:87
+msgid ""
+"For example, the distance value of the ``UltrasonicSensor`` is measured "
+"in millimeters."
+msgstr ""
+"たとえば、 ``UltrasonicSensor`` の距離の値はミリメートルで計測されます。"
+
+#: ../../signaltypes.rst:90
+msgid ""
+"While we recommend working with millimeters in your programs, you can use"
+" the following table to convert between commonly used units."
+msgstr ""
+"プログラムではミリメートルで作業することを推奨しますが、以下の表にしたがって一般的な単位に"
+"変換できます。"
+
+#: ../../signaltypes.rst:94
+msgid "mm"
+msgstr ""
+
+#: ../../signaltypes.rst:94
+msgid "cm"
+msgstr ""
+
+#: ../../signaltypes.rst:94
+msgid "inch"
+msgstr ""
+
+#: ../../signaltypes.rst:96
+msgid "1 mm ="
+msgstr ""
+
+#: ../../signaltypes.rst:96
+msgid "0.1"
+msgstr ""
+
+#: ../../signaltypes.rst:96
+msgid "0.0394"
+msgstr ""
+
+#: ../../signaltypes.rst:98
+msgid "1 cm ="
+msgstr ""
+
+#: ../../signaltypes.rst:98
+msgid "10"
+msgstr ""
+
+#: ../../signaltypes.rst:98
+msgid "0.394"
+msgstr ""
+
+#: ../../signaltypes.rst:100
+msgid "1 inch ="
+msgstr ""
+
+#: ../../signaltypes.rst:100
+msgid "25.4"
+msgstr ""
+
+#: ../../signaltypes.rst:100
+msgid "2.54"
+msgstr ""
+
+#: ../../signaltypes.rst:106
+msgid "dimension: mm"
+msgstr "寸法: mm"
+
+#: ../../signaltypes.rst:108
+msgid "Dimensions are expressed in millimeters (mm), just like distances."
+msgstr "寸法は、距離と同じようにミリメートル(mm)で表します。"
+
+#: ../../signaltypes.rst:111
+msgid "For example, the diameter of a wheel is measured in millimeters."
+msgstr "たとえば、車輪の直径はミリメートルで表されます。"
+
+#: ../../signaltypes.rst:116
+msgid "speed: mm/s"
+msgstr "速度: mm/s"
+
+#: ../../signaltypes.rst:117
+msgid "Linear speeds are expressed as millimeters per second (mm/s)."
+msgstr "線速度はミリメートル/秒 (mm/s)で表されます。"
+
+#: ../../signaltypes.rst:119
+msgid "For example, the speed of a robotic vehicle is expressed in mm/s."
+msgstr "たとえば、ロボット車両の速度は mm/s で表されます。"
+
+#: ../../signaltypes.rst:124
+msgid "linear acceleration: mm/s²"
+msgstr "線加速度: mm/s²"
+
+#: ../../signaltypes.rst:126
+msgid ""
+"Linear acceleration describes how fast the speed changes. This is "
+"expressed as the change of the millimeters per second, during one second "
+"(mm/s²). This is also commonly written as  :math:`mm/s^2`."
+msgstr ""
+"線加速度は、速度の変化の速さを表します。"
+"これは、1秒間の間の、１秒あたりのミリメートルの変化で表されます(mm/s²)。"
+"一般に :math:`mm/s^2` とも表記されます。"
+
+#: ../../signaltypes.rst:130
+msgid ""
+"For example, you can adjust the acceleration setting of a "
+":class:`DriveBase <.robotics.DriveBase>` to change how smoothly or how "
+"quickly it reaches the constant speed set point."
+msgstr ""
+"たとえば、 :class:`DriveBase <.robotics.DriveBase>` の加速度設定を"
+"調整することで、一定速度の設定値に到達するまでのスムーズさや速さを変更できます。"
+
+#: ../../signaltypes.rst:135
+msgid "Approximate and relative units"
+msgstr "近似単位と相対単位"
+
+#: ../../signaltypes.rst:140
+msgid "percentage: %"
+msgstr "パーセント: %"
+
+#: ../../signaltypes.rst:142
+msgid ""
+"Some signals do not have specific units. They range from a minimum (0%) "
+"to a maximum (100%). Specifics type of percentages are :ref:`relative "
+"distances <relativedistance>` or  :ref:`brightness <brightness>`."
+msgstr ""
+"値によっては特定の単位を持たないものもあります。それらは最小値(0%)から最大値(%)までの"
+"範囲をとります。パーセントで表す具体的なものとして、 "
+":ref:`相対距離 <relativedistance>` や "
+":ref:`照度 <brightness>` があります。"
+
+#: ../../signaltypes.rst:146
+msgid ""
+"Another example is the sound volume, which ranges from 0% (silent) to "
+"100% (loudest)."
+msgstr ""
+"他の例としては、音の大きさがあり、0％ (無音)から100％ (最大音量)までの範囲をとります。"
+
+#: ../../signaltypes.rst:152
+msgid "relative distance: %"
+msgstr "相対距離: %"
+
+#: ../../signaltypes.rst:154
+msgid ""
+"Some distance measurements do not provide an accurate value with a "
+"specific unit, but they range from very close (0%) to very far (100%). "
+"These are referred to as relative distances."
+msgstr ""
+"距離の計測するセンサーによっては、特定の単位で正確な値が得られず、"
+"非常に近い(0%)から非常に遠い(100%)までの範囲をとるものがあります。"
+"これらは相対距離と呼ばれます。"
+
+#: ../../signaltypes.rst:158
+msgid ""
+"For example, the distance value of the ``InfraredSensor`` is a relative "
+"distance."
+msgstr ""
+"たとえば、 ``InfraredSensor`` の距離の値は相対距離です。"
+
+#: ../../signaltypes.rst:165
+msgid "brightness: %"
+msgstr "照度: %"
+
+#: ../../signaltypes.rst:167
+msgid ""
+"The perceived brightness of a light is expressed as a percentage. It is "
+"0% when the light is off and 100% when the light is fully on. When you "
+"choose 50%, this means that the light is perceived as approximately half "
+"as bright to the human eye."
+msgstr ""
+"ライトの照度はパーセンテージで表されます。ライトがオフのときは0%、"
+"ライトが完全にオンのときは100%となります。50%を選択した場合、"
+"これは人間の目には光が約半分の明るさとして認識されることを意味します。"
+
+#: ../../signaltypes.rst:173
+msgid "Force and torque"
+msgstr "圧力とトルク"
+
+#: ../../signaltypes.rst:178
+msgid "force: N"
+msgstr "圧力: N"
+
+#: ../../signaltypes.rst:179
+msgid "Force values are expressed in newtons (N)."
+msgstr "圧力の値はニュートン(N)で表します。"
+
+#: ../../signaltypes.rst:181
+msgid ""
+"While we recommend working with newtons in your programs, you can use the"
+" following table to convert to and from other units."
+msgstr ""
+"プログラムではニュートンを使って作業することを勧めますが、"
+"次の表を使って他の単位に変換できます。"
+
+#: ../../signaltypes.rst:185
+msgid "mN"
+msgstr ""
+
+#: ../../signaltypes.rst:185
+msgid "N"
+msgstr ""
+
+#: ../../signaltypes.rst:185
+msgid "lbf"
+msgstr ""
+
+#: ../../signaltypes.rst:187
+msgid "1 mN ="
+msgstr ""
+
+#: ../../signaltypes.rst:187
+msgid "0.001"
+msgstr ""
+
+#: ../../signaltypes.rst:187
+msgid ":math:`2.248 \\cdot 10^{-4}`"
+msgstr ""
+
+#: ../../signaltypes.rst:189
+msgid "1 N ="
+msgstr ""
+
+#: ../../signaltypes.rst:189
+msgid "1000"
+msgstr ""
+
+#: ../../signaltypes.rst:189
+msgid "0.2248"
+msgstr ""
+
+#: ../../signaltypes.rst:191
+msgid "1 lbf ="
+msgstr ""
+
+#: ../../signaltypes.rst:191
+msgid "4448"
+msgstr ""
+
+#: ../../signaltypes.rst:191
+msgid "4.448"
+msgstr ""
+
+#: ../../signaltypes.rst:197
+msgid "torque: mNm"
+msgstr "トルク: mNm"
+
+#: ../../signaltypes.rst:198
+msgid ""
+"Torque values are expressed in millinewtonmeter (mNm) unless stated "
+"otherwise."
+msgstr ""
+"トルクの値は、特に断りのない限り、ミリニュートン・メートル（mNm）で表します。"
+
+#: ../../signaltypes.rst:201
+msgid "Electricity"
+msgstr "電気関連"
+
+#: ../../signaltypes.rst:206
+msgid "voltage: mV"
+msgstr "電圧: mV"
+
+#: ../../signaltypes.rst:207
+msgid "Voltages are expressed in millivolt (mV)."
+msgstr "電圧の単位はミリボルト(mV)です。"
+
+#: ../../signaltypes.rst:209
+msgid "For example, you can check the voltage of the battery."
+msgstr "たとえば、バッテリーの電圧を確認できます。"
+
+#: ../../signaltypes.rst:214
+msgid "current: mA"
+msgstr "電流: mA"
+
+#: ../../signaltypes.rst:216
+msgid "Electrical currents are expressed in milliampere (mA)."
+msgstr "電流はミリアンペア(mA)単位で表します。"
+
+#: ../../signaltypes.rst:218
+msgid "For example, you can check the current supplied by the battery."
+msgstr "たとえば、バッテリーから供給される電流を確認できます。"
+
+#: ../../signaltypes.rst:223
+msgid "energy: J"
+msgstr "エネルギー: J"
+
+#: ../../signaltypes.rst:225
+msgid "Stored energy or energy consumption can be expressed in Joules (J)."
+msgstr "蓄積エネルギーや消費エネルギーは、ジュール(J)で表せます。"
+
+#: ../../signaltypes.rst:230
+msgid "power: mW"
+msgstr "電力: mW"
+
+#: ../../signaltypes.rst:232
+msgid ""
+"Power is the rate at which energy is stored or consumed. It is expressed "
+"in milliwatt (mW)."
+msgstr ""
+"電力は、エネルギーが蓄積または消費される割合です。ミリワット(mW)で表せます。"
+
+#: ../../signaltypes.rst:236
+msgid "Ambient environment"
+msgstr "周囲環境"
+
+#: ../../signaltypes.rst:241
+msgid "frequency: Hz"
+msgstr "周波数: Hz"
+
+#: ../../signaltypes.rst:242
+msgid "Sound frequencies are expressed in Hertz (Hz)."
+msgstr "音の周波数はヘルツ(Hz)で表します。"
+
+#: ../../signaltypes.rst:244
+msgid "For example, you can choose the frequency of a beep to change the pitch."
+msgstr "たとえば、ビープ音の周波数を選ぶとピッチが変わります。"
+
+#: ../../signaltypes.rst:249
+msgid "temperature: °C"
+msgstr "温度: °C"
+
+#: ../../signaltypes.rst:251
+msgid ""
+"Temperature is measured in degrees Celcius (°C). To convert to degrees "
+"Fahrenheit (°F) or Kelvin (K), you can use the following conversion "
+"formulas:"
+msgstr ""
+"温度は摂氏(°C)で表します。華氏(°F)またはケルビン(K)に変換するには、"
+"次の変換式を使います:"
+
+#: ../../signaltypes.rst:254
+msgid ""
+":math:`^{\\circ}\\kern1pt\\!F =\\kern1pt^{\\circ}\\kern1pt\\!C \\cdot "
+"\\frac{9}{5} + 32`."
+msgstr ""
+
+#: ../../signaltypes.rst:256
+msgid ":math:`K =\\kern1pt^{\\circ}\\kern1pt\\!C + 273.15`."
+msgstr ""
+
+#: ../../signaltypes.rst:261
+msgid "hue: deg"
+msgstr "色相: deg"
+
+#: ../../signaltypes.rst:262
+msgid "Hue of a color (0-359 degrees)."
+msgstr "色の色相(0～359度)。"
+

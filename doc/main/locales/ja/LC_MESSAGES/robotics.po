@@ -1,0 +1,516 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2021 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-16 22:02+0900\n"
+"PO-Revision-Date: 2023-02-23 10:12+0900\n"
+"Last-Translator: Minoru INACHI\n"
+"Language-Team: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../robotics.rst:4
+msgid ":mod:`robotics <pybricks.robotics>` -- Robotics and drive bases"
+msgstr ":mod:`robotics <pybricks.robotics>` -- ロボティクスとドライブベース"
+
+#: of pybricks.robotics:1
+msgid "Robotics module for the Pybricks API."
+msgstr "Pybricks API 用のロボティクスモジュール"
+
+#: of pybricks.robotics.DriveBase:1
+msgid ""
+"A robotic vehicle with two powered wheels and an optional support wheel "
+"or caster."
+msgstr ""
+"2つの動力車輪と、オプションで補助輪やキャスターを持つロボット車両。"
+
+#: of pybricks.robotics.DriveBase:4
+msgid ""
+"By specifying the dimensions of your robot, this class makes it easy to "
+"drive a given distance in millimeters or turn by a given number of "
+"degrees."
+msgstr ""
+"ロボットの寸法を指定することで、指定した距離をミリメートル単位で駆動したり、"
+"指定した角度だけ旋回したりすることが簡単にできるクラスです。"
+
+#: of pybricks.robotics.DriveBase:8
+msgid ""
+"**Positive** distances, radii, or drive speeds mean driving **forward**. "
+"**Negative** means **backward**."
+msgstr ""
+"距離、半径、駆動速度が **正** の場合は **前進** を意味し、 **負** の場合は "
+"**後進** を意味します。"
+
+#: of pybricks.robotics.DriveBase:11
+msgid ""
+"**Positive** angles and turn rates mean turning **right**. **Negative** "
+"means **left**. So when viewed from the top, positive means clockwise and"
+" negative means counterclockwise. If desired, you can flip this "
+"convention by reversing the ``left_motor`` and ``right_motor`` when you "
+"initialize this class."
+msgstr ""
+"角度や旋回速度が **正** の場合は、右に曲がることを意味します。 **負** の場合は"
+"左回りを意味します。つまり、上から見て、プラスは時計回り、マイナスは反時計回りを"
+"意味します。必要であれば、このクラスを初期化するときに ``left_motor`` と "
+"``right_motor`` を逆にすることで、この規則を反転させられます。"
+
+#: of pybricks.robotics.DriveBase:17
+msgid ""
+"See the `measuring`_ section for tips to measure and adjust the diameter "
+"and axle track values."
+msgstr ""
+"直径と軸の軌跡の値を測定して調整するコツは `measuring`_ の章を参照してください。"
+
+#: of pybricks.robotics.DriveBase pybricks.robotics.DriveBase.curve
+#: pybricks.robotics.DriveBase.drive pybricks.robotics.DriveBase.settings
+#: pybricks.robotics.DriveBase.straight pybricks.robotics.DriveBase.turn
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: of pybricks.robotics.DriveBase:20
+msgid "The motor that drives the left wheel."
+msgstr "左車輪を駆動するモーター。"
+
+#: of pybricks.robotics.DriveBase:22
+msgid "The motor that drives the right wheel."
+msgstr "右の車輪を駆動するモーター。"
+
+#: of pybricks.robotics.DriveBase:24
+msgid "Diameter of the wheels."
+msgstr "車輪の直径。"
+
+#: of pybricks.robotics.DriveBase:26
+msgid "Distance between the points where both wheels touch the ground."
+msgstr "両輪が地面に接しているところの間の距離。"
+
+#: ../../robotics.rst:14
+msgid "Driving by a given distance or angle"
+msgstr "指定の距離または角度で走行させる方法"
+
+#: ../../robotics.rst:15
+msgid ""
+"Use the following commands to drive a given distance, or turn by a given "
+"angle."
+msgstr ""
+"次のコマンドを使用すると、指定した距離だけ走行したり、指定した角度だけ旋回したり"
+"することができます。"
+
+#: ../../robotics.rst:18
+msgid ""
+"This is measured using the internal rotation sensors. Because wheels may "
+"slip while moving, the traveled distance and angle are only estimates."
+msgstr ""
+"これは内部の回転センサーで測定しています。移動中に車輪が滑ることがあるので、"
+"移動距離や角度はあくまで目安です。"
+
+#: of pybricks.robotics.DriveBase.straight:1
+msgid "Drives straight for a given distance and then stops."
+msgstr "一定距離直進した後、停止します。"
+
+#: of pybricks.robotics.DriveBase.straight:3
+msgid "Distance to travel"
+msgstr "移動する距離"
+
+#: of pybricks.robotics.DriveBase.curve:7
+#: pybricks.robotics.DriveBase.straight:5 pybricks.robotics.DriveBase.turn:5
+msgid "What to do after coming to a standstill."
+msgstr "停止した後の挙動。"
+
+#: of pybricks.robotics.DriveBase.curve:9
+#: pybricks.robotics.DriveBase.straight:7 pybricks.robotics.DriveBase.turn:7
+msgid ""
+"Wait for the maneuver to complete before continuing with the rest of the "
+"program."
+msgstr ""
+"動作が完了するのを待ってから、プログラムの続きを実行するのかの指定。"
+
+#: of pybricks.robotics.DriveBase.turn:1
+msgid "Turns in place by a given angle and then stops."
+msgstr "指定の角度だけその場で回転し、停止する。"
+
+#: of pybricks.robotics.DriveBase.turn:3
+msgid "Angle of the turn."
+msgstr "回転する角度。"
+
+#: of pybricks.robotics.DriveBase.curve:1
+msgid "Drives an arc along a circle of a given radius, by a given angle."
+msgstr "指定の半径の円に沿って、指定の角度で円弧状に駆動します。"
+
+#: of pybricks.robotics.DriveBase.curve:3
+msgid "Radius of the circle."
+msgstr "円の半径。"
+
+#: of pybricks.robotics.DriveBase.curve:5
+msgid "Angle along the circle."
+msgstr "円に沿った角度。"
+
+#: of pybricks.robotics.DriveBase.settings:1
+msgid ""
+"Configures the speed and acceleration used by :meth:`.straight`, "
+":meth:`.turn`, and  :meth:`.curve`."
+msgstr ""
+":meth:`.straight`, :meth:`.turn`, :meth:`.curve` で"
+"使う速度と加速度を設定します。"
+
+#: of pybricks.robotics.DriveBase.settings:4
+msgid "If you give no arguments, this returns the current values as a tuple."
+msgstr "引数を与えない場合は、現在の値をタプルとして返します。"
+
+#: of pybricks.robotics.DriveBase.settings:6
+#, python-format
+msgid ""
+"The default values are automatically configured based on your wheel "
+"diameter and axle track. They are selected such that your robot drives at"
+" about 40% of its maximum speed."
+msgstr ""
+"デフォルト値は、車輪の直径と車軸の軌跡に基づいて自動的に設定されます。"
+"ロボットが最大速度の約40%で駆動するよう設定されています。"
+
+#: of pybricks.robotics.DriveBase.settings:10
+msgid "Straight-line speed of the robot."
+msgstr "ロボットの前進速度。"
+
+#: of pybricks.robotics.DriveBase.settings:12
+msgid "Straight-line acceleration and deceleration of the robot."
+msgstr "ロボットの前進加速度および減速度。"
+
+#: of pybricks.robotics.DriveBase.drive:6
+#: pybricks.robotics.DriveBase.settings:15
+msgid "Turn rate of the robot."
+msgstr "ロボットの旋回速度。"
+
+#: of pybricks.robotics.DriveBase.settings:17
+msgid "Angular acceleration and deceleration of the robot."
+msgstr "ロボットの角度加速度・減速度。"
+
+#: of pybricks.robotics.DriveBase.done:1
+msgid "Checks if an ongoing command or maneuver is done."
+msgstr "進行中のコマンドや動作が行われているかどうかをチェックします。"
+
+#: of pybricks.robotics.DriveBase.angle pybricks.robotics.DriveBase.distance
+#: pybricks.robotics.DriveBase.done pybricks.robotics.DriveBase.stalled
+#: pybricks.robotics.DriveBase.state
+msgid "Returns"
+msgstr "戻り値"
+
+#: of pybricks.robotics.DriveBase.done:3
+msgid "``True`` if the command is done, ``False`` if not."
+msgstr "コマンドが完了した場合は ``True`` 、完了していない場合は ``False`` 。"
+
+#: ../../robotics.rst:32
+msgid "Drive forever"
+msgstr "永久駆動"
+
+#: ../../robotics.rst:33
+msgid "Use :meth:`.drive` to begin driving at a desired speed and steering."
+msgstr ":meth:`.drive` を使って、任意の速度とステアリングで走行を開始します。"
+
+#: ../../robotics.rst:35
+msgid ""
+"It keeps going until you use :meth:`.stop` or change course by using "
+":meth:`.drive` again. For example, you can drive until a sensor is "
+"triggered and then stop or turn around."
+msgstr ""
+":meth:`.stop` を使うか、もう一度 :meth:`.drive` を使って進路を変更するまで"
+"走り続けます。たとえば、センサーが反応するまで運転し、その後停止または方向転換する"
+"ようにできます。"
+
+#: of pybricks.robotics.DriveBase.drive:1
+msgid ""
+"Starts driving at the specified speed and turn rate. Both values are "
+"measured at the center point between the wheels of the robot."
+msgstr ""
+"指定された速度と回転数で走行を開始します。"
+"どちらの値も、ロボットの車輪の間の中心点で計測されます。"
+
+#: of pybricks.robotics.DriveBase.drive:4
+msgid "Speed of the robot."
+msgstr "ロボットの速度。"
+
+#: of pybricks.robotics.DriveBase.stop:1
+msgid "Stops the robot by letting the motors spin freely."
+msgstr "モーターの動作を止め、惰性でロボットが停止するにまかせます。"
+
+#: ../../robotics.rst:44
+msgid "Measuring"
+msgstr "計測"
+
+#: of pybricks.robotics.DriveBase.distance:1
+msgid "Gets the estimated driven distance."
+msgstr "推定走行距離を取得します。"
+
+#: of pybricks.robotics.DriveBase.distance:3
+msgid "Driven distance since last reset."
+msgstr "前回リセットしてからの走行距離。"
+
+#: of pybricks.robotics.DriveBase.angle:1
+msgid "Gets the estimated rotation angle of the drive base."
+msgstr "駆動基部の推定回転角度を取得します。"
+
+#: of pybricks.robotics.DriveBase.angle:3
+msgid "Accumulated angle since last reset."
+msgstr "前回のリセットからの累積角度。"
+
+#: of pybricks.robotics.DriveBase.state:1
+msgid "Gets the state of the robot."
+msgstr "ロボットの状態を取得します。"
+
+#: of pybricks.robotics.DriveBase.state:3
+msgid "Tuple of distance, drive speed, angle, and turn rate of the robot."
+msgstr "ロボットの距離、駆動速度、角度、旋回速度のタプル。"
+
+#: of pybricks.robotics.DriveBase.reset:1
+msgid "Resets the estimated driven distance and angle to 0."
+msgstr "推定駆動距離と推定駆動角度を 0 にリセットします。"
+
+#: of pybricks.robotics.DriveBase.stalled:1
+msgid "Checks if the drive base is currently stalled."
+msgstr "ドライブベースが現在失速しているかどうかをチェックします。"
+
+#: of pybricks.robotics.DriveBase.stalled:3
+msgid ""
+"It is stalled when it cannot reach the target speed or position, even "
+"with the maximum actuation signal."
+msgstr ""
+"最大限の動作量を与えても、目標速度や位置に到達できない場合に失速しているとみなされます。"
+
+#: of pybricks.robotics.DriveBase.stalled:6
+msgid "``True`` if the drivebase is stalled, ``False`` if not."
+msgstr "ドライブベースが失速していれば ``True`` 、失速していなければ ``False`` 。"
+
+#: ../../robotics.rst:58
+msgid "Measuring and validating the robot dimensions"
+msgstr "ロボットの寸法の計測と検証"
+
+#: ../../robotics.rst:59
+msgid ""
+"As a first estimate, you can measure the ``wheel_diameter`` and the "
+"``axle_track`` with a ruler. Because it is hard to see where the wheels "
+"effectively touch the ground, you can estimate the ``axle_track`` as the "
+"distance between the midpoint of the wheels."
+msgstr ""
+"最初の見積りとして、定規を使って ``wheel_diameter`` (車輪の直径)と"
+"``axle_track`` (車輪間の距離)を計測できます。"
+"車輪が効果的に地面に接している箇所を確認するのは難しいので、"
+"車輪の中点間の距離として ``axle_track`` を推定できます。"
+
+#: ../../robotics.rst:64
+msgid ""
+"If you don't have a ruler, you can use a LEGO beam to measure. The "
+"center-to-center distance of the holes is 8 mm. For some tyres, the "
+"diameter is printed on the side. For example, 62.4 x 20 means that the "
+"diameter is 62.4mm and that the width is 20 mm."
+msgstr ""
+"定規がない場合は、レゴのビームを使って計測できます。"
+"穴の中心から中心までの距離は8mmです。"
+"タイヤによっては、側面に直径が印刷されているものもあります。"
+"たとえば、62.4 × 20 と印刷されていれば、直径が 62.4mm で、"
+"幅が 20mm であることを意味します。"
+
+#: ../../robotics.rst:69
+msgid ""
+"In practice, most wheels compress slightly under the weight of your "
+"robot. To verify, make your robot drive 1000 mm using "
+"``my_robot.straight(1000)`` and measure how far it really traveled. "
+"Compensate as follows:"
+msgstr ""
+"実際のところ、ほとんどの車輪はロボットの重量でわずかに圧縮されます。"
+"そこで、 ``my_robot.straight(1000)`` を使ってロボットを "
+"1000mm 走行させ、実際にどの程度走行したかを計測してみましょう。"
+"以下のように補正してください:"
+
+#: ../../robotics.rst:73
+msgid ""
+"If your robot drives **not far enough**, **decrease** the "
+"``wheel_diameter`` value slightly."
+msgstr ""
+"ロボットの走行距離が **足りない** 場合は、 ``wheel_diameter`` の"
+"値を少し **小さく** してください。"
+
+#: ../../robotics.rst:75
+msgid ""
+"If your robot drives **too far**, **increase** the ``wheel_diameter`` "
+"value slightly."
+msgstr ""
+"ロボットの走行距離が **長すぎる** 場合は、 ``wheel_diameter`` の"
+"値を少し **大きく** してください。"
+
+#: ../../robotics.rst:78
+msgid ""
+"Motor shafts and axles bend slightly under the load of the robot, causing"
+" the ground contact point of the wheels to be closer to the midpoint of "
+"your robot. To verify, make your robot turn 360 degrees using "
+"``my_robot.turn(360)`` and check that it is back in the same place:"
+msgstr ""
+"モーターシャフトと車軸はロボットの負荷でわずかに曲がり、車輪の接地点がロボット"
+"の中央寄りになります。確認するには、 ``my_robot.turn(360)`` を使って"
+"ロボットを360度回転させ、同じ場所に戻ってくるかどうかをチェックしてください:"
+
+#: ../../robotics.rst:83
+msgid ""
+"If your robot turns **not far enough**, **increase** the ``axle_track`` "
+"value slightly."
+msgstr ""
+"ロボットの旋回が **十分でない** 場合は、 ``axl_track`` の値を少し **大きく** "
+"してください。"
+
+#: ../../robotics.rst:85
+msgid ""
+"If your robot turns **too far**, **decrease** the ``axle_track`` value "
+"slightly."
+msgstr ""
+"ロボットが曲がり **すぎる** 場合は、 ``axl_track`` の値を少し **小さく** します。"
+
+#: ../../robotics.rst:88
+msgid ""
+"When making these adjustments, always adjust the ``wheel_diameter`` "
+"first, as done above. Be sure to test both turning and driving straight "
+"after you are done."
+msgstr ""
+"これらの調整を行う際は、上記のように必ず ``wheel_diameter`` を先に調整します。"
+"調整が終わったら、旋回と直進の両方を必ずテストしてください。"
+
+#: ../../robotics.rst:93
+msgid "Using the DriveBase motors individually"
+msgstr "DriveBase のモーターを個別に使う"
+
+#: ../../robotics.rst:94
+msgid ""
+"After creating a :class:`.DriveBase` object, you can still use its two "
+"motors individually. If you start one motor, the other motor will "
+"automatically stop. Likewise, if a motor is already running and you make "
+"the drive base move, the original maneuver is cancelled and the drive "
+"base will take over."
+msgstr ""
+":class:`.DriveBase` オブジェクトを作成した後でも、その2つのモーターを個別に使えます。"
+"片方のモーターを起動すると、もう片方のモーターは自動的に停止します。"
+"同様に、モータが既に動いている状態でドライブベースを動かすと、元の操作が"
+"キャンセルされ、ディードライブベースが引き継ぎます。"
+
+#: ../../robotics.rst:101
+msgid "Advanced settings"
+msgstr "高度な設定"
+
+#: ../../robotics.rst:102
+msgid ""
+"The :meth:`.settings` method is used to adjust commonly used settings "
+"like the default speed and acceleration for straight maneuvers and turns."
+" Use the following attributes to adjust more advanced control settings."
+msgstr ""
+":meth:`.settings` メソッドは、直進や旋回時のデフォルトの速度や加速度など、"
+"よく使われる設定を調整するために使います。より高度な制御設定を調整するには、"
+"次の属性を使います。"
+
+#: ../../robotics.rst:106
+msgid ""
+"You can only change the settings while the robot is stopped. This is "
+"either before you begin driving or after you call :meth:`.stop`."
+msgstr ""
+"設定を変更できるのは、ロボットが停止している間だけです。つまり、運転を開始する前か、 "
+":meth:`.stop` を呼び出した後のどちらかです。"
+
+#: ../../../docstring of pybricks.robotics.DriveBase.distance_control:1
+msgid ""
+"The traveled distance and drive speed are controlled by a PID controller."
+" You can use this attribute to change its settings. See the :ref:`motor "
+"control <settings>` attribute for an overview of available methods. The "
+"``distance_control`` attribute has the same functionality, but the "
+"settings apply to every millimeter driven by the drive base, instead of "
+"degrees turned by one motor."
+msgstr ""
+"走行距離と駆動速度は、PIDコントローラによって制御されます。"
+"この属性を使って、その設定を変更できます。利用可能なメソッドの概要については、 "
+":ref:`motor control <settings>` 属性を参照してください。 "
+"``distance_control`` 属性は同じ機能を持ちますが、設定は１つのモーターで回転する"
+"度数ではなく、ドライブベースで駆動する全てのミリメートルに対して適用されます。"
+
+#: ../../../docstring of pybricks.robotics.DriveBase.heading_control:1
+msgid ""
+"The robot turn angle and turn rate are controlled by a PID controller. "
+"You can use this attribute to change its settings. See the :ref:`motor "
+"control <settings>` attribute for an overview of available methods. The "
+"``heading_control`` attribute has the same functionality, but the "
+"settings apply to every degree of rotation of the whole drive base "
+"(viewed from the top) instead of degrees turned by one motor."
+msgstr ""
+"ロボットの旋回角度と旋回速度は、PIDコントローラによって制御されます。"
+"この属性を使ってその設定を変更できます。利用可能な方法の概要については、 "
+":ref:`motor control <settings>` 属性を参照してください。 "
+"``heading_control`` 属性は同じ機能を持ちますが、設定は1つのモーターが"
+"回す度数ではなく、ドライブベース全体の(上から見た)回転の度数に対して適用されます。"
+
+#: ../../robotics.rst:117
+msgid "The :meth:`done` and :meth:`stalled` methods have been moved."
+msgstr ":meth:`done` と :meth:`stalled` メソッドは移動しました。"
+
+#: ../../robotics.rst:120
+msgid "Examples"
+msgstr "サンプルコード"
+
+#: ../../robotics.rst:123
+msgid "Driving straight and turning in place"
+msgstr "直進とその場での旋回"
+
+#: ../../robotics.rst:125
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port, Direction\n"
+"from pybricks.robotics import DriveBase\n"
+"\n"
+"# Initialize both motors. In this example, the motor on the\n"
+"# left must turn counterclockwise to make the robot go forward.\n"
+"left_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"# Initialize the drive base. In this example, the wheel diameter is 56mm."
+"\n"
+"# The distance between the two wheel-ground contact points is 112mm.\n"
+"drive_base = DriveBase(left_motor, right_motor, wheel_diameter=56, "
+"axle_track=112)\n"
+"\n"
+"# Drive forward by 500mm (half a meter).\n"
+"drive_base.straight(500)\n"
+"\n"
+"# Turn around clockwise (180 degrees)\n"
+"drive_base.turn(180)\n"
+"\n"
+"# Drive forward again to drive back.\n"
+"drive_base.straight(500)\n"
+"\n"
+"# Turn around counterclockwise.\n"
+"drive_base.turn(-180)\n"
+msgstr ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port, Direction\n"
+"from pybricks.robotics import DriveBase\n"
+"\n"
+"# 両方のモーターを初期化します。この例では、ロボットを前進させる\n"
+"# ためには、左側のモータを反時計回りに回転させる必要があります。\n"
+"left_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"# ドライブベースを初期化します。この例では、車輪の直径は 56mm です。\n"
+"# ２つの車輪と地面の接触点間の距離は 112mm です。\n"
+"drive_base = DriveBase(left_motor, right_motor, wheel_diameter=56, "
+"axle_track=112)\n"
+"\n"
+"# 500mm (0.5m)前進させる。\n"
+"drive_base.straight(500)\n"
+"\n"
+"# 時計回りに旋回させる(180度)\n"
+"drive_base.turn(180)\n"
+"\n"
+"# 元に戻るために再度前進する。\n"
+"drive_base.straight(500)\n"
+"\n"
+"# 反時計回りに旋回させる。\n"
+"drive_base.turn(-180)\n"
+
