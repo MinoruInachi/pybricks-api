@@ -1127,7 +1127,7 @@ msgstr "すべてのモーターコマンドの間、モーターにかかる最
 
 #: ../../pupdevices/dcmotor.rst:35
 msgid "Making a train drive forever"
-msgstr ""
+msgstr "トレインを動かし続ける"
 
 #: ../../pupdevices/dcmotor.rst:37
 msgid ""
@@ -1150,7 +1150,6 @@ msgstr ""
 "from pybricks.tools import wait\n"
 "\n"
 "# モーターを初期化。\n"
-"# Initialize the motor.\n"
 "train_motor = DCMotor(Port.A)\n"
 "\n"
 "# トレインの「電圧」レベルを指定。負の値は逆方向を意味する。\n"
