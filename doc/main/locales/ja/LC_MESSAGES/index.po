@@ -66,7 +66,7 @@ msgid ""
 "You are viewing the stand-alone version of the documentation. To learn "
 "more about Pybricks and to start coding, visit the `Pybricks website`_"
 msgstr ""
-"現在参照しているのは、スタンドアロン版のドキュメントです。"
+"現在参照しているのは、スタンドアローン版のドキュメントです。"
 "Pybricks についてもっと知りたい人や、コーディングを始めたい人は "
 "`Pybricks website`_ を参照してください。"
 
