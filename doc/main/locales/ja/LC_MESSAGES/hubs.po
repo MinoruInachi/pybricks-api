@@ -257,7 +257,6 @@ msgstr ""
 
 #: of pybricks._common.System.shutdown:1
 msgid "Stops your program and shuts the hub down."
-msgstr ""
 msgstr "プログラムを停止し、ハブをシャットダウンします。"
 
 #: of pybricks._common.System.reset_reason:1
