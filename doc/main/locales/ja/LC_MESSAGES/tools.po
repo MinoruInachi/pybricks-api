@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018-2021 The Pybricks Authors
+# Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.2\n"
+"Project-Id-Version: pybricks v3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-16 22:02+0900\n"
-"PO-Revision-Date: 2023-02-23 10:12+0900\n"
+"POT-Creation-Date: 2023-10-31 10:05+0900\n"
+"PO-Revision-Date: 2023-10-31 18:50+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
@@ -18,12 +18,16 @@ msgstr ""
 "Generated-By: Babel 2.11.0\n"
 
 #: ../../tools/index.rst:4
-msgid ":mod:`tools <pybricks.tools>` -- Timing tools"
-msgstr ":mod:`tools <pybricks.tools>` -- タイミングツール"
+msgid ":mod:`tools <pybricks.tools>` -- General purpose tools"
+msgstr ":mod:`tools <pybricks.tools>` -- 汎用ツール"
 
 #: of pybricks.tools:1
-msgid "Common tools for timing and data logging."
-msgstr "タイミングとデータロギングのための共通ツール。"
+msgid "Common tools for timing, data logging, and linear algebra."
+msgstr "タイミングと、データロギング、線形代数のための共通ツール。"
+
+#: ../../tools/index.rst:10
+msgid "Timing tools"
+msgstr "タイミングツール"
 
 #: of pybricks.tools.wait:1
 msgid "Pauses the user program for a specified amount of time."
@@ -80,4 +84,308 @@ msgstr "一時停止していた場合は、一時停止したままです(た�
 #: of pybricks.tools.StopWatch.reset:6
 msgid "If it was running, it stays running (but starting again from 0)."
 msgstr "実行中であれば、実行中のままです(ただし、0 から再スタートします)。"
+
+#: ../../tools/index.rst:26
+msgid "Input tools"
+msgstr "入力ツール"
+
+#: of pybricks.tools.read_input_byte:1
+msgid "Reads one byte from standard input without blocking."
+msgstr "標準入力からブロックなしで1バイトを読み込みます。"
+
+#: of pybricks.tools.read_input_byte:3
+msgid "The numeric value of the byte read or ``None`` if no data is available."
+msgstr "読み込んだバイトの値。データが利用できない場合は ``None`` 。
+
+#: of pybricks.tools.hub_menu:1
+msgid ""
+"Shows a menu on the hub display and waits for the user to select an item "
+"using the buttons. Can be used in your own menu-program that lets you "
+"choose which of your other programs to run."
+msgstr ""
+"ハブのディスプレイにメニューを表示し、ユーザーがボタンを使ってアイテム選択するのを待ちます。"
+"これは、他のプログラムを実行するかどうかを選択するカスタムメニュープログラム内で使えます。"
+
+#: of pybricks.tools.hub_menu:5
+msgid ""
+"Note that this is just a convenience function that combines the display, "
+"buttons, and waits to make a simple menu. This means that it can be used "
+"anywhere in a program, not just at the start."
+msgstr ""
+"これは、ディスプレイ、ボタン、および待機を組み合わせてシンプルなメニューを作成するための"
+"便益関数であることに注意してください。したがって、プログラムの開始時だけでなく、"
+"プログラム内のどこでも使えます。"
+
+#: of pybricks.tools.hub_menu:9
+msgid "The first symbol to show in the menu."
+msgstr "メニューに表示する最初のシンボル。"
+
+#: of pybricks.tools.hub_menu:11
+msgid "The second symbol, and so on..."
+msgstr "2番目のシンボル、およびその後のシンボル..."
+
+#: of pybricks.tools.hub_menu:14
+msgid "The selected symbol."
+msgstr "選択されたシンボル。"
+
+#: ../../tools/index.rst:34
+msgid ""
+"from pybricks.tools import hub_menu\n"
+"\n"
+"# This example assumes that you have three other programs in Pybricks "
+"Code,\n"
+"# called \"fly_mission\", \"drive_mission\", and \"zigzag\". This example"
+" creates a\n"
+"# menu that lets you pick which one to run.\n"
+"\n"
+"# Choose a letter.\n"
+"selected = hub_menu(\"F\", \"D\", \"Z\")\n"
+"\n"
+"# Based on the selection, run a program.\n"
+"if selected == \"F\":\n"
+"    import fly_mission\n"
+"elif selected == \"D\":\n"
+"    import drive_mission\n"
+"elif selected == \"Z\":\n"
+"    import zigzag\n"
+msgstr ""
+"from pybricks.tools import hub_menu\n"
+"\n"
+"# この例は、Pybricks Code に \"fly_mission\", \"drive_mission\",\n"
+"# \"zigzag\" という名前の他の3つのプログラムがあることを前提としています。\n"
+"# この例では、実行するプログラムを選択できるメニューを作成します。\n"
+"\n"
+"# 文字を選択。\n"
+"selected = hub_menu(\"F\", \"D\", \"Z\")\n"
+"\n"
+"# 選択したものに該当するプログラムを実行。\n"
+"if selected == \"F\":\n"
+"    import fly_mission\n"
+"elif selected == \"D\":\n"
+"    import drive_mission\n"
+"elif selected == \"Z\":\n"
+"    import zigzag\n"
+
+#: ../../tools/index.rst:26
+msgid "Linear algebra tools"
+msgstr "線形代数ツール"
+
+#: ../../tools/index.rst:30
+msgid "These tools were previously located in the ``pybricks.geometry`` module."
+msgstr "このツールは以前、 ``pybricks.geometry`` モジュールに配置されていました。"
+
+#: of pybricks.tools.Matrix:1
+msgid ""
+"Mathematical representation of a matrix. It supports addition (``A + "
+"B``), subtraction (``A - B``), and matrix multiplication (``A * B``) for "
+"matrices of compatible size."
+msgstr ""
+"行列の数学的表現。互換性のあるサイズの行列に対して、加算 "
+"(``A + B``)、減算  (``A - B``)、乗算 (``A * B``) をサポートします。"
+
+#: of pybricks.tools.Matrix:5
+msgid ""
+"It also supports scalar multiplication (``c * A`` or ``A * c``) and "
+"scalar division (``A / c``)."
+msgstr ""
+"また、スカラー倍算(``c * A`` または ``A * c``)やスカラー除算"
+"(``A / c``)もサポートします。"
+
+#: of pybricks.tools.Matrix:8
+msgid "A :class:`.Matrix` object is immutable."
+msgstr ":class:`.Matrix` オブジェクトは不変です。"
+
+#: of pybricks.tools.Matrix:10
+msgid "List of rows. Each row is itself a list of numbers."
+msgstr "行のリスト。各行は、それ自体が数値のリストです。"
+
+#: ../../../docstring of pybricks.tools.Matrix.T:1
+msgid "Returns a new :class:`.Matrix` that is the transpose of the original."
+msgstr "元の行列の転置行列である新しい :class:`.Matrix` を返します。"
+
+#: ../../../docstring of pybricks.tools.Matrix.shape:1
+msgid ""
+"Returns a tuple (``m``, ``n``), where ``m`` is the number of rows and "
+"``n`` is the number of columns."
+msgstr ""
+"タプル (``m``, ``n``) を返します。 ``m`` は行の数、 ``n`` は列の数です。"
+
+#: of pybricks.tools.vector:1
+msgid ""
+"Convenience function to create a :class:`.Matrix` with the shape (``2``, "
+"``1``) or (``3``, ``1``)."
+msgstr ""
+"(``2``, ``1``) または (``3``, ``1``) の形状の :class:`.Matrix` "
+"を作成するための便利な機能です。"
+
+#: of pybricks.tools.vector:4
+msgid "x-coordinate of the vector."
+msgstr "ベクトルの x 座標。"
+
+#: of pybricks.tools.vector:6
+msgid "y-coordinate of the vector."
+msgstr "ベクトルの y 座標。"
+
+#: of pybricks.tools.vector:8
+msgid "z-coordinate of the vector (optional)."
+msgstr "ベクトルの z 座標(オプション)。"
+
+#: of pybricks.tools.vector:11
+msgid "A matrix with the shape of a column vector."
+msgstr "列ベクトルの形をした行列。"
+
+#: of pybricks.tools.cross:1
+msgid "Gets the cross product ``a`` × ``b`` of two vectors."
+msgstr "2つのベクトルの内積 ``a`` × ``b`` を取得します。"
+
+#: of pybricks.tools.cross:3 pybricks.tools.cross:5
+msgid "A three-dimensional vector."
+msgstr "3次元ベクトル。"
+
+#: of pybricks.tools.cross:8
+msgid "The cross product, also a three-dimensional vector."
+msgstr "内積の3次元ベクトル。"
+
+#: ../../tools/index.rst:60
+msgid "Multitasking"
+msgstr "マルチタスク"
+
+#: ../../tools/index.rst:64
+msgid ""
+"Pybricks supports cooperative multitasking using the ``async`` and "
+"``await`` keywords. This allows operations that normally take some time "
+"to complete to run in parallel with other operations."
+msgstr ""
+"Pybricks は ``async`` および ``await`` キーワードを使った協調的マルチタスクを"
+"サポートしています。これにより、通常時間がかかる操作を他の操作と並行して実行できます。"
+
+#: of pybricks.tools.multitask:1
+msgid ""
+"Runs multiple coroutines concurrently. This creates a new coroutine that "
+"can be used like any other, including in another ``multitask`` statement."
+msgstr ""
+"複数のコルーチンを同時に実行します。これにより、他のどのコルーチンと同様に使える"
+"新しいコルーチンが作成されます。また、別のマルチタスクステートメント内でも使えます。"
+
+#: of pybricks.tools.multitask:4
+msgid "One or more coroutines to run in parallel."
+msgstr "並行して実行する1つ以上のコルーチン。"
+
+#: of pybricks.tools.multitask:7
+msgid ""
+"Choose ``False`` to wait for all coroutines to finish. Choose ``True`` to"
+" wait for one coroutine to finish and then cancel the others, as if it's "
+"a \"race\"."
+msgstr ""
+"すべてのコルーチンの終了を待つ場合は ``False`` を指定します。"
+"1つのコルーチンの終了を待って他のコルーチンをキャンセルする場合、"
+"つまり「レース」のように扱うには ``True`` を指定します。"
+
+#: of pybricks.tools.multitask:12
+msgid ""
+"Tuple of the return values of each coroutine. Unfinished coroutines will "
+"have ``None`` as their return value."
+msgstr ""
+"各コルーチンの戻り値のタプル。終了していないコルーチンは戻り値として ``None`` を持ちます。"
+
+#: of pybricks.tools.run_task:1
+msgid ""
+"Runs a coroutine from start to finish while blocking the rest of the "
+"program. This is used primarily to run the main coroutine of a program."
+msgstr ""
+"プログラムの残り部分をブロックしながら、コルーチンを最初から最後まで実行します。"
+"これは主に、プログラムのメインコルーチンを実行するために使います。"
+
+#: of pybricks.tools.run_task:4
+msgid "The main coroutine to run."
+msgstr "実行するメインコルーチン。"
+
+#: ../../tools/index.rst:72
+msgid ""
+"The following example shows how to use multitasking to make a robot drive"
+" forward, then turn and move a gripper at the same time, and then drive "
+"backward."
+msgstr ""
+"次の例では、マルチタスクを使って、ロボットを前進させ、同時にグリッパーを"
+"上下に動かし、その後後退させる方法を示しています。"
+
+#: ../../tools/index.rst:76
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Direction, Port\n"
+"from pybricks.robotics import DriveBase\n"
+"from pybricks.tools import multitask, run_task\n"
+"\n"
+"# Set up all devices.\n"
+"left = Motor(Port.A, Direction.COUNTERCLOCKWISE)\n"
+"right = Motor(Port.B)\n"
+"gripper = Motor(Port.C)\n"
+"drive_base = DriveBase(left, right, 56, 114)\n"
+"\n"
+"\n"
+"# Move the gripper up and down.\n"
+"async def move_gripper():\n"
+"    await gripper.run_angle(500, -90)\n"
+"    await gripper.run_angle(500, 90)\n"
+"\n"
+"\n"
+"# Drive forward, turn move gripper at the same time, and drive backward.\n"
+"async def main():\n"
+"    await drive_base.straight(250)\n"
+"    await multitask(drive_base.turn(90), move_gripper())\n"
+"    await drive_base.straight(-250)\n"
+"\n"
+"\n"
+"# Runs the main program from start to finish.\n"
+"run_task(main())\n"
+msgstr ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Direction, Port\n"
+"from pybricks.robotics import DriveBase\n"
+"from pybricks.tools import multitask, run_task\n"
+"\n"
+"# 全てのデバイスをセットアップ。\n"
+"left = Motor(Port.A, Direction.COUNTERCLOCKWISE)\n"
+"right = Motor(Port.B)\n"
+"gripper = Motor(Port.C)\n"
+"drive_base = DriveBase(left, right, 56, 114)\n"
+"\n"
+"\n"
+"# グリッパーをアップ・ダウン。\n"
+"async def move_gripper():\n"
+"    await gripper.run_angle(500, -90)\n"
+"    await gripper.run_angle(500, 90)\n"
+"\n"
+"\n"
+"# 前進させ、同時にグリッパーを動かし、後退させる。\n"
+"async def main():\n"
+"    await drive_base.straight(250)\n"
+"    await multitask(drive_base.turn(90), move_gripper())\n"
+"    await drive_base.straight(-250)\n"
+"\n"
+"\n"
+"# 開始から終了までメインプログラムを走らせる。\n"
+"run_task(main())\n"
+
+#: ../../tools/index.rst:83
+msgid ""
+"Whenever you see a function or method prefixed by ``await``, this means "
+"that it supports multitasking. When running a coroutine with "
+"``run_task``, all methods and functions prefixed by ``await`` will act as"
+" coroutines."
+msgstr ""
+"``await`` キーワードでプレフィックスされた関数やメソッドがあれば、"
+"それはマルチタスクをサポートしていることを意味します。 "
+"``run_task`` でコルーチンを実行すると、 ``await`` でプレフィックス"
+"されたすべてのメソッドや関数はコルーチンとして動作します。"
+
+#: ../../tools/index.rst:87
+msgid ""
+"If you don't use multitasking, you can ignore the ``await`` keyword and "
+"write programs as usual. Specifically, when ``run_task`` is not used, "
+"functions prefixed by ``await`` will act as normal functions."
+msgstr ""
+"マルチタスクを使わない場合、 ``await`` キーワードを無視して、通常通りプログラムを"
+"書けます。具体的には ``run_task`` を使用しない場合、 ``await`` でプレフィックス"
+"された関数は通常の関数として動作します。"
 

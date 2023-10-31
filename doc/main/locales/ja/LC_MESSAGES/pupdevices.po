@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018-2021 The Pybricks Authors
+# Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.2\n"
+"Project-Id-Version: pybricks v3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-16 22:02+0900\n"
-"PO-Revision-Date: 2023-02-23 10:12+0900\n"
+"POT-Creation-Date: 2023-10-31 10:05+0900\n"
+"PO-Revision-Date: 2023-10-31 18:48+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
@@ -1806,17 +1806,22 @@ msgstr ""
 "リセットされます。 ``False`` を指定すると、現在の値が維持され、プログラムは前回の"
 "終了点を知ることができます。"
 
+#: of pybricks.pupdevices.Motor:25
+msgid ""
+"Precision profile. This is the approximate position tolerance in degrees "
+"that is acceptable in your application. A lower value gives more precise "
+"but more erratic movement; a higher value gives less precise but smoother"
+" movement. If no value is given, a suitable profile for this motor type "
+"will be selected automatically (about 11 degrees)."
+msgstr ""
+"精密プロファイル。これは、あなたのアプリケーションで許容される角度の位置許容差の"
+"おおよその値です。低い値はより精密ながら不規則な動きを提供しますが、高い値はより"
+"滑らかながら精度の低い動きを提供します。値が指定されていない場合、このモータータイプに"
+"適したプロファイルが自動的に選択されます(約11°)。
+
 #: ../../pupdevices/motor.rst:20
 msgid "Measuring"
 msgstr "計測"
-
-#: of pybricks._common.Motor.speed:1
-msgid "Gets the speed of the motor."
-msgstr "モーターのスピードを取得します。"
-
-#: of pybricks._common.Motor.speed:3
-msgid "Motor speed."
-msgstr "モーターのスピード。"
 
 #: of pybricks._common.Motor.angle:1
 msgid "Gets the rotation angle of the motor."
@@ -1840,6 +1845,30 @@ msgstr ""
 #: of pybricks.pupdevices.Motor.reset_angle:6
 msgid "Value to which the angle should be reset."
 msgstr "リセットする角度の値。"
+
+#: of pybricks._common.Motor.speed:1
+msgid "Gets the speed of the motor."
+msgstr "モーターのスピードを取得します。"
+
+#: of pybricks._common.Motor.speed:3
+msgid ""
+"The speed is measured as the change in the motor angle during the given "
+"time window. A short window makes the speed value more responsive to "
+"motor movement, but less steady. A long window makes the speed value less"
+" responsive, but more steady."
+msgstr ""
+"速度は、与えられたタイムウィンドウの間のモーター角度の変化として測定されます。"
+"ウィンドウを短くすると、速度値はモータの動きに反応しやすくなりますが、"
+"安定性は低下します。長いウィンドウを使用すると、速度値はモータの動きに"
+"反応しにくくなりますが、より安定した値になります。"
+
+#: of pybricks._common.Motor.speed:8
+msgid "The time window used to determine the speed."
+msgstr "速度を決定するために使用されるタイムウィンドウ。"
+
+#: of pybricks._common.Motor.speed:11
+msgid "Motor speed."
+msgstr "モーターのスピード。"
 
 #: of pybricks._common.Motor.load:1
 msgid "Estimates the load that holds back the motor when it tries to move."
