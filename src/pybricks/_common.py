@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2021 The Pybricks Authors
+# Copyright (c) 2018-2023 The Pybricks Authors
 
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
@@ -8,11 +8,34 @@ from __future__ import annotations
 
 from typing import Union, Iterable, overload, Optional, Tuple, Collection, TYPE_CHECKING
 
-from .geometry import Matrix, Axis
-from .parameters import Direction, Stop, Button, Port, Color, Side
+from .tools import Matrix
+from .parameters import Axis, Direction, Stop, Button, Port, Color, Side
 
 if TYPE_CHECKING:
+    from typing import Any, Awaitable, TypeVar
+
     from .parameters import Number
+
+    _T_co = TypeVar("_T_co", covariant=True)
+
+    class MaybeAwaitable(None, Awaitable[None]):
+        ...
+
+    # HACK: Cannot subclass bool, so using Any instead.
+    class MaybeAwaitableBool(Any, Awaitable[bool]):
+        ...
+
+    class MaybeAwaitableFloat(float, Awaitable[float]):
+        ...
+
+    class MaybeAwaitableInt(int, Awaitable[int]):
+        ...
+
+    class MaybeAwaitableTuple(Tuple[_T_co], Awaitable[Tuple[_T_co]]):
+        ...
+
+    class MaybeAwaitableColor(Color, Awaitable[Color]):
+        ...
 
 
 class System:
@@ -78,8 +101,8 @@ class System:
 
     def storage(self, offset, read=None, write=None):
         """
-        storage(self, offset, write=)
-        storage(self, offset, read=) -> bytes
+        storage(offset, write=)
+        storage(offset, read=) -> bytes
 
         Reads or writes binary data to persistent storage.
 
@@ -368,8 +391,9 @@ class Motor(DCMotor):
         positive_direction: Direction = Direction.CLOCKWISE,
         gears: Optional[Union[Collection[int], Collection[Collection[int]]]] = None,
         reset_angle: bool = True,
+        profile: Number = None,
     ):
-        """__init__(port, positive_direction=Direction.CLOCKWISE, gears=None, reset_angle=True)
+        """__init__(port, positive_direction=Direction.CLOCKWISE, gears=None, reset_angle=True, profile=None)
 
         Arguments:
             port (Port): Port to which the motor is connected.
@@ -386,12 +410,18 @@ class Motor(DCMotor):
                 When you specify a gear train, all motor commands and settings
                 are automatically adjusted to account for the resulting gear
                 ratio.  The motor direction remains unchanged by this.
-            reset_angle(bool):
+            reset_angle (bool):
                 Choose ``True`` to reset the rotation sensor value to the
                 absolute marker angle (between -180 and 179).
                 Choose ``False`` to keep the
                 current value, so your program knows where it left off last
                 time.
+            profile (Number, deg): Precision profile. This is the approximate
+                position tolerance in degrees that is acceptable in your
+                application. A lower value gives more precise but more erratic
+                movement; a higher value gives less precise but smoother
+                movement. If no value is given, a suitable profile for this
+                motor type will be selected automatically (about 11 degrees).
         """
 
     def angle(self) -> int:
@@ -403,10 +433,18 @@ class Motor(DCMotor):
             Motor angle.
         """
 
-    def speed(self) -> int:
-        """speed() -> int: deg/s
+    def speed(self, window: Number = 100) -> int:
+        """speed(window=100) -> int: deg/s
 
         Gets the speed of the motor.
+
+        The speed is measured as the change in the motor angle during the
+        given time window. A short window makes the speed value more
+        responsive to motor movement, but less steady. A long window makes the
+        speed value less responsive, but more steady.
+
+        Arguments:
+            window (Number, ms): The time window used to determine the speed.
 
         Returns:
             Motor speed.
@@ -463,7 +501,7 @@ class Motor(DCMotor):
 
     def run_time(
         self, speed: Number, time: Number, then: Stop = Stop.HOLD, wait: bool = True
-    ) -> None:
+    ) -> MaybeAwaitable:
         """run_time(speed, time, then=Stop.HOLD, wait=True)
 
         Runs the motor at a constant speed for a given amount of time.
@@ -486,7 +524,7 @@ class Motor(DCMotor):
         rotation_angle: Number,
         then: Stop = Stop.HOLD,
         wait: bool = True,
-    ) -> None:
+    ) -> MaybeAwaitable:
         """run_angle(speed, rotation_angle, then=Stop.HOLD, wait=True)
 
         Runs the motor at a constant speed by a given angle.
@@ -506,7 +544,7 @@ class Motor(DCMotor):
         target_angle: Number,
         then: Stop = Stop.HOLD,
         wait: bool = True,
-    ) -> None:
+    ) -> MaybeAwaitable:
         """run_target(speed, target_angle, then=Stop.HOLD, wait=True)
 
         Runs the motor at a constant speed towards a given target angle.
@@ -527,7 +565,7 @@ class Motor(DCMotor):
         speed: Number,
         then: Stop = Stop.COAST,
         duty_limit: Optional[Number] = None,
-    ) -> int:
+    ) -> MaybeAwaitableInt:
         """
         run_until_stalled(speed, then=Stop.COAST, duty_limit=None) -> int: deg
 
@@ -591,7 +629,7 @@ class Speaker:
             volume (Number, %): Volume of the speaker in the 0-100 range.
         """
 
-    def beep(self, frequency: Number = 500, duration: Number = 100) -> None:
+    def beep(self, frequency: Number = 500, duration: Number = 100) -> MaybeAwaitable:
         """beep(frequency=500, duration=100)
 
         Play a beep/tone.
@@ -605,7 +643,7 @@ class Speaker:
                 play continues to play indefinitely.
         """
 
-    def play_notes(self, notes: Iterable[str], tempo: Number = 120) -> None:
+    def play_notes(self, notes: Iterable[str], tempo: Number = 120) -> MaybeAwaitable:
         """play_notes(notes, tempo=120)
 
         Plays a sequence of musical notes. For example:
@@ -692,10 +730,31 @@ class ColorLight:
         """
 
 
+class ExternalColorLight:
+    """Control a multi-color light."""
+
+    def on(self, color: Color) -> MaybeAwaitable:
+        """on(color)
+
+        Turns on the light at the specified color.
+
+        Arguments:
+            color (Color): Color of the light.
+        """
+
+    def off(self) -> MaybeAwaitable:
+        """off()
+
+        Turns off the light.
+        """
+
+
 class LightArray3:
     """Control an array of three single-color lights."""
 
-    def on(self, brightness: Union[Number, Tuple[Number, Number, Number]]) -> None:
+    def on(
+        self, brightness: Union[Number, Tuple[Number, Number, Number]]
+    ) -> MaybeAwaitable:
         """on(brightness)
 
         Turns on the lights at the specified brightness.
@@ -707,10 +766,11 @@ class LightArray3:
                 of each light individually.
         """
 
-    def off(self) -> None:
+    def off(self) -> MaybeAwaitable:
         """off()
 
-        Turns off all the lights."""
+        Turns off all the lights.
+        """
 
 
 class LightArray4(LightArray3):
@@ -718,7 +778,7 @@ class LightArray4(LightArray3):
 
     def on(
         self, brightness: Union[Number, Tuple[Number, Number, Number, Number]]
-    ) -> None:
+    ) -> MaybeAwaitable:
         """on(brightness)
 
         Turns on the lights at the specified brightness.
@@ -781,7 +841,7 @@ class LightMatrix:
 
         Arguments:
             matrices (iter): Sequence of
-                :class:`Matrix <pybricks.geometry.Matrix>` of intensities.
+                :class:`Matrix <pybricks.tools.Matrix>` of intensities.
             interval (Number, ms): Time to display each image in the list.
         """
 
@@ -978,22 +1038,94 @@ class Accelerometer(SimpleAccelerometer):
         along the x-axis.
 
         Returns:
-            Tuple of pitch and roll angles.
+            Tuple of pitch and roll angles in degrees.
         """
 
 
 class IMU(Accelerometer):
+    def ready(self) -> bool:
+        """ready() -> bool
+
+        Checks if the device is calibrated and ready for use.
+
+        This becomes ``True`` when the robot has been sitting stationary for a
+        few seconds, which allows the device to re-calibrate. It is ``False``
+        if the hub has just been started, or if it hasn't had a chance to
+        calibrate for more than 10 minutes.
+
+        Returns:
+            ``True`` if it is ready for use, ``False`` if not.
+        """
+
+    def stationary(self) -> bool:
+        """stationary() -> bool
+
+        Checks if the device is currently stationary (not moving).
+
+        Returns:
+            ``True`` if stationary for at least a second, ``False`` if it is
+            moving.
+        """
+
+    @overload
+    def settings(
+        self,
+        angular_velocity_threshold: float = None,
+        acceleration_threshold: float = None,
+    ) -> None:
+        ...
+
+    @overload
+    def settings(self) -> Tuple[float, float]:
+        ...
+
+    def settings(self, *args):
+        """
+        settings(angular_velocity_threshold, acceleration_threshold)
+        settings() -> Tuple[float, float]
+
+        Configures the IMU settings. If no arguments are given,
+        this returns the current values.
+
+        The ``angular_velocity_threshold`` and ``acceleration_threshold``
+        define when the hub is considered stationary. If all
+        measurements stay below these thresholds for one second, the IMU
+        will recalibrate itself.
+
+        In a noisy room with high ambient vibrations (such as a
+        competition hall), it is recommended to increase the thresholds
+        slightly to give your robot the chance to calibrate.
+        To verify that your settings are working as expected, test that
+        the ``stationary()`` method gives ``False`` if your robot is moving,
+        and ``True`` if it is sitting still for at least a second.
+
+        Arguments:
+            angular_velocity_threshold (Number, deg/s): The threshold for
+                angular velocity. The default value is 1.5 deg/s.
+            acceleration_threshold (Number, mm/s²): The threshold for angular
+                velocity. The default value is 250 mm/s².
+        """
+
     def heading(self) -> float:
         """heading() -> float: deg
 
-        Gets the heading angle relative to the starting orientation. It is a
-        positive rotation around the :ref:`z-axis in the robot
-        frame <robotframe>`, prior to applying any tilt rotation.
+        Gets the heading angle of your robot. A positive value means a
+        clockwise turn.
 
-        For a vehicle viewed from the top, this means that
-        a positive heading value corresponds to a counterclockwise rotation.
+        The heading is 0 when your program starts. The value continues to grow
+        even as the robot turns more than 180 degrees. It does not wrap around
+        to -180 like it does in some apps.
 
-        .. note:: This method is not yet implemented.
+
+        .. note:: *For now, this method only keeps track of the heading while
+                  the robot is on a flat surface.*
+
+                  This means that the value is
+                  no longer correct if you lift it from the table. To solve
+                  this, you can call ``reset_heading`` to reset the heading to
+                  a known value *after* you put it back down. For example, you
+                  could align your robot with the side of the competition table
+                  and reset the heading 90 degrees as the new starting point.
 
         Returns:
             Heading angle relative to starting orientation.
@@ -1004,8 +1136,6 @@ class IMU(Accelerometer):
         """reset_heading(angle)
 
         Resets the accumulated heading angle of the robot.
-
-        .. note:: This method is not yet implemented.
 
         Arguments:
             angle (Number, deg): Value to which the heading should be reset.
@@ -1035,6 +1165,41 @@ class IMU(Accelerometer):
             this returns a vector of accelerations along all axes.
         """
 
+    def rotation(self, axis: Axis) -> float:
+        """
+        rotation(axis) -> float: deg
+
+        Gets the rotation of the device along a given axis in
+        the :ref:`robot reference frame <robotframe>`.
+
+        This value is useful if your robot *only* rotates along the requested
+        axis. For general three-dimensional motion, use the
+        ``orientation()`` method instead.
+
+        The value starts counting from ``0`` when you initialize this class.
+
+        Arguments:
+            axis (Axis): Axis along which the rotation should be measured.
+        Returns:
+            The rotation angle.
+        """
+
+    def orientation(self) -> Matrix:
+        """
+        orientation() -> Matrix
+
+        Gets the three-dimensional orientation of the robot in
+        the :ref:`robot reference frame <robotframe>`.
+
+        It returns a rotation matrix whose columns represent the ``X``, ``Y``,
+        and ``Z`` axis of the robot.
+
+        .. note:: This method is not yet implemented.
+
+        Returns:
+            The rotation matrix.
+        """
+
 
 class CommonColorSensor:
     """Generic color sensor that supports Pybricks color calibration."""
@@ -1046,7 +1211,7 @@ class CommonColorSensor:
             port (Port): Port to which the sensor is connected.
         """
 
-    def color(self) -> Color:
+    def color(self) -> MaybeAwaitableColor:
         """color() -> Color
 
         Scans the color of a surface.
@@ -1060,7 +1225,7 @@ class CommonColorSensor:
             Detected color.
         """
 
-    def hsv(self) -> Color:
+    def hsv(self) -> MaybeAwaitableColor:
         """hsv() -> Color
 
         Scans the color of a surface.
@@ -1074,7 +1239,7 @@ class CommonColorSensor:
             saturation (0--100), and a brightness value (0--100).
         """
 
-    def ambient(self) -> int:
+    def ambient(self) -> MaybeAwaitableInt:
         """ambient() -> int: %
 
         Measures the ambient light intensity.
@@ -1084,7 +1249,7 @@ class CommonColorSensor:
             to 100% (bright).
         """
 
-    def reflection(self) -> int:
+    def reflection(self) -> MaybeAwaitableInt:
         """reflection() -> int: %
 
         Measures how much a surface reflects the light emitted by the
@@ -1130,7 +1295,7 @@ class AmbientColorSensor(CommonColorSensor):
     """Like CommonColorSensor, but also detects ambient colors when the sensor
     light is turned off"""
 
-    def color(self, surface: bool = True) -> Optional[Color]:
+    def color(self, surface: bool = True) -> MaybeAwaitableColor:
         """color(surface=True) -> Color
 
         Scans the color of a surface or an external light source.
@@ -1149,7 +1314,7 @@ class AmbientColorSensor(CommonColorSensor):
             Detected color.`
         """
 
-    def hsv(self, surface: bool = True) -> Color:
+    def hsv(self, surface: bool = True) -> MaybeAwaitableColor:
         """hsv(surface=True) -> Color
 
         Scans the color of a surface or an external light source.
@@ -1166,4 +1331,78 @@ class AmbientColorSensor(CommonColorSensor):
         Returns:
             Measured color. The color is described by a hue (0--359), a
             saturation (0--100), and a brightness value (0--100).
+        """
+
+
+class BLE:
+    """
+    Bluetooth Low Energy.
+
+    .. versionadded:: 3.3
+    """
+
+    def broadcast(self, data: Union[bool, int, float, str, bytes]) -> None:
+        """broadcast(data)
+
+        Starts broadcasting the given data on
+        the *broadcast_channel* you selected when initializing the hub.
+
+        Data may be of type ``int``, ``float``, ``str``, ``bytes``,
+        ``True``, or ``False``, or a tuple thereof.
+
+        The total data size is quite limited (26 bytes). ``True`` and
+        ``False`` take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to
+        5 bytes depending on how big the number is. ``str`` and ``bytes`` take
+        the number of bytes in the object plus one extra byte.
+
+        Args:
+            data: The value or values to be broadcast.
+
+        .. versionadded:: 3.3
+        """
+
+    def observe(
+        self, channel: int
+    ) -> Optional[Tuple[Union[bool, int, float, str, bytes], ...]]:
+        """observe(channel) -> bool | int | float | str | bytes | tuple | None
+
+        Retrieves the last observed data for a given channel.
+
+        Receiving data is more reliable when the hub is not connected
+        to a computer or other devices at the same time.
+
+        Args:
+            channel (int): The channel to observe (0 to 255).
+
+        Returns:
+            The received data in the same format as it was sent, or ``None``
+            if no recent data is available.
+
+        .. versionadded:: 3.3
+        """
+
+    def signal_strength(self, channel: int) -> int:
+        """signal_strength(channel) -> int: dBm
+
+        Gets the average signal strength in dBm for the given channel.
+
+        This indicates how near the broadcasting device is. Nearby devices
+        may have a signal strength around -40 dBm, while far away devices
+        might have a signal strength around -70 dBm.
+
+        Args:
+            channel (int): The channel number (0 to 255).
+
+        Returns:
+            The signal strength or ``-128`` if there is no recent observed data.
+
+        .. versionadded:: 3.3
+        """
+
+    def version(self) -> str:
+        """version() -> str
+
+        Gets the firmware version from the Bluetooth chip.
+
+        .. versionadded:: 3.3
         """

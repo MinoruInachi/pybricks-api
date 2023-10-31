@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2022 The Pybricks Authors
+# Copyright (c) 2022-2023 The Pybricks Authors
 
 """
 Tests for correct signatures of the pupdevices.Motor class.
@@ -29,9 +29,10 @@ def _get_function_signature(module: str, function: str) -> SignatureHelp:
 
 
 FUNCTION_PARAMS = [
-    pytest.param("pybricks.tools", "wait", [(["time: Number"], "None")]),
+    pytest.param("pybricks.tools", "read_input_byte", [([], "Optional[int]")]),
+    pytest.param("pybricks.tools", "wait", [(["time: Number"], "MaybeAwaitable")]),
     pytest.param(
-        "pybricks.geometry",
+        "pybricks.tools",
         "vector",
         [
             (["x: float", "y: float"], "Matrix"),
@@ -78,17 +79,51 @@ def _get_constructor_signature(module: str, type: str) -> SignatureHelp:
 
 
 CONSTRUCTOR_PARAMS = [
-    pytest.param("pybricks.hubs", "MoveHub", [[]]),
-    pytest.param("pybricks.hubs", "CityHub", [[]]),
+    pytest.param(
+        "pybricks.hubs",
+        "MoveHub",
+        [["broadcast_channel: int=0", "observe_channels: Sequence[int]=[]"]],
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "CityHub",
+        [["broadcast_channel: int=0", "observe_channels: Sequence[int]=[]"]],
+    ),
     pytest.param(
         "pybricks.hubs",
         "TechnicHub",
-        [["top_side: Axis=Axis.Z", "front_side: Axis=Axis.X"]],
+        [
+            [
+                "top_side: Axis=Axis.Z",
+                "front_side: Axis=Axis.X",
+                "broadcast_channel: int=0",
+                "observe_channels: Sequence[int]=[]",
+            ]
+        ],
     ),
     pytest.param(
         "pybricks.hubs",
         "PrimeHub",
-        [["top_side: Axis=Axis.Z", "front_side: Axis=Axis.X"]],
+        [
+            [
+                "top_side: Axis=Axis.Z",
+                "front_side: Axis=Axis.X",
+                "broadcast_channel: int=0",
+                "observe_channels: Sequence[int]=[]",
+            ]
+        ],
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        [
+            [
+                "top_side: Axis=Axis.Z",
+                "front_side: Axis=Axis.X",
+                "broadcast_channel: int=0",
+                "observe_channels: Sequence[int]=[]",
+            ]
+        ],
     ),
     pytest.param(
         "pybricks.pupdevices",
@@ -104,6 +139,7 @@ CONSTRUCTOR_PARAMS = [
                 "positive_direction: Direction=Direction.CLOCKWISE",
                 "gears: Optional[Union[Collection[int], Collection[Collection[int]]]]=None",
                 "reset_angle: bool=True",
+                "profile: Number=None",
             ]
         ],
     ),
@@ -151,7 +187,7 @@ CONSTRUCTOR_PARAMS = [
         ],
     ),
     pytest.param(
-        "pybricks.geometry",
+        "pybricks.tools",
         "Matrix",
         [["rows: Sequence[Sequence[float]]"]],
     ),
@@ -306,11 +342,18 @@ METHOD_PARAMS = [
         [(["axis: Axis"], "float"), ([], "Matrix")],
     ),
     pytest.param("pybricks.hubs", "TechnicHub", "imu.heading", [([], "float")]),
+    pytest.param("pybricks.hubs", "TechnicHub", "imu.orientation", [([], "Matrix")]),
     pytest.param(
         "pybricks.hubs",
         "TechnicHub",
         "imu.reset_heading",
         [(["angle: Number"], "None")],
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "TechnicHub",
+        "imu.rotation",
+        [(["axis: Axis"], "float")],
     ),
     pytest.param("pybricks.hubs", "TechnicHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "TechnicHub", "battery.current", [([], "int")]),
@@ -398,11 +441,18 @@ METHOD_PARAMS = [
         [(["axis: Axis"], "float"), ([], "Matrix")],
     ),
     pytest.param("pybricks.hubs", "PrimeHub", "imu.heading", [([], "float")]),
+    pytest.param("pybricks.hubs", "PrimeHub", "imu.orientation", [([], "Matrix")]),
     pytest.param(
         "pybricks.hubs",
         "PrimeHub",
         "imu.reset_heading",
         [(["angle: Number"], "None")],
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "PrimeHub",
+        "imu.rotation",
+        [(["axis: Axis"], "float")],
     ),
     pytest.param(
         "pybricks.hubs",
@@ -414,13 +464,13 @@ METHOD_PARAMS = [
         "pybricks.hubs",
         "PrimeHub",
         "speaker.beep",
-        [(["frequency: Number=500", "duration: Number=100"], "None")],
+        [(["frequency: Number=500", "duration: Number=100"], "MaybeAwaitable")],
     ),
     pytest.param(
         "pybricks.hubs",
         "PrimeHub",
         "speaker.play_notes",
-        [(["notes: Iterable[str]", "tempo: Number=120"], "None")],
+        [(["notes: Iterable[str]", "tempo: Number=120"], "MaybeAwaitable")],
     ),
     pytest.param("pybricks.hubs", "PrimeHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "PrimeHub", "battery.current", [([], "int")]),
@@ -481,11 +531,18 @@ METHOD_PARAMS = [
         [(["axis: Axis"], "float"), ([], "Matrix")],
     ),
     pytest.param("pybricks.hubs", "EssentialHub", "imu.heading", [([], "float")]),
+    pytest.param("pybricks.hubs", "EssentialHub", "imu.orientation", [([], "Matrix")]),
     pytest.param(
         "pybricks.hubs",
         "EssentialHub",
         "imu.reset_heading",
         [(["angle: Number"], "None")],
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        "imu.rotation",
+        [(["axis: Axis"], "float")],
     ),
     pytest.param("pybricks.hubs", "EssentialHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "EssentialHub", "battery.current", [([], "int")]),
@@ -520,7 +577,12 @@ METHOD_PARAMS = [
         "settings",
         [(["max_voltage: Number"], "None"), ([], "Tuple[int]")],
     ),
-    pytest.param("pybricks.pupdevices", "Motor", "speed", [([], "int")]),
+    pytest.param(
+        "pybricks.pupdevices",
+        "Motor",
+        "speed",
+        [(["window: Number=100"], "int")],
+    ),
     pytest.param("pybricks.pupdevices", "Motor", "angle", [([], "int")]),
     pytest.param(
         "pybricks.pupdevices",
@@ -544,7 +606,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),
@@ -560,7 +622,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),
@@ -576,7 +638,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),
@@ -597,7 +659,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.COAST",
                     "duty_limit: Optional[Number]=None",
                 ],
-                "int",
+                "MaybeAwaitableInt",
             )
         ],
     ),
@@ -676,24 +738,53 @@ METHOD_PARAMS = [
         ],
     ),
     pytest.param(
-        "pybricks.pupdevices", "TiltSensor", "tilt", [([], "Tuple[int, int]")]
-    ),
-    pytest.param("pybricks.pupdevices", "InfraredSensor", "distance", [([], "int")]),
-    pytest.param("pybricks.pupdevices", "InfraredSensor", "reflection", [([], "int")]),
-    pytest.param("pybricks.pupdevices", "InfraredSensor", "count", [([], "int")]),
-    pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "color", [([], "Color")]
+        "pybricks.pupdevices",
+        "TiltSensor",
+        "tilt",
+        [([], "MaybeAwaitableTuple[int, int]")],
     ),
     pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "reflection", [([], "int")]
+        "pybricks.pupdevices", "InfraredSensor", "distance", [([], "MaybeAwaitableInt")]
     ),
     pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "ambient", [([], "int")]
+        "pybricks.pupdevices",
+        "InfraredSensor",
+        "reflection",
+        [([], "MaybeAwaitableInt")],
     ),
     pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "distance", [([], "int")]
+        "pybricks.pupdevices", "InfraredSensor", "count", [([], "MaybeAwaitableInt")]
     ),
-    pytest.param("pybricks.pupdevices", "ColorDistanceSensor", "hsv", [([], "Color")]),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "color",
+        [([], "MaybeAwaitableColor")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "reflection",
+        [([], "MaybeAwaitableInt")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "ambient",
+        [([], "MaybeAwaitableInt")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "distance",
+        [([], "MaybeAwaitableInt")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "hsv",
+        [([], "MaybeAwaitableColor")],
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "ColorDistanceSensor",
@@ -704,27 +795,36 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "ColorDistanceSensor",
         "light.on",
-        [(["color: Color"], "None")],
+        [(["color: Color"], "MaybeAwaitable")],
     ),
     pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "light.off", [([], "None")]
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "light.off",
+        [([], "MaybeAwaitable")],
     ),
-    pytest.param("pybricks.pupdevices", "PFMotor", "dc", [(["duty: Number"], "None")]),
-    pytest.param("pybricks.pupdevices", "PFMotor", "stop", [([], "None")]),
-    pytest.param("pybricks.pupdevices", "PFMotor", "brake", [([], "None")]),
+    pytest.param(
+        "pybricks.pupdevices", "PFMotor", "dc", [(["duty: Number"], "MaybeAwaitable")]
+    ),
+    pytest.param("pybricks.pupdevices", "PFMotor", "stop", [([], "MaybeAwaitable")]),
+    pytest.param("pybricks.pupdevices", "PFMotor", "brake", [([], "MaybeAwaitable")]),
     pytest.param(
         "pybricks.pupdevices",
         "ColorSensor",
         "color",
-        [(["surface: bool=True"], "Optional[Color]")],
+        [(["surface: bool=True"], "MaybeAwaitableColor")],
     ),
-    pytest.param("pybricks.pupdevices", "ColorSensor", "reflection", [([], "int")]),
-    pytest.param("pybricks.pupdevices", "ColorSensor", "ambient", [([], "int")]),
+    pytest.param(
+        "pybricks.pupdevices", "ColorSensor", "reflection", [([], "MaybeAwaitableInt")]
+    ),
+    pytest.param(
+        "pybricks.pupdevices", "ColorSensor", "ambient", [([], "MaybeAwaitableInt")]
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "ColorSensor",
         "hsv",
-        [(["surface: bool=True"], "Color")],
+        [(["surface: bool=True"], "MaybeAwaitableColor")],
     ),
     pytest.param(
         "pybricks.pupdevices",
@@ -736,11 +836,28 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "ColorSensor",
         "lights.on",
-        [(["brightness: Union[Number, Tuple[Number, Number, Number]]"], "None")],
+        [
+            (
+                ["brightness: Union[Number, Tuple[Number, Number, Number]]"],
+                "MaybeAwaitable",
+            )
+        ],
     ),
-    pytest.param("pybricks.pupdevices", "ColorSensor", "lights.off", [([], "None")]),
-    pytest.param("pybricks.pupdevices", "UltrasonicSensor", "distance", [([], "int")]),
-    pytest.param("pybricks.pupdevices", "UltrasonicSensor", "presence", [([], "bool")]),
+    pytest.param(
+        "pybricks.pupdevices", "ColorSensor", "lights.off", [([], "MaybeAwaitable")]
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "UltrasonicSensor",
+        "distance",
+        [([], "MaybeAwaitableInt")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "UltrasonicSensor",
+        "presence",
+        [([], "MaybeAwaitableBool")],
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "UltrasonicSensor",
@@ -748,29 +865,40 @@ METHOD_PARAMS = [
         [
             (
                 ["brightness: Union[Number, Tuple[Number, Number, Number, Number]]"],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),
     pytest.param(
-        "pybricks.pupdevices", "UltrasonicSensor", "lights.off", [([], "None")]
+        "pybricks.pupdevices",
+        "UltrasonicSensor",
+        "lights.off",
+        [([], "MaybeAwaitable")],
     ),
-    pytest.param("pybricks.pupdevices", "ForceSensor", "force", [([], "float")]),
-    pytest.param("pybricks.pupdevices", "ForceSensor", "distance", [([], "float")]),
+    pytest.param(
+        "pybricks.pupdevices", "ForceSensor", "force", [([], "MaybeAwaitableFloat")]
+    ),
+    pytest.param(
+        "pybricks.pupdevices", "ForceSensor", "distance", [([], "MaybeAwaitableFloat")]
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "ForceSensor",
         "pressed",
-        [(["force: Number=3"], "bool")],
+        [(["force: Number=3"], "MaybeAwaitableBool")],
     ),
-    pytest.param("pybricks.pupdevices", "ForceSensor", "touched", [([], "bool")]),
+    pytest.param(
+        "pybricks.pupdevices", "ForceSensor", "touched", [([], "MaybeAwaitableBool")]
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "ColorLightMatrix",
         "on",
-        [(["color: Union[Color, Collection[Color]]"], "None")],
+        [(["color: Union[Color, Collection[Color]]"], "MaybeAwaitable")],
     ),
-    pytest.param("pybricks.pupdevices", "ColorLightMatrix", "off", [([], "None")]),
+    pytest.param(
+        "pybricks.pupdevices", "ColorLightMatrix", "off", [([], "MaybeAwaitable")]
+    ),
     pytest.param(
         "pybricks.pupdevices", "Light", "on", [(["brightness: Number=100"], "None")]
     ),
@@ -799,13 +927,23 @@ METHOD_PARAMS = [
         "pybricks.robotics",
         "DriveBase",
         "straight",
-        [(["distance: Number", "then: Stop=Stop.HOLD", "wait: bool=True"], "None")],
+        [
+            (
+                ["distance: Number", "then: Stop=Stop.HOLD", "wait: bool=True"],
+                "MaybeAwaitable",
+            )
+        ],
     ),
     pytest.param(
         "pybricks.robotics",
         "DriveBase",
         "turn",
-        [(["angle: Number", "then: Stop=Stop.HOLD", "wait: bool=True"], "None")],
+        [
+            (
+                ["angle: Number", "then: Stop=Stop.HOLD", "wait: bool=True"],
+                "MaybeAwaitable",
+            )
+        ],
     ),
     pytest.param(
         "pybricks.robotics",
@@ -819,7 +957,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),
@@ -847,6 +985,7 @@ METHOD_PARAMS = [
         [(["speed: Number", "turn_rate: Number"], "None")],
     ),
     pytest.param("pybricks.robotics", "DriveBase", "stop", [([], "None")]),
+    pytest.param("pybricks.robotics", "DriveBase", "brake", [([], "None")]),
     pytest.param("pybricks.robotics", "DriveBase", "distance", [([], "int")]),
     pytest.param("pybricks.robotics", "DriveBase", "angle", [([], "int")]),
     pytest.param(
