@@ -147,7 +147,7 @@ add_module_names = False  # Hide module name
 
 # -- Options for HTML output ----------------------------------------------
 
-if ON_RTD:
+if False:  #ON_RTD:
     html_theme = "default"
 else:
     import sphinx_rtd_theme
