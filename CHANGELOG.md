@@ -4,6 +4,25 @@
 
 ## Unreleased
 
+## 3.4.0b2 - 2023-11-28
+
+### Changed
+- Include first batch of block coding images.
+
+## 3.3.0 - 2023-11-24
+
+### Changed
+- Bump beta version to release version with no further changes.
+
+## 3.3.0c1 - 2023-11-20
+
+## Added
+- Enabled tilt and orientation config for `MoveHub()`.
+- Documented `Motor.close()`
+
+## Fixed
+- Fixed missing awaitable for `Remote.light` and LWP3 writes.
+
 ## 3.3.0b9 - 2023-10-26
 
 ### Changed

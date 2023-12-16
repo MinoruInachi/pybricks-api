@@ -605,6 +605,16 @@ class Motor(DCMotor):
                 rotate to.
         """
 
+    def close(self) -> None:
+        """close()
+
+        Closes the motor object so you can call ``Motor`` again to initialize
+        a new object.
+
+        This allows advanced users to change properties such as gearing in the
+        middle of the program, which can be useful for removeable attachments.
+        """
+
 
 class Speaker:
     """Plays beeps and sounds using a speaker."""
@@ -998,6 +1008,20 @@ class SimpleAccelerometer:
             ``Side.FRONT`` or ``Side.BACK``.
         """
 
+    def tilt(self) -> Tuple[int, int]:
+        """tilt() -> Tuple[int, int]
+
+        Gets the pitch and roll angles. This is relative to the
+        :ref:`user-specified neutral orientation <robotframe>`.
+
+        The order of rotation is pitch-then-roll. This is equivalent to a
+        positive rotation along the robot y-axis and then a positive rotation
+        along the x-axis.
+
+        Returns:
+            Tuple of pitch and roll angles in degrees.
+        """
+
 
 class Accelerometer(SimpleAccelerometer):
     """Get measurements from an accelerometer."""
@@ -1025,20 +1049,6 @@ class Accelerometer(SimpleAccelerometer):
         Returns:
             Acceleration along the specified axis. If you specify no axis,
             this returns a vector of accelerations along all axes.
-        """
-
-    def tilt(self) -> Tuple[int, int]:
-        """tilt() -> Tuple[int, int]
-
-        Gets the pitch and roll angles. This is relative to the
-        :ref:`user-specified neutral orientation <robotframe>`.
-
-        The order of rotation is pitch-then-roll. This is equivalent to a
-        positive rotation along the robot y-axis and then a positive rotation
-        along the x-axis.
-
-        Returns:
-            Tuple of pitch and roll angles in degrees.
         """
 
 
@@ -1280,6 +1290,8 @@ class CommonColorSensor:
         desired color, and other colors are ignored. This improves reliability.
 
         If you give no arguments, the currently chosen colors will be returned.
+
+        When coding with blocks, this is configured in the sensor setup block.
 
         Arguments:
             colors (list or tuple): List of :class:`Color <.parameters.Color>`

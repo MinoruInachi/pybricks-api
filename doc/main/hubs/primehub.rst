@@ -6,12 +6,22 @@ Prime Hub / Inventor Hub
 .. figure:: ../../main/cad/output/hub-spike-inventor.png
     :width: 80%
 
+.. blockimg:: pybricks_variables_set_inventor_hub_option0
+
+.. blockimg:: pybricks_variables_set_inventor_hub_option4
+    :stack:
+
 .. class:: InventorHub
 
     This class is the same as the ``PrimeHub`` class, shown below. Both classes
     work on both hubs.
 
     These hubs are completely identical. They use the same Pybricks firmware.
+
+.. blockimg:: pybricks_variables_set_prime_hub_option0
+
+.. blockimg:: pybricks_variables_set_prime_hub_option4
+    :stack:
 
 .. autoclass:: pybricks.hubs.PrimeHub
     :no-members:
@@ -21,7 +31,11 @@ Prime Hub / Inventor Hub
     .. figure:: ../../main/diagrams/primehub_light.png
         :width: 22 em
 
+    .. blockimg:: pybricks_blockLightOnColor_primehub_on
+
     .. automethod:: pybricks.hubs::PrimeHub.light.on
+
+    .. blockimg:: pybricks_blockLightOnColor_primehub_off
 
     .. automethod:: pybricks.hubs::PrimeHub.light.off
 
@@ -36,7 +50,11 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.display.orientation
 
+    .. blockimg:: pybricks_blockLightMatrixDo_light_matrix_off
+
     .. automethod:: pybricks.hubs::PrimeHub.display.off
+
+    .. blockimg:: pybricks_blockLightMatrixDo_light_matrix_pixel
 
     .. automethod:: pybricks.hubs::PrimeHub.display.pixel
 
@@ -44,7 +62,11 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.display.animate
 
+    .. blockimg:: pybricks_blockLightMatrixDo_light_matrix_number
+
     .. automethod:: pybricks.hubs::PrimeHub.display.number
+
+    .. blockimg:: pybricks_blockLightMatrixDo_light_matrix_symbol
 
     .. automethod:: pybricks.hubs::PrimeHub.display.char
 
@@ -55,7 +77,11 @@ Prime Hub / Inventor Hub
     .. figure:: ../../main/diagrams/primehub_buttons.png
         :width: 22 em
 
+    .. blockimg:: pybricks_blockButtonIsPressed_PrimeHub
+
     .. automethod:: pybricks.hubs::PrimeHub.buttons.pressed
+
+    .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
     .. rubric:: Using the IMU
 
@@ -65,15 +91,30 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.up
 
+    .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.pitch
+
+    .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.roll
+        :stack:
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
+
+    .. blockimg:: pybricks_blockImuAcceleration_PrimeHub
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.acceleration
 
+    .. blockimg:: pybricks_blockImuRotation_PrimeHub_imu.angular_velocity
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.angular_velocity
+
+    .. blockimg:: pybricks_blockImuGetHeading_PrimeHub
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.heading
 
+    .. blockimg:: pybricks_blockImuResetHeading_PrimeHub
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.reset_heading
+
+    .. blockimg:: pybricks_blockImuRotation_PrimeHub_imu.rotation
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.rotation
 
@@ -91,7 +132,11 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using connectionless Bluetooth messaging
 
+    .. blockimg:: pybricks_blockBleBroadcast_PrimeHub
+
     .. automethod:: pybricks.hubs::PrimeHub.ble.broadcast
+
+    .. blockimg:: pybricks_blockBleObserve_PrimeHub
 
     .. automethod:: pybricks.hubs::PrimeHub.ble.observe
 
@@ -101,7 +146,11 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using the battery
 
+    .. blockimg:: pybricks_blockBatteryMeasure_PrimeHub_battery.voltage
+
     .. automethod:: pybricks.hubs::PrimeHub.battery.voltage
+
+    .. blockimg:: pybricks_blockBatteryMeasure_PrimeHub_battery.current
 
     .. automethod:: pybricks.hubs::PrimeHub.battery.current
 
@@ -114,8 +163,6 @@ Prime Hub / Inventor Hub
     .. automethod:: pybricks.hubs::PrimeHub.charger.status
 
     .. rubric:: System control
-
-    .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
     .. automethod:: pybricks.hubs::PrimeHub.system.name
 
