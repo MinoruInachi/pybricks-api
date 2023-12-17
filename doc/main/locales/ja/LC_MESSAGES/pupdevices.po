@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 10:05+0900\n"
-"PO-Revision-Date: 2023-10-31 18:48+0900\n"
+"POT-Creation-Date: 2023-12-17 09:36+0900\n"
+"PO-Revision-Date: 2023-12-17 10:11+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
@@ -2032,6 +2032,22 @@ msgstr "完了した場合は ``True`` 、完了していない場合は ``False
 #: ../../pupdevices/motor.rst:62
 msgid "Motor settings"
 msgstr "モーターの設定"
+
+#: of pybricks._common.Motor.close:1
+msgid ""
+"Closes the motor object so you can call ``Motor`` again to initialize a "
+"new object."
+msgstr ""
+"モーターオブジェクトを閉じます。"
+"新しいオブジェクトを初期化するには ``Motor`` を再度呼び出す必要があります。"
+
+#: of pybricks._common.Motor.close:4
+msgid ""
+"This allows advanced users to change properties such as gearing in the "
+"middle of the program, which can be useful for removeable attachments."
+msgstr ""
+"これにより、上級ユーザはプログラムの途中でギアリングなどのプロパティを"
+"変更できるようになり、取り外し可能なアタッチメント用に便利です。"
 
 #: ../../pupdevices/motor.rst:66
 msgid "Control settings"

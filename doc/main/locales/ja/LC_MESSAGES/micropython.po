@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.3\n"
+"Project-Id-Version: pybricks v3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 10:05+0900\n"
-"PO-Revision-Date: 2023-10-31 10:05+0900\n"
+"POT-Creation-Date: 2023-12-17 09:36+0900\n"
+"PO-Revision-Date: 2023-12-17 11:06+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
@@ -383,6 +383,124 @@ msgstr ""
 msgid "Iterable from which to build the list."
 msgstr "リストを作成するためのイテラブル。"
 
+#: of ubuiltins.set:1
+msgid "Creates a new set."
+msgstr "新しい集合を作成します。"
+
+#: of ubuiltins.set:3
+msgid ""
+"With no arguments, creates a new empty set, otherwise creates a set "
+"containing unique items of *iterable*."
+msgstr ""
+"引数がない場合は新しい空の集合を作成し、そうでない場合は *イテラブル* な"
+"一意の要素を含む集合を作成します。
+
+#: of ubuiltins.set:6
+msgid "Sets can also be created using a set literal::"
+msgstr "集合は集合リテラルを使っても作成できます::"
+
+#: of ubuiltins.set:10
+msgid ""
+"Elements of a set must be hashable. There are only a few types, like "
+":class:`list` that aren't hashable."
+msgstr ""
+"集合の要素はハッシュ可能でなければなりません。"
+"ハッシュ可能でないものはごくわずかですが、たとえば :class:`list` が該当します。"
+
+#: of ubuiltins.set:13
+msgid "An iterable of hashable objects."
+msgstr "ハッシュ可能なオブジェクトのイテラブル。"
+
+#: of ubuiltins.set.copy:1
+msgid "Returns a shallow copy of the set."
+msgstr "集合の浅いコピーを返します。"
+
+#: of ubuiltins.set.copy:3 ubuiltins.set.difference:9
+#: ubuiltins.set.intersection:10 ubuiltins.set.symmetric_difference:9
+#: ubuiltins.set.union:9
+msgid "A new set."
+msgstr "新しい集合。"
+
+#: of ubuiltins.set.difference:1
+msgid "Returns a new set with elements that are not in any of the other sets."
+msgstr "他のどの集合にもない要素を持つ新しい集合を返します。"
+
+#: of ubuiltins.set.difference:3
+msgid "The difference can also be computed using the ``-`` operator::"
+msgstr "集合の差は ``-`` 演算子を使っても計算できます::"
+
+#: of ubuiltins.set.difference:7 ubuiltins.set.intersection:8
+#: ubuiltins.set.union:7
+msgid "1 or more other sets."
+msgstr "1つ以上の他の集合。"
+
+#: of ubuiltins.set.intersection:1
+msgid ""
+"Returns a new set with elements that are common between this set and all "
+"other sets."
+msgstr ""
+"この集合と他のすべての集合に共通する要素を持つ新しい集合を返します。"
+
+#: of ubuiltins.set.intersection:4
+msgid "The intersection can also be computed using the ``&`` operator::"
+msgstr "集合の交差は ``&`` 演算子でも計算できます::"
+
+#: of ubuiltins.set.isdisjoint:1
+msgid "Tests if a set and *other* have no elements in common."
+msgstr "この集合と *other* 集合に共通の要素がないかどうかを判定します。"
+
+#: of ubuiltins.set.isdisjoint:3 ubuiltins.set.issubset:9
+#: ubuiltins.set.issuperset:9 ubuiltins.set.symmetric_difference:7
+msgid "Another set."
+msgstr "別の集合。"
+
+#: of ubuiltins.set.isdisjoint:5
+msgid ""
+"``True`` if this set has no elements in common with *other*, otherwise "
+"``False``."
+msgstr ""
+"この集合が *other* と共通の要素を持たない場合は ``True`` 、そうでない場合は ``False`` 。
+
+#: of ubuiltins.set.issubset:1
+msgid "Tests if a set is a subset of *other*."
+msgstr "この集合が *other* 集合の部分集合であるかを判定します。"
+
+#: of ubuiltins.set.issubset:3
+msgid "The test can also be performed using using the ``<=`` operator::"
+msgstr "この判定は ``<=`` 演算子でも実行できます::"
+
+#: of ubuiltins.set.issubset:11
+msgid "``True`` if this set is a subset of *other*, otherwise ``False``."
+msgstr "この集合が *other* の部分集合であれば ``True`` 、そうでない場合は ``False`` 。
+
+#: of ubuiltins.set.issuperset:1
+msgid "Tests if a set is a superset of *other*."
+msgstr "集合が *other* の上位集合であるかどうかを判定します。"
+
+#: of ubuiltins.set.issuperset:3
+msgid "The test can also be performed using using the ``>=`` operator::"
+msgstr "この判定は ``>=`` 演算子でも実行できます::"
+
+#: of ubuiltins.set.issuperset:11
+msgid "``True`` if this set is a superset of *other*, otherwise ``False``."
+msgstr "この集合が *other* の上位集合であれば ``True`` 、そうでない場合は ``False`` 。
+
+#: of ubuiltins.set.symmetric_difference:1
+msgid "Returns a new set with elements in one set or the other but not in both."
+msgstr "一方の集合または他方の集合に含まれ、両方に含まれない要素を持つ新しい集合を返します。"
+
+#: of ubuiltins.set.symmetric_difference:3
+msgid "The symmetric difference can also be computed using the ``^`` operator::"
+msgstr "対称差は ``^`` 演算子を使っても計算できます::"
+
+#: of ubuiltins.set.union:1
+msgid "Returns a new set with elements from this set and all other sets."
+msgstr "この集合と他のすべての集合の要素を持つ新しい集合を返します。"
+
+#: of ubuiltins.set.union:3
+msgid "The union can also be computed using the ``|`` operator::"
+msgstr "和集合は ``|`` 演算子を使っても計算できます::"
+
 #: of ubuiltins.slice:1
 msgid "Creating instances of this class is not supported."
 msgstr "このクラスのインスタンスを作成することはサポートされていません。"
@@ -405,7 +523,7 @@ msgstr "引数を指定しない場合は、空の ``str`` オブジェクトを
 
 #: of ubuiltins.str:5
 msgid ""
-"If only this argument is given, this returns the stirng representation of"
+"If only this argument is given, this returns the string representation of"
 " the object."
 msgstr ""
 "この引数のみを指定した場合、オブジェクトの文字列表現を返します。"
@@ -1904,7 +2022,7 @@ msgstr ""
 
 #: ../../micropython/ujson.rst:4
 msgid ":mod:`ujson` -- JSON encoding and decoding"
-msgstr ":mod:`ujson` -- JSON のエンコーディングとデコーディング"
+msgstr ":mod:`ujson` -- JSON のエンコードとデコード"
 
 #: of ujson:1
 msgid "Convert between Python objects and the JSON data format."
@@ -2122,7 +2240,7 @@ msgid "The square root of ``x``."
 msgstr "``x`` の平方根。"
 
 #: ../../micropython/umath.rst:42
-msgid "Trigonomety"
+msgid "Trigonometry"
 msgstr "三角法"
 
 #: ../../../docstring of umath.pi:1

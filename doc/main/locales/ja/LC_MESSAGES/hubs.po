@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 10:05+0900\n"
-"PO-Revision-Date: 2023-10-31 18:43+0900\n"
+"POT-Creation-Date: 2023-05-27 09:33+0900\n"
+"PO-Revision-Date: 2023-05-27 17:00+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
@@ -3605,10 +3605,6 @@ msgstr ""
 "    wait(100)\n"
 
 #: ../../hubs/primehub.rst:281
-msgid "Changing the stop button combination"
-msgstr ""
-
-#: ../../hubs/primehub.rst:244
 msgid "Changing the stop button combination"
 msgstr "ストップボタンの組合わせの変更"
 

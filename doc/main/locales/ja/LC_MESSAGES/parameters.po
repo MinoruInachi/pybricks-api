@@ -8,14 +8,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 10:05+0900\n"
-"PO-Revision-Date: 2023-10-31 10:05+0900\n"
+"POT-Creation-Date: 2023-12-17 09:36+0900\n"
+"PO-Revision-Date: 2023-12-17 10:27+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+
+#: ../../parameters/axis.rst:4
+msgid "Axis"
+msgstr "軸"
+
+#: of pybricks.parameters.Axis:1
+msgid "Unit axes of a coordinate system."
+msgstr "座標系を構成する単位軸。"
+
+#: ../../parameters/axis.rst:9
+msgid ""
+"On Move Hub, doing math with these vectors is not supported. The axes can"
+" still be used to set up the hub orientation."
+msgstr ""
+"ムーブハブでは、これらの vector を使った計算はサポートされていません。"
+"それでも、ハブの向きを設定するために軸を使うことはできます。"
 
 #: ../../parameters/button.rst:4
 msgid "Button"
