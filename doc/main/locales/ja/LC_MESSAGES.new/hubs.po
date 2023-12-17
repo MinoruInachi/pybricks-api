@@ -1,0 +1,1097 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 09:36+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../hubs/cityhub.rst:4
+msgid "City Hub"
+msgstr ""
+
+#: of pybricks.hubs.CityHub:1
+msgid "LEGO® City Hub."
+msgstr ""
+
+#: ../../hubs/cityhub.rst ../../hubs/essentialhub.rst ../../hubs/movehub.rst
+#: ../../hubs/primehub.rst ../../hubs/technichub.rst of
+#: pybricks._common.Accelerometer.acceleration pybricks._common.BLE.broadcast
+#: pybricks._common.BLE.observe pybricks._common.BLE.signal_strength
+#: pybricks._common.ColorLight.animate pybricks._common.ColorLight.blink
+#: pybricks._common.ColorLight.on pybricks._common.IMU.angular_velocity
+#: pybricks._common.IMU.reset_heading pybricks._common.IMU.rotation
+#: pybricks._common.IMU.settings pybricks._common.LightMatrix.animate
+#: pybricks._common.LightMatrix.char pybricks._common.LightMatrix.icon
+#: pybricks._common.LightMatrix.number pybricks._common.LightMatrix.orientation
+#: pybricks._common.LightMatrix.pixel pybricks._common.LightMatrix.text
+#: pybricks._common.Speaker.beep pybricks._common.Speaker.play_notes
+#: pybricks._common.Speaker.volume pybricks._common.System.set_stop_button
+#: pybricks.hubs.CityHub pybricks.hubs.EssentialHub pybricks.hubs.MoveHub
+#: pybricks.hubs.PrimeHub pybricks.hubs.TechnicHub
+msgid "Parameters"
+msgstr ""
+
+#: of pybricks.hubs.CityHub:3 pybricks.hubs.EssentialHub:14
+#: pybricks.hubs.MoveHub:9 pybricks.hubs.PrimeHub:14
+#: pybricks.hubs.TechnicHub:14
+msgid ""
+"A value from 0 to 255 indicating which channel ``hub.ble.broadcast()`` "
+"will use. Default is channel 0."
+msgstr ""
+
+#: of pybricks.hubs.CityHub:5 pybricks.hubs.EssentialHub:16
+#: pybricks.hubs.MoveHub:11 pybricks.hubs.PrimeHub:16
+#: pybricks.hubs.TechnicHub:16
+msgid ""
+"A list of channels to listen to when ``hub.ble.observe()`` is called. "
+"Listening to more channels requires more memory. Default is an empty list"
+" (no channels)."
+msgstr ""
+
+#: of pybricks.hubs.CityHub:9 pybricks.hubs.EssentialHub:20
+#: pybricks.hubs.MoveHub:15 pybricks.hubs.PrimeHub:20
+#: pybricks.hubs.TechnicHub:20
+msgid "Added *broadcast_channel* and *observe_channels* arguments."
+msgstr ""
+
+#: ../../hubs/cityhub.rst:13 ../../hubs/essentialhub.rst:13
+#: ../../hubs/movehub.rst:15 ../../hubs/primehub.rst:20
+#: ../../hubs/technichub.rst:13
+msgid "Using the hub status light"
+msgstr ""
+
+#: of pybricks._common.ColorLight.on:1
+msgid "Turns on the light at the specified color."
+msgstr ""
+
+#: of pybricks._common.ColorLight.blink:11 pybricks._common.ColorLight.on:3
+msgid "Color of the light."
+msgstr ""
+
+#: of pybricks._common.ColorLight.off:1
+msgid "Turns off the light."
+msgstr ""
+
+#: of pybricks._common.ColorLight.blink:1
+msgid ""
+"Blinks the light at a given color by turning it on and off for given "
+"durations."
+msgstr ""
+
+#: of pybricks._common.ColorLight.blink:4
+msgid ""
+"The light keeps blinking indefinitely while the rest of your program "
+"keeps running."
+msgstr ""
+
+#: of pybricks._common.ColorLight.blink:7
+msgid ""
+"This method provides a simple way to make basic but useful patterns. For "
+"more generic and multi-color patterns, use ``animate()`` instead."
+msgstr ""
+
+#: of pybricks._common.ColorLight.blink:13
+msgid "Sequence of time values of the form ``[on_1, off_1, on_2, off_2, ...]``."
+msgstr ""
+
+#: of pybricks._common.ColorLight.animate:1
+msgid ""
+"Animates the light with a sequence of colors, shown one by one for the "
+"given interval."
+msgstr ""
+
+#: of pybricks._common.ColorLight.animate:4
+msgid ""
+"The animation runs in the background while the rest of your program keeps"
+" running. When the animation completes, it repeats."
+msgstr ""
+
+#: of pybricks._common.ColorLight.animate:7
+msgid "Sequence of :class:`Color <.parameters.Color>` values."
+msgstr ""
+
+#: of pybricks._common.ColorLight.animate:10
+msgid "Time between color updates."
+msgstr ""
+
+#: ../../hubs/cityhub.rst:23 ../../hubs/essentialhub.rst:51
+#: ../../hubs/movehub.rst:37 ../../hubs/primehub.rst:93
+#: ../../hubs/technichub.rst:47
+msgid "Using connectionless Bluetooth messaging"
+msgstr ""
+
+#: of pybricks._common.BLE.broadcast:1
+msgid ""
+"Starts broadcasting the given data on the *broadcast_channel* you "
+"selected when initializing the hub."
+msgstr ""
+
+#: of pybricks._common.BLE.broadcast:4
+msgid ""
+"Data may be of type ``int``, ``float``, ``str``, ``bytes``, ``True``, or "
+"``False``, or a tuple thereof."
+msgstr ""
+
+#: of pybricks._common.BLE.broadcast:7
+msgid ""
+"The total data size is quite limited (26 bytes). ``True`` and ``False`` "
+"take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to 5 bytes "
+"depending on how big the number is. ``str`` and ``bytes`` take the number"
+" of bytes in the object plus one extra byte."
+msgstr ""
+
+#: of pybricks._common.BLE.broadcast:12
+msgid "The value or values to be broadcast."
+msgstr ""
+
+#: of pybricks._common.BLE.observe:1
+msgid "Retrieves the last observed data for a given channel."
+msgstr ""
+
+#: of pybricks._common.BLE.observe:3
+msgid ""
+"Receiving data is more reliable when the hub is not connected to a "
+"computer or other devices at the same time."
+msgstr ""
+
+#: of pybricks._common.BLE.observe:6
+msgid "The channel to observe (0 to 255)."
+msgstr ""
+
+#: ../../hubs/cityhub.rst ../../hubs/essentialhub.rst ../../hubs/movehub.rst
+#: ../../hubs/primehub.rst ../../hubs/technichub.rst of
+#: pybricks._common.Accelerometer.acceleration pybricks._common.BLE.observe
+#: pybricks._common.BLE.signal_strength pybricks._common.Battery.current
+#: pybricks._common.Battery.voltage pybricks._common.Charger.connected
+#: pybricks._common.Charger.current pybricks._common.Charger.status
+#: pybricks._common.IMU.angular_velocity pybricks._common.IMU.heading
+#: pybricks._common.IMU.orientation pybricks._common.IMU.ready
+#: pybricks._common.IMU.rotation pybricks._common.IMU.stationary
+#: pybricks._common.Keypad.pressed
+#: pybricks._common.SimpleAccelerometer.acceleration
+#: pybricks._common.SimpleAccelerometer.tilt
+#: pybricks._common.SimpleAccelerometer.up pybricks._common.System.name
+#: pybricks._common.System.reset_reason
+msgid "Returns"
+msgstr ""
+
+#: of pybricks._common.BLE.observe:9
+msgid ""
+"The received data in the same format as it was sent, or ``None`` if no "
+"recent data is available."
+msgstr ""
+
+#: of pybricks._common.BLE.signal_strength:1
+msgid "Gets the average signal strength in dBm for the given channel."
+msgstr ""
+
+#: of pybricks._common.BLE.signal_strength:3
+msgid ""
+"This indicates how near the broadcasting device is. Nearby devices may "
+"have a signal strength around -40 dBm, while far away devices might have "
+"a signal strength around -70 dBm."
+msgstr ""
+
+#: of pybricks._common.BLE.signal_strength:7
+msgid "The channel number (0 to 255)."
+msgstr ""
+
+#: of pybricks._common.BLE.signal_strength:10
+msgid "The signal strength or ``-128`` if there is no recent observed data."
+msgstr ""
+
+#: of pybricks._common.BLE.version:1
+msgid "Gets the firmware version from the Bluetooth chip."
+msgstr ""
+
+#: ../../hubs/cityhub.rst:33 ../../hubs/essentialhub.rst:61
+#: ../../hubs/movehub.rst:47 ../../hubs/primehub.rst:103
+#: ../../hubs/technichub.rst:57
+msgid "Using the battery"
+msgstr ""
+
+#: of pybricks._common.Battery.voltage:1
+msgid "Gets the voltage of the battery."
+msgstr ""
+
+#: of pybricks._common.Battery.voltage:3
+msgid "Battery voltage."
+msgstr ""
+
+#: of pybricks._common.Battery.current:1
+msgid "Gets the current supplied by the battery."
+msgstr ""
+
+#: of pybricks._common.Battery.current:3
+msgid "Battery current."
+msgstr ""
+
+#: ../../hubs/cityhub.rst:39 ../../hubs/movehub.rst:53
+#: ../../hubs/technichub.rst:63
+msgid "Button and system control"
+msgstr ""
+
+#: of pybricks._common.Keypad.pressed:1
+msgid "Checks which buttons are currently pressed."
+msgstr ""
+
+#: of pybricks._common.Keypad.pressed:3
+msgid "Set of pressed buttons."
+msgstr ""
+
+#: of pybricks._common.System.set_stop_button:1
+msgid "Sets the button or button combination that stops a running script."
+msgstr ""
+
+#: of pybricks._common.System.set_stop_button:3
+msgid ""
+"Normally, the center button is used to stop a running script. You can "
+"change or disable this behavior in order to use the button for other "
+"purposes."
+msgstr ""
+
+#: of pybricks._common.System.set_stop_button:7
+msgid ""
+"A button such as :attr:`Button.CENTER "
+"<pybricks.parameters.Button.CENTER>`, or a tuple of multiple buttons. "
+"Choose ``None`` to disable the stop button altogether."
+msgstr ""
+
+#: of pybricks._common.System.name:1
+msgid "Gets the hub name. This is the name you see when connecting via Bluetooth."
+msgstr ""
+
+#: of pybricks._common.System.name:4
+msgid "The hub name."
+msgstr ""
+
+#: of pybricks._common.System.storage:1
+msgid "Reads or writes binary data to persistent storage."
+msgstr ""
+
+#: of pybricks._common.System.storage:3
+msgid ""
+"This lets you store data that can be used the next time you run the "
+"program."
+msgstr ""
+
+#: of pybricks._common.System.storage:6
+msgid ""
+"The data will be saved to flash memory when you turn the hub off "
+"normally. It will not be saved if the batteries are removed *while* the "
+"hub is still running."
+msgstr ""
+
+#: of pybricks._common.System.storage:10
+msgid ""
+"Once saved, the data will remain available even after you remove the "
+"batteries."
+msgstr ""
+
+#: of pybricks._common.System.storage:13
+msgid "The offset from the start of the user storage memory, in bytes."
+msgstr ""
+
+#: of pybricks._common.System.storage:15
+msgid "The number of bytes to read. Omit this argument when writing."
+msgstr ""
+
+#: of pybricks._common.System.storage:17
+msgid "The bytes to write. Omit this argument when reading."
+msgstr ""
+
+#: of pybricks._common.System.storage:20
+msgid "The bytes read if reading, otherwise ``None``."
+msgstr ""
+
+#: ../../hubs/cityhub.rst ../../hubs/essentialhub.rst ../../hubs/movehub.rst
+#: ../../hubs/primehub.rst ../../hubs/technichub.rst
+msgid "Raises"
+msgstr ""
+
+#: of pybricks._common.System.storage:22
+msgid "If you try to read or write data outside of the allowed range."
+msgstr ""
+
+#: ../../hubs/cityhub.rst:48 ../../hubs/movehub.rst:62
+#: ../../hubs/technichub.rst:72
+msgid ""
+"You can store up to 128 bytes of data on this hub. The data is cleared "
+"when you update the Pybricks firmware or if you restore the original "
+"firmware."
+msgstr ""
+
+#: of pybricks._common.System.shutdown:1
+msgid "Stops your program and shuts the hub down."
+msgstr ""
+
+#: of pybricks._common.System.reset_reason:1
+msgid ""
+"Finds out how and why the hub (re)booted. This can be useful to diagnose "
+"some problems."
+msgstr ""
+
+#: of pybricks._common.System.reset_reason:4
+msgid ""
+"* ``0`` if the hub was previously powered off   normally. * ``1`` if the "
+"hub rebooted automatically, like   after a firmware update. * ``2`` if "
+"the hub previously   crashed due to a watchdog timeout, which indicates a"
+" firmware   issue."
+msgstr ""
+
+#: of pybricks._common.System.reset_reason:6
+msgid "``0`` if the hub was previously powered off normally."
+msgstr ""
+
+#: of pybricks._common.System.reset_reason:8
+msgid "``1`` if the hub rebooted automatically, like after a firmware update."
+msgstr ""
+
+#: of pybricks._common.System.reset_reason:10
+msgid ""
+"``2`` if the hub previously crashed due to a watchdog timeout, which "
+"indicates a firmware issue."
+msgstr ""
+
+#: ../../hubs/cityhub.rst:57 ../../hubs/essentialhub.rst:89
+#: ../../hubs/movehub.rst:71 ../../hubs/primehub.rst:135
+#: ../../hubs/technichub.rst:81
+msgid "Status light examples"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:60 ../../hubs/essentialhub.rst:92
+#: ../../hubs/movehub.rst:74 ../../hubs/primehub.rst:138
+#: ../../hubs/technichub.rst:84
+msgid "Turning the light on and off"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:66 ../../hubs/essentialhub.rst:98
+#: ../../hubs/primehub.rst:144 ../../hubs/technichub.rst:90
+msgid "Changing brightness and using custom colors"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:72 ../../hubs/essentialhub.rst:104
+#: ../../hubs/movehub.rst:80 ../../hubs/primehub.rst:150
+#: ../../hubs/technichub.rst:96
+msgid "Making the light blink"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:78 ../../hubs/essentialhub.rst:110
+#: ../../hubs/primehub.rst:156 ../../hubs/technichub.rst:102
+msgid "Creating light animations"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:85 ../../hubs/essentialhub.rst:151
+#: ../../hubs/movehub.rst:102 ../../hubs/primehub.rst:262
+#: ../../hubs/technichub.rst:143
+msgid "Bluetooth examples"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:88 ../../hubs/essentialhub.rst:154
+#: ../../hubs/movehub.rst:105 ../../hubs/primehub.rst:265
+#: ../../hubs/technichub.rst:146
+msgid "Broadcasting data to other hubs"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:94 ../../hubs/essentialhub.rst:160
+#: ../../hubs/movehub.rst:111 ../../hubs/primehub.rst:271
+#: ../../hubs/technichub.rst:152
+msgid "Observing data from other hubs"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:101 ../../hubs/movehub.rst:118
+#: ../../hubs/technichub.rst:159
+msgid "Button and system examples"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:104 ../../hubs/essentialhub.rst:170
+#: ../../hubs/movehub.rst:121 ../../hubs/technichub.rst:162
+msgid "Using the stop button during your program"
+msgstr ""
+
+#: ../../hubs/cityhub.rst:110 ../../hubs/essentialhub.rst:176
+#: ../../hubs/movehub.rst:127 ../../hubs/primehub.rst:287
+#: ../../hubs/technichub.rst:168
+msgid "Turning the hub off"
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:4
+msgid "Essential Hub"
+msgstr ""
+
+#: of pybricks.hubs.EssentialHub:1
+msgid "LEGO® SPIKE Essential Hub."
+msgstr ""
+
+#: of pybricks.hubs.EssentialHub:3
+msgid ""
+"Initializes the hub. Optionally, specify how the hub is :ref:`placed in "
+"your design <robotframe>` by saying in which direction the top side (with"
+" the button) and the front side (with the USB port, and I/O ports A and "
+"B) are pointing."
+msgstr ""
+
+#: of pybricks.hubs.EssentialHub:8 pybricks.hubs.MoveHub:3
+#: pybricks.hubs.PrimeHub:8 pybricks.hubs.TechnicHub:8
+msgid "The axis that passes through the *top side* of the hub."
+msgstr ""
+
+#: of pybricks.hubs.EssentialHub:11 pybricks.hubs.MoveHub:6
+#: pybricks.hubs.PrimeHub:11 pybricks.hubs.TechnicHub:11
+msgid "The axis that passes through the *front side* of the hub."
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:23
+msgid "Using the button"
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:27 ../../hubs/movehub.rst:25
+#: ../../hubs/primehub.rst:61 ../../hubs/technichub.rst:23
+msgid "Using the IMU"
+msgstr ""
+
+#: of pybricks._common.IMU.ready:1
+msgid "Checks if the device is calibrated and ready for use."
+msgstr ""
+
+#: of pybricks._common.IMU.ready:3
+msgid ""
+"This becomes ``True`` when the robot has been sitting stationary for a "
+"few seconds, which allows the device to re-calibrate. It is ``False`` if "
+"the hub has just been started, or if it hasn't had a chance to calibrate "
+"for more than 10 minutes."
+msgstr ""
+
+#: of pybricks._common.IMU.ready:8
+msgid "``True`` if it is ready for use, ``False`` if not."
+msgstr ""
+
+#: of pybricks._common.IMU.stationary:1
+msgid "Checks if the device is currently stationary (not moving)."
+msgstr ""
+
+#: of pybricks._common.IMU.stationary:3
+msgid "``True`` if stationary for at least a second, ``False`` if it is moving."
+msgstr ""
+
+#: of pybricks._common.SimpleAccelerometer.up:1
+msgid "Checks which side of the hub currently faces upward."
+msgstr ""
+
+#: of pybricks._common.SimpleAccelerometer.up:3
+msgid ""
+"``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``, "
+"``Side.FRONT`` or ``Side.BACK``."
+msgstr ""
+
+#: of pybricks._common.SimpleAccelerometer.tilt:1
+msgid ""
+"Gets the pitch and roll angles. This is relative to the :ref:`user-"
+"specified neutral orientation <robotframe>`."
+msgstr ""
+
+#: of pybricks._common.SimpleAccelerometer.tilt:4
+msgid ""
+"The order of rotation is pitch-then-roll. This is equivalent to a "
+"positive rotation along the robot y-axis and then a positive rotation "
+"along the x-axis."
+msgstr ""
+
+#: of pybricks._common.SimpleAccelerometer.tilt:8
+msgid "Tuple of pitch and roll angles in degrees."
+msgstr ""
+
+#: of pybricks._common.Accelerometer.acceleration:1
+msgid ""
+"Gets the acceleration of the device along a given axis in the :ref:`robot"
+" reference frame <robotframe>`."
+msgstr ""
+
+#: of pybricks._common.Accelerometer.acceleration:4
+msgid "Axis along which the acceleration should be measured."
+msgstr ""
+
+#: of pybricks._common.Accelerometer.acceleration:8
+msgid ""
+"Acceleration along the specified axis. If you specify no axis, this "
+"returns a vector of accelerations along all axes."
+msgstr ""
+
+#: of pybricks._common.IMU.angular_velocity:1
+msgid ""
+"Gets the angular velocity of the device along a given axis in the "
+":ref:`robot reference frame <robotframe>`."
+msgstr ""
+
+#: of pybricks._common.IMU.angular_velocity:4
+msgid "Axis along which the angular velocity should be measured."
+msgstr ""
+
+#: of pybricks._common.IMU.angular_velocity:8
+msgid ""
+"Angular velocity along the specified axis. If you specify no axis, this "
+"returns a vector of accelerations along all axes."
+msgstr ""
+
+#: of pybricks._common.IMU.heading:1
+msgid ""
+"Gets the heading angle of your robot. A positive value means a clockwise "
+"turn."
+msgstr ""
+
+#: of pybricks._common.IMU.heading:4
+msgid ""
+"The heading is 0 when your program starts. The value continues to grow "
+"even as the robot turns more than 180 degrees. It does not wrap around to"
+" -180 like it does in some apps."
+msgstr ""
+
+#: of pybricks._common.IMU.heading:9
+msgid ""
+"*For now, this method only keeps track of the heading while the robot is "
+"on a flat surface.*"
+msgstr ""
+
+#: of pybricks._common.IMU.heading:12
+msgid ""
+"This means that the value is no longer correct if you lift it from the "
+"table. To solve this, you can call ``reset_heading`` to reset the heading"
+" to a known value *after* you put it back down. For example, you could "
+"align your robot with the side of the competition table and reset the "
+"heading 90 degrees as the new starting point."
+msgstr ""
+
+#: of pybricks._common.IMU.heading:19
+msgid "Heading angle relative to starting orientation."
+msgstr ""
+
+#: of pybricks._common.IMU.reset_heading:1
+msgid "Resets the accumulated heading angle of the robot."
+msgstr ""
+
+#: of pybricks._common.IMU.reset_heading:3
+msgid "Value to which the heading should be reset."
+msgstr ""
+
+#: of pybricks._common.IMU.rotation:1
+msgid ""
+"Gets the rotation of the device along a given axis in the :ref:`robot "
+"reference frame <robotframe>`."
+msgstr ""
+
+#: of pybricks._common.IMU.rotation:4
+msgid ""
+"This value is useful if your robot *only* rotates along the requested "
+"axis. For general three-dimensional motion, use the ``orientation()`` "
+"method instead."
+msgstr ""
+
+#: of pybricks._common.IMU.rotation:8
+msgid "The value starts counting from ``0`` when you initialize this class."
+msgstr ""
+
+#: of pybricks._common.IMU.rotation:10
+msgid "Axis along which the rotation should be measured."
+msgstr ""
+
+#: of pybricks._common.IMU.rotation:13
+msgid "The rotation angle."
+msgstr ""
+
+#: of pybricks._common.IMU.orientation:1
+msgid ""
+"Gets the three-dimensional orientation of the robot in the :ref:`robot "
+"reference frame <robotframe>`."
+msgstr ""
+
+#: of pybricks._common.IMU.orientation:4
+msgid ""
+"It returns a rotation matrix whose columns represent the ``X``, ``Y``, "
+"and ``Z`` axis of the robot."
+msgstr ""
+
+#: of pybricks._common.IMU.orientation:7
+msgid "This method is not yet implemented."
+msgstr ""
+
+#: of pybricks._common.IMU.orientation:9
+msgid "The rotation matrix."
+msgstr ""
+
+#: of pybricks._common.IMU.settings:1
+msgid ""
+"Configures the IMU settings. If no arguments are given, this returns the "
+"current values."
+msgstr ""
+
+#: of pybricks._common.IMU.settings:4
+msgid ""
+"The ``angular_velocity_threshold`` and ``acceleration_threshold`` define "
+"when the hub is considered stationary. If all measurements stay below "
+"these thresholds for one second, the IMU will recalibrate itself."
+msgstr ""
+
+#: of pybricks._common.IMU.settings:9
+msgid ""
+"In a noisy room with high ambient vibrations (such as a competition "
+"hall), it is recommended to increase the thresholds slightly to give your"
+" robot the chance to calibrate. To verify that your settings are working "
+"as expected, test that the ``stationary()`` method gives ``False`` if "
+"your robot is moving, and ``True`` if it is sitting still for at least a "
+"second."
+msgstr ""
+
+#: of pybricks._common.IMU.settings:16
+msgid "The threshold for angular velocity. The default value is 1.5 deg/s."
+msgstr ""
+
+#: of pybricks._common.IMU.settings:19
+msgid "The threshold for angular velocity. The default value is 250 mm/s²."
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:67 ../../hubs/primehub.rst:109
+msgid "Getting the charger status"
+msgstr ""
+
+#: of pybricks._common.Charger.connected:1
+msgid "Checks whether a charger is connected via USB."
+msgstr ""
+
+#: of pybricks._common.Charger.connected:3
+msgid "``True`` if a charger is connected, ``False`` if not."
+msgstr ""
+
+#: of pybricks._common.Charger.current:1
+msgid "Gets the charging current."
+msgstr ""
+
+#: of pybricks._common.Charger.current:3
+msgid "Charging current."
+msgstr ""
+
+#: of pybricks._common.Charger.status:1
+msgid ""
+"Gets the status of the battery charger, represented by one of the "
+"following values. This corresponds to the battery light indicator right "
+"next to the USB port."
+msgstr ""
+
+#: of pybricks._common.Charger.status:5
+msgid "Not charging (light is off)."
+msgstr ""
+
+#: of pybricks._common.Charger.status:6
+msgid "Charging (light is red)."
+msgstr ""
+
+#: of pybricks._common.Charger.status:7
+msgid "Charging is complete (light is green)."
+msgstr ""
+
+#: of pybricks._common.Charger.status:8
+msgid "There is a problem with the charger (light is yellow)."
+msgstr ""
+
+#: of pybricks._common.Charger.status:10
+msgid "Status value."
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:75 ../../hubs/primehub.rst:117
+msgid "System control"
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:82 ../../hubs/primehub.rst:124
+msgid "You can store up to 512 bytes of data on this hub."
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:116 ../../hubs/movehub.rst:86
+#: ../../hubs/primehub.rst:227 ../../hubs/technichub.rst:108
+msgid "IMU examples"
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:119 ../../hubs/movehub.rst:89
+#: ../../hubs/primehub.rst:230 ../../hubs/technichub.rst:111
+msgid "Testing which way is up"
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:126 ../../hubs/primehub.rst:237
+#: ../../hubs/technichub.rst:118
+msgid "Reading the tilt value"
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:132 ../../hubs/primehub.rst:243
+#: ../../hubs/technichub.rst:124
+msgid "Using a custom hub orientation"
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:138 ../../hubs/primehub.rst:249
+#: ../../hubs/technichub.rst:130
+msgid "Reading acceleration and angular velocity vectors"
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:144 ../../hubs/primehub.rst:255
+#: ../../hubs/technichub.rst:136
+msgid "Reading acceleration and angular velocity on one axis"
+msgstr ""
+
+#: ../../hubs/essentialhub.rst:167 ../../hubs/primehub.rst:278
+msgid "System examples"
+msgstr ""
+
+#: ../../hubs/index.rst:4
+msgid ":mod:`hubs <pybricks.hubs>` -- Built-in hub functions"
+msgstr ""
+
+#: ../../hubs/movehub.rst:4
+msgid "Move Hub"
+msgstr ""
+
+#: of pybricks.hubs.MoveHub:1
+msgid "LEGO® BOOST Move Hub."
+msgstr ""
+
+#: of pybricks._common.SimpleAccelerometer.acceleration:1
+msgid "Gets the acceleration of the device."
+msgstr ""
+
+#: of pybricks._common.SimpleAccelerometer.acceleration:3
+msgid "Acceleration along all three axes."
+msgstr ""
+
+#: ../../hubs/movehub.rst:34
+msgid "Changed acceleration units from m/s² to mm/s²."
+msgstr ""
+
+#: ../../hubs/movehub.rst:95
+msgid "Reading acceleration"
+msgstr ""
+
+#: ../../hubs/movehub.rst:133
+msgid "Making random numbers"
+msgstr ""
+
+#: ../../hubs/movehub.rst:135
+msgid ""
+"The Move Hub does not include the :mod:`urandom` module. If you need "
+"random numbers in your application, you can try a variation of the "
+"following example."
+msgstr ""
+
+#: ../../hubs/movehub.rst:138
+msgid ""
+"To make it work better, change the initial value of ``_rand`` to "
+"something that is truly random in your application. You could use the IMU"
+" acceleration or a sensor value, for example."
+msgstr ""
+
+#: ../../hubs/primehub.rst:4
+msgid "Prime Hub / Inventor Hub"
+msgstr ""
+
+#: ../../hubs/primehub.rst:11
+msgid ""
+"This class is the same as the ``PrimeHub`` class, shown below. Both "
+"classes work on both hubs."
+msgstr ""
+
+#: ../../hubs/primehub.rst:14
+msgid "These hubs are completely identical. They use the same Pybricks firmware."
+msgstr ""
+
+#: of pybricks.hubs.PrimeHub:1
+msgid "LEGO® SPIKE Prime Hub."
+msgstr ""
+
+#: of pybricks.hubs.PrimeHub:3
+msgid ""
+"Initializes the hub. Optionally, specify how the hub is :ref:`placed in "
+"your design <robotframe>` by saying in which direction the top side (with"
+" the buttons) and front side (with the USB port) are pointing."
+msgstr ""
+
+#: ../../hubs/primehub.rst:33
+msgid "Using the light matrix display"
+msgstr ""
+
+#: of pybricks._common.LightMatrix.orientation:1
+msgid "Sets the orientation of the light matrix display."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.orientation:3
+msgid ""
+"Only new displayed images and pixels are affected. The existing display "
+"contents remain unchanged."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.orientation:6
+msgid ""
+"Which side of the light matrix display is \"up\" in your design. Choose "
+"``Side.TOP``, ``Side.LEFT``, ``Side.RIGHT``, or ``Side.BOTTOM``."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.off:1
+msgid "Turns off all the pixels."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.pixel:1
+msgid "Turns on one pixel at the specified brightness."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.pixel:3
+msgid "Vertical grid index, starting at 0 from the top."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.pixel:5
+msgid "Horizontal grid index, starting at 0 from the left."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.pixel:7
+msgid "Brightness of the pixel."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.icon:1
+msgid "Displays an icon, represented by a matrix of :ref:`brightness` values."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.icon:4
+msgid "Matrix of intensities (:ref:`brightness`). A 2D list is also accepted."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.animate:1
+msgid "Displays an animation made using a list of images."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.animate:3
+msgid ""
+"Each image has the same format as above. Each image is shown for the "
+"given interval. The animation repeats forever while the rest of your "
+"program keeps running."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.animate:7
+msgid "Sequence of :class:`Matrix <pybricks.tools.Matrix>` of intensities."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.animate:10
+msgid "Time to display each image in the list."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.number:1
+msgid "Displays a number in the range -99 to 99."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.number:3
+msgid ""
+"A minus sign (``-``) is shown as a faint dot in the center of the "
+"display. Numbers greater than 99 are shown as ``>``. Numbers less than "
+"-99 are shown as ``<``."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.number:7
+msgid "The number to be displayed."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.char:1
+msgid ""
+"Displays a character or symbol on the light grid. This may be any letter "
+"(``a``--``z``), capital letter (``A``--``Z``) or one of the following "
+"symbols: ``!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}``."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.char:5
+msgid "The character or symbol to be displayed."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.text:1
+msgid ""
+"Displays a text string, one character at a time, with a pause between "
+"each character. After the last character is shown, all lights turn off."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.text:5
+msgid "The text to be displayed."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.text:7
+msgid "For how long a character is shown."
+msgstr ""
+
+#: of pybricks._common.LightMatrix.text:9
+msgid "For how long the display is off between characters."
+msgstr ""
+
+#: ../../hubs/primehub.rst:54
+msgid "Using the buttons"
+msgstr ""
+
+#: ../../hubs/primehub.rst:85
+msgid "Using the speaker"
+msgstr ""
+
+#: of pybricks._common.Speaker.volume:1
+msgid "Gets or sets the speaker volume."
+msgstr ""
+
+#: of pybricks._common.Speaker.volume:3
+msgid "If no volume is given, this method returns the current volume."
+msgstr ""
+
+#: of pybricks._common.Speaker.volume:5
+msgid "Volume of the speaker in the 0-100 range."
+msgstr ""
+
+#: of pybricks._common.Speaker.beep:1
+msgid "Play a beep/tone."
+msgstr ""
+
+#: of pybricks._common.Speaker.beep:3
+msgid "Frequency of the beep in the 64-24000 Hz range."
+msgstr ""
+
+#: of pybricks._common.Speaker.beep:5
+msgid ""
+"Duration of the beep. If the duration is less than 0, then the method "
+"returns immediately and the frequency play continues to play "
+"indefinitely."
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:1
+msgid ""
+"Plays a sequence of musical notes. For example: ``[\"C4/4\", \"C4/4\", "
+"\"G4/4\", \"G4/4\"]``."
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:4
+msgid "Each note is a string with the following format:"
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:6
+msgid ""
+"The first character is the name of the note, ``A`` to ``G`` or ``R`` for "
+"a rest."
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:8
+msgid ""
+"Note names can also include an accidental ``#`` (sharp) or ``b`` (flat). "
+"``B#``/``Cb`` and ``E#``/``Fb`` are not allowed."
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:11
+msgid ""
+"The note name is followed by the octave number ``2`` to ``8``. For "
+"example ``C4`` is middle C. The octave changes to the next number at the "
+"note C, for example, ``B3`` is the note below middle C (``C4``)."
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:15
+msgid ""
+"The octave is followed by ``/`` and a number that indicates the size of "
+"the note. For example ``/4`` is a quarter note, ``/8`` is an eighth note "
+"and so on."
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:18
+msgid ""
+"This can optionally followed by a ``.`` to make a dotted note. Dotted "
+"notes are 1-1/2 times as long as notes without a dot."
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:21
+msgid ""
+"The note can optionally end with a ``_`` which is a tie or a slur. This "
+"causes there to be no pause between this note and the next note."
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:25
+msgid "A sequence of notes to be played."
+msgstr ""
+
+#: of pybricks._common.Speaker.play_notes:27
+msgid "Beats per minute. A quarter note is one beat."
+msgstr ""
+
+#: ../../hubs/primehub.rst:130
+msgid ""
+"The examples below use the ``PrimeHub`` class. The examples work fine on "
+"both hubs because they are the identical. If you prefer, you can change "
+"this to ``InventorHub``."
+msgstr ""
+
+#: ../../hubs/primehub.rst:162
+msgid "Matrix display examples"
+msgstr ""
+
+#: ../../hubs/primehub.rst:165
+msgid "Displaying images"
+msgstr ""
+
+#: ../../hubs/primehub.rst:171
+msgid "Displaying numbers"
+msgstr ""
+
+#: ../../hubs/primehub.rst:177
+msgid "Displaying text"
+msgstr ""
+
+#: ../../hubs/primehub.rst:183
+msgid "Displaying individual pixels"
+msgstr ""
+
+#: ../../hubs/primehub.rst:189
+msgid "Changing the display orientation"
+msgstr ""
+
+#: ../../hubs/primehub.rst:200
+msgid "Making your own images"
+msgstr ""
+
+#: ../../hubs/primehub.rst:206
+msgid "Combining icons to make expressions"
+msgstr ""
+
+#: ../../hubs/primehub.rst:212
+msgid "Displaying animations"
+msgstr ""
+
+#: ../../hubs/primehub.rst:218
+msgid "Button examples"
+msgstr ""
+
+#: ../../hubs/primehub.rst:221
+msgid "Detecting button presses"
+msgstr ""
+
+#: ../../hubs/primehub.rst:281
+msgid "Changing the stop button combination"
+msgstr ""
+
+#: ../../hubs/technichub.rst:4
+msgid "Technic Hub"
+msgstr ""
+
+#: of pybricks.hubs.TechnicHub:1
+msgid "LEGO® Technic Hub."
+msgstr ""
+
+#: of pybricks.hubs.TechnicHub:3
+msgid ""
+"Initializes the hub. Optionally, specify how the hub is :ref:`placed in "
+"your design <robotframe>` by saying in which direction the top side (with"
+" the button) and front side (with the light) are pointing."
+msgstr ""
+

@@ -1,0 +1,101 @@
+#: of pybricks._common.BLE.broadcast:1
+msgid ""
+"Starts broadcasting the given data on the *broadcast_channel* you "
+"selected when initializing the hub."
+msgstr ""
+"ハブ初期化時に選択した *broadcast_channel* で、指定データのブロードキャスト"
+"を開始します。"
+
+#: of pybricks._common.BLE.broadcast:4
+msgid ""
+"Data may be of type ``int``, ``float``, ``str``, ``bytes``, ``True``, or "
+"``False``, or a tuple thereof."
+msgstr ""
+"データには、型 ``int``, ``float``, ``str``, ``bytes``, ``True``, ``False`` "
+"のもの、もしくはそれらのタプルを指定できます。"
+
+#: of pybricks._common.BLE.broadcast:7
+msgid ""
+"The total data size is quite limited (26 bytes). ``True`` and ``False`` "
+"take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to 5 bytes "
+"depending on how big the number is. ``str`` and ``bytes`` take the number"
+" of bytes in the object plus one extra byte."
+msgstr ""
+"合計データサイズはかなり制限されています(26バイト)。 "
+"``True`` と ``False`` はそれぞれ1バイトを占有します。 "
+"``float`` は5バイトを占有します。 "
+"``int`` は数値の大きさに応じて2から5バイトを占有します。 "
+"``str`` と ``bytes`` はオブジェクトのバイト数に加えて1バイトを占有します。"
+
+#: of pybricks._common.BLE.broadcast:12
+msgid "The value or values to be broadcast."
+msgstr "ブロードキャストする値。"
+
+#: of pybricks._common.BLE.observe:1
+msgid "Retrieves the last observed data for a given channel."
+msgstr "指定チャンネルで最後に観測されたデータを取得します。"
+
+#: of pybricks._common.BLE.observe:3
+msgid ""
+"Receiving data is more reliable when the hub is not connected to a "
+"computer or other devices at the same time."
+msgstr ""
+"ハブがコンピュータや他のデバイスに同時に接続されていない場合、"
+"データの受信は信頼性が高くなります。"
+
+#: of pybricks._common.BLE.observe:6
+msgid "The channel to observe (0 to 255)."
+msgstr "観測するチャンネル（0から255まで）。"
+
+#: ../../hubs/cityhub.rst ../../hubs/essentialhub.rst ../../hubs/movehub.rst
+#: ../../hubs/primehub.rst ../../hubs/technichub.rst of
+#: pybricks._common.Accelerometer.acceleration
+#: pybricks._common.Accelerometer.tilt pybricks._common.BLE.observe
+#: pybricks._common.BLE.signal_strength pybricks._common.Battery.current
+#: pybricks._common.Battery.voltage pybricks._common.Charger.connected
+#: pybricks._common.Charger.current pybricks._common.Charger.status
+#: pybricks._common.IMU.angular_velocity pybricks._common.IMU.heading
+#: pybricks._common.IMU.orientation pybricks._common.IMU.ready
+#: pybricks._common.IMU.rotation pybricks._common.IMU.stationary
+#: pybricks._common.Keypad.pressed
+#: pybricks._common.SimpleAccelerometer.acceleration
+#: pybricks._common.SimpleAccelerometer.up pybricks._common.System.name
+#: pybricks._common.System.reset_reason
+msgid "Returns"
+msgstr "戻り値"
+
+#: of pybricks._common.BLE.observe:9
+msgid ""
+"The received data in the same format as it was sent, or ``None`` if no "
+"recent data is available."
+msgstr ""
+"送信されたデータは、送信された形式と同じ形式で受信されます。"
+"最近のデータが利用できない場合は ``None`` が返されます。"
+
+#: of pybricks._common.BLE.signal_strength:1
+msgid "Gets the average signal strength in dBm for the given channel."
+msgstr ""
+"指定チャンネルの平均信号強度をdBmで取得します。"
+
+#: of pybricks._common.BLE.signal_strength:3
+msgid ""
+"This indicates how near the broadcasting device is. Nearby devices may "
+"have a signal strength around -40 dBm, while far away devices might have "
+"a signal strength around -70 dBm."
+msgstr ""
+"これはブロードキャストデバイスがどれだけ近くにあるかを示します。"
+"近くのデバイスは約 -40 dBmの信号強度を持ち、"
+"遠くのデバイスは約 -70 dBmの信号強度を持ちます。"
+
+#: of pybricks._common.BLE.signal_strength:7
+msgid "The channel number (0 to 255)."
+msgstr "チャンネル番号(0から255まで)。"
+
+#: of pybricks._common.BLE.signal_strength:10
+msgid "The signal strength or ``-128`` if there is no recent observed data."
+msgstr "信号強度。最近の観測データがない場合は -128 が返ります。"
+
+#: of pybricks._common.BLE.version:1
+msgid "Gets the firmware version from the Bluetooth chip."
+msgstr "Bluetoothチップからファームウェアバージョンを取得します。"
+

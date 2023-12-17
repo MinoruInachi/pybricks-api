@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2021 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-05 13:22+0900\n"
+"PO-Revision-Date: 2023-03-05 13:29+0900\n"
+"Last-Translator: Minoru INACHI\n"
+"Language-Team: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../iodevices/index.rst:4
+msgid ":mod:`iodevices <pybricks.iodevices>` -- Custom devices"
+msgstr ":mod:`iodevices <pybricks.iodevices>` -- カスタムデバイス"
+
+#: ../../iodevices/index.rst:15
+msgid "This module has classes for generic and custom input/output devices."
+msgstr "このモジュールは汎用およびカスタム入出力デバイス用クラスです。"
+
+#: ../../iodevices/index.rst
+msgid ".. image:: ../main/cad/output/iodevice-pupdevice.png"
+msgstr ""
+
+#: ../../iodevices/index.rst
+msgid ".. image:: ../main/cad/output/hub-lwp3.png"
+msgstr ""
+
+#: ../../iodevices/lwp3device.rst:2
+msgid "LEGO Wireless Protocol v3 device"
+msgstr "LEGO 無線プロトコル v3 デバイス"
+
+#: ../../iodevices/lwp3device.rst:6
+msgid ""
+"This is an experimental class. It has not been well tested and may be "
+"changed in future."
+msgstr ""
+"これは試験的なクラスです。十分に検証されていないため、将来的に変更する可能性があります。"
+
+#: of pybricks.iodevices.LWP3Device:1
+msgid ""
+"Connects to a hub running official LEGO firmware using the `LEGO Wireless"
+" Protocol v3`_"
+msgstr ""
+"`LEGO Wireless Protocol v3`_ により、"
+"レゴ社公式ファームウェアを搭載したハブとの接続が可能です。"
+
+#: of pybricks.iodevices.LWP3Device pybricks.iodevices.LWP3Device.name
+#: pybricks.iodevices.LWP3Device.write pybricks.iodevices.PUPDevice
+#: pybricks.iodevices.PUPDevice.read pybricks.iodevices.PUPDevice.write
+msgid "Parameters"
+msgstr "パタメータ"
+
+#: of pybricks.iodevices.LWP3Device:7
+msgid "The `hub type identifier`_ of the hub to connect to."
+msgstr "接続するハブの `hub type identifier`_ 。"
+
+#: of pybricks.iodevices.LWP3Device:9
+msgid "The name of the hub to connect to or ``None`` to connect to any hub."
+msgstr "接続するハブの名前。任意のハブに接続する場合は ``None`` を指定します。"
+
+#: of pybricks.iodevices.LWP3Device:12
+msgid ""
+"The time, in milliseconds, to wait for a connection before raising an "
+"exception."
+msgstr ""
+"例外を発生させるまでの接続待ち時間をミリ秒単位で指定します。"
+
+#: of pybricks.iodevices.LWP3Device.name:1
+msgid "Sets or gets the Bluetooth name of the device."
+msgstr "デバイスの Bluetooth 名を設定または取得します。"
+
+#: of pybricks.iodevices.LWP3Device.name:3
+msgid ""
+"New Bluetooth name of the device. If no name is given, this method "
+"returns the current name."
+msgstr ""
+"デバイスの新しい Bluetooth 名。"
+"name を指定しない場合、このメソッドは現在の名前を返します。"
+
+#: of pybricks.iodevices.LWP3Device.write:1
+msgid "Sends a message to the remote hub."
+msgstr "リモートハブにメッセージを送信します。"
+
+#: of pybricks.iodevices.LWP3Device.write:3
+msgid "The raw binary message to send."
+msgstr "送信する生のバイナリーメッセージ。"
+
+#: of pybricks.iodevices.LWP3Device.read:1
+msgid "Retrieves the most recent message received from the remote hub."
+msgstr "リモートハブから受信した最新のメッセージを取得します。"
+
+#: of pybricks.iodevices.LWP3Device.read:3
+msgid ""
+"If a message has not been received since the last read, the method will "
+"block until a message is received."
+msgstr ""
+"最後の読み取り以降にメッセージを受信していない場合、このメソッドはメッセージが"
+"受信されるまでブロックされます。"
+
+#: of pybricks.iodevices.LWP3Device.read pybricks.iodevices.PUPDevice.info
+#: pybricks.iodevices.PUPDevice.read
+msgid "Returns"
+msgstr "戻り値"
+
+#: of pybricks.iodevices.LWP3Device.read:6
+msgid "The raw binary message."
+msgstr "生のバイナリーメッセージ。"
+
+#: ../../iodevices/pupdevice.rst:4
+msgid "Powered Up Device"
+msgstr "Powered Up デバイス"
+
+msgid ".. image:: cad/output/iodevice-pupdevice.png"
+msgstr ""
+
+#: of pybricks.iodevices.PUPDevice:1
+msgid "Powered Up motor or sensor."
+msgstr "Powered Up モーターまたはセンサー。"
+
+#: of pybricks.iodevices.PUPDevice:3
+msgid "Port to which the device is connected."
+msgstr "デバイスが接続されているポート。"
+
+#: of pybricks.iodevices.PUPDevice.info:1
+msgid "Gets information about the device."
+msgstr "デバイスについての情報を取得します。"
+
+#: of pybricks.iodevices.PUPDevice.info:3
+msgid "Dictionary with information, such as the device ``id``."
+msgstr "デバイス ``id`` のような情報を持った辞書。"
+
+#: of pybricks.iodevices.PUPDevice.read:1
+msgid "Reads values from a given mode."
+msgstr "指定のモードで値を読み取ります。"
+
+#: of pybricks.iodevices.PUPDevice.read:3 pybricks.iodevices.PUPDevice.write:4
+msgid "Device mode."
+msgstr "デバイスモード。"
+
+#: of pybricks.iodevices.PUPDevice.read:6
+msgid "Values read from the sensor."
+msgstr "センサーから読み取った値。"
+
+#: of pybricks.iodevices.PUPDevice.write:1
+msgid "Writes values to the sensor. Only selected sensors and modes support this."
+msgstr "センサーに値を書き出します。一部のセンサーとモードのみ対応しています。"
+
+#: of pybricks.iodevices.PUPDevice.write:6
+msgid "Values to be written."
+msgstr "書き出す値。"
+
+#: ../../iodevices/pupdevice.rst:19
+msgid "Examples"
+msgstr "サンプルコード"
+
+#: ../../iodevices/pupdevice.rst:22
+msgid "Detecting devices"
+msgstr "デバイスの検出"
+
+#: ../../iodevices/pupdevice.rst:24
+msgid ""
+"from pybricks.iodevices import PUPDevice\n"
+"from pybricks.parameters import Port\n"
+"from uerrno import ENODEV\n"
+"\n"
+"# Dictionary of device identifiers along with their name.\n"
+"device_names = {\n"
+"    # pybricks.pupdevices.DCMotor\n"
+"    1: \"Wedo 2.0 Medium Motor\",\n"
+"    2: \"Powered Up Train Motor\",\n"
+"    # pybricks.pupdevices.Light\n"
+"    8: \"Powered Up Light\",\n"
+"    # pybricks.pupdevices.Motor\n"
+"    38: \"BOOST Interactive Motor\",\n"
+"    46: \"Technic Large Motor\",\n"
+"    47: \"Technic Extra Large Motor\",\n"
+"    48: \"SPIKE Medium Angular Motor\",\n"
+"    49: \"SPIKE Large Angular Motor\",\n"
+"    65: \"SPIKE Small Angular Motor\",\n"
+"    75: \"Technic Medium Angular Motor\",\n"
+"    76: \"Technic Large Angular Motor\",\n"
+"    # pybricks.pupdevices.TiltSensor\n"
+"    34: \"Wedo 2.0 Tilt Sensor\",\n"
+"    # pybricks.pupdevices.InfraredSensor\n"
+"    35: \"Wedo 2.0 Infrared Motion Sensor\",\n"
+"    # pybricks.pupdevices.ColorDistanceSensor\n"
+"    37: \"BOOST Color Distance Sensor\",\n"
+"    # pybricks.pupdevices.ColorSensor\n"
+"    61: \"SPIKE Color Sensor\",\n"
+"    # pybricks.pupdevices.UltrasonicSensor\n"
+"    62: \"SPIKE Ultrasonic Sensor\",\n"
+"    # pybricks.pupdevices.ForceSensor\n"
+"    63: \"SPIKE Force Sensor\",\n"
+"    # pybricks.pupdevices.ColorLightMatrix\n"
+"    64: \"SPIKE 3x3 Color Light Matrix\",\n"
+"}\n"
+"\n"
+"# Make a list of known ports.\n"
+"ports = [Port.A, Port.B]\n"
+"\n"
+"# On hubs that support it, add more ports.\n"
+"try:\n"
+"    ports.append(Port.C)\n"
+"    ports.append(Port.D)\n"
+"except AttributeError:\n"
+"    pass\n"
+"\n"
+"# On hubs that support it, add more ports.\n"
+"try:\n"
+"    ports.append(Port.E)\n"
+"    ports.append(Port.F)\n"
+"except AttributeError:\n"
+"    pass\n"
+"\n"
+"# Go through all available ports.\n"
+"for port in ports:\n"
+"\n"
+"    # Try to get the device, if it is attached.\n"
+"    try:\n"
+"        device = PUPDevice(port)\n"
+"    except OSError as ex:\n"
+"        if ex.args[0] == ENODEV:\n"
+"            # No device found on this port.\n"
+"            print(port, \": ---\")\n"
+"            continue\n"
+"        else:\n"
+"            raise\n"
+"\n"
+"    # Get the device id\n"
+"    id = device.info()[\"id\"]\n"
+"\n"
+"    # Look up the name.\n"
+"    try:\n"
+"        print(port, \":\", device_names[id])\n"
+"    except KeyError:\n"
+"        print(port, \":\", \"Unknown device with ID\", id)\n"
+msgstr ""
+"from pybricks.iodevices import PUPDevice\n"
+"from pybricks.parameters import Port\n"
+"from uerrno import ENODEV\n"
+"\n"
+"# デバイスの識別子とその名称を並べた辞書。\n"
+"device_names = {\n"
+"    # pybricks.pupdevices.DCMotor\n"
+"    1: \"Wedo 2.0 Medium Motor\",\n"
+"    2: \"Powered Up Train Motor\",\n"
+"    # pybricks.pupdevices.Light\n"
+"    8: \"Powered Up Light\",\n"
+"    # pybricks.pupdevices.Motor\n"
+"    38: \"BOOST Interactive Motor\",\n"
+"    46: \"Technic Large Motor\",\n"
+"    47: \"Technic Extra Large Motor\",\n"
+"    48: \"SPIKE Medium Angular Motor\",\n"
+"    49: \"SPIKE Large Angular Motor\",\n"
+"    65: \"SPIKE Small Angular Motor\",\n"
+"    75: \"Technic Medium Angular Motor\",\n"
+"    76: \"Technic Large Angular Motor\",\n"
+"    # pybricks.pupdevices.TiltSensor\n"
+"    34: \"Wedo 2.0 Tilt Sensor\",\n"
+"    # pybricks.pupdevices.InfraredSensor\n"
+"    35: \"Wedo 2.0 Infrared Motion Sensor\",\n"
+"    # pybricks.pupdevices.ColorDistanceSensor\n"
+"    37: \"BOOST Color Distance Sensor\",\n"
+"    # pybricks.pupdevices.ColorSensor\n"
+"    61: \"SPIKE Color Sensor\",\n"
+"    # pybricks.pupdevices.UltrasonicSensor\n"
+"    62: \"SPIKE Ultrasonic Sensor\",\n"
+"    # pybricks.pupdevices.ForceSensor\n"
+"    63: \"SPIKE Force Sensor\",\n"
+"    # pybricks.pupdevices.ColorLightMatrix\n"
+"    64: \"SPIKE 3x3 Color Light Matrix\",\n"
+"}\n"
+"\n"
+"# 既知のポートのリストを作成。\n"
+"ports = [Port.A, Port.B]\n"
+"\n"
+"# 対応するハブでは、さらにポートを追加。\n"
+"try:\n"
+"    ports.append(Port.C)\n"
+"    ports.append(Port.D)\n"
+"except AttributeError:\n"
+"    pass\n"
+"\n"
+"# 対応するハブでは、さらにポートを追加。\n"
+"try:\n"
+"    ports.append(Port.E)\n"
+"    ports.append(Port.F)\n"
+"except AttributeError:\n"
+"    pass\n"
+"\n"
+"# 利用できるポートを巡回。\n"
+"for port in ports:\n"
+"\n"
+"    # デバイスが繋げられている場合は、そのの取得を試みます。\n"
+"    try:\n"
+"        device = PUPDevice(port)\n"
+"    except OSError as ex:\n"
+"        if ex.args[0] == ENODEV:\n"
+"            # このポートにはデバイスが見つからなかった。\n"
+"            print(port, \": ---\")\n"
+"            continue\n"
+"        else:\n"
+"            raise\n"
+"\n"
+"    # デバイス id を取得\n"
+"    id = device.info()[\"id\"]\n"
+"\n"
+"    # デバイス名を調べる。\n"
+"    try:\n"
+"        print(port, \":\", device_names[id])\n"
+"    except KeyError:\n"
+"        print(port, \":\", \"Unknown device with ID\", id)\n"
+

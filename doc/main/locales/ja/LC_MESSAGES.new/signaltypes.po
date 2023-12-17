@@ -1,0 +1,559 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 09:36+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../signaltypes.rst:2
+msgid "Signals and Units"
+msgstr ""
+
+#: ../../signaltypes.rst:4
+msgid ""
+"Many commands allow you to specify arguments in terms of well-known "
+"physical quantities. This page gives an overview of each quantity and its"
+" unit."
+msgstr ""
+
+#: ../../signaltypes.rst:8
+msgid "Numbers"
+msgstr ""
+
+#: ../../../docstring of typing.Union:5
+msgid "Numbers can be represented as integers or floating point values:"
+msgstr ""
+
+#: ../../../docstring of typing.Union:7
+msgid ""
+"Integers (:class:`int <ubuiltins.int>`) are whole numbers like ``15`` or "
+"``-123``."
+msgstr ""
+
+#: ../../../docstring of typing.Union:9
+msgid ""
+"Floating point values (:class:`float <ubuiltins.float>`) are decimal "
+"numbers like ``3.14`` or ``-123.45``."
+msgstr ""
+
+#: ../../../docstring of typing.Union:12
+msgid ""
+"If you see :class:`Number` as the argument type, both :class:`int "
+"<ubuiltins.int>` and :class:`float <ubuiltins.float>` may be used."
+msgstr ""
+
+#: ../../../docstring of typing.Union:15
+msgid ""
+"For example, :func:`wait(15) <pybricks.tools.wait>` and "
+":func:`wait(15.75) <pybricks.tools.wait>` are both allowed. In most "
+"functions, however, your input value will be truncated to a whole number "
+"anyway. In this example, either command makes the program pause for just "
+"15 milliseconds."
+msgstr ""
+
+#: ../../../docstring of typing.Union:21
+msgid ""
+"The BOOST Move hub doesn't support floating point numbers due to limited "
+"system resources. Only integers can be used on that hub."
+msgstr ""
+
+#: ../../signaltypes.rst:14
+msgid "Time"
+msgstr ""
+
+#: ../../signaltypes.rst:19
+msgid "time: ms"
+msgstr ""
+
+#: ../../signaltypes.rst:20
+msgid "All time and duration values are measured in milliseconds (ms)."
+msgstr ""
+
+#: ../../signaltypes.rst:22
+msgid ""
+"For example, the duration of motion with ``run_time``, and the duration "
+"of :func:`wait <.tools.wait>` are specified in milliseconds."
+msgstr ""
+
+#: ../../signaltypes.rst:27
+msgid "Angles and angular motion"
+msgstr ""
+
+#: ../../signaltypes.rst:32
+msgid "angle: deg"
+msgstr ""
+
+#: ../../signaltypes.rst:34
+msgid ""
+"All angles are measured in degrees (deg). One full rotation corresponds "
+"to 360 degrees."
+msgstr ""
+
+#: ../../signaltypes.rst:37
+msgid ""
+"For example, the angle values of a ``Motor`` or the ``GyroSensor`` are "
+"expressed in degrees."
+msgstr ""
+
+#: ../../signaltypes.rst:43
+msgid "rotational speed: deg/s"
+msgstr ""
+
+#: ../../signaltypes.rst:45
+msgid ""
+"Rotational speed, or *angular velocity* describes how fast something "
+"rotates, expressed as the number of degrees per second (deg/s)."
+msgstr ""
+
+#: ../../signaltypes.rst:48
+msgid ""
+"For example, the rotational speed values of a ``Motor`` or the "
+"``GyroSensor`` are expressed in degrees per second."
+msgstr ""
+
+#: ../../signaltypes.rst:52
+msgid ""
+"While we recommend working with degrees per second in your programs, you "
+"can use the following table to convert between commonly used units."
+msgstr ""
+
+#: ../../signaltypes.rst:56
+msgid "deg/s"
+msgstr ""
+
+#: ../../signaltypes.rst:56
+msgid "rpm"
+msgstr ""
+
+#: ../../signaltypes.rst:58
+msgid "1 deg/s ="
+msgstr ""
+
+#: ../../signaltypes.rst:58 ../../signaltypes.rst:60 ../../signaltypes.rst:96
+#: ../../signaltypes.rst:98 ../../signaltypes.rst:100 ../../signaltypes.rst:187
+#: ../../signaltypes.rst:189 ../../signaltypes.rst:191
+msgid "1"
+msgstr ""
+
+#: ../../signaltypes.rst:58
+msgid "1/6=0.167"
+msgstr ""
+
+#: ../../signaltypes.rst:60
+msgid "1 rpm ="
+msgstr ""
+
+#: ../../signaltypes.rst:60
+msgid "6"
+msgstr ""
+
+#: ../../signaltypes.rst:66
+msgid "rotational acceleration: deg/s²"
+msgstr ""
+
+#: ../../signaltypes.rst:68
+msgid ""
+"Rotational acceleration, or *angular acceleration* describes how fast the"
+" rotational speed changes. This is expressed as the change of the number "
+"of degrees per second, during one second (deg/s²). This is also commonly "
+"written as  :math:`deg/s^2`."
+msgstr ""
+
+#: ../../signaltypes.rst:73
+msgid ""
+"For example, you can adjust the rotational acceleration setting of a "
+"``Motor`` to change how smoothly or how quickly it reaches the constant "
+"speed set point."
+msgstr ""
+
+#: ../../signaltypes.rst:79
+msgid "Distance and linear motion"
+msgstr ""
+
+#: ../../signaltypes.rst:84
+msgid "distance: mm"
+msgstr ""
+
+#: ../../signaltypes.rst:85
+msgid "Distances are expressed in millimeters (mm) whenever possible."
+msgstr ""
+
+#: ../../signaltypes.rst:87
+msgid ""
+"For example, the distance value of the ``UltrasonicSensor`` is measured "
+"in millimeters."
+msgstr ""
+
+#: ../../signaltypes.rst:90
+msgid ""
+"While we recommend working with millimeters in your programs, you can use"
+" the following table to convert between commonly used units."
+msgstr ""
+
+#: ../../signaltypes.rst:94
+msgid "mm"
+msgstr ""
+
+#: ../../signaltypes.rst:94
+msgid "cm"
+msgstr ""
+
+#: ../../signaltypes.rst:94
+msgid "inch"
+msgstr ""
+
+#: ../../signaltypes.rst:96
+msgid "1 mm ="
+msgstr ""
+
+#: ../../signaltypes.rst:96
+msgid "0.1"
+msgstr ""
+
+#: ../../signaltypes.rst:96
+msgid "0.0394"
+msgstr ""
+
+#: ../../signaltypes.rst:98
+msgid "1 cm ="
+msgstr ""
+
+#: ../../signaltypes.rst:98
+msgid "10"
+msgstr ""
+
+#: ../../signaltypes.rst:98
+msgid "0.394"
+msgstr ""
+
+#: ../../signaltypes.rst:100
+msgid "1 inch ="
+msgstr ""
+
+#: ../../signaltypes.rst:100
+msgid "25.4"
+msgstr ""
+
+#: ../../signaltypes.rst:100
+msgid "2.54"
+msgstr ""
+
+#: ../../signaltypes.rst:106
+msgid "dimension: mm"
+msgstr ""
+
+#: ../../signaltypes.rst:108
+msgid "Dimensions are expressed in millimeters (mm), just like distances."
+msgstr ""
+
+#: ../../signaltypes.rst:111
+msgid "For example, the diameter of a wheel is measured in millimeters."
+msgstr ""
+
+#: ../../signaltypes.rst:116
+msgid "speed: mm/s"
+msgstr ""
+
+#: ../../signaltypes.rst:117
+msgid "Linear speeds are expressed as millimeters per second (mm/s)."
+msgstr ""
+
+#: ../../signaltypes.rst:119
+msgid "For example, the speed of a robotic vehicle is expressed in mm/s."
+msgstr ""
+
+#: ../../signaltypes.rst:124
+msgid "linear acceleration: mm/s²"
+msgstr ""
+
+#: ../../signaltypes.rst:126
+msgid ""
+"Linear acceleration describes how fast the speed changes. This is "
+"expressed as the change of the millimeters per second, during one second "
+"(mm/s²). This is also commonly written as  :math:`mm/s^2`."
+msgstr ""
+
+#: ../../signaltypes.rst:130
+msgid ""
+"For example, you can adjust the acceleration setting of a "
+":class:`DriveBase <.robotics.DriveBase>` to change how smoothly or how "
+"quickly it reaches the constant speed set point."
+msgstr ""
+
+#: ../../signaltypes.rst:135
+msgid "Approximate and relative units"
+msgstr ""
+
+#: ../../signaltypes.rst:140
+msgid "percentage: %"
+msgstr ""
+
+#: ../../signaltypes.rst:142
+msgid ""
+"Some signals do not have specific units. They range from a minimum (0%) "
+"to a maximum (100%). Specifics type of percentages are :ref:`relative "
+"distances <relativedistance>` or  :ref:`brightness <brightness>`."
+msgstr ""
+
+#: ../../signaltypes.rst:146
+msgid ""
+"Another example is the sound volume, which ranges from 0% (silent) to "
+"100% (loudest)."
+msgstr ""
+
+#: ../../signaltypes.rst:152
+msgid "relative distance: %"
+msgstr ""
+
+#: ../../signaltypes.rst:154
+msgid ""
+"Some distance measurements do not provide an accurate value with a "
+"specific unit, but they range from very close (0%) to very far (100%). "
+"These are referred to as relative distances."
+msgstr ""
+
+#: ../../signaltypes.rst:158
+msgid ""
+"For example, the distance value of the ``InfraredSensor`` is a relative "
+"distance."
+msgstr ""
+
+#: ../../signaltypes.rst:165
+msgid "brightness: %"
+msgstr ""
+
+#: ../../signaltypes.rst:167
+msgid ""
+"The perceived brightness of a light is expressed as a percentage. It is "
+"0% when the light is off and 100% when the light is fully on. When you "
+"choose 50%, this means that the light is perceived as approximately half "
+"as bright to the human eye."
+msgstr ""
+
+#: ../../signaltypes.rst:173
+msgid "Force and torque"
+msgstr ""
+
+#: ../../signaltypes.rst:178
+msgid "force: N"
+msgstr ""
+
+#: ../../signaltypes.rst:179
+msgid "Force values are expressed in newtons (N)."
+msgstr ""
+
+#: ../../signaltypes.rst:181
+msgid ""
+"While we recommend working with newtons in your programs, you can use the"
+" following table to convert to and from other units."
+msgstr ""
+
+#: ../../signaltypes.rst:185
+msgid "mN"
+msgstr ""
+
+#: ../../signaltypes.rst:185
+msgid "N"
+msgstr ""
+
+#: ../../signaltypes.rst:185
+msgid "lbf"
+msgstr ""
+
+#: ../../signaltypes.rst:187
+msgid "1 mN ="
+msgstr ""
+
+#: ../../signaltypes.rst:187
+msgid "0.001"
+msgstr ""
+
+#: ../../signaltypes.rst:187
+msgid ":math:`2.248 \\cdot 10^{-4}`"
+msgstr ""
+
+#: ../../signaltypes.rst:189
+msgid "1 N ="
+msgstr ""
+
+#: ../../signaltypes.rst:189
+msgid "1000"
+msgstr ""
+
+#: ../../signaltypes.rst:189
+msgid "0.2248"
+msgstr ""
+
+#: ../../signaltypes.rst:191
+msgid "1 lbf ="
+msgstr ""
+
+#: ../../signaltypes.rst:191
+msgid "4448"
+msgstr ""
+
+#: ../../signaltypes.rst:191
+msgid "4.448"
+msgstr ""
+
+#: ../../signaltypes.rst:197
+msgid "torque: mNm"
+msgstr ""
+
+#: ../../signaltypes.rst:198
+msgid ""
+"Torque values are expressed in millinewtonmeter (mNm) unless stated "
+"otherwise."
+msgstr ""
+
+#: ../../signaltypes.rst:201
+msgid "Electricity"
+msgstr ""
+
+#: ../../signaltypes.rst:206
+msgid "voltage: mV"
+msgstr ""
+
+#: ../../signaltypes.rst:207
+msgid "Voltages are expressed in millivolt (mV)."
+msgstr ""
+
+#: ../../signaltypes.rst:209
+msgid "For example, you can check the voltage of the battery."
+msgstr ""
+
+#: ../../signaltypes.rst:214
+msgid "current: mA"
+msgstr ""
+
+#: ../../signaltypes.rst:216
+msgid "Electrical currents are expressed in milliampere (mA)."
+msgstr ""
+
+#: ../../signaltypes.rst:218
+msgid "For example, you can check the current supplied by the battery."
+msgstr ""
+
+#: ../../signaltypes.rst:223
+msgid "energy: J"
+msgstr ""
+
+#: ../../signaltypes.rst:225
+msgid "Stored energy or energy consumption can be expressed in Joules (J)."
+msgstr ""
+
+#: ../../signaltypes.rst:230
+msgid "power: mW"
+msgstr ""
+
+#: ../../signaltypes.rst:232
+msgid ""
+"Power is the rate at which energy is stored or consumed. It is expressed "
+"in milliwatt (mW)."
+msgstr ""
+
+#: ../../signaltypes.rst:236
+msgid "Ambient environment"
+msgstr ""
+
+#: ../../signaltypes.rst:241
+msgid "frequency: Hz"
+msgstr ""
+
+#: ../../signaltypes.rst:242
+msgid "Sound frequencies are expressed in Hertz (Hz)."
+msgstr ""
+
+#: ../../signaltypes.rst:244
+msgid "For example, you can choose the frequency of a beep to change the pitch."
+msgstr ""
+
+#: ../../signaltypes.rst:249
+msgid "temperature: °C"
+msgstr ""
+
+#: ../../signaltypes.rst:251
+msgid ""
+"Temperature is measured in degrees Celsius (°C). To convert to degrees "
+"Fahrenheit (°F) or Kelvin (K), you can use the following conversion "
+"formulas:"
+msgstr ""
+
+#: ../../signaltypes.rst:254
+msgid ""
+":math:`^{\\circ}\\kern1pt\\!F =\\kern1pt^{\\circ}\\kern1pt\\!C \\cdot "
+"\\frac{9}{5} + 32`."
+msgstr ""
+
+#: ../../signaltypes.rst:256
+msgid ":math:`K =\\kern1pt^{\\circ}\\kern1pt\\!C + 273.15`."
+msgstr ""
+
+#: ../../signaltypes.rst:261
+msgid "hue: deg"
+msgstr ""
+
+#: ../../signaltypes.rst:262
+msgid "Hue of a color (0-359 degrees)."
+msgstr ""
+
+#: ../../signaltypes.rst:267
+msgid "Reference frames"
+msgstr ""
+
+#: ../../signaltypes.rst:269
+msgid "The Pybricks module and this documentation use the following conventions:"
+msgstr ""
+
+#: ../../signaltypes.rst:271
+msgid "X: Positive means forward. Negative means backward."
+msgstr ""
+
+#: ../../signaltypes.rst:272
+msgid "Y: Positive means to the left. Negative means to the right."
+msgstr ""
+
+#: ../../signaltypes.rst:273
+msgid "Z: Positive means upward. Negative means downward."
+msgstr ""
+
+#: ../../signaltypes.rst:275
+msgid ""
+"To make sure that all hub measurements (such as acceleration) have the "
+"correct value and sign, you can specify how the hub is mounted in your "
+"creation. This adjust the measurements so that it is easy to see how your"
+" *robot* is moving, rather than how the *hub* is moving."
+msgstr ""
+
+#: ../../signaltypes.rst:280
+msgid ""
+"For example, the hub may be mounted upside down in your design. If you "
+"configure the settings as shown in :numref:`fig_imuexamples`, the hub "
+"measurements will be adjusted accordingly. This way, a positive "
+"acceleration value in the X direction means that your *robot* accelerates"
+" forward, even though the *hub* accelerates backward."
+msgstr ""
+
+#: ../../signaltypes.rst:291
+msgid ""
+"How to configure the ``top_side`` and ``front_side`` settings for three "
+"different robot designs. The same technique can be applied to other hubs "
+"and other creations, by noting which way the top and front :class:`Side "
+"<Side>` of the hub are pointing. The example on the left is the default "
+"configuration."
+msgstr ""
+

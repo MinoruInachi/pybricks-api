@@ -1,0 +1,2582 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 09:36+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../micropython/builtins.rst:2
+msgid "Built-in classes and functions"
+msgstr ""
+
+#: ../../micropython/builtins.rst:4
+msgid ""
+"The classes and functions shown on this page can be used without "
+"importing anything."
+msgstr ""
+
+#: ../../micropython/builtins.rst:8
+msgid "Input and output"
+msgstr ""
+
+#: of ubuiltins.input:1
+msgid ""
+"Gets input from the user in the terminal window. It waits until the user "
+"presses :kbd:`Enter`."
+msgstr ""
+
+#: micropython.const micropython.kbd_intr micropython.mem_info
+#: micropython.opt_level micropython.qstr_info of ubuiltins.abs ubuiltins.all
+#: ubuiltins.any ubuiltins.bin ubuiltins.bool ubuiltins.bytearray
+#: ubuiltins.bytes ubuiltins.callable ubuiltins.chr ubuiltins.complex
+#: ubuiltins.dir ubuiltins.divmod ubuiltins.eval ubuiltins.exec ubuiltins.float
+#: ubuiltins.getattr ubuiltins.hasattr ubuiltins.hash ubuiltins.help
+#: ubuiltins.hex ubuiltins.id ubuiltins.input ubuiltins.int
+#: ubuiltins.int.from_bytes ubuiltins.int.to_bytes ubuiltins.isinstance
+#: ubuiltins.issubclass ubuiltins.iter ubuiltins.len ubuiltins.list
+#: ubuiltins.map ubuiltins.next ubuiltins.oct ubuiltins.ord ubuiltins.pow
+#: ubuiltins.print ubuiltins.range ubuiltins.repr ubuiltins.reversed
+#: ubuiltins.round ubuiltins.set ubuiltins.set.difference
+#: ubuiltins.set.intersection ubuiltins.set.isdisjoint ubuiltins.set.issubset
+#: ubuiltins.set.issuperset ubuiltins.set.symmetric_difference
+#: ubuiltins.set.union ubuiltins.setattr ubuiltins.sorted ubuiltins.str
+#: ubuiltins.sum ubuiltins.tuple ubuiltins.type ubuiltins.zip uio.BytesIO
+#: uio.StringIO ujson.dump ujson.dumps ujson.load ujson.loads umath.acos
+#: umath.asin umath.atan umath.atan2 umath.ceil umath.copysign umath.cos
+#: umath.degrees umath.exp umath.fabs umath.floor umath.fmod umath.frexp
+#: umath.isfinite umath.isinfinite umath.isnan umath.ldexp umath.log umath.modf
+#: umath.pow umath.radians umath.sin umath.sqrt umath.tan umath.trunc
+#: urandom.choice urandom.getrandbits urandom.randint urandom.randrange
+#: urandom.seed urandom.uniform uselect.Poll.ipoll uselect.Poll.modify
+#: uselect.Poll.poll uselect.Poll.register uselect.Poll.unregister
+#: ustruct.calcsize ustruct.pack ustruct.pack_into ustruct.unpack
+#: ustruct.unpack_from
+msgid "Parameters"
+msgstr ""
+
+#: of ubuiltins.input:4
+msgid ""
+"If given, this is printed in the terminal window first. This can be used "
+"to ask a question so the user knows what to type."
+msgstr ""
+
+#: micropython.const micropython.heap_unlock micropython.opt_level
+#: micropython.stack_use of ubuiltins.abs ubuiltins.all ubuiltins.any
+#: ubuiltins.bin ubuiltins.bool ubuiltins.callable ubuiltins.chr
+#: ubuiltins.complex ubuiltins.dir ubuiltins.divmod ubuiltins.eval
+#: ubuiltins.getattr ubuiltins.globals ubuiltins.hasattr ubuiltins.hash
+#: ubuiltins.hex ubuiltins.id ubuiltins.input ubuiltins.int.from_bytes
+#: ubuiltins.int.to_bytes ubuiltins.isinstance ubuiltins.issubclass
+#: ubuiltins.iter ubuiltins.len ubuiltins.locals ubuiltins.map ubuiltins.max
+#: ubuiltins.min ubuiltins.next ubuiltins.oct ubuiltins.ord ubuiltins.pow
+#: ubuiltins.repr ubuiltins.reversed ubuiltins.set.copy
+#: ubuiltins.set.difference ubuiltins.set.intersection ubuiltins.set.isdisjoint
+#: ubuiltins.set.issubset ubuiltins.set.issuperset
+#: ubuiltins.set.symmetric_difference ubuiltins.set.union ubuiltins.sorted
+#: ubuiltins.sum ubuiltins.super ubuiltins.zip ujson.dumps ujson.load
+#: ujson.loads umath.acos umath.asin umath.atan umath.atan2 umath.ceil
+#: umath.copysign umath.cos umath.degrees umath.exp umath.fabs umath.floor
+#: umath.fmod umath.frexp umath.isfinite umath.isinfinite umath.isnan
+#: umath.ldexp umath.log umath.modf umath.pow umath.radians umath.sin
+#: umath.sqrt umath.tan umath.trunc urandom.choice urandom.randint
+#: urandom.random urandom.randrange urandom.uniform uselect.Poll.poll
+#: uselect.poll ustruct.calcsize ustruct.pack ustruct.unpack
+#: ustruct.unpack_from
+msgid "Returns"
+msgstr ""
+
+#: of ubuiltins.input:8
+msgid "Everything the user typed before pressing :kbd:`Enter`."
+msgstr ""
+
+#: of ubuiltins.print:1
+msgid "Prints text or other objects in the terminal window."
+msgstr ""
+
+#: of ubuiltins.print:3
+msgid "Zero or more objects to print."
+msgstr ""
+
+#: of ubuiltins.print
+msgid "Keyword Arguments"
+msgstr ""
+
+#: of ubuiltins.print:5
+msgid "This is printed between objects, if there is more than one."
+msgstr ""
+
+#: of ubuiltins.print:7
+msgid "This is printed after the last object."
+msgstr ""
+
+#: of ubuiltins.print:9
+msgid ""
+"By default, the result is printed in the terminal window. This argument "
+"lets you print it to a file instead, if files are supported."
+msgstr ""
+
+#: ../../micropython/builtins.rst:19
+msgid "Basic types"
+msgstr ""
+
+#: of ubuiltins.bool:1
+msgid "Creates a boolean value, which is either ``True`` or ``False``."
+msgstr ""
+
+#: of ubuiltins.bool:3
+msgid ""
+"The input value is converted using the standard truth testing procedure. "
+"If no input is given, it is assumed to be ``False``."
+msgstr ""
+
+#: of ubuiltins.bin:5 ubuiltins.bool:6 ubuiltins.hex:5 ubuiltins.oct:5
+msgid "Value to be converted."
+msgstr ""
+
+#: of ubuiltins.bool:8
+msgid "Result of the truth-test."
+msgstr ""
+
+#: of ubuiltins.complex:1
+msgid "Creates a complex number from a string or from a pair of numbers."
+msgstr ""
+
+#: of ubuiltins.complex:3
+msgid ""
+"If a string is given, it must be of the form ``'1+2j'``. If a pair of "
+"numbers is provided, the result is computed as: ``a + b * j``."
+msgstr ""
+
+#: of ubuiltins.complex:7
+msgid "A string of the form ``'1+2j'`` ."
+msgstr ""
+
+#: of ubuiltins.complex:9 ubuiltins.complex:11
+msgid "A real-valued or complex number."
+msgstr ""
+
+#: of ubuiltins.complex:14
+msgid "The resulting complex number."
+msgstr ""
+
+#: of ubuiltins.dict:1
+msgid "Creates a dictionary object."
+msgstr ""
+
+#: of ubuiltins.dict:3
+msgid ""
+"See the standard `Python documentation "
+"<https://docs.python.org/3/library/stdtypes.html#mapping-types-dict>`_ "
+"for a comprehensive reference with examples."
+msgstr ""
+
+#: of ubuiltins.float:1
+msgid "Creates a floating point number from a given object."
+msgstr ""
+
+#: of ubuiltins.float:3
+msgid "Number or string to be converted."
+msgstr ""
+
+#: of ubuiltins.int:1
+msgid "Creates an integer."
+msgstr ""
+
+#: of ubuiltins.int:3 ubuiltins.repr:3
+msgid "Object to be converted."
+msgstr ""
+
+#: of ubuiltins.int.to_bytes:1
+msgid "Get a :class:`bytes` representation of the integer."
+msgstr ""
+
+#: of ubuiltins.int.to_bytes:3
+msgid "How many bytes to use."
+msgstr ""
+
+#: of ubuiltins.int.to_bytes:5
+msgid ""
+"Choose ``\"big\"`` to put the most significant byte first. Choose "
+"``\"little\"`` to put the least significant byte first."
+msgstr ""
+
+#: of ubuiltins.int.to_bytes:10
+msgid "Byte sequence that represents the integer."
+msgstr ""
+
+#: of ubuiltins.int.from_bytes:1
+msgid "Convert a byte sequence to the number it represents."
+msgstr ""
+
+#: of ubuiltins.int.from_bytes:3
+msgid "The bytes to convert."
+msgstr ""
+
+#: of ubuiltins.int.from_bytes:5
+msgid ""
+"Choose ``\"big\"`` if the most significant byte is the first element. "
+"Choose ``\"little\"`` if the least significant byte is the first element."
+msgstr ""
+
+#: of ubuiltins.int.from_bytes:10
+msgid "The number represented by the bytes."
+msgstr ""
+
+#: of ubuiltins.object:1
+msgid "Creates a new, featureless object."
+msgstr ""
+
+#: of ubuiltins.type:1
+msgid ""
+"Gets the type of an object. This can be used to check if an object is an "
+"instance of a particular class."
+msgstr ""
+
+#: of ubuiltins.type:4
+msgid "Object of which to check the type."
+msgstr ""
+
+#: ../../micropython/builtins.rst:55
+msgid "Sequences"
+msgstr ""
+
+#: of ubuiltins.bytearray:1
+msgid ""
+"Creates a new ``bytearray`` object, which is a sequence of integers in "
+"the range :math:`0 \\leq x \\leq 255`. This object is *mutable*, which "
+"means that you *can* change its contents after you create it."
+msgstr ""
+
+#: of ubuiltins.bytearray:5
+msgid "If no argument is given, this creates an empty ``bytearray`` object."
+msgstr ""
+
+#: of ubuiltins.bytearray:7
+msgid ""
+"If the argument is a single integer, this creates a ``bytearray`` object "
+"of zeros. The argument specifies how many."
+msgstr ""
+
+#: of ubuiltins.bytearray:10
+msgid ""
+"If the argument is a ``bytearray``, ``bytes`` object, or some other "
+"iterable of integers, this creates a ``bytearray`` object with the same "
+"byte sequence as the argument."
+msgstr ""
+
+#: of ubuiltins.bytearray:14
+msgid ""
+"If the argument is a string, this creates a ``bytearray`` object "
+"containing the encoded string."
+msgstr ""
+
+#: of ubuiltins.bytes:1
+msgid ""
+"Creates a new ``bytes`` object, which is a sequence of integers in the "
+"range :math:`0 \\leq x \\leq 255`. This object is *immutable*, which "
+"means that you *cannot* change its contents after you create it."
+msgstr ""
+
+#: of ubuiltins.bytes:5
+msgid "If no argument is given, this creates an empty ``bytes`` object."
+msgstr ""
+
+#: of ubuiltins.bytes:7
+msgid ""
+"If the argument is a single integer, this creates a ``bytes`` object of "
+"zeros. The argument specifies how many."
+msgstr ""
+
+#: of ubuiltins.bytes:10
+msgid ""
+"If the argument is a ``bytearray``, ``bytes`` object, or some other "
+"iterable of integers, this creates a ``bytes`` object with the same byte "
+"sequence as the argument."
+msgstr ""
+
+#: of ubuiltins.bytes:14
+msgid ""
+"If the argument is a string, this creates a ``bytes`` object containing "
+"the encoded string."
+msgstr ""
+
+#: of ubuiltins.bytes:17
+msgid ""
+"Specifies which encoding to use for the ``string`` argument. Only "
+"``\"utf-8\"``  is supported."
+msgstr ""
+
+#: of ubuiltins.len:1
+msgid "Gets the length (the number of items) of an object."
+msgstr ""
+
+#: of ubuiltins.len:3
+msgid "The sequence of which to get the length."
+msgstr ""
+
+#: of ubuiltins.len:6
+msgid "The length."
+msgstr ""
+
+#: of ubuiltins.list:1
+msgid ""
+"Creates a new list. If no argument is given, this creates an empty "
+"``list`` object."
+msgstr ""
+
+#: of ubuiltins.list:4
+msgid ""
+"A list is *mutable*, which means that you *can* change its contents after"
+" you create it."
+msgstr ""
+
+#: of ubuiltins.list:7
+msgid "Iterable from which to build the list."
+msgstr ""
+
+#: of ubuiltins.set:1
+msgid "Creates a new set."
+msgstr ""
+
+#: of ubuiltins.set:3
+msgid ""
+"With no arguments, creates a new empty set, otherwise creates a set "
+"containing unique items of *iterable*."
+msgstr ""
+
+#: of ubuiltins.set:6
+msgid "Sets can also be created using a set literal::"
+msgstr ""
+
+#: of ubuiltins.set:10
+msgid ""
+"Elements of a set must be hashable. There are only a few types, like "
+":class:`list` that aren't hashable."
+msgstr ""
+
+#: of ubuiltins.set:13
+msgid "An iterable of hashable objects."
+msgstr ""
+
+#: of ubuiltins.set.copy:1
+msgid "Returns a shallow copy of the set."
+msgstr ""
+
+#: of ubuiltins.set.copy:3 ubuiltins.set.difference:9
+#: ubuiltins.set.intersection:10 ubuiltins.set.symmetric_difference:9
+#: ubuiltins.set.union:9
+msgid "A new set."
+msgstr ""
+
+#: of ubuiltins.set.difference:1
+msgid "Returns a new set with elements that are not in any of the other sets."
+msgstr ""
+
+#: of ubuiltins.set.difference:3
+msgid "The difference can also be computed using the ``-`` operator::"
+msgstr ""
+
+#: of ubuiltins.set.difference:7 ubuiltins.set.intersection:8
+#: ubuiltins.set.union:7
+msgid "1 or more other sets."
+msgstr ""
+
+#: of ubuiltins.set.intersection:1
+msgid ""
+"Returns a new set with elements that are common between this set and all "
+"other sets."
+msgstr ""
+
+#: of ubuiltins.set.intersection:4
+msgid "The intersection can also be computed using the ``&`` operator::"
+msgstr ""
+
+#: of ubuiltins.set.isdisjoint:1
+msgid "Tests if a set and *other* have no elements in common."
+msgstr ""
+
+#: of ubuiltins.set.isdisjoint:3 ubuiltins.set.issubset:9
+#: ubuiltins.set.issuperset:9 ubuiltins.set.symmetric_difference:7
+msgid "Another set."
+msgstr ""
+
+#: of ubuiltins.set.isdisjoint:5
+msgid ""
+"``True`` if this set has no elements in common with *other*, otherwise "
+"``False``."
+msgstr ""
+
+#: of ubuiltins.set.issubset:1
+msgid "Tests if a set is a subset of *other*."
+msgstr ""
+
+#: of ubuiltins.set.issubset:3
+msgid "The test can also be performed using using the ``<=`` operator::"
+msgstr ""
+
+#: of ubuiltins.set.issubset:11
+msgid "``True`` if this set is a subset of *other*, otherwise ``False``."
+msgstr ""
+
+#: of ubuiltins.set.issuperset:1
+msgid "Tests if a set is a superset of *other*."
+msgstr ""
+
+#: of ubuiltins.set.issuperset:3
+msgid "The test can also be performed using using the ``>=`` operator::"
+msgstr ""
+
+#: of ubuiltins.set.issuperset:11
+msgid "``True`` if this set is a superset of *other*, otherwise ``False``."
+msgstr ""
+
+#: of ubuiltins.set.symmetric_difference:1
+msgid "Returns a new set with elements in one set or the other but not in both."
+msgstr ""
+
+#: of ubuiltins.set.symmetric_difference:3
+msgid "The symmetric difference can also be computed using the ``^`` operator::"
+msgstr ""
+
+#: of ubuiltins.set.union:1
+msgid "Returns a new set with elements from this set and all other sets."
+msgstr ""
+
+#: of ubuiltins.set.union:3
+msgid "The union can also be computed using the ``|`` operator::"
+msgstr ""
+
+#: of ubuiltins.slice:1
+msgid "Creating instances of this class is not supported."
+msgstr ""
+
+#: of ubuiltins.slice:3
+msgid ""
+"Use indexing syntax instead. For example: ``a[start:stop:step]`` or "
+"``a[start:stop, i]``."
+msgstr ""
+
+#: of ubuiltins.str:1
+msgid "Gets the string representation of an object."
+msgstr ""
+
+#: of ubuiltins.str:3
+msgid "If no argument is given, this creates an empty ``str`` object."
+msgstr ""
+
+#: of ubuiltins.str:5
+msgid ""
+"If only this argument is given, this returns the string representation of"
+" the object."
+msgstr ""
+
+#: of ubuiltins.str:7
+msgid ""
+"If the first argument is a ``bytearray`` or ``bytes`` object and the "
+"encoding argument is ``\"utf-8\"``, this will decode the byte data to get"
+" a string representation."
+msgstr ""
+
+#: of ubuiltins.tuple:1
+msgid ""
+"Creates a new tuple. If no argument is given, this creates an empty "
+"``tuple`` object."
+msgstr ""
+
+#: of ubuiltins.tuple:4
+msgid ""
+"A tuple is *immutable*, which means that you *cannot* change its contents"
+" after you create it."
+msgstr ""
+
+#: of ubuiltins.tuple:7
+msgid "Iterable from which to build the tuple."
+msgstr ""
+
+#: ../../micropython/builtins.rst:90
+msgid "Iterators"
+msgstr ""
+
+#: of ubuiltins.all:1
+msgid "Checks if all elements of the iterable are true."
+msgstr ""
+
+#: of ubuiltins.all:3 ubuiltins.any:3
+msgid "Equivalent to::"
+msgstr ""
+
+#: of ubuiltins.all:11 ubuiltins.any:11
+msgid "The iterable to be checked."
+msgstr ""
+
+#: of ubuiltins.all:14
+msgid ""
+"``True`` if the iterable ``x`` is empty or if all elements are true. "
+"Otherwise ``False``."
+msgstr ""
+
+#: of ubuiltins.any:1
+msgid "Checks if at least one elements of the iterable is true."
+msgstr ""
+
+#: of ubuiltins.any:14
+msgid "``True`` if at least one element in ``x`` is true. Otherwise ``False``."
+msgstr ""
+
+#: of ubuiltins.enumerate:1
+msgid "Enumerates an existing iterator by adding a numeric index."
+msgstr ""
+
+#: of ubuiltins.enumerate:3
+msgid "This function is equivalent to::"
+msgstr ""
+
+#: of ubuiltins.iter:1
+msgid "Gets the iterator of the object if available."
+msgstr ""
+
+#: of ubuiltins.iter:3
+msgid "Object for which to get the iterator."
+msgstr ""
+
+#: of ubuiltins.iter:5
+msgid "The iterator."
+msgstr ""
+
+#: of ubuiltins.map:1
+msgid ""
+"Creates a new iterator that applies the given function to each item in "
+"the given iterable and yields the results."
+msgstr ""
+
+#: of ubuiltins.map:4
+msgid ""
+"Function that computes a result for one item in the iterable(s). The "
+"number of arguments to this function must match the number of iterables "
+"given."
+msgstr ""
+
+#: of ubuiltins.map:8
+msgid ""
+"One or more source interables from which to draw data. With multiple "
+"iterables, the iterator stops when the shortest iterable is exhausted."
+msgstr ""
+
+#: of ubuiltins.map:13
+msgid "The new, mapped iterator."
+msgstr ""
+
+#: of ubuiltins.next:1
+msgid ""
+"Retrieves the next item from the iterator by calling its ``__next__()`` "
+"method."
+msgstr ""
+
+#: of ubuiltins.next:3
+msgid "Initialized generator object from which to draw the next value."
+msgstr ""
+
+#: of ubuiltins.next:7
+msgid "The next value from the generator."
+msgstr ""
+
+#: of ubuiltins.range:1
+msgid ""
+"Creates a generator that yields values from ``start`` up to ``stop``, "
+"with increments of ``step``."
+msgstr ""
+
+#: of ubuiltins.range:4
+msgid "Starting value. Defaults to ``0`` if only one argument is given."
+msgstr ""
+
+#: of ubuiltins.range:6
+msgid "Endpoint. This value is *not* included."
+msgstr ""
+
+#: of ubuiltins.range:8 urandom.randrange:12
+msgid ""
+"Increment between values. Defaults to ``1`` if only one or two arguments "
+"are given."
+msgstr ""
+
+#: of ubuiltins.reversed:1
+msgid ""
+"Gets an iterator that yields the values from the sequence in the reverse,"
+" if supported."
+msgstr ""
+
+#: of ubuiltins.reversed:4
+msgid "Sequence from which to draw samples."
+msgstr ""
+
+#: of ubuiltins.reversed:6
+msgid ""
+"Iterator that yields values in reverse order, starting with the last "
+"value."
+msgstr ""
+
+#: of ubuiltins.sorted:1
+msgid "Sorts objects."
+msgstr ""
+
+#: of ubuiltins.sorted:3
+msgid ""
+"Objects to be sorted. This can also be a generator that yield a finite "
+"number of objects."
+msgstr ""
+
+#: of ubuiltins.sorted:6
+msgid ""
+"Function ``def(item) -> int`` that maps an object to a numerical value. "
+"This is used to figure out the order of the sorted items."
+msgstr ""
+
+#: of ubuiltins.sorted:10
+msgid "Whether to sort in reverse, putting the highest value first."
+msgstr ""
+
+#: of ubuiltins.sorted:14
+msgid "A new list with the sorted items."
+msgstr ""
+
+#: of ubuiltins.zip:1
+msgid ""
+"Returns an iterator of tuples, where the *i*-th tuple contains the *i*-th"
+" element from each of the argument sequences or iterables. The iterator "
+"stops when the shortest input iterable is exhausted."
+msgstr ""
+
+#: of ubuiltins.zip:5
+msgid ""
+"With a single iterable argument, it returns an iterator of 1-tuples. With"
+" no arguments, it returns an empty iterator."
+msgstr ""
+
+#: of ubuiltins.zip:8
+msgid "This functionality is equivalent to::"
+msgstr ""
+
+#: of ubuiltins.zip:22
+msgid ""
+"The first iterable. This provides the first value for each of the yielded"
+" tuples."
+msgstr ""
+
+#: of ubuiltins.zip:25
+msgid ""
+"The second iterable. This provides the second value in each of the "
+"yielded tuples. And so on."
+msgstr ""
+
+#: of ubuiltins.zip:29
+msgid ""
+"A new iterator that yields tuples containing the values of the individual"
+" iterables."
+msgstr ""
+
+#: ../../micropython/builtins.rst:133
+msgid "Conversion functions"
+msgstr ""
+
+#: of ubuiltins.bin:1
+msgid ""
+"Converts an integer to its binary representation. The result is a string "
+"prefixed with ``0b``. The result is a valid Python expression. For "
+"example, ``bin(5)`` gives ``\"0b101\"``."
+msgstr ""
+
+#: of ubuiltins.bin:8
+msgid "A string representing the binary form of the input."
+msgstr ""
+
+#: of ubuiltins.chr:1
+msgid ""
+"Returns the string representing a character whose Unicode code is the "
+"integer ``x``. This is the inverse of :meth:`ord`. For example, "
+"``chr(97)`` gives ``\"a\"``."
+msgstr ""
+
+#: of ubuiltins.chr:5
+msgid "Value to be converted (0-255)."
+msgstr ""
+
+#: of ubuiltins.chr:8
+msgid "A string with one character, corresponding to the given Unicode value."
+msgstr ""
+
+#: of ubuiltins.hex:1
+msgid ""
+"Converts an integer to its hexadecimal representation. The result is a "
+"lowercase string prefixed with ``0x``. The result is a valid Python "
+"expression. For example, ``hex(25)`` gives ``\"0x19\"``."
+msgstr ""
+
+#: of ubuiltins.hex:8
+msgid "A string representing the hexadecimal form of the input."
+msgstr ""
+
+#: of ubuiltins.oct:1
+msgid ""
+"Converts an integer to its octal representation. The result is a string "
+"prefixed with ``0o``. The result is a valid Python expression. For "
+"example, ``oct(25)`` gives ``\"0o31\"``."
+msgstr ""
+
+#: of ubuiltins.oct:8
+msgid "A string representing the octal form of the input."
+msgstr ""
+
+#: of ubuiltins.ord:1
+msgid ""
+"Converts a string consisting of one Unicode character to the "
+"corresponding number. This is the inverse of :meth:`chr`."
+msgstr ""
+
+#: of ubuiltins.ord:4
+msgid "Character to be converted."
+msgstr ""
+
+#: of ubuiltins.ord:7
+msgid "Number that represents the character (0--255)."
+msgstr ""
+
+#: of ubuiltins.repr:1
+msgid "Gets the string that represents an object."
+msgstr ""
+
+#: of ubuiltins.repr:6
+msgid "String representation implemented by the object's ``__repr__`` method."
+msgstr ""
+
+#: ../../micropython/builtins.rst:162
+msgid "Math functions"
+msgstr ""
+
+#: ../../micropython/builtins.rst:164
+msgid "See also :mod:`umath` for floating point math operations."
+msgstr ""
+
+#: of ubuiltins.abs:1
+msgid "Returns the absolute value of a number."
+msgstr ""
+
+#: of ubuiltins.abs:3
+msgid ""
+"The argument may be an integer, a floating point number, or any object "
+"implementing ``__abs__()``. If the argument is a complex number, its "
+"magnitude is returned."
+msgstr ""
+
+#: of ubuiltins.abs:7 umath.fabs:3 umath.ldexp:3 umath.log:3
+msgid "The value."
+msgstr ""
+
+#: of ubuiltins.abs:10 umath.fabs:6
+msgid "Absolute value of ``x``."
+msgstr ""
+
+#: of ubuiltins.divmod:1
+msgid "Gets the quotient and remainder for dividing two integers."
+msgstr ""
+
+#: of ubuiltins.divmod:3
+msgid ""
+"See the standard `Python divmod documentation "
+"<https://docs.python.org/3/library/functions.html#divmod>`_ for the "
+"expected behavior when ``a`` or ``b`` are floating point numbers instead."
+msgstr ""
+
+#: of ubuiltins.divmod:8
+msgid "Numerator."
+msgstr ""
+
+#: of ubuiltins.divmod:10
+msgid "Denominator."
+msgstr ""
+
+#: of ubuiltins.divmod:13
+msgid "A tuple with the quotient ``a // b`` and the remainder ``a % b``."
+msgstr ""
+
+#: of ubuiltins.max:1
+msgid "Gets the object with largest value."
+msgstr ""
+
+#: of ubuiltins.max:3 ubuiltins.min:3
+msgid "The argument may be a single iterable, or any number of objects."
+msgstr ""
+
+#: of ubuiltins.max:5
+msgid "The object with the largest value."
+msgstr ""
+
+#: of ubuiltins.min:1
+msgid "Gets the object with smallest value."
+msgstr ""
+
+#: of ubuiltins.min:5
+msgid "The object with the smallest value."
+msgstr ""
+
+#: of ubuiltins.pow:1
+msgid ""
+"Raises the base to the given exponent: "
+":math:`\\text{base}^{\\mathrm{exp}}`."
+msgstr ""
+
+#: of ubuiltins.pow:3
+msgid "This is the same as doing ``base ** exp``."
+msgstr ""
+
+#: of ubuiltins.pow:5
+msgid "The base."
+msgstr ""
+
+#: of ubuiltins.pow:7 umath.exp:3 umath.ldexp:5 umath.pow:5
+msgid "The exponent."
+msgstr ""
+
+#: of ubuiltins.pow:10
+msgid "The result."
+msgstr ""
+
+#: of ubuiltins.round:1
+msgid "Round a number to a given number of digits after the decimal point."
+msgstr ""
+
+#: of ubuiltins.round:3
+msgid "If ``ndigits`` is omitted or ``None``, it returns the nearest integer."
+msgstr ""
+
+#: of ubuiltins.round:5
+msgid ""
+"Rounding with one or more digits after the decimal point will not always "
+"truncate trailing zeros. To print numbers nicely, format strings "
+"instead::"
+msgstr ""
+
+#: of ubuiltins.round:13
+msgid "The number to be rounded."
+msgstr ""
+
+#: of ubuiltins.round:15
+msgid "The number of digits remaining after the decimal point."
+msgstr ""
+
+#: of ubuiltins.sum:1
+msgid "Sums the items from the iterable and the start value."
+msgstr ""
+
+#: of ubuiltins.sum:3
+msgid "Values to be summed, starting with the first value."
+msgstr ""
+
+#: of ubuiltins.sum:5
+msgid "Value added to the total."
+msgstr ""
+
+#: of ubuiltins.sum:8
+msgid "The total sum."
+msgstr ""
+
+#: ../../micropython/builtins.rst:195
+msgid "Runtime functions"
+msgstr ""
+
+#: of ubuiltins.eval:1
+msgid "Evaluates the result of an expression."
+msgstr ""
+
+#: of ubuiltins.eval:3 ubuiltins.exec:3
+msgid "Syntax errors are reported as exceptions."
+msgstr ""
+
+#: of ubuiltins.eval:5
+msgid "Expression to evaluate result of."
+msgstr ""
+
+#: of ubuiltins.eval:7 ubuiltins.exec:7
+msgid ""
+"If given, this controls what functions are available for use in the "
+"expression. By default the global scope is accessible."
+msgstr ""
+
+#: of ubuiltins.eval:10 ubuiltins.exec:10
+msgid ""
+"If given, this controls what functions are available for use in the "
+"expression. Defaults to the same as ``globals``."
+msgstr ""
+
+#: of ubuiltins.eval:14
+msgid "The value obtained by executing the expression."
+msgstr ""
+
+#: of ubuiltins.exec:1
+msgid "Executes MicroPython code."
+msgstr ""
+
+#: of ubuiltins.exec:5
+msgid "Code to be executed."
+msgstr ""
+
+#: of ubuiltins.globals:1
+msgid "Gets a dictionary representing the current global symbol table."
+msgstr ""
+
+#: of ubuiltins.globals:3
+msgid "The dictionary of globals."
+msgstr ""
+
+#: of ubuiltins.hash:1
+msgid "Gets the hash value of an object, if the object supports it."
+msgstr ""
+
+#: of ubuiltins.hash:3
+msgid "Object for which to get a hash value."
+msgstr ""
+
+#: of ubuiltins.hash:5
+msgid "The hash value."
+msgstr ""
+
+#: of ubuiltins.help:1
+msgid "Get information about an object."
+msgstr ""
+
+#: of ubuiltins.help:3
+msgid ""
+"If no arguments are given, this function prints instructions to operate "
+"the REPL. If the argument is ``\"modules\"``, it prints the available "
+"modules."
+msgstr ""
+
+#: of ubuiltins.help:6
+msgid "Object for which to print help information."
+msgstr ""
+
+#: of ubuiltins.id:1
+msgid ""
+"Gets the *identity* of an object. This is an integer which is guaranteed "
+"to be unique and constant for this object during its lifetime."
+msgstr ""
+
+#: of ubuiltins.id:4
+msgid "Object of which to get the identifier."
+msgstr ""
+
+#: of ubuiltins.id:6
+msgid "The identifier."
+msgstr ""
+
+#: of ubuiltins.locals:1
+msgid "Gets a dictionary representing the current local symbol table."
+msgstr ""
+
+#: of ubuiltins.locals:3
+msgid "The dictionary of locals."
+msgstr ""
+
+#: ../../micropython/builtins.rst:227
+msgid "Class functions"
+msgstr ""
+
+#: of ubuiltins.callable:1
+msgid "Checks if an object is callable."
+msgstr ""
+
+#: of ubuiltins.callable:3
+msgid "Object to check."
+msgstr ""
+
+#: of ubuiltins.callable:5
+msgid "``True`` if the object argument appears callable, ``False`` if not."
+msgstr ""
+
+#: of ubuiltins.dir:1
+msgid "Gets a list of attributes of an object."
+msgstr ""
+
+#: of ubuiltins.dir:3
+msgid ""
+"If no object argument is given, this function gets the list of names in "
+"the current local scope."
+msgstr ""
+
+#: of ubuiltins.dir:6
+msgid "Object to check for valid attributes."
+msgstr ""
+
+#: of ubuiltins.dir:8
+msgid "List of object attributes or list of names in current local scope."
+msgstr ""
+
+#: of ubuiltins.getattr:1
+msgid "Looks up the attribute called ``name`` in the given ``object``."
+msgstr ""
+
+#: of ubuiltins.getattr:3 ubuiltins.hasattr:3
+msgid "Object in which to look for the attribute."
+msgstr ""
+
+#: of ubuiltins.getattr:4 ubuiltins.hasattr:4 ubuiltins.setattr:6
+msgid "Name of the attribute."
+msgstr ""
+
+#: of ubuiltins.getattr:6
+msgid "Object to return if the attribute is not found."
+msgstr ""
+
+#: of ubuiltins.getattr:8
+msgid "Returns the value of the named attribute."
+msgstr ""
+
+#: of ubuiltins.hasattr:1
+msgid "Checks if an attribute exists on an object."
+msgstr ""
+
+#: of ubuiltins.hasattr:7
+msgid "``True`` if an attribute by that name exists, ``False`` if not."
+msgstr ""
+
+#: of ubuiltins.isinstance:1
+msgid "Checks if an object is an instance of a certain class."
+msgstr ""
+
+#: of ubuiltins.isinstance:3
+msgid "Object to check the type of."
+msgstr ""
+
+#: of ubuiltins.isinstance:4 ubuiltins.issubclass:4
+msgid "Class information."
+msgstr ""
+
+#: of ubuiltins.isinstance:7
+msgid ""
+"``True`` if the ``object`` argument is an instance of the ``classinfo`` "
+"argument, or of a subclass thereof."
+msgstr ""
+
+#: of ubuiltins.issubclass:1
+msgid "Checks if one class is a subclass of another class."
+msgstr ""
+
+#: of ubuiltins.issubclass:3
+msgid "Class type."
+msgstr ""
+
+#: of ubuiltins.issubclass:7
+msgid "``True`` if ``cls`` is a subclass of ``classinfo``."
+msgstr ""
+
+#: of ubuiltins.setattr:1
+msgid "Assigns a value to an attribute, provided that the object allows it."
+msgstr ""
+
+#: of ubuiltins.setattr:3
+msgid "This is the counterpart of :meth:`getattr`."
+msgstr ""
+
+#: of ubuiltins.setattr:5
+msgid "Object in which to store the attribute."
+msgstr ""
+
+#: of ubuiltins.setattr:8
+msgid "Value to store."
+msgstr ""
+
+#: of ubuiltins.super:1
+msgid ""
+"Gets an object that delegates method calls to a parent, or a sibling "
+"class of the given type."
+msgstr ""
+
+#: of ubuiltins.super:4
+msgid "The matching `super()` object."
+msgstr ""
+
+#: ../../micropython/builtins.rst:263
+msgid "Method decorators"
+msgstr ""
+
+#: of ubuiltins.classmethod:1
+msgid "Transforms a method into a class method."
+msgstr ""
+
+#: of ubuiltins.staticmethod:1
+msgid "Transforms a method into a static method."
+msgstr ""
+
+#: ../../micropython/exceptions.rst:2
+msgid "Exceptions and errors"
+msgstr ""
+
+#: ../../micropython/exceptions.rst:4
+msgid "This section lists all available exceptions in alphabetical order."
+msgstr ""
+
+#: of ubuiltins.ArithmeticError:1
+msgid ""
+"The base class for those built-in exceptions that are raised for various "
+"arithmetic errors."
+msgstr ""
+
+#: of ubuiltins.AssertionError:1
+msgid "Raised when an assert statement fails."
+msgstr ""
+
+#: of ubuiltins.AttributeError:1
+msgid "Raised when an attribute reference or assignment fails."
+msgstr ""
+
+#: of ubuiltins.BaseException:1
+msgid "The base class for all built-in exceptions."
+msgstr ""
+
+#: of ubuiltins.BaseException:3
+msgid ""
+"It is not meant to be directly inherited by user-defined classes (for "
+"that, use :class:`Exception`)."
+msgstr ""
+
+#: of ubuiltins.EOFError:1
+msgid ""
+"Raised when the :meth:`input` function hits an end-of-file condition "
+"(EOF) without reading any data."
+msgstr ""
+
+#: of ubuiltins.Exception:1
+msgid "All built-in exceptions are derived from this class."
+msgstr ""
+
+#: of ubuiltins.Exception:3
+msgid "All user-defined exceptions should also be derived from this class."
+msgstr ""
+
+#: of ubuiltins.GeneratorExit:1
+msgid "Raised when a generator or coroutine is closed."
+msgstr ""
+
+#: of ubuiltins.ImportError:1
+msgid "Raised when the ``import`` statement is unable to load a module."
+msgstr ""
+
+#: of ubuiltins.IndentationError:1
+msgid "Base class for syntax errors related to incorrect indentation."
+msgstr ""
+
+#: of ubuiltins.IndexError:1
+msgid "Raised when a sequence subscript is out of range."
+msgstr ""
+
+#: of ubuiltins.KeyboardInterrupt:1
+msgid ""
+"Raised when the user hits the interrupt key (normally :kbd:`Ctrl` "
+":kbd:`C`)."
+msgstr ""
+
+#: of ubuiltins.KeyError:1
+msgid ""
+"Raised when a mapping (dictionary) key is not found in the set of "
+"existing keys."
+msgstr ""
+
+#: of ubuiltins.LookupError:1
+msgid ""
+"The base class for the exceptions that are raised when a key or index "
+"used on a mapping or sequence is invalid."
+msgstr ""
+
+#: of ubuiltins.MemoryError:1
+msgid "Raised when an operation runs out of memory."
+msgstr ""
+
+#: of ubuiltins.NameError:1
+msgid "Raised when a local or global name is not found."
+msgstr ""
+
+#: of ubuiltins.NotImplementedError:1
+msgid ""
+"In user defined base classes, abstract methods should raise this "
+"exception when they require derived classes to override the method, or "
+"while the class is being developed to indicate that the real "
+"implementation still needs to be added."
+msgstr ""
+
+#: of ubuiltins.OSError:1
+msgid ""
+"This exception is raised by the firmware, which is the Operating System "
+"that runs on the hub. For :ref:`example <device_detection>`, it raises an"
+" ``OSError`` if you call ``Motor(Port.A)`` when there is no motor on port"
+" A."
+msgstr ""
+
+#: ../../../docstring of ubuiltins.OSError.errno:1
+msgid ""
+"Specifies which kind of ``OSError`` occurred, as listed in the "
+":mod:`uerrno` module."
+msgstr ""
+
+#: of ubuiltins.OverflowError:1
+msgid ""
+"Raised when the result of an arithmetic operation is too large to be "
+"represented."
+msgstr ""
+
+#: of ubuiltins.RuntimeError:1
+msgid ""
+"Raised when an error is detected that doesn’t fall in any of the other "
+"categories."
+msgstr ""
+
+#: of ubuiltins.RuntimeError:3
+msgid "The associated value is a string indicating what precisely went wrong."
+msgstr ""
+
+#: of ubuiltins.StopIteration:1
+msgid ""
+"Raised by built-in function :meth:`next` and an iterator’s ``__next__()``"
+" method to signal that there are no further items produced by the "
+"iterator."
+msgstr ""
+
+#: of ubuiltins.StopIteration:4
+msgid "Generator functions should return instead of raising this directly."
+msgstr ""
+
+#: of ubuiltins.SyntaxError:1
+msgid "Raised when the parser encounters a syntax error."
+msgstr ""
+
+#: of ubuiltins.SystemExit:1
+msgid ""
+"Raised when you press the stop button on the hub or in the Pybricks Code "
+"app."
+msgstr ""
+
+#: of ubuiltins.TypeError:1
+msgid ""
+"Raised when an operation or function is applied to an object of "
+"inappropriate type."
+msgstr ""
+
+#: of ubuiltins.ValueError:1
+msgid ""
+"Raised when an operation or function receives an argument that has the "
+"right type but an inappropriate value. This is used when the situation is"
+" not described by a more precise exception such as :class:`IndexError`."
+msgstr ""
+
+#: of ubuiltins.ZeroDivisionError:1
+msgid "Raised when the second argument of a division or modulo operation is zero."
+msgstr ""
+
+#: ../../micropython/exceptions.rst:84 ../../micropython/micropython.rst:27
+#: ../../micropython/uselect.rst:37 ../../micropython/usys.rst:33
+msgid "Examples"
+msgstr ""
+
+#: ../../micropython/exceptions.rst:87
+msgid "Debugging in the REPL terminal"
+msgstr ""
+
+#: ../../micropython/exceptions.rst:93
+msgid "Running code when the stop button is pressed"
+msgstr ""
+
+#: ../../micropython/exceptions.rst:101
+msgid "Detecting devices using ``OSError``"
+msgstr ""
+
+#: ../../micropython/micropython.rst:4
+msgid ":mod:`micropython` -- MicroPython internals"
+msgstr ""
+
+#: micropython:1 of
+msgid "Access and control MicroPython internals."
+msgstr ""
+
+#: micropython.const:1 of
+msgid "Declares the value as a constant, which makes your code more efficient."
+msgstr ""
+
+#: micropython.const:3 of
+msgid ""
+"To reduce memory usage further, prefix its name with an underscore "
+"(``_ORANGES``). This constant can only be used within the same file."
+msgstr ""
+
+#: micropython.const:7 of
+msgid ""
+"If you want to import the value from another module, use a name without "
+"an underscore (``APPLES``). This uses a bit more memory."
+msgstr ""
+
+#: micropython.const:10 of
+msgid "The literal to be made constant."
+msgstr ""
+
+#: micropython.const:13 of
+msgid "The constant value."
+msgstr ""
+
+#: micropython.heap_lock:1 of
+msgid ""
+"Locks the heap. When locked, no memory allocation can occur. A "
+"``MemoryError`` will be raised if any heap allocation is attempted."
+msgstr ""
+
+#: micropython.heap_unlock:1 of
+msgid "Unlocks the heap. Memory allocation is now allowed again."
+msgstr ""
+
+#: micropython.heap_unlock:3 of
+msgid ""
+"If :func:`heap_lock()` was called multiple times, :func:`heap_unlock()` "
+"must be called the same number of times to make the heap available again."
+msgstr ""
+
+#: micropython.heap_unlock:6 of
+msgid "The lock depth after unlocking. It is ``0`` once it is unlocked."
+msgstr ""
+
+#: micropython.kbd_intr:1 of
+msgid ""
+"Sets the character that triggers a ``KeyboardInterrupt`` exception when "
+"you type it in the input window. By default it is set to ``3``, which "
+"corresponds to pressing :kbd:`Ctrl` :kbd:`C`."
+msgstr ""
+
+#: micropython.kbd_intr:5 of
+msgid ""
+"Character that should raise the ``KeyboardInterrupt``. Choose ``-1`` to "
+"disable this feature."
+msgstr ""
+
+#: micropython.mem_info:1 of
+msgid "Prints information about stack and heap memory usage."
+msgstr ""
+
+#: micropython.mem_info:3 of
+msgid ""
+"If any value is given, it also prints out the entire heap. This indicates"
+" which blocks are used and which are free."
+msgstr ""
+
+#: micropython.opt_level:1 of
+msgid "Sets the optimization level for code compiled on the hub:"
+msgstr ""
+
+#: micropython.opt_level:3 of
+msgid ""
+"Assertion statements are enabled. The built-in ``__debug__`` variable is "
+"``True``. Script line numbers are saved, so they can be reported when an "
+"Exception occurs."
+msgstr ""
+
+#: micropython.opt_level:6 micropython.opt_level:8 of
+msgid ""
+"Assertions are ignored and ``__debug__`` is ``False``. Script line "
+"numbers are saved."
+msgstr ""
+
+#: micropython.opt_level:10 of
+msgid ""
+"Assertions are ignored and ``__debug__`` is ``False``. Script line "
+"numbers are *not* saved."
+msgstr ""
+
+#: micropython.opt_level:13 of
+msgid ""
+"This applies only to code that you run in the REPL, because regular "
+"scripts are already compiled before they are sent to the hub."
+msgstr ""
+
+#: micropython.opt_level:16 of
+msgid "The level to be set."
+msgstr ""
+
+#: micropython.opt_level:19 of
+msgid "If no argument is given, this returns the current optimization level."
+msgstr ""
+
+#: micropython.qstr_info:1 of
+msgid "Prints how many strings are interned and how much RAM they use."
+msgstr ""
+
+#: micropython.qstr_info:3 of
+msgid ""
+"MicroPython uses string interning to save both RAM and ROM. This avoids "
+"having to store duplicate copies of the same string."
+msgstr ""
+
+#: micropython.qstr_info:6 of
+msgid ""
+"If any value is given, it also prints out the names of all RAM-interned "
+"strings."
+msgstr ""
+
+#: micropython.stack_use:1 of
+msgid ""
+"Checks the amount of stack that is being used. This can be used to "
+"compute differences in stack usage at different points in a script."
+msgstr ""
+
+#: micropython.stack_use:4 of
+msgid "The amount of stack in use."
+msgstr ""
+
+#: ../../micropython/micropython.rst:30
+msgid "Using constants for efficiency"
+msgstr ""
+
+#: ../../micropython/micropython.rst:36
+msgid "Checking free RAM"
+msgstr ""
+
+#: ../../micropython/micropython.rst:41
+msgid ""
+"This prints information in the format shown below. In this example for "
+"the SPIKE Prime Hub, there are 257696 bytes (251 KB) worth of memory "
+"remaining for the variables in your code. ::"
+msgstr ""
+
+#: ../../micropython/micropython.rst:51
+msgid "Getting more memory statistics"
+msgstr ""
+
+#: ../../micropython/uerrno.rst:2
+msgid ":mod:`uerrno <uerrno>` -- Error codes"
+msgstr ""
+
+#: ../../micropython/uerrno.rst:6
+msgid ""
+"The ``errno`` attribute of an :ref:`OSError <OSError>` indicates why this"
+" exception was raised. This attribute has one of the following values. "
+"See also :ref:`this example <device_detection>`."
+msgstr ""
+
+#: ../../../docstring of uerrno.EAGAIN:1
+msgid "The operation is not complete and should be tried again soon."
+msgstr ""
+
+#: ../../../docstring of uerrno.EBUSY:1
+msgid "The device or resource is busy and cannot be used right now."
+msgstr ""
+
+#: ../../../docstring of uerrno.ECANCELED:1
+msgid "The operation was canceled."
+msgstr ""
+
+#: ../../../docstring of uerrno.EINVAL:1
+msgid "An invalid argument was given. Usually ``ValueError`` is used instead."
+msgstr ""
+
+#: ../../../docstring of uerrno.EIO:1
+msgid "An unspecified error occurred."
+msgstr ""
+
+#: ../../../docstring of uerrno.ENODEV:1
+msgid ""
+"Device was not found. For example, a sensor or motor is not plugged in "
+"the correct port."
+msgstr ""
+
+#: ../../../docstring of uerrno.EOPNOTSUPP:1
+msgid "The operation is not supported on this hub or on the connected device."
+msgstr ""
+
+#: ../../../docstring of uerrno.EPERM:1
+msgid "The operation cannot be performed in the current state."
+msgstr ""
+
+#: ../../../docstring of uerrno.ETIMEDOUT:1
+msgid "The operation timed out."
+msgstr ""
+
+#: ../../../docstring of uerrno.errorcode:1
+msgid ""
+"Dictionary that maps numeric error codes to strings with symbolic error "
+"code."
+msgstr ""
+
+#: ../../micropython/uio.rst:4
+msgid ":mod:`uio` -- Input/output streams"
+msgstr ""
+
+#: of uio:1
+msgid "This module contains ``stream`` objects that behave like files."
+msgstr ""
+
+#: of uio.BytesIO:1
+msgid "A binary stream using an in-memory bytes buffer."
+msgstr ""
+
+#: of uio.BytesIO:3
+msgid "Optional bytes-like object that contains initial data."
+msgstr ""
+
+#: of uio.BytesIO:6 uio.StringIO:5
+msgid ""
+"Optional number of preallocated bytes. This parameter is unique to "
+"MicroPython. It is not recommended to use it in end-user code."
+msgstr ""
+
+#: of uio.BytesIO.getvalue:1 uio.StringIO.getvalue:1
+msgid "Gets the contents of the underlying buffer."
+msgstr ""
+
+#: of uio.StringIO:1
+msgid "A stream using an in-memory string buffer."
+msgstr ""
+
+#: of uio.StringIO:3
+msgid "Optional string with initial data."
+msgstr ""
+
+#: of uio.FileIO:1
+msgid ""
+"This type represents a file opened in binary mode with ``open(name, "
+"'rb')``. You should not instantiate this class directly."
+msgstr ""
+
+#: ../../micropython/ujson.rst:4
+msgid ":mod:`ujson` -- JSON encoding and decoding"
+msgstr ""
+
+#: of ujson:1
+msgid "Convert between Python objects and the JSON data format."
+msgstr ""
+
+#: of ujson.dump:1
+msgid "Serializes an object to a JSON string and write it to a stream."
+msgstr ""
+
+#: of ujson.dump:3 ujson.dumps:3
+msgid "Object to serialize."
+msgstr ""
+
+#: of ujson.dump:4
+msgid "Stream to write the output to."
+msgstr ""
+
+#: of ujson.dump:5 ujson.dumps:4
+msgid ""
+"An ``(item_separator, key_separator)`` tuple to specify how elements "
+"should be separated."
+msgstr ""
+
+#: of ujson.dumps:1
+msgid "Serializes an object to JSON and return it as a string"
+msgstr ""
+
+#: of ujson.dumps:8
+msgid "The JSON string."
+msgstr ""
+
+#: of ujson.load:1
+msgid ""
+"Parses the stream to interpret and deserialize the JSON data to a "
+"MicroPython object."
+msgstr ""
+
+#: of ujson.load:4
+msgid ""
+"Parsing continues until end-of-file is encountered. A ``ValueError`` is "
+"raised if the data in stream is not correctly formed."
+msgstr ""
+
+#: of ujson.load:7
+msgid "Stream from which to read the JSON string."
+msgstr ""
+
+#: of ujson.load:9 ujson.loads:9
+msgid "The deserialized MicroPython object."
+msgstr ""
+
+#: of ujson.loads:1
+msgid ""
+"Parses the string to interpret and deserialize the JSON data to a "
+"MicroPython object."
+msgstr ""
+
+#: of ujson.loads:4
+msgid "A ``ValueError`` is raised if the string is not correctly formed."
+msgstr ""
+
+#: of ujson.loads:6
+msgid "JSON string to decode."
+msgstr ""
+
+#: ../../micropython/umath.rst:4
+msgid ":mod:`umath <umath>` -- Math functions"
+msgstr ""
+
+#: ../../micropython/umath.rst:8
+msgid "This MicroPython module is similar to the `math module`_ in Python."
+msgstr ""
+
+#: ../../micropython/umath.rst:10
+msgid ""
+"See also the :ref:`built-in math functions<builtinmath>` that can be used"
+" without importing anything."
+msgstr ""
+
+#: ../../micropython/umath.rst:14
+msgid "Rounding and sign"
+msgstr ""
+
+#: of umath.ceil:1
+msgid "Rounds up."
+msgstr ""
+
+#: of umath.ceil:3 umath.floor:3
+msgid "The value to be rounded."
+msgstr ""
+
+#: of umath.ceil:6
+msgid "Value rounded towards positive infinity."
+msgstr ""
+
+#: of umath.floor:1
+msgid "Rounds down."
+msgstr ""
+
+#: of umath.floor:6
+msgid "Value rounded towards negative infinity."
+msgstr ""
+
+#: of umath.trunc:1
+msgid "Truncates decimals to get the integer part of a value."
+msgstr ""
+
+#: of umath.trunc:3
+msgid "This is the same as rounding towards ``0``."
+msgstr ""
+
+#: of umath.trunc:5
+msgid "The value to be truncated."
+msgstr ""
+
+#: of umath.trunc:8
+msgid "Integer part of the value."
+msgstr ""
+
+#: of umath.fmod:1
+msgid "Gets the remainder of ``x / y``."
+msgstr ""
+
+#: of umath.fmod:3
+msgid "Not to be confused with :func:`modf`."
+msgstr ""
+
+#: of umath.fmod:5
+msgid "The numerator."
+msgstr ""
+
+#: of umath.fmod:7
+msgid "The denominator."
+msgstr ""
+
+#: of umath.fmod:10
+msgid "Remainder after division"
+msgstr ""
+
+#: of umath.fabs:1
+msgid "Gets the absolute value."
+msgstr ""
+
+#: of umath.copysign:1
+msgid "Gets ``x`` with the sign of ``y``."
+msgstr ""
+
+#: of umath.copysign:3
+msgid "Determines the magnitude of the return value."
+msgstr ""
+
+#: of umath.copysign:5
+msgid "Determines the sign of the return value."
+msgstr ""
+
+#: of umath.copysign:8
+msgid "``x`` with the sign of ``y``."
+msgstr ""
+
+#: ../../micropython/umath.rst:29
+msgid "Powers and logarithms"
+msgstr ""
+
+#: ../../../docstring of umath.e:1
+msgid "The mathematical constant e."
+msgstr ""
+
+#: of umath.exp:1
+msgid "Gets :attr:`e` raised to the power of ``x``."
+msgstr ""
+
+#: of umath.exp:6
+msgid ":attr:`e` raised to the power of ``x``."
+msgstr ""
+
+#: of umath.pow:1
+msgid "Gets ``x`` raised to the power of ``y``."
+msgstr ""
+
+#: of umath.pow:3
+msgid "The base number."
+msgstr ""
+
+#: of umath.pow:8
+msgid "``x`` raised to the power of ``y``."
+msgstr ""
+
+#: of umath.log:1
+msgid "Gets the natural logarithm."
+msgstr ""
+
+#: of umath.log:6
+msgid "The natural logarithm of ``x``."
+msgstr ""
+
+#: of umath.sqrt:1
+msgid "Gets the square root."
+msgstr ""
+
+#: of umath.sqrt:3
+msgid "The value ``x``."
+msgstr ""
+
+#: of umath.sqrt:6
+msgid "The square root of ``x``."
+msgstr ""
+
+#: ../../micropython/umath.rst:42
+msgid "Trigonometry"
+msgstr ""
+
+#: ../../../docstring of umath.pi:1
+msgid "The mathematical constant π."
+msgstr ""
+
+#: of umath.degrees:1
+msgid "Converts an angle from radians to degrees."
+msgstr ""
+
+#: of umath.cos:3 umath.degrees:3 umath.radians:6 umath.sin:3 umath.tan:3
+msgid "Angle in radians."
+msgstr ""
+
+#: of umath.degrees:6 umath.radians:3
+msgid "Angle in degrees."
+msgstr ""
+
+#: of umath.radians:1
+msgid "Converts an angle from degrees to radians."
+msgstr ""
+
+#: of umath.sin:1
+msgid "Gets the sine of an angle."
+msgstr ""
+
+#: of umath.sin:6
+msgid "Sine of ``x``."
+msgstr ""
+
+#: of umath.asin:1
+msgid "Applies the inverse sine operation."
+msgstr ""
+
+#: of umath.asin:3
+msgid "Opposite / hypotenuse."
+msgstr ""
+
+#: of umath.asin:6
+msgid "Arcsine of ``x``, in radians."
+msgstr ""
+
+#: of umath.cos:1
+msgid "Gets the cosine of an angle."
+msgstr ""
+
+#: of umath.cos:6
+msgid "Cosine of ``x``."
+msgstr ""
+
+#: of umath.acos:1
+msgid "Applies the inverse cosine operation."
+msgstr ""
+
+#: of umath.acos:3
+msgid "Adjacent / hypotenuse."
+msgstr ""
+
+#: of umath.acos:6
+msgid "Arccosine of ``x``, in radians."
+msgstr ""
+
+#: of umath.tan:1
+msgid "Gets the tangent of an angle."
+msgstr ""
+
+#: of umath.tan:6
+msgid "Tangent of ``x``."
+msgstr ""
+
+#: of umath.atan:1
+msgid "Applies the inverse tangent operation."
+msgstr ""
+
+#: of umath.atan:3
+msgid "Opposite / adjacent."
+msgstr ""
+
+#: of umath.atan:6
+msgid "Arctangent of ``x``, in radians."
+msgstr ""
+
+#: of umath.atan2:1
+msgid ""
+"Applies the inverse tangent operation on ``b / a``, and accounts for the "
+"signs of ``b`` and ``a`` to produce the expected angle."
+msgstr ""
+
+#: of umath.atan2:4
+msgid "Opposite side of the triangle."
+msgstr ""
+
+#: of umath.atan2:6
+msgid "Adjacent side of the triangle."
+msgstr ""
+
+#: of umath.atan2:9
+msgid "Arctangent of ``b / a``, in radians."
+msgstr ""
+
+#: ../../micropython/umath.rst:65
+msgid "Other math functions"
+msgstr ""
+
+#: of umath.isfinite:1
+msgid "Checks if a value is finite."
+msgstr ""
+
+#: of umath.isfinite:3 umath.isinfinite:3 umath.isnan:3
+msgid "The value to be checked."
+msgstr ""
+
+#: of umath.isfinite:6
+msgid "``True`` if ``x`` is finite, else ``False``."
+msgstr ""
+
+#: of umath.isinfinite:1
+msgid "Checks if a value is infinite."
+msgstr ""
+
+#: of umath.isinfinite:6
+msgid "``True`` if ``x`` is infinite, else ``False``."
+msgstr ""
+
+#: of umath.isnan:1
+msgid "Checks if a value is not-a-number."
+msgstr ""
+
+#: of umath.isnan:6
+msgid "``True`` if ``x`` is not-a-number, else ``False``."
+msgstr ""
+
+#: of umath.modf:1
+msgid ""
+"Gets the fractional and integral parts of ``x``, both with the same sign "
+"as ``x``."
+msgstr ""
+
+#: of umath.modf:4
+msgid "Not to be confused with :func:`fmod`."
+msgstr ""
+
+#: of umath.frexp:4 umath.modf:6
+msgid "The value to be decomposed."
+msgstr ""
+
+#: of umath.modf:9
+msgid "Tuple of fractional and integral parts."
+msgstr ""
+
+#: of umath.frexp:1
+msgid ""
+"Decomposes a value ``x`` into a tuple ``(m, p)``, such that ``x == m * (2"
+" ** p)``."
+msgstr ""
+
+#: of umath.frexp:7
+msgid "Tuple of ``m`` and ``p``."
+msgstr ""
+
+#: of umath.ldexp:1
+msgid "Computes ``m * (2 ** p)``."
+msgstr ""
+
+#: of umath.ldexp:8
+msgid "Result of ``m * (2 ** p)``."
+msgstr ""
+
+#: ../../micropython/urandom.rst:4
+msgid ":mod:`urandom` -- Pseudo-random numbers"
+msgstr ""
+
+#: of urandom:1
+msgid "This module implements pseudo-random number generators."
+msgstr ""
+
+#: of urandom:3
+msgid ""
+"All functions in this module should be used with positional arguments. "
+"Keyword arguments are not supported."
+msgstr ""
+
+#: ../../micropython/urandom.rst:10
+msgid "Basic random numbers"
+msgstr ""
+
+#: of urandom.randint:1
+msgid "Gets a random integer :math:`N` satisfying :math:`a \\leq N \\leq b`."
+msgstr ""
+
+#: of urandom.randint:3
+msgid "Lowest value. This value *is* included in the range."
+msgstr ""
+
+#: of urandom.randint:5
+msgid "Highest value. This value *is* included in the range."
+msgstr ""
+
+#: of urandom.randint:8
+msgid "The random integer."
+msgstr ""
+
+#: of urandom.random:1
+msgid "Gets a random value :math:`x` satisfying :math:`0 \\leq x < 1`."
+msgstr ""
+
+#: of urandom.random:3 urandom.uniform:8
+msgid "The random value."
+msgstr ""
+
+#: ../../micropython/urandom.rst:16
+msgid "Random numbers from a range"
+msgstr ""
+
+#: of urandom.getrandbits:1
+msgid ""
+"Gets a random integer :math:`N` satisfying :math:`0 \\leq N < "
+"2^{\\text{k}}`."
+msgstr ""
+
+#: of urandom.getrandbits:3
+msgid "How many bits to use for the result."
+msgstr ""
+
+#: of urandom.randrange:1
+msgid "Returns a randomly selected element from ``range(start, stop, step)``."
+msgstr ""
+
+#: of urandom.randrange:3
+msgid ""
+"For example, ``randrange(1, 7, 2)`` returns random numbers from ``1`` up "
+"to (but excluding) ``7``, in increments of ``2``. In other words, it "
+"returns ``1``, ``3``, or ``5``."
+msgstr ""
+
+#: of urandom.randrange:8
+msgid "Lowest value. Defaults to ``0`` if only one argument is given."
+msgstr ""
+
+#: of urandom.randrange:10
+msgid "Highest value. This value is *not* included in the range."
+msgstr ""
+
+#: of urandom.randrange:16
+msgid "The random number."
+msgstr ""
+
+#: of urandom.uniform:1
+msgid ""
+"Gets a random floating point value :math:`x` satisfying :math:`a \\leq x "
+"\\leq b`."
+msgstr ""
+
+#: of urandom.uniform:3
+msgid "Lowest value."
+msgstr ""
+
+#: of urandom.uniform:5
+msgid "Highest value."
+msgstr ""
+
+#: ../../micropython/urandom.rst:24
+msgid "Random elements from a sequence"
+msgstr ""
+
+#: of urandom.choice:1
+msgid "Gets a random element from a sequence such as a tuple or list."
+msgstr ""
+
+#: of urandom.choice:3
+msgid "Sequence from which to select a random element."
+msgstr ""
+
+#: of urandom.choice:5
+msgid "The randomly selected element."
+msgstr ""
+
+#: of urandom.choice uselect.Poll.modify
+msgid "Raises"
+msgstr ""
+
+#: of urandom.choice:7
+msgid "If the sequence is empty."
+msgstr ""
+
+#: ../../micropython/urandom.rst:28
+msgid "Updating the random seed"
+msgstr ""
+
+#: of urandom.seed:1
+msgid "Initializes the random number generator."
+msgstr ""
+
+#: of urandom.seed:3
+msgid ""
+"This gets called when the module is imported, so normally you do not need"
+" to call this."
+msgstr ""
+
+#: of urandom.seed:6
+msgid "Seed value. When using ``None``, the system timer will be used."
+msgstr ""
+
+#: ../../micropython/uselect.rst:4
+msgid ":mod:`uselect` -- Wait for events"
+msgstr ""
+
+#: of uselect:1
+msgid ""
+"This module provides functions to efficiently wait for events on multiple"
+" streams."
+msgstr ""
+
+#: ../../micropython/uselect.rst:10
+msgid "Poll instance and class"
+msgstr ""
+
+#: of uselect.poll:1
+msgid "Creates an instance of the :class:`Poll` class."
+msgstr ""
+
+#: of uselect.poll:3
+msgid "The :class:`Poll` instance."
+msgstr ""
+
+#: of uselect.Poll.register:1
+msgid ""
+"Register a stream object for polling. The stream object will now be "
+"monitored for events. If an event happens, it becomes part of the return "
+"value of :meth:`poll`."
+msgstr ""
+
+#: of uselect.Poll.register:5
+msgid ""
+"If this method is called again for the same stream object, the object "
+"will not be registered again, but the ``eventmask`` flags will be "
+"updated, as if calling :meth:`modify()`."
+msgstr ""
+
+#: of uselect.Poll.modify:3 uselect.Poll.register:9
+msgid "Stream to be registered for polling."
+msgstr ""
+
+#: of uselect.Poll.register:11
+msgid ""
+"Which events to use. Should be ``POLLIN``, ``POLLOUT``, or their logical "
+"disjunction: ``POLLIN | POLLOUT``."
+msgstr ""
+
+#: of uselect.Poll.unregister:1
+msgid "Unregister an object from polling."
+msgstr ""
+
+#: of uselect.Poll.unregister:3
+msgid "Stream to be unregistered from polling."
+msgstr ""
+
+#: of uselect.Poll.modify:1
+msgid "Modifies the event mask for the stream object."
+msgstr ""
+
+#: of uselect.Poll.modify:5
+msgid "Which events to use."
+msgstr ""
+
+#: of uselect.Poll.modify:8
+msgid "If the object is not registered. The error is ``ENOENT``."
+msgstr ""
+
+#: of uselect.Poll.poll:1
+msgid ""
+"Wait until at least one of the registered objects has a new event or "
+"exceptional condition ready to be handled."
+msgstr ""
+
+#: of uselect.Poll.ipoll:9 uselect.Poll.poll:4
+msgid ""
+"Timeout in milliseconds. Choose ``0`` to return immediately or choose "
+"``-1`` to wait indefinitely."
+msgstr ""
+
+#: of uselect.Poll.poll:8
+msgid ""
+"A list of tuples. There is one (``object``, ``eventmask``, ...) tuple for"
+" each object with an event, or no tuples if there are no events to be "
+"handled. The ``eventmask`` value is a combination of poll flags to "
+"indicate what happened. This may include ``POLLERR`` and ``POLLHUP`` even"
+" if they were not registered."
+msgstr ""
+
+#: of uselect.Poll.ipoll:1
+msgid ""
+"First, just like :meth:`poll`, wait until at least one of the registered "
+"objects has a new event or exceptional condition ready to be handled."
+msgstr ""
+
+#: of uselect.Poll.ipoll:4
+msgid ""
+"But instead of a list, this method returns an iterator for improved "
+"efficiency. The iterator yields one (``object``, ``eventmask``, ...) "
+"tuple at a time, and overwrites it when yielding the next value. If you "
+"need the values later, make sure to copy them explicitly."
+msgstr ""
+
+#: of uselect.Poll.ipoll:12
+msgid ""
+"If set to ``1``, one-shot behavior for events is employed. This means "
+"that streams for which events happened will have their event masks "
+"automatically reset using ``poll.modify(obj, 0)``. This way, new events "
+"for such a stream won't be processed until a new mask is set with "
+":meth:`modify`, which is useful for asynchronous I/O schedulers."
+msgstr ""
+
+#: ../../micropython/uselect.rst:27
+msgid "Event mask flags"
+msgstr ""
+
+#: ../../../docstring of uselect.POLLIN:1
+msgid "Data is available for reading."
+msgstr ""
+
+#: ../../../docstring of uselect.POLLOUT:1
+msgid "More data can be written."
+msgstr ""
+
+#: ../../../docstring of uselect.POLLERR:1
+msgid ""
+"Error condition happened on the associated stream. Should be handled "
+"explicitly or else further invocations of :meth:`poll` may return right "
+"away."
+msgstr ""
+
+#: ../../../docstring of uselect.POLLHUP:1
+msgid ""
+"Hang up happened on the associated stream. Should be handled explicitly "
+"or else further invocations of :meth:`poll` may return right away."
+msgstr ""
+
+#: ../../micropython/uselect.rst:39
+msgid "See the `projects website`_ for a demo that uses this module."
+msgstr ""
+
+#: ../../micropython/ustruct.rst:4
+msgid ":mod:`ustruct` -- Pack and unpack binary data"
+msgstr ""
+
+#: of ustruct:1
+msgid ""
+"This module provides functions to convert between Python values and "
+"C-like data structs."
+msgstr ""
+
+#: of ustruct.calcsize:1
+msgid "Gets the data size corresponding to a format string"
+msgstr ""
+
+#: of ustruct.calcsize:3 ustruct.pack:3 ustruct.pack_into:3 ustruct.unpack:3
+#: ustruct.unpack_from:3
+msgid "Data format string."
+msgstr ""
+
+#: of ustruct.calcsize:6
+msgid "The number of bytes needed to represent this format."
+msgstr ""
+
+#: of ustruct.pack:1
+msgid "Packs the values using the given format."
+msgstr ""
+
+#: of ustruct.pack:6
+msgid "The data encoded as bytes."
+msgstr ""
+
+#: of ustruct.pack_into:1
+msgid "Encode the values using the given format and write them to a given buffer."
+msgstr ""
+
+#: of ustruct.pack_into:5
+msgid "Buffer to store the encoded data."
+msgstr ""
+
+#: of ustruct.pack_into:7
+msgid ""
+"Offset from the start of the buffer. Use a negative value to count from "
+"the end of the buffer."
+msgstr ""
+
+#: of ustruct.unpack:1
+msgid "Decodes the binary data using the given format."
+msgstr ""
+
+#: of ustruct.unpack:5
+msgid "Data to unpack."
+msgstr ""
+
+#: of ustruct.unpack:8 ustruct.unpack_from:11
+msgid "The decoded data as a tuple of values."
+msgstr ""
+
+#: of ustruct.unpack_from:1
+msgid "Decodes binary data from a buffer using the given format."
+msgstr ""
+
+#: of ustruct.unpack_from:5
+msgid "Data buffer to unpack."
+msgstr ""
+
+#: of ustruct.unpack_from:7
+msgid ""
+"Offset from the start of the data. Use a negative value to count from the"
+" end of the data."
+msgstr ""
+
+#: ../../micropython/ustruct.rst:8
+msgid "The following byte orders are supported:"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:11
+msgid "Character"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:11
+msgid "Byte order"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:11
+msgid "Size"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:11
+msgid "Alignment"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:13
+msgid "@"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:13
+msgid "native"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:15
+msgid "<"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:15
+msgid "little-endian"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:15 ../../micropython/ustruct.rst:17
+#: ../../micropython/ustruct.rst:19
+msgid "standard"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:15 ../../micropython/ustruct.rst:17
+#: ../../micropython/ustruct.rst:19
+msgid "none"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:17
+msgid ">"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:17
+msgid "big-endian"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:19
+msgid "!"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:19
+msgid "network (= big-endian)"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:22
+msgid "The following data types are supported:"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:25
+msgid "Format"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:25
+msgid "C Type"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:25
+msgid "Python type"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:25
+msgid "Standard size"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:27
+msgid "b"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:27
+msgid "signed char"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:27 ../../micropython/ustruct.rst:29
+#: ../../micropython/ustruct.rst:31 ../../micropython/ustruct.rst:33
+#: ../../micropython/ustruct.rst:35 ../../micropython/ustruct.rst:37
+#: ../../micropython/ustruct.rst:53
+msgid "integer"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:27 ../../micropython/ustruct.rst:29
+msgid "1"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:29
+msgid "B"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:29
+msgid "unsigned char"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:31
+msgid "h"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:31
+msgid "short"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:31 ../../micropython/ustruct.rst:33
+msgid "2"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:33
+msgid "H"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:33
+msgid "unsigned short"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:35
+msgid "i"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:35
+msgid "int"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:35 ../../micropython/ustruct.rst:37
+#: ../../micropython/ustruct.rst:39 ../../micropython/ustruct.rst:41
+#: ../../micropython/ustruct.rst:47
+msgid "4"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:37
+msgid "I"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:37
+msgid "unsigned int"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:39
+msgid "l"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:39
+msgid "long"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:39 ../../micropython/ustruct.rst:41
+#: ../../micropython/ustruct.rst:43 ../../micropython/ustruct.rst:45
+msgid "integer (1)"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:41
+msgid "L"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:41
+msgid "unsigned long"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:43
+msgid "q"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:43
+msgid "long long"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:43 ../../micropython/ustruct.rst:45
+#: ../../micropython/ustruct.rst:49
+msgid "8"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:45
+msgid "Q"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:45
+msgid "unsigned long long"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:47
+msgid "f"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:47 ../../micropython/ustruct.rst:49
+msgid "float"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:49
+msgid "d"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:49
+msgid "double"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:51
+msgid "s"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:51
+msgid "char[]"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:51
+msgid "bytes"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:53
+msgid "P"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:53
+msgid "void *"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:56
+msgid "\\(1\\) Supports values up to +/-1073741823"
+msgstr ""
+
+#: ../../micropython/usys.rst:4
+msgid ":mod:`usys` -- System specific functions"
+msgstr ""
+
+#: ../../micropython/usys.rst:6
+msgid "This MicroPython module is a subset of the `sys module`_ in Python."
+msgstr ""
+
+#: ../../micropython/usys.rst:9
+msgid "Input and output streams"
+msgstr ""
+
+#: ../../../docstring of usys.stdin:1
+msgid ""
+"This is a stream object (:class:`uio.FileIO`) that receives input from a "
+"connected terminal, if any."
+msgstr ""
+
+#: ../../../docstring of usys.stdin:4
+msgid ""
+"Also see :func:`kbd_intr <micropython.kbd_intr>` to disable "
+"``KeyboardInterrupt`` when passing binary data via ``stdin``."
+msgstr ""
+
+#: ../../../docstring of usys.stdout:1
+msgid ""
+"This is a stream object (:class:`uio.FileIO`) that sends output to a "
+"connected terminal, if any."
+msgstr ""
+
+#: ../../../docstring of usys.stderr:1
+msgid "Alias for :data:`stdout`."
+msgstr ""
+
+#: ../../micropython/usys.rst:22
+msgid "Version info"
+msgstr ""
+
+#: ../../../docstring of usys.implementation:1
+msgid "MicroPython version tuple. See format and example below."
+msgstr ""
+
+#: ../../../docstring of usys.version:1
+msgid ""
+"Python compatibility version, Pybricks version, and build date. See "
+"format and example below."
+msgstr ""
+
+#: ../../../docstring of usys.version_info:1
+msgid "Python compatibility version. See format and example below."
+msgstr ""
+
+#: ../../micropython/usys.rst:36
+msgid "Version information"
+msgstr ""
+
+#: ../../micropython/usys.rst:45
+msgid "Standard input and output"
+msgstr ""
+
+#: ../../micropython/usys.rst:47
+msgid ""
+"The ``stdin`` stream can be used to capture input via the Pybricks Code "
+"input/output window. See the `keyboard input`_ project to learn how this "
+"works. This approach can be extended to exchange data with any `other "
+"device`_ as well."
+msgstr ""
+

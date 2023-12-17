@@ -59,7 +59,7 @@ extensions = [
     # Custom Pybricks extensions
     "color",
     "classlink",
-    "requirements",
+    "requirements-ja",
     "requirements-static",
     "versionchanged",
 ]
@@ -90,7 +90,9 @@ version = re.match(r"(v\d+\.\d+)", release)[0]
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = "en"
+language = "ja"
+locale_dirs = ['locales']
+gettext_additional_targets = ['literal-block', 'image']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = "xcode"
@@ -101,10 +103,10 @@ todo_include_todos = True
 # Figure numbering
 numfig = True
 numfig_format = {
-    "figure": "Figure %s",
-    "table": "Table %s",
-    "code-block": "Listing %s",
-    "section": "Section %s",
+    "figure": "図 %s",
+    "table": "表 %s",
+    "code-block": "リスト %s",
+    "section": "第 %s 章",
 }
 
 # Find cross-reference errors

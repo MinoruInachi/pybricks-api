@@ -1,0 +1,3143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 09:36+0900\n"
+"PO-Revision-Date: 2023-12-17 11:06+0900\n"
+"Last-Translator: Minoru INACHI\n"
+"Language-Team: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../micropython/builtins.rst:2
+msgid "Built-in classes and functions"
+msgstr "組込みクラスと関数"
+
+#: ../../micropython/builtins.rst:4
+msgid ""
+"The classes and functions shown on this page can be used without "
+"importing anything."
+msgstr ""
+"このページで紹介するクラスや関数は、何もインポートせずとも使えます。"
+
+#: ../../micropython/builtins.rst:8
+msgid "Input and output"
+msgstr "入出力"
+
+#: of ubuiltins.input:1
+msgid ""
+"Gets input from the user in the terminal window. It waits until the user "
+"presses :kbd:`Enter`."
+msgstr ""
+"ターミナルウィンドウでユーザーからの入力を取得します。"
+"ユーザーが :kbd:`Enter` キーを押すまで待ちます。"
+
+#: micropython.const micropython.kbd_intr micropython.mem_info
+#: micropython.opt_level micropython.qstr_info of ubuiltins.abs ubuiltins.all
+#: ubuiltins.any ubuiltins.bin ubuiltins.bool ubuiltins.bytearray
+#: ubuiltins.bytes ubuiltins.callable ubuiltins.chr ubuiltins.complex
+#: ubuiltins.dir ubuiltins.divmod ubuiltins.eval ubuiltins.exec ubuiltins.float
+#: ubuiltins.getattr ubuiltins.hasattr ubuiltins.hash ubuiltins.help
+#: ubuiltins.hex ubuiltins.id ubuiltins.input ubuiltins.int
+#: ubuiltins.int.from_bytes ubuiltins.int.to_bytes ubuiltins.isinstance
+#: ubuiltins.issubclass ubuiltins.iter ubuiltins.len ubuiltins.list
+#: ubuiltins.map ubuiltins.next ubuiltins.oct ubuiltins.ord ubuiltins.pow
+#: ubuiltins.print ubuiltins.range ubuiltins.repr ubuiltins.reversed
+#: ubuiltins.round ubuiltins.setattr ubuiltins.sorted ubuiltins.str
+#: ubuiltins.sum ubuiltins.tuple ubuiltins.type ubuiltins.zip uio.BytesIO
+#: uio.StringIO ujson.dump ujson.dumps ujson.load ujson.loads umath.acos
+#: umath.asin umath.atan umath.atan2 umath.ceil umath.copysign umath.cos
+#: umath.degrees umath.exp umath.fabs umath.floor umath.fmod umath.frexp
+#: umath.isfinite umath.isinfinite umath.isnan umath.ldexp umath.log umath.modf
+#: umath.pow umath.radians umath.sin umath.sqrt umath.tan umath.trunc
+#: urandom.choice urandom.getrandbits urandom.randint urandom.randrange
+#: urandom.seed urandom.uniform uselect.Poll.ipoll uselect.Poll.modify
+#: uselect.Poll.poll uselect.Poll.register uselect.Poll.unregister
+#: ustruct.calcsize ustruct.pack ustruct.pack_into ustruct.unpack
+#: ustruct.unpack_from
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: of ubuiltins.input:4
+msgid ""
+"If given, this is printed in the terminal window first. This can be used "
+"to ask a question so the user knows what to type."
+msgstr ""
+"指定した場合、その内容が最初に端末ウィンドウに表示されます。"
+"これは、ユーザが何を入力すればよいかが分かるよう、"
+"質問を表示するのに使えます。"
+
+#: micropython.const micropython.heap_unlock micropython.opt_level
+#: micropython.stack_use of ubuiltins.abs ubuiltins.all ubuiltins.any
+#: ubuiltins.bin ubuiltins.bool ubuiltins.callable ubuiltins.chr
+#: ubuiltins.complex ubuiltins.dir ubuiltins.divmod ubuiltins.eval
+#: ubuiltins.getattr ubuiltins.globals ubuiltins.hasattr ubuiltins.hash
+#: ubuiltins.hex ubuiltins.id ubuiltins.input ubuiltins.int.from_bytes
+#: ubuiltins.int.to_bytes ubuiltins.isinstance ubuiltins.issubclass
+#: ubuiltins.iter ubuiltins.len ubuiltins.locals ubuiltins.map ubuiltins.max
+#: ubuiltins.min ubuiltins.next ubuiltins.oct ubuiltins.ord ubuiltins.pow
+#: ubuiltins.repr ubuiltins.reversed ubuiltins.sorted ubuiltins.sum
+#: ubuiltins.super ubuiltins.zip ujson.dumps ujson.load ujson.loads umath.acos
+#: umath.asin umath.atan umath.atan2 umath.ceil umath.copysign umath.cos
+#: umath.degrees umath.exp umath.fabs umath.floor umath.fmod umath.frexp
+#: umath.isfinite umath.isinfinite umath.isnan umath.ldexp umath.log umath.modf
+#: umath.pow umath.radians umath.sin umath.sqrt umath.tan umath.trunc
+#: urandom.choice urandom.randint urandom.random urandom.randrange
+#: urandom.uniform uselect.Poll.poll uselect.poll ustruct.calcsize ustruct.pack
+#: ustruct.unpack ustruct.unpack_from
+msgid "Returns"
+msgstr "戻り値"
+
+#: of ubuiltins.input:8
+msgid "Everything the user typed before pressing :kbd:`Enter`."
+msgstr ":kbd:`Enter` を押す前にユーザが入力したもの全て。"
+
+#: of ubuiltins.print:1
+msgid "Prints text or other objects in the terminal window."
+msgstr "ターミナルウィンドウにテキストなどのオブジェクトを表示します。"
+
+#: of ubuiltins.print:3
+msgid "Zero or more objects to print."
+msgstr "表示するオブジェクトを0個以上指定します。"
+
+#: of ubuiltins.print
+msgid "Keyword Arguments"
+msgstr "キーワード引数"
+
+#: of ubuiltins.print:5
+msgid "This is printed between objects, if there is more than one."
+msgstr "複数のオブジェクトを指定した場合、これがオブジェクトの間に表示されます。"
+
+#: of ubuiltins.print:7
+msgid "This is printed after the last object."
+msgstr "最後のオブジェクトの後に表示されます。"
+
+#: of ubuiltins.print:9
+msgid ""
+"By default, the result is printed in the terminal window. This argument "
+"lets you print it to a file instead, if files are supported."
+msgstr ""
+"デフォルトでは、結果はターミナルウィンドウに表示されます。"
+"この引数により、ファイルがサポートされている場合は、"
+"表示の代わりにファイルに出力できます。"
+
+#: ../../micropython/builtins.rst:19
+msgid "Basic types"
+msgstr "基本型"
+
+#: of ubuiltins.bool:1
+msgid "Creates a boolean value, which is either ``True`` or ``False``."
+msgstr "``True`` または ``False`` の真偽値を作成します。"
+
+#: of ubuiltins.bool:3
+msgid ""
+"The input value is converted using the standard truth testing procedure. "
+"If no input is given, it is assumed to be ``False``."
+msgstr ""
+"入力値は、標準的な真偽判定手順で変換されます。入力がない場合は ``False`` と見なされます。"
+
+#: of ubuiltins.bin:5 ubuiltins.bool:6 ubuiltins.hex:5 ubuiltins.oct:5
+msgid "Value to be converted."
+msgstr "変換される値。"
+
+#: of ubuiltins.bool:8
+msgid "Result of the truth-test."
+msgstr "真偽判定の結果。"
+
+#: of ubuiltins.complex:1
+msgid "Creates a complex number from a string or from a pair of numbers."
+msgstr "文字列または数値の組から複素数を作成します。"
+
+#: of ubuiltins.complex:3
+msgid ""
+"If a string is given, it must be of the form ``'1+2j'``. If a pair of "
+"numbers is provided, the result is computed as: ``a + b * j``."
+msgstr ""
+"文字列を指定する場合、それは ``'1+2j'`` の形式でなければなりません。"
+"数字の組を指定する場合、結果は ``a + b * j`` のように計算されます。"
+
+#: of ubuiltins.complex:7
+msgid "A string of the form ``'1+2j'`` ."
+msgstr "``'1+2j'`` 形式の文字列。"
+
+#: of ubuiltins.complex:9 ubuiltins.complex:11
+msgid "A real-valued or complex number."
+msgstr "実数または複素数。"
+
+#: of ubuiltins.complex:14
+msgid "The resulting complex number."
+msgstr "結果の複素数。"
+
+#: of ubuiltins.dict:1
+msgid "Creates a dictionary object."
+msgstr "辞書オブジェクトを作成します。"
+
+#: of ubuiltins.dict:3
+msgid ""
+"See the standard `Python documentation "
+"<https://docs.python.org/3/library/stdtypes.html#mapping-types-dict>`_ "
+"for a comprehensive reference with examples."
+msgstr ""
+"例題を含む包括的なリファレンスについては、標準の `Python ドキュメント "
+"<https://docs.python.org/ja/3/library/stdtypes.html#mapping-types-dict>`_ "
+"を参照してください。"
+
+#: of ubuiltins.float:1
+msgid "Creates a floating point number from a given object."
+msgstr "指定したオブジェクトから浮動小数点数を作成します。"
+
+#: of ubuiltins.float:3
+msgid "Number or string to be converted."
+msgstr "変換する数値または文字列。"
+
+#: of ubuiltins.int:1
+msgid "Creates an integer."
+msgstr "整数を作成します。"
+
+#: of ubuiltins.int:3 ubuiltins.repr:3
+msgid "Object to be converted."
+msgstr "変換対象のオブジェクト。"
+
+#: of ubuiltins.int.to_bytes:1
+msgid "Get a :class:`bytes` representation of the integer."
+msgstr "整数の :class:`bytes` 表現を取得します。"
+
+#: of ubuiltins.int.to_bytes:3
+msgid "How many bytes to use."
+msgstr "何バイトで表現するか。"
+
+#: of ubuiltins.int.to_bytes:5
+msgid ""
+"Choose ``\"big\"`` to put the most significant byte first. Choose "
+"``\"little\"`` to put the least significant byte first."
+msgstr ""
+"``\"big\"`` "を指定すると、最上位バイトが最初に置かれます。"
+"``\"little\"`` を指定すると、最下位バイトが最初に置かれます。"
+
+#: of ubuiltins.int.to_bytes:10
+msgid "Byte sequence that represents the integer."
+msgstr "整数を表すバイト列。"
+
+#: of ubuiltins.int.from_bytes:1
+msgid "Convert a byte sequence to the number it represents."
+msgstr "バイト列をそれが表す数値に変換します。"
+
+#: of ubuiltins.int.from_bytes:3
+msgid "The bytes to convert."
+msgstr "変換するバイト列。"
+
+#: of ubuiltins.int.from_bytes:5
+msgid ""
+"Choose ``\"big\"`` if the most significant byte is the first element. "
+"Choose ``\"little\"`` if the least significant byte is the first element."
+msgstr ""
+"最上位バイトが最初の要素であれば ``\"big\"`` を指定します。"
+"最下位バイトが最初の要素であれば、``\"little\"`` を指定します。"
+
+#: of ubuiltins.int.from_bytes:10
+msgid "The number represented by the bytes."
+msgstr "バイト列で表されていた数値。"
+
+#: of ubuiltins.object:1
+msgid "Creates a new, featureless object."
+msgstr "新しい、機能のないオブジェクトを作成します。"
+
+#: of ubuiltins.type:1
+msgid ""
+"Gets the type of an object. This can be used to check if an object is an "
+"instance of a particular class."
+msgstr ""
+"オブジェクトのタイプを取得します。これは、オブジェクトが特定のクラスのインスタンスで"
+"あるかどうかを確認するために使えます。"
+
+#: of ubuiltins.type:4
+msgid "Object of which to check the type."
+msgstr "型を確認するオブジェクト。"
+
+#: ../../micropython/builtins.rst:55
+msgid "Sequences"
+msgstr "シーケンス"
+
+#: of ubuiltins.bytearray:1
+msgid ""
+"Creates a new ``bytearray`` object, which is a sequence of integers in "
+"the range :math:`0 \\leq x \\leq 255`. This object is *mutable*, which "
+"means that you *can* change its contents after you create it."
+msgstr ""
+":math:`0 \\leq x \\leq 255` の範囲の整数のシーケンスである新しい "
+"``bytearray`` オブジェクトを作成します。"
+"このオブジェクトは *不変* であり、作成後にその内容を変更 "
+"*できません* 。"
+
+#: of ubuiltins.bytearray:5
+msgid "If no argument is given, this creates an empty ``bytearray`` object."
+msgstr "引数を指定しない場合、これは空の ``bytearray`` オブジェクトを作成します。"
+
+#: of ubuiltins.bytearray:7
+msgid ""
+"If the argument is a single integer, this creates a ``bytearray`` object "
+"of zeros. The argument specifies how many."
+msgstr ""
+"引数が１つの整数の場合、これはゼロが並んだ ``bytearray`` オブジェクトを作成します。"
+"引数は、その数を指定します。"
+
+#: of ubuiltins.bytearray:10
+msgid ""
+"If the argument is a ``bytearray``, ``bytes`` object, or some other "
+"iterable of integers, this creates a ``bytearray`` object with the same "
+"byte sequence as the argument."
+msgstr ""
+"引数が ``byteearray`` 、 ``bytes`` オブジェクト、あるいはその他の整数のイテラブル"
+"である場合、これは引数と同じバイト列を持つ ``bytearray`` オブジェクトを作成します。"
+
+#: of ubuiltins.bytearray:14
+msgid ""
+"If the argument is a string, this creates a ``bytearray`` object "
+"containing the encoded string."
+msgstr ""
+"引数が文字列の場合、エンコードされた文字列を含む ``bytearray`` オブジェクトを"
+"作成します。"
+
+#: of ubuiltins.bytes:1
+msgid ""
+"Creates a new ``bytes`` object, which is a sequence of integers in the "
+"range :math:`0 \\leq x \\leq 255`. This object is *immutable*, which "
+"means that you *cannot* change its contents after you create it."
+msgstr ""
+":math:`0 \\leq x \\leq 255` の範囲の整数の列である新しい ``bytes`` "
+"オブジェクトを作成します。このオブジェクトは *不変* であり、作成後にその内容を変更 "
+"*できません* 。"
+
+#: of ubuiltins.bytes:5
+msgid "If no argument is given, this creates an empty ``bytes`` object."
+msgstr "引数を指定しない場合、これは空の ``bytes`` オブジェクトを作成します。"
+
+#: of ubuiltins.bytes:7
+msgid ""
+"If the argument is a single integer, this creates a ``bytes`` object of "
+"zeros. The argument specifies how many."
+msgstr ""
+"引数が１つの整数の場合、これはゼロが並んだ ``bytes`` オブジェクトを作成します。"
+"引数は、その数を指定します。"
+
+#: of ubuiltins.bytes:10
+msgid ""
+"If the argument is a ``bytearray``, ``bytes`` object, or some other "
+"iterable of integers, this creates a ``bytes`` object with the same byte "
+"sequence as the argument."
+msgstr ""
+"引数が ``byteearray`` 、 ``bytes`` オブジェクト、あるいはその他の整数のイテラブル"
+"である場合、これは引数と同じバイト列を持つ ``bytes`` オブジェクトを作成します。"
+
+#: of ubuiltins.bytes:14
+msgid ""
+"If the argument is a string, this creates a ``bytes`` object containing "
+"the encoded string."
+msgstr ""
+"引数が文字列の場合、エンコードされた文字列を含む ``bytes`` オブジェクトを作成します。"
+
+#: of ubuiltins.bytes:17
+msgid ""
+"Specifies which encoding to use for the ``string`` argument. Only "
+"``\"utf-8\"``  is supported."
+msgstr ""
+"引数の ``string`` に使用するエンコーディングを指定します。 "
+"``\"utf-8\"`` のみをサポートしています。"
+
+#: of ubuiltins.len:1
+msgid "Gets the length (the number of items) of an object."
+msgstr "オブジェクトの長さ(項目の数)を取得します。"
+
+#: of ubuiltins.len:3
+msgid "The sequence of which to get the length."
+msgstr "長さを取得するシーケンス。"
+
+#: of ubuiltins.len:6
+msgid "The length."
+msgstr "長さ。"
+
+#: of ubuiltins.list:1
+msgid ""
+"Creates a new list. If no argument is given, this creates an empty "
+"``list`` object."
+msgstr ""
+"新しいリストを作成します。引数が与えられていない場合は、"
+"空の ``list`` オブジェクトを作成します。"
+
+#: of ubuiltins.list:4
+msgid ""
+"A list is *mutable*, which means that you *can* change its contents after"
+" you create it."
+msgstr ""
+"リストは *可変* です。つまり、作成後に内容を変更 *できます* 。"
+
+#: of ubuiltins.list:7
+msgid "Iterable from which to build the list."
+msgstr "リストを作成するためのイテラブル。"
+
+#: of ubuiltins.set:1
+msgid "Creates a new set."
+msgstr "新しい集合を作成します。"
+
+#: of ubuiltins.set:3
+msgid ""
+"With no arguments, creates a new empty set, otherwise creates a set "
+"containing unique items of *iterable*."
+msgstr ""
+"引数がない場合は新しい空の集合を作成し、そうでない場合は *イテラブル* な"
+"一意の要素を含む集合を作成します。
+
+#: of ubuiltins.set:6
+msgid "Sets can also be created using a set literal::"
+msgstr "集合は集合リテラルを使っても作成できます::"
+
+#: of ubuiltins.set:10
+msgid ""
+"Elements of a set must be hashable. There are only a few types, like "
+":class:`list` that aren't hashable."
+msgstr ""
+"集合の要素はハッシュ可能でなければなりません。"
+"ハッシュ可能でないものはごくわずかですが、たとえば :class:`list` が該当します。"
+
+#: of ubuiltins.set:13
+msgid "An iterable of hashable objects."
+msgstr "ハッシュ可能なオブジェクトのイテラブル。"
+
+#: of ubuiltins.set.copy:1
+msgid "Returns a shallow copy of the set."
+msgstr "集合の浅いコピーを返します。"
+
+#: of ubuiltins.set.copy:3 ubuiltins.set.difference:9
+#: ubuiltins.set.intersection:10 ubuiltins.set.symmetric_difference:9
+#: ubuiltins.set.union:9
+msgid "A new set."
+msgstr "新しい集合。"
+
+#: of ubuiltins.set.difference:1
+msgid "Returns a new set with elements that are not in any of the other sets."
+msgstr "他のどの集合にもない要素を持つ新しい集合を返します。"
+
+#: of ubuiltins.set.difference:3
+msgid "The difference can also be computed using the ``-`` operator::"
+msgstr "集合の差は ``-`` 演算子を使っても計算できます::"
+
+#: of ubuiltins.set.difference:7 ubuiltins.set.intersection:8
+#: ubuiltins.set.union:7
+msgid "1 or more other sets."
+msgstr "1つ以上の他の集合。"
+
+#: of ubuiltins.set.intersection:1
+msgid ""
+"Returns a new set with elements that are common between this set and all "
+"other sets."
+msgstr ""
+"この集合と他のすべての集合に共通する要素を持つ新しい集合を返します。"
+
+#: of ubuiltins.set.intersection:4
+msgid "The intersection can also be computed using the ``&`` operator::"
+msgstr "集合の交差は ``&`` 演算子でも計算できます::"
+
+#: of ubuiltins.set.isdisjoint:1
+msgid "Tests if a set and *other* have no elements in common."
+msgstr "この集合と *other* 集合に共通の要素がないかどうかを判定します。"
+
+#: of ubuiltins.set.isdisjoint:3 ubuiltins.set.issubset:9
+#: ubuiltins.set.issuperset:9 ubuiltins.set.symmetric_difference:7
+msgid "Another set."
+msgstr "別の集合。"
+
+#: of ubuiltins.set.isdisjoint:5
+msgid ""
+"``True`` if this set has no elements in common with *other*, otherwise "
+"``False``."
+msgstr ""
+"この集合が *other* と共通の要素を持たない場合は ``True`` 、そうでない場合は ``False`` 。
+
+#: of ubuiltins.set.issubset:1
+msgid "Tests if a set is a subset of *other*."
+msgstr "この集合が *other* 集合の部分集合であるかを判定します。"
+
+#: of ubuiltins.set.issubset:3
+msgid "The test can also be performed using using the ``<=`` operator::"
+msgstr "この判定は ``<=`` 演算子でも実行できます::"
+
+#: of ubuiltins.set.issubset:11
+msgid "``True`` if this set is a subset of *other*, otherwise ``False``."
+msgstr "この集合が *other* の部分集合であれば ``True`` 、そうでない場合は ``False`` 。
+
+#: of ubuiltins.set.issuperset:1
+msgid "Tests if a set is a superset of *other*."
+msgstr "集合が *other* の上位集合であるかどうかを判定します。"
+
+#: of ubuiltins.set.issuperset:3
+msgid "The test can also be performed using using the ``>=`` operator::"
+msgstr "この判定は ``>=`` 演算子でも実行できます::"
+
+#: of ubuiltins.set.issuperset:11
+msgid "``True`` if this set is a superset of *other*, otherwise ``False``."
+msgstr "この集合が *other* の上位集合であれば ``True`` 、そうでない場合は ``False`` 。
+
+#: of ubuiltins.set.symmetric_difference:1
+msgid "Returns a new set with elements in one set or the other but not in both."
+msgstr "一方の集合または他方の集合に含まれ、両方に含まれない要素を持つ新しい集合を返します。"
+
+#: of ubuiltins.set.symmetric_difference:3
+msgid "The symmetric difference can also be computed using the ``^`` operator::"
+msgstr "対称差は ``^`` 演算子を使っても計算できます::"
+
+#: of ubuiltins.set.union:1
+msgid "Returns a new set with elements from this set and all other sets."
+msgstr "この集合と他のすべての集合の要素を持つ新しい集合を返します。"
+
+#: of ubuiltins.set.union:3
+msgid "The union can also be computed using the ``|`` operator::"
+msgstr "和集合は ``|`` 演算子を使っても計算できます::"
+
+#: of ubuiltins.slice:1
+msgid "Creating instances of this class is not supported."
+msgstr "このクラスのインスタンスを作成することはサポートされていません。"
+
+#: of ubuiltins.slice:3
+msgid ""
+"Use indexing syntax instead. For example: ``a[start:stop:step]`` or "
+"``a[start:stop, i]``."
+msgstr ""
+"代わりにインデックス構文を使います。"
+"例: ``a[start:stop:step]`` または ``a[start:stop, i]``"
+
+#: of ubuiltins.str:1
+msgid "Gets the string representation of an object."
+msgstr "オブジェクトの文字列表現を取得します。"
+
+#: of ubuiltins.str:3
+msgid "If no argument is given, this creates an empty ``str`` object."
+msgstr "引数を指定しない場合は、空の ``str`` オブジェクトを作成します。"
+
+#: of ubuiltins.str:5
+msgid ""
+"If only this argument is given, this returns the string representation of"
+" the object."
+msgstr ""
+"この引数のみを指定した場合、オブジェクトの文字列表現を返します。"
+
+#: of ubuiltins.str:7
+msgid ""
+"If the first argument is a ``bytearray`` or ``bytes`` object and the "
+"encoding argument is ``\"utf-8\"``, this will decode the byte data to get"
+" a string representation."
+msgstr ""
+"第１引数が ``bytearray`` または ``bytes`` オブジェクトで、encoding 引数が "
+"``\"utf-8\"`` の場合、バイトデータをデコードして文字列表現にします。"
+
+#: of ubuiltins.tuple:1
+msgid ""
+"Creates a new tuple. If no argument is given, this creates an empty "
+"``tuple`` object."
+msgstr ""
+"新しいタプルを作成します。引数を指定しない場合、これは空の ``tuple`` オブジェクトを"
+"作成します。"
+
+#: of ubuiltins.tuple:4
+msgid ""
+"A tuple is *immutable*, which means that you *cannot* change its contents"
+" after you create it."
+msgstr ""
+"タプルは *不変* であり、作成後にその内容を変更 *できません* 。"
+
+#: of ubuiltins.tuple:7
+msgid "Iterable from which to build the tuple."
+msgstr "タプルを構築するためのイテラブル。"
+
+#: ../../micropython/builtins.rst:86
+msgid "Iterators"
+msgstr "イテレータ"
+
+#: of ubuiltins.all:1
+msgid "Checks if all elements of the iterable are true."
+msgstr "イテラブルのすべての要素が真であるかどうかをチェックします。"
+
+#: of ubuiltins.all:3 ubuiltins.any:3
+msgid "Equivalent to::"
+msgstr "これは以下の処理と等価です::"
+
+#: of ubuiltins.all:5
+msgid ""
+"def all(x):\n"
+"    for element in x:\n"
+"        if not element:\n"
+"            return False\n"
+"    return True"
+msgstr ""
+
+#: of ubuiltins.all:11 ubuiltins.any:11
+msgid "The iterable to be checked."
+msgstr "チェックするイテラブル。"
+
+#: of ubuiltins.all:14
+msgid ""
+"``True`` if the iterable ``x`` is empty or if all elements are true. "
+"Otherwise ``False``."
+msgstr ""
+"イテラブルな ``x`` が空であるか，すべての要素が真であれば ``True`` 。"
+"それ以外は ``False`` 。"
+
+#: of ubuiltins.any:1
+msgid "Checks if at least one elements of the iterable is true."
+msgstr "イテラブルの少なくとも1つの要素が真であるかどうかをチェックします。"
+
+#: of ubuiltins.any:5
+msgid ""
+"def any(x):\n"
+"    for element in x:\n"
+"        if element:\n"
+"            return True\n"
+"    return False"
+msgstr ""
+
+#: of ubuiltins.any:14
+msgid "``True`` if at least one element in ``x`` is true. Otherwise ``False``."
+msgstr "``x`` の少なくとも1つの要素が真であれば ``True`` 。それ以外は ``False`` 。"
+
+#: of ubuiltins.enumerate:1
+msgid "Enumerates an existing iterator by adding a numeric index."
+msgstr "既存のイテレータに数値インデックスを追加して列挙します。"
+
+#: of ubuiltins.enumerate:3
+msgid "This function is equivalent to::"
+msgstr "この関数は以下の処理と等価です::"
+
+#: of ubuiltins.enumerate:5
+msgid ""
+"def enumerate(sequence, start=0):\n"
+"    n = start\n"
+"    for elem in sequence:\n"
+"        yield n, elem\n"
+"        n += 1"
+msgstr ""
+
+#: of ubuiltins.iter:1
+msgid "Gets the iterator of the object if available."
+msgstr "可能であればオブジェクトのイテレータを取得します。"
+
+#: of ubuiltins.iter:3
+msgid "Object for which to get the iterator."
+msgstr "イテレータを取得するオブジェクト。"
+
+#: of ubuiltins.iter:5
+msgid "The iterator."
+msgstr "イテレータ。"
+
+#: of ubuiltins.map:1
+msgid ""
+"Creates a new iterator that applies the given function to each item in "
+"the given iterable and yields the results."
+msgstr ""
+"指定のイテラブルの各項目に指定の関数を適用し、その結果を返す新しいイテレータを作成します。"
+
+#: of ubuiltins.map:4
+msgid ""
+"Function that computes a result for one item in the iterable(s). The "
+"number of arguments to this function must match the number of iterables "
+"given."
+msgstr ""
+"イテラブル(複数可)の各項目に対して結果を計算する関数です。"
+"この関数の引数の数は、指定のイテラブルの数と一致しなければなりません。"
+
+#: of ubuiltins.map:8
+msgid ""
+"One or more source interables from which to draw data. With multiple "
+"iterables, the iterator stops when the shortest iterable is exhausted."
+msgstr ""
+"データを取得するための１つまたは複数のソースイテラブル。"
+"複数のイテラブルを持つ場合、最短のイテラブルを使い切った時点で"
+"イテレータは停止します。"
+
+#: of ubuiltins.map:13
+msgid "The new, mapped iterator."
+msgstr "新しい、マップされたイテレータ。"
+
+#: of ubuiltins.next:1
+msgid ""
+"Retrieves the next item from the iterator by calling its ``__next__()`` "
+"method."
+msgstr ""
+"イテレータの ``__next__()`` メソッドを呼び出して、イテレータから次の項目を取得します。"
+
+#: of ubuiltins.next:3
+msgid "Initialized generator object from which to draw the next value."
+msgstr "次の取得するための初期化済みジェネレータオブジェクト。"
+
+#: of ubuiltins.next:7
+msgid "The next value from the generator."
+msgstr "ジェネレータから次の値を取得します。"
+
+#: of ubuiltins.range:1
+msgid ""
+"Creates a generator that yields values from ``start`` up to ``stop``, "
+"with increments of ``step``."
+msgstr ""
+"``start`` から ``stop`` までの値を ``step`` 単位で出力するジェネレータを作成します。"
+
+#: of ubuiltins.range:4
+msgid "Starting value. Defaults to ``0`` if only one argument is given."
+msgstr "開始値。引数が１つだけの場合、デフォルトは ``0`` です。"
+
+#: of ubuiltins.range:6
+msgid "Endpoint. This value is *not* included."
+msgstr "終点。この値自体は *含みません* 。"
+
+#: of ubuiltins.range:8 urandom.randrange:12
+msgid ""
+"Increment between values. Defaults to ``1`` if only one or two arguments "
+"are given."
+msgstr ""
+"値の増分値。引数が１つまたは２つしか与えられていない場合、デフォルトは ``1`` です。"
+
+#: of ubuiltins.reversed:1
+msgid ""
+"Gets an iterator that yields the values from the sequence in the reverse,"
+" if supported."
+msgstr ""
+"サポートされていれば、シーケンスから値を逆引きするイテレータを取得します。"
+
+#: of ubuiltins.reversed:4
+msgid "Sequence from which to draw samples."
+msgstr "項目を取得するシーケンス。"
+
+#: of ubuiltins.reversed:6
+msgid ""
+"Iterator that yields values in reverse order, starting with the last "
+"value."
+msgstr ""
+"最後の値から逆順に値を返すイテレータ。"
+
+#: of ubuiltins.sorted:1
+msgid "Sorts objects."
+msgstr "オブジェクトをソートします。"
+
+#: of ubuiltins.sorted:3
+msgid ""
+"Objects to be sorted. This can also be a generator that yield a finite "
+"number of objects."
+msgstr ""
+"ソートされるオブジェクト。"
+"有限個のオブジェクトを生成するジェネレータでも指定できます。"
+
+#: of ubuiltins.sorted:6
+msgid ""
+"Function ``def(item) -> int`` that maps an object to a numerical value. "
+"This is used to figure out the order of the sorted items."
+msgstr ""
+"オブジェクトを数値にマップする ``def(item) -> int`` 関数です。"
+"これは、ソートされた項目の順番を知るために使われます。"
+
+#: of ubuiltins.sorted:10
+msgid "Whether to sort in reverse, putting the highest value first."
+msgstr "逆順(高い値を最初に置くか)にソートするかどうか。"
+
+#: of ubuiltins.sorted:14
+msgid "A new list with the sorted items."
+msgstr "ソートされた項目を含む新しいリスト。"
+
+#: of ubuiltins.zip:1
+msgid ""
+"Returns an iterator of tuples, where the *i*-th tuple contains the *i*-th"
+" element from each of the argument sequences or iterables. The iterator "
+"stops when the shortest input iterable is exhausted."
+msgstr ""
+"タプルのイテレータを返します。"
+"*i* 番目のタプルは、引数のシーケンスまたはイテラブルのそれぞれの *i* 番目の要素を持ちます。"
+"イテレータは、最短の入力イテレータブルを使い果たした時点で停止します。"
+
+#: of ubuiltins.zip:5
+msgid ""
+"With a single iterable argument, it returns an iterator of 1-tuples. With"
+" no arguments, it returns an empty iterator."
+msgstr ""
+"引数が１つの場合，1項目のタプルのイテレータを返します。"
+"引数がない場合は、空のイテレータを返します。"
+
+#: of ubuiltins.zip:8
+msgid "This functionality is equivalent to::"
+msgstr "この関数は以下の処理と等価です::"
+
+#: of ubuiltins.zip:10
+msgid ""
+"def zip(*iterables):\n"
+"    sentinel = object()\n"
+"    iterators = [iter(it) for it in iterables]\n"
+"    while iterators:\n"
+"        result = []\n"
+"        for it in iterators:\n"
+"            elem = next(it, sentinel)\n"
+"            if elem is sentinel:\n"
+"                return\n"
+"            result.append(elem)\n"
+"        yield tuple(result)"
+msgstr ""
+
+#: of ubuiltins.zip:22
+msgid ""
+"The first iterable. This provides the first value for each of the yielded"
+" tuples."
+msgstr ""
+"最初のイテラブル。これは、生成されたタプルのそれぞれについて、最初の値を提供します。"
+
+#: of ubuiltins.zip:25
+msgid ""
+"The second iterable. This provides the second value in each of the "
+"yielded tuples. And so on."
+msgstr ""
+"2番目のイテラブル。これは、得られたタプルのそれぞれにおける2番目の値を提供します。"
+"以降の引数も同様です。"
+
+#: of ubuiltins.zip:29
+msgid ""
+"A new iterator that yields tuples containing the values of the individual"
+" iterables."
+msgstr ""
+"個々のイテラブルの値を含むタプルを生成する新しいイテレータ。"
+
+#: ../../micropython/builtins.rst:129
+msgid "Conversion functions"
+msgstr "変換関数"
+
+#: of ubuiltins.bin:1
+msgid ""
+"Converts an integer to its binary representation. The result is a string "
+"prefixed with ``0b``. The result is a valid Python expression. For "
+"example, ``bin(5)`` gives ``\"0b101\"``."
+msgstr ""
+"整数を2進数表現に変換します。"
+"結果は接頭辞 ``0b`` のついた文字列になります。"
+"結果は有効な Python 式です。たとえば ``bin(5)`` は``\"0b101\"`` になります。"
+
+#: of ubuiltins.bin:8
+msgid "A string representing the binary form of the input."
+msgstr "入力の2進数形式を表す文字列。"
+
+#: of ubuiltins.chr:1
+msgid ""
+"Returns the string representing a character whose Unicode code is the "
+"integer ``x``. This is the inverse of :meth:`ord`. For example, "
+"``chr(97)`` gives ``\"a\"``."
+msgstr ""
+"Unicode (utf-8)のコードが整数 ``x`` である文字を表す文字列を返します。"
+"これは :meth:`ord` の逆の変換になります。"
+"たとえば ``chr(97)`` は ``\"a\"`` になります。"
+
+#: of ubuiltins.chr:5
+msgid "Value to be converted (0-255)."
+msgstr "変換される値(0-255)。"
+
+#: of ubuiltins.chr:8
+msgid "A string with one character, corresponding to the given Unicode value."
+msgstr "指定した Unicode 値に対応する１文字の文字列。"
+
+#: of ubuiltins.hex:1
+msgid ""
+"Converts an integer to its hexadecimal representation. The result is a "
+"lowercase string prefixed with ``0x``. The result is a valid Python "
+"expression. For example, ``hex(25)`` gives ``\"0x19\"``."
+msgstr ""
+"整数を16進数表現に変換します。"
+"結果は接頭辞 ``0x`` のついた文字列になります。"
+"結果は有効な Python 式です。たとえば ``hex(25)`` は``\"0x19\"`` になります。"
+
+#: of ubuiltins.hex:8
+msgid "A string representing the hexadecimal form of the input."
+msgstr "入力の16進数形式を表す文字列。"
+
+#: of ubuiltins.oct:1
+msgid ""
+"Converts an integer to its octal representation. The result is a string "
+"prefixed with ``0o``. The result is a valid Python expression. For "
+"example, ``oct(25)`` gives ``\"0o31\"``."
+msgstr ""
+"整数を8進数表現に変換します。"
+"結果は接頭辞 ``0o`` のついた文字列になります。"
+"結果は有効な Python 式です。たとえば ``hex(25)`` は``\"0o31\"`` になります。"
+
+#: of ubuiltins.oct:8
+msgid "A string representing the octal form of the input."
+msgstr "入力の8進数形式を表す文字列。"
+
+#: of ubuiltins.ord:1
+msgid ""
+"Converts a string consisting of one Unicode character to the "
+"corresponding number. This is the inverse of :meth:`chr`."
+msgstr ""
+"Unicode の1文字からなる文字列を、対応する数値に変換します。"
+"これは :meth:`chr` の逆の変換になります。"
+
+#: of ubuiltins.ord:4
+msgid "Character to be converted."
+msgstr "変換される文字。"
+
+#: of ubuiltins.ord:7
+msgid "Number that represents the character (0--255)."
+msgstr "文字を表す数値(0--255)。"
+
+#: of ubuiltins.repr:1
+msgid "Gets the string that represents an object."
+msgstr "オブジェクトを表す文字列を取得します。"
+
+#: of ubuiltins.repr:6
+msgid "String representation implemented by the object's ``__repr__`` method."
+msgstr "オブジェクトの ``__repr__`` メソッドで実装された文字列表現。"
+
+#: ../../micropython/builtins.rst:158
+msgid "Math functions"
+msgstr "数学関数"
+
+#: ../../micropython/builtins.rst:160
+msgid "See also :mod:`umath` for floating point math operations."
+msgstr "浮動小数点演算については :mod:`umath` も参照してください。"
+
+#: of ubuiltins.abs:1
+msgid "Returns the absolute value of a number."
+msgstr "数値の絶対値を返します。"
+
+#: of ubuiltins.abs:3
+msgid ""
+"The argument may be an integer, a floating point number, or any object "
+"implementing ``__abs__()``. If the argument is a complex number, its "
+"magnitude is returned."
+msgstr ""
+"引数には、整数、浮動小数点数、または ``__abs__()`` を実装した任意のオブジェクトを"
+"指定できます。引数が複素数の場合、そのマグニチュード(大きさ)が返されます。"
+
+#: of ubuiltins.abs:7 umath.fabs:3 umath.ldexp:3 umath.log:3
+msgid "The value."
+msgstr "値。"
+
+#: of ubuiltins.abs:10 umath.fabs:6
+msgid "Absolute value of ``x``."
+msgstr "``x`` の絶対値。"
+
+#: of ubuiltins.divmod:1
+msgid "Gets the quotient and remainder for dividing two integers."
+msgstr "２つの整数を割ったときの商と余りを取得します。"
+
+#: of ubuiltins.divmod:3
+msgid ""
+"See the standard `Python divmod documentation "
+"<https://docs.python.org/3/library/functions.html#divmod>`_ for the "
+"expected behavior when ``a`` or ``b`` are floating point numbers instead."
+msgstr ""
+"``a`` や ``b`` が浮動小数点数である場合の動作については、 "
+"`Python の divmod ドキュメント "
+"<https://docs.python.org/ja/3/library/functions.html#divmod>`_ "
+"を参照してください。"
+
+#: of ubuiltins.divmod:8
+msgid "Numerator."
+msgstr "分子。"
+
+#: of ubuiltins.divmod:10
+msgid "Denominator."
+msgstr "分母。"
+
+#: of ubuiltins.divmod:13
+msgid "A tuple with the quotient ``a // b`` and the remainder ``a % b``."
+msgstr "商 ``a // b`` と余り ``a % b`` を持つタプル。"
+
+#: of ubuiltins.max:1
+msgid "Gets the object with largest value."
+msgstr "最大値を持つオブジェクトを取得します。"
+
+#: of ubuiltins.max:3 ubuiltins.min:3
+msgid "The argument may be a single iterable, or any number of objects."
+msgstr "引数は単一のイテラブル、または任意の数のオブジェクトです。"
+
+#: of ubuiltins.max:5
+msgid "The object with the largest value."
+msgstr "最大値を持つオブジェクト。"
+
+#: of ubuiltins.min:1
+msgid "Gets the object with smallest value."
+msgstr "最小値を持つオブジェクトを取得します。"
+
+#: of ubuiltins.min:5
+msgid "The object with the smallest value."
+msgstr "最小値を持つオブジェクト。"
+
+#: of ubuiltins.pow:1
+msgid ""
+"Raises the base to the given exponent: "
+":math:`\\text{base}^{\\mathrm{exp}}`."
+msgstr ""
+"base の exp 乗を返します: "
+":math:`\\text{base}^{\\mathrm{exp}}` 。"
+
+#: of ubuiltins.pow:3
+msgid "This is the same as doing ``base ** exp``."
+msgstr "これは ``base ** exp`` と同じです。"
+
+#: of ubuiltins.pow:5
+msgid "The base."
+msgstr "基数。"
+
+#: of ubuiltins.pow:7 umath.exp:3 umath.ldexp:5 umath.pow:5
+msgid "The exponent."
+msgstr "指数。"
+
+#: of ubuiltins.pow:10
+msgid "The result."
+msgstr "結果。"
+
+#: of ubuiltins.round:1
+msgid "Round a number to a given number of digits after the decimal point."
+msgstr "数値を小数点以下の指定された桁数に丸めます。"
+
+#: of ubuiltins.round:3
+msgid "If ``ndigits`` is omitted or ``None``, it returns the nearest integer."
+msgstr "``ndigits`` が省略された場合，あるいは ``None`` の場合、最も近い整数を返します。"
+
+#: of ubuiltins.round:5
+msgid ""
+"Rounding with one or more digits after the decimal point will not always "
+"truncate trailing zeros. To print numbers nicely, format strings "
+"instead::"
+msgstr ""
+"小数点以下1桁以上の丸めでは、末尾の0が切り捨てられるとは限りません。"
+"数字をきれいに表示するには、代わりにフォーマット文字列を使ってください::"
+
+#: of ubuiltins.round:8
+#, python-format
+msgid ""
+"# print two decimal places\n"
+"print('my number: %.2f' % number)\n"
+"print('my number: {:.2f}'.format(number))\n"
+"print(f'my number: {number:.2f}')"
+msgstr ""
+"# 小数点以下2桁を表示\n"
+"print('my number: %.2f' % number)\n"
+"print('my number: {:.2f}'.format(number))\n"
+"print(f'my number: {number:.2f}')"
+
+#: of ubuiltins.round:13
+msgid "The number to be rounded."
+msgstr "丸める数値。"
+
+#: of ubuiltins.round:15
+msgid "The number of digits remaining after the decimal point."
+msgstr "小数点以下の残り桁数。"
+
+#: of ubuiltins.sum:1
+msgid "Sums the items from the iterable and the start value."
+msgstr "イテラブルの各項目と開始値を合計します。"
+
+#: of ubuiltins.sum:3
+msgid "Values to be summed, starting with the first value."
+msgstr "合計するイテラブル。"
+
+#: of ubuiltins.sum:5
+msgid "Value added to the total."
+msgstr "合計に加える値。"
+
+#: of ubuiltins.sum:8
+msgid "The total sum."
+msgstr "合計値。"
+
+#: ../../micropython/builtins.rst:191
+msgid "Runtime functions"
+msgstr "ランタイム関数"
+
+#: of ubuiltins.eval:1
+msgid "Evaluates the result of an expression."
+msgstr "式の結果を評価します。"
+
+#: of ubuiltins.eval:3 ubuiltins.exec:3
+msgid "Syntax errors are reported as exceptions."
+msgstr "構文エラーは例外として報告されます。"
+
+#: of ubuiltins.eval:5
+msgid "Expression to evaluate result of."
+msgstr "結果を評価する式。"
+
+#: of ubuiltins.eval:7 ubuiltins.exec:7
+msgid ""
+"If given, this controls what functions are available for use in the "
+"expression. By default the global scope is accessible."
+msgstr ""
+"指定した場合、式で利用可能な関数を制御します。デフォルトでは、グローバルスコープに"
+"アクセス可能です。"
+
+#: of ubuiltins.eval:10 ubuiltins.exec:10
+msgid ""
+"If given, this controls what functions are available for use in the "
+"expression. Defaults to the same as ``globals``."
+msgstr ""
+"指定した場合、式で使用できる関数を制御します。デフォルトは ``globals`` と同じです。"
+
+#: of ubuiltins.eval:14
+msgid "The value obtained by executing the expression."
+msgstr "式を実行して得られた値。"
+
+#: of ubuiltins.exec:1
+msgid "Executes MicroPython code."
+msgstr "MicroPython コードを実行します。"
+
+#: of ubuiltins.exec:5
+msgid "Code to be executed."
+msgstr "実行するコード。"
+
+#: of ubuiltins.globals:1
+msgid "Gets a dictionary representing the current global symbol table."
+msgstr "現在のグローバルシンボルテーブルを表す辞書を取得します。"
+
+#: of ubuiltins.globals:3
+msgid "The dictionary of globals."
+msgstr "グローバルの辞書を取得します。"
+
+#: of ubuiltins.hash:1
+msgid "Gets the hash value of an object, if the object supports it."
+msgstr "オブジェクトがサポートしている場合、オブジェクトのハッシュ値を取得します。"
+
+#: of ubuiltins.hash:3
+msgid "Object for which to get a hash value."
+msgstr "ハッシュ値を取得するオブジェクト。"
+
+#: of ubuiltins.hash:5
+msgid "The hash value."
+msgstr "ハッシュ値。"
+
+#: of ubuiltins.help:1
+msgid "Get information about an object."
+msgstr "オブジェクトに関する情報を取得します。"
+
+#: of ubuiltins.help:3
+msgid ""
+"If no arguments are given, this function prints instructions to operate "
+"the REPL. If the argument is ``\"modules\"``, it prints the available "
+"modules."
+msgstr ""
+"引数がない場合、REPL を操作するための指示を表示します。"
+"引数に ``\"modules\"`` を指定した場合、利用可能なモジュールを表示します。"
+
+#: of ubuiltins.help:6
+msgid "Object for which to print help information."
+msgstr "ヘルプ情報を表示するオブジェクト。"
+
+#: of ubuiltins.id:1
+msgid ""
+"Gets the *identity* of an object. This is an integer which is guaranteed "
+"to be unique and constant for this object during its lifetime."
+msgstr ""
+"オブジェクトの *識別子* を取得します。"
+"これは、このオブジェクトが生きている間、一意で一定であることが保証されている整数値です。"
+
+#: of ubuiltins.id:4
+msgid "Object of which to get the identifier."
+msgstr "識別子を取得するオブジェクト。"
+
+#: of ubuiltins.id:6
+msgid "The identifier."
+msgstr "識別子。"
+
+#: of ubuiltins.locals:1
+msgid "Gets a dictionary representing the current local symbol table."
+msgstr "現在のローカルシンボルテーブルを表す辞書を取得します。"
+
+#: of ubuiltins.locals:3
+msgid "The dictionary of locals."
+msgstr "ローカルの辞書。"
+
+#: ../../micropython/builtins.rst:223
+msgid "Class functions"
+msgstr "クラス関数"
+
+#: of ubuiltins.callable:1
+msgid "Checks if an object is callable."
+msgstr "オブジェクトが呼出し可能かどうかをチェックします。"
+
+#: of ubuiltins.callable:3
+msgid "Object to check."
+msgstr "チェックするオブジェクト。"
+
+#: of ubuiltins.callable:5
+msgid "``True`` if the object argument appears callable, ``False`` if not."
+msgstr "オブジェクトの引数が呼出し可能であれば ``True`` 、そうでなければ ``False`` 。"
+
+#: of ubuiltins.dir:1
+msgid "Gets a list of attributes of an object."
+msgstr "オブジェクトの属性のリストを取得します。"
+
+#: of ubuiltins.dir:3
+msgid ""
+"If no object argument is given, this function gets the list of names in "
+"the current local scope."
+msgstr ""
+"オブジェクトの引数が与えられていない場合、この関数は現在のローカルスコープにある名前の"
+"リストを取得します。"
+
+#: of ubuiltins.dir:6
+msgid "Object to check for valid attributes."
+msgstr "有効な属性をチェックするためのオブジェクト。"
+
+#: of ubuiltins.dir:8
+msgid "List of object attributes or list of names in current local scope."
+msgstr "オブジェクトの属性のリスト、または現在のローカルスコープにある名前のリスト。"
+
+#: of ubuiltins.getattr:1
+msgid "Looks up the attribute called ``name`` in the given ``object``."
+msgstr "指定したオブジェクト(``object``)の ``name`` で指定した属性を調べます。
+
+#: of ubuiltins.getattr:3 ubuiltins.hasattr:3
+msgid "Object in which to look for the attribute."
+msgstr "属性を探すオブジェクト。"
+
+#: of ubuiltins.getattr:4 ubuiltins.hasattr:4 ubuiltins.setattr:6
+msgid "Name of the attribute."
+msgstr "属性の名前。"
+
+#: of ubuiltins.getattr:6
+msgid "Object to return if the attribute is not found."
+msgstr "属性が見つからなかった場合に返すオブジェクト。"
+
+#: of ubuiltins.getattr:8
+msgid "Returns the value of the named attribute."
+msgstr "指定した属性の値を返します。"
+
+#: of ubuiltins.hasattr:1
+msgid "Checks if an attribute exists on an object."
+msgstr "オブジェクトに属性が存在するかをチェックします。"
+
+#: of ubuiltins.hasattr:7
+msgid "``True`` if an attribute by that name exists, ``False`` if not."
+msgstr "指定した名前の属性が存在すれば ``True`` 、存在しなければ ``False`` 。"
+
+#: of ubuiltins.isinstance:1
+msgid "Checks if an object is an instance of a certain class."
+msgstr "オブジェクトが特定のクラスのインスタンスであるかどうかをチェックします。"
+
+#: of ubuiltins.isinstance:3
+msgid "Object to check the type of."
+msgstr "型をチェックするオブジェクト。"
+
+#: of ubuiltins.isinstance:4 ubuiltins.issubclass:4
+msgid "Class information."
+msgstr "クラス情報。"
+
+#: of ubuiltins.isinstance:7
+msgid ""
+"``True`` if the ``object`` argument is an instance of the ``classinfo`` "
+"argument, or of a subclass thereof."
+msgstr ""
+"``object`` 引数が ``classinfo`` 引数のインスタンス、またはそのサブクラスであるとき、"
+" ``True`` を返します。"
+
+#: of ubuiltins.issubclass:1
+msgid "Checks if one class is a subclass of another class."
+msgstr "あるクラスが他のクラスのサブクラスであるかどうかをチェックします。"
+
+#: of ubuiltins.issubclass:3
+msgid "Class type."
+msgstr "クラス型。"
+
+#: of ubuiltins.issubclass:7
+msgid "``True`` if ``cls`` is a subclass of ``classinfo``."
+msgstr "``cls`` が ``classinfo`` のサブクラスであるとき ``True`` 。"
+
+#: of ubuiltins.setattr:1
+msgid "Assigns a value to an attribute, provided that the object allows it."
+msgstr "オブジェクトが許可している場合に限り、属性に値を割り当てます。"
+
+#: of ubuiltins.setattr:3
+msgid "This is the counterpart of :meth:`getattr`."
+msgstr "これは :meth:`getattr` と対になるものです。"
+
+#: of ubuiltins.setattr:5
+msgid "Object in which to store the attribute."
+msgstr "属性を格納するオブジェクト。"
+
+#: of ubuiltins.setattr:8
+msgid "Value to store."
+msgstr "格納する値。"
+
+#: of ubuiltins.super:1
+msgid ""
+"Gets an object that delegates method calls to a parent, or a sibling "
+"class of the given type."
+msgstr ""
+"親クラス、または指定された型の兄弟クラスにメソッド呼び出しを委譲するオブジェクトを"
+"取得します。"
+
+#: of ubuiltins.super:4
+msgid "The matching `super()` object."
+msgstr "一致する `super()` オブジェクト。"
+
+#: ../../micropython/builtins.rst:259
+msgid "Method decorators"
+msgstr "メソッドデコレータ"
+
+#: of ubuiltins.classmethod:1
+msgid "Transforms a method into a class method."
+msgstr "メソッドをクラスメソッドに変換します。"
+
+#: of ubuiltins.staticmethod:1
+msgid "Transforms a method into a static method."
+msgstr "メソッドを静的メソッドに変換します。"
+
+#: ../../micropython/exceptions.rst:2
+msgid "Exceptions and errors"
+msgstr "例外とエラー"
+
+#: ../../micropython/exceptions.rst:4
+msgid "This section lists all available exceptions in alphabetical order."
+msgstr "この章では、利用可能なすべての例外をアルファベット順にリストアップします。"
+
+#: of ubuiltins.ArithmeticError:1
+msgid ""
+"The base class for those built-in exceptions that are raised for various "
+"arithmetic errors."
+msgstr ""
+"様々な算術エラーのために発生する組込み例外の基本クラスです。"
+
+#: of ubuiltins.AssertionError:1
+msgid "Raised when an assert statement fails."
+msgstr "assert 文が失敗したときに発生します。"
+
+#: of ubuiltins.AttributeError:1
+msgid "Raised when an attribute reference or assignment fails."
+msgstr "属性の参照や代入が失敗した時に発生します。"
+
+#: of ubuiltins.BaseException:1
+msgid "The base class for all built-in exceptions."
+msgstr "すべての組込み例外の基本クラス。"
+
+#: of ubuiltins.BaseException:3
+msgid ""
+"It is not meant to be directly inherited by user-defined classes (for "
+"that, use :class:`Exception`)."
+msgstr ""
+"ユーザー定義クラスから直接継承されることはありません(継承するには :class:`Exception` "
+"を使ってください)。"
+
+#: of ubuiltins.EOFError:1
+msgid ""
+"Raised when the :meth:`input` function hits an end-of-file condition "
+"(EOF) without reading any data."
+msgstr ""
+":meth:`input` 関数がデータを読み込まずにファイル終了条件(EOF)に当たったときに"
+"発生します。"
+
+#: of ubuiltins.Exception:1
+msgid "All built-in exceptions are derived from this class."
+msgstr "すべての組込み例外は、このクラスから派生します。"
+
+#: of ubuiltins.Exception:3
+msgid "All user-defined exceptions should also be derived from this class."
+msgstr "ユーザー定義の例外もすべてこのクラスから派生させる必要があります。"
+
+#: of ubuiltins.GeneratorExit:1
+msgid "Raised when a generator or coroutine is closed."
+msgstr "ジェネレータまたはコルーチンが閉じられるときに発生します。"
+
+#: of ubuiltins.ImportError:1
+msgid "Raised when the ``import`` statement is unable to load a module."
+msgstr "``import`` 文がモジュールをロードできないときに発生します。"
+
+#: of ubuiltins.IndentationError:1
+msgid "Base class for syntax errors related to incorrect indentation."
+msgstr "不正なインデントに関する構文エラーの基本クラスです。"
+
+#: of ubuiltins.IndexError:1
+msgid "Raised when a sequence subscript is out of range."
+msgstr "シーケンスの添字が範囲外の時に発生します。"
+
+#: of ubuiltins.KeyboardInterrupt:1
+msgid ""
+"Raised when the user hits the interrupt key (normally :kbd:`Ctrl` "
+":kbd:`C`)."
+msgstr ""
+"ユーザーが割り込みキー(通常は :kbd:`Ctrl` :kbd:`C`)を押した時に発生します。"
+
+#: of ubuiltins.KeyError:1
+msgid ""
+"Raised when a mapping (dictionary) key is not found in the set of "
+"existing keys."
+msgstr ""
+"マッピング(辞書)のキーが既存のキーの集合の中に見つからない場合に発生します。"
+
+#: of ubuiltins.LookupError:1
+msgid ""
+"The base class for the exceptions that are raised when a key or index "
+"used on a mapping or sequence is invalid."
+msgstr ""
+"マッピングやシーケンスで使うキーやインデックスが無効な場合に発生する例外の基本クラスです。"
+
+#: of ubuiltins.MemoryError:1
+msgid "Raised when an operation runs out of memory."
+msgstr "オペレーションがメモリ不足になったときに発生します。"
+
+#: of ubuiltins.NameError:1
+msgid "Raised when a local or global name is not found."
+msgstr "ローカル名やグローバル名が見つからない場合に発生します。"
+
+#: of ubuiltins.NotImplementedError:1
+msgid ""
+"In user defined base classes, abstract methods should raise this "
+"exception when they require derived classes to override the method, or "
+"while the class is being developed to indicate that the real "
+"implementation still needs to be added."
+msgstr ""
+"ユーザー定義の基底クラスにおいて、抽象メソッドは派生クラスがメソッドをオーバーライド"
+"することを要求するとき、またはクラスが開発されている間、本当の実装をまだ追加する必要が"
+"あることを示すために、この例外を発生させる必要があります。"
+
+#: of ubuiltins.OSError:1
+msgid ""
+"This exception is raised by the firmware, which is the Operating System "
+"that runs on the hub. For :ref:`example <device_detection>`, it raises an"
+" ``OSError`` if you call ``Motor(Port.A)`` when there is no motor on port"
+" A."
+msgstr ""
+"この例外は、ハブ上で動作するオペレーティングシステムであるファームウェアによって"
+"発生します。 :ref:`たとえば <device_detection>` 、ポートAにモータがないのに "
+"``Motor(Port.A)`` を呼び出すと ``OSError`` が発生します。"
+
+#: ../../../docstring of ubuiltins.OSError.errno:1
+msgid ""
+"Specifies which kind of ``OSError`` occurred, as listed in the "
+":mod:`uerrno` module."
+msgstr ""
+"どの種類の ``OSError`` が発生したかを :mod:`uerrno` モジュールにリスト"
+"されているもので示します。"
+
+#: of ubuiltins.OverflowError:1
+msgid ""
+"Raised when the result of an arithmetic operation is too large to be "
+"represented."
+msgstr "算術演算の結果が大きすぎて表現できない場合に発生します。"
+
+#: of ubuiltins.RuntimeError:1
+msgid ""
+"Raised when an error is detected that doesn’t fall in any of the other "
+"categories."
+msgstr ""
+"他のどのカテゴリーにも当てはまらないエラーが検出されたときに発生します。"
+
+#: of ubuiltins.RuntimeError:3
+msgid "The associated value is a string indicating what precisely went wrong."
+msgstr "関連する値は、正確に何が間違っていたかを示す文字列です。"
+
+#: of ubuiltins.StopIteration:1
+msgid ""
+"Raised by built-in function :meth:`next` and an iterator’s ``__next__()``"
+" method to signal that there are no further items produced by the "
+"iterator."
+msgstr ""
+"組み込み関数 :meth:`next` とイテレータの ``__next__()`` メソッドで、"
+"イテレータが生成するアイテムがこれ以上ないことを知らせるために発生します。"
+
+#: of ubuiltins.StopIteration:4
+msgid "Generator functions should return instead of raising this directly."
+msgstr "ジェネレータ関数は、これを直接発生させるのではなく、return する必要があります。
+
+#: of ubuiltins.SyntaxError:1
+msgid "Raised when the parser encounters a syntax error."
+msgstr "パーサーが構文エラーに遭遇したときに発生します。"
+
+#: of ubuiltins.SystemExit:1
+msgid ""
+"Raised when you press the stop button on the hub or in the Pybricks Code "
+"app."
+msgstr ""
+"ハブまたは Pybricks Code アプリで停止ボタンを押したときに発生します。"
+
+#: of ubuiltins.TypeError:1
+msgid ""
+"Raised when an operation or function is applied to an object of "
+"inappropriate type."
+msgstr ""
+"操作や関数が不適切な型のオブジェクトに適用されたときに発生します。"
+
+#: of ubuiltins.ValueError:1
+msgid ""
+"Raised when an operation or function receives an argument that has the "
+"right type but an inappropriate value. This is used when the situation is"
+" not described by a more precise exception such as :class:`IndexError`."
+msgstr ""
+"操作や関数が、型は正しいが値が不適切な引数を受け取ったときに発生します。"
+"これは :class:`IndexError` のような、より正確な例外で説明できない場合に使われる。"
+
+#: of ubuiltins.ZeroDivisionError:1
+msgid "Raised when the second argument of a division or modulo operation is zero."
+msgstr ""
+"除算、剰余演算の第2引数が0の場合に発生します。"
+
+#: ../../micropython/exceptions.rst:84 ../../micropython/micropython.rst:27
+#: ../../micropython/uselect.rst:37 ../../micropython/usys.rst:33
+msgid "Examples"
+msgstr "サンプルコード"
+
+#: ../../micropython/exceptions.rst:87
+msgid "Debugging in the REPL terminal"
+msgstr "REPL 端末でのデバッグ"
+
+#: ../../micropython/exceptions.rst:89
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the motor.\n"
+"test_motor = Motor(Port.A)\n"
+"\n"
+"# Start moving at 500 deg/s.\n"
+"test_motor.run(500)\n"
+"\n"
+"# If you click on the terminal window and press CTRL+C,\n"
+"# you can continue debugging in this terminal.\n"
+"wait(5000)\n"
+"\n"
+"# You can also do this to exit the script and enter the\n"
+"# terminal. Variables in the global scope are still available.\n"
+"raise KeyboardInterrupt\n"
+"\n"
+"# For example, you can copy the following line to the terminal\n"
+"# to get the angle, because test_motor is still available.\n"
+"test_motor.angle()\n"
+msgstr ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# モーターを初期化。\n"
+"test_motor = Motor(Port.A)\n"
+"\n"
+"# 500 deg/s で始動。\n"
+"test_motor.run(500)\n"
+"\n"
+"# ターミナルウィンドウをクリックして CTRL+C を押すと、\n"
+"# このターミナルでデバッグを継続できる。\n"
+"wait(5000)\n"
+"\n"
+"# また、この操作でスクリプトを終了し、ターミナルに入ることもできる。\n"
+"# グローバルスコープにある変数もそのまま利用できる。\n"
+"raise KeyboardInterrupt\n"
+"\n"
+"# たとえば、以下の行をターミナルにコピーすると、test_motor が\n"
+"# まだ有効なので、角度を取得できる。\n"
+"test_motor.angle()\n"
+
+#: ../../micropython/exceptions.rst:93
+msgid "Running code when the stop button is pressed"
+msgstr "停止ボタンが押されたときにコードを実行"
+
+#: ../../micropython/exceptions.rst:95
+msgid ""
+"from pybricks.tools import wait\n"
+"\n"
+"print(\"Started!\")\n"
+"\n"
+"try:\n"
+"\n"
+"    # Run your script here as you normally would. In this\n"
+"    # example we just wait forever and do nothing.\n"
+"    while True:\n"
+"        wait(1000)\n"
+"\n"
+"except SystemExit:\n"
+"    # This code will run when you press the stop button.\n"
+"    # This can be useful to \"clean up\", such as to move\n"
+"    # the motors back to their starting positions.\n"
+"    print(\"You pressed the stop button!\")\n"
+msgstr ""
+"from pybricks.tools import wait\n"
+"\n"
+"print(\"Started!\")\n"
+"\n"
+"try:\n"
+"\n"
+"    # ここで、通常と同じようにスクリプトを実行する。\n"
+"    # この例では、何もせずにただひたすら待機する。\n"
+"    while True:\n"
+"        wait(1000)\n"
+"\n"
+"except SystemExit:\n"
+"    # このコードは、停止ボタンを押したときに実行されます。\n"
+"    # これは、モーターをスタート位置に戻すなどの「後始末」に\n"
+"    # 有効です。\n"
+"    print(\"You pressed the stop button!\")\n"
+
+#: ../../micropython/exceptions.rst:101
+msgid "Detecting devices using ``OSError``"
+msgstr "``OSError`` を使ったデバイスの検出"
+
+#: ../../micropython/exceptions.rst:103
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"from uerrno import ENODEV\n"
+"\n"
+"try:\n"
+"    # Try to initialize a motor.\n"
+"    my_motor = Motor(Port.A)\n"
+"\n"
+"    # If all goes well, you'll see this message.\n"
+"    print(\"Detected a motor.\")\n"
+"except OSError as ex:\n"
+"    # If an OSError was raised, we can check what\n"
+"    # kind of error this was, like ENODEV.\n"
+"    if ex.errno == ENODEV:\n"
+"        # ENODEV is short for \"Error, no device.\"\n"
+"        print(\"There is no motor this port.\")\n"
+"    else:\n"
+"        print(\"Another error occurred.\")\n"
+msgstr ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"from uerrno import ENODEV\n"
+"\n"
+"try:\n"
+"    # モーターの初期化を試す。\n"
+"    my_motor = Motor(Port.A)\n"
+"\n"
+"    # 初期化がうまくいけば、次のメッセージを見ることになる。\n"
+"    print(\"Detected a motor.\")\n"
+"except OSError as ex:\n"
+"    # OSError が発生した場合、ENODEV のようなどのような\n"
+"    # エラーであったかを確認できます。\n"
+"    if ex.errno == ENODEV:\n"
+"        # ENODEVは \"Error, no device\" の略です。\n"
+"        print(\"There is no motor this port.\")\n"
+"    else:\n"
+"        print(\"Another error occurred.\")\n"
+
+#: ../../micropython/micropython.rst:4
+msgid ":mod:`micropython` -- MicroPython internals"
+msgstr ":mod:`micropython` -- MicroPython の内部"
+
+#: micropython:1 of
+msgid "Access and control MicroPython internals."
+msgstr "MicroPython の内部にアクセスし、制御します。"
+
+#: micropython.const:1 of
+msgid "Declares the value as a constant, which makes your code more efficient."
+msgstr "値を定数として宣言することで、コードを効率化します。"
+
+#: micropython.const:3 of
+msgid ""
+"To reduce memory usage further, prefix its name with an underscore "
+"(``_ORANGES``). This constant can only be used within the same file."
+msgstr ""
+"さらにメモリ使用量を減らすために、その名前の前にアンダースコア(``_ORANGES``)を"
+"付けます。こうすると、定数は同一ファイル内でのみ使えるようになります。"
+
+#: micropython.const:7 of
+msgid ""
+"If you want to import the value from another module, use a name without "
+"an underscore (``APPLES``). This uses a bit more memory."
+msgstr ""
+"他のモジュールから値をインポートしたい場合は、アンダースコアのない名前(``APPLES``)を"
+"使います。この場合、もう少しメモリを消費します。"
+
+#: micropython.const:10 of
+msgid "The literal to be made constant."
+msgstr "定数化するリテラル。"
+
+#: micropython.const:13 of
+msgid "The constant value."
+msgstr "定数値。"
+
+#: micropython.heap_lock:1 of
+msgid ""
+"Locks the heap. When locked, no memory allocation can occur. A "
+"``MemoryError`` will be raised if any heap allocation is attempted."
+msgstr ""
+"ヒープをロックします。ロックするとメモリの割り当てができなくなります。"
+"ヒープを割り当てようとすると ``MemoryError`` が発生します。"
+
+#: micropython.heap_unlock:1 of
+msgid "Unlocks the heap. Memory allocation is now allowed again."
+msgstr "ヒープをアンロックします。メモリ割り当てが再び許可されます。"
+
+#: micropython.heap_unlock:3 of
+msgid ""
+"If :func:`heap_lock()` was called multiple times, :func:`heap_unlock()` "
+"must be called the same number of times to make the heap available again."
+msgstr ""
+":func:`heap_lock()` が複数回呼ばれた場合、ヒープを再び利用可能にするには "
+":func:`heap_unlock()` を同じ回数だけ呼び出す必要があります。"
+
+#: micropython.heap_unlock:6 of
+msgid "The lock depth after unlocking. It is ``0`` once it is unlocked."
+msgstr "ロック解除後のロックの深さ。ロックが解除されると ``0`` になります。"
+
+#: micropython.kbd_intr:1 of
+msgid ""
+"Sets the character that triggers a ``KeyboardInterrupt`` exception when "
+"you type it in the input window. By default it is set to ``3``, which "
+"corresponds to pressing :kbd:`Ctrl` :kbd:`C`."
+msgstr ""
+"入力ウィンドウに文字を入力したときに ``KeyboardInterrupt`` 例外を発生させる"
+"文字を設定します。デフォルトでは ``3`` が設定されており、これは "
+":kbd:`Ctrl` :kbd:`C` を押したときに相当します。"
+
+#: micropython.kbd_intr:5 of
+msgid ""
+"Character that should raise the ``KeyboardInterrupt``. Choose ``-1`` to "
+"disable this feature."
+msgstr ""
+"KeyboardInterrupt を発生させる文字。この機能を無効にするには ``-1`` を指定します。"
+
+#: micropython.mem_info:1 of
+msgid "Prints information about stack and heap memory usage."
+msgstr "スタックとヒープのメモリ使用量に関する情報を表示します。"
+
+#: micropython.mem_info:3 of
+msgid ""
+"If any value is given, it also prints out the entire heap. This indicates"
+" which blocks are used and which are free."
+msgstr ""
+"何らかの値が与えられた場合、ヒープ全体も表示されます。これは、どのブロックが"
+"使用され、どのブロックが解放されているかを示します。"
+
+#: micropython.opt_level:1 of
+msgid "Sets the optimization level for code compiled on the hub:"
+msgstr "ハブでコンパイルされるコードの最適化レベルを設定します:"
+
+#: micropython.opt_level:3 of
+msgid ""
+"Assertion statements are enabled. The built-in ``__debug__`` variable is "
+"``True``. Script line numbers are saved, so they can be reported when an "
+"Exception occurs."
+msgstr ""
+"アサーション文が有効になります。組み込みの ``__debug__`` 変数が ``True`` に"
+"なっています。スクリプトの行番号が保存され、例外発生時に報告されるようになります。"
+
+#: micropython.opt_level:6 micropython.opt_level:8 of
+msgid ""
+"Assertions are ignored and ``__debug__`` is ``False``. Script line "
+"numbers are saved."
+msgstr ""
+"アサーションは無視され、 ``__debug__`` は ``False`` になります。"
+"スクリプトの行番号は保存されます。"
+
+#: micropython.opt_level:10 of
+msgid ""
+"Assertions are ignored and ``__debug__`` is ``False``. Script line "
+"numbers are *not* saved."
+msgstr ""
+"アサーションは無視され、 ``__debug__`` は ``False`` になります。"
+"スクリプトの行番号は保存されません。"
+
+#: micropython.opt_level:13 of
+msgid ""
+"This applies only to code that you run in the REPL, because regular "
+"scripts are already compiled before they are sent to the hub."
+msgstr ""
+"通常のスクリプトはハブに送信される前にすでにコンパイルされているため、"
+"これはREPLで実行するコードにのみ適用されます。"
+
+#: micropython.opt_level:16 of
+msgid "The level to be set."
+msgstr "設定するレベル。"
+
+#: micropython.opt_level:19 of
+msgid "If no argument is given, this returns the current optimization level."
+msgstr "引数を指定しない場合は、現在の最適化レベルを返します。"
+
+#: micropython.qstr_info:1 of
+msgid "Prints how many strings are interned and how much RAM they use."
+msgstr ""
+"文字列がどの数だけ隔離化されているか、どれだけの RAM を消費しているかを表示します。"
+
+#: micropython.qstr_info:3 of
+msgid ""
+"MicroPython uses string interning to save both RAM and ROM. This avoids "
+"having to store duplicate copies of the same string."
+msgstr ""
+MicroPythonvは RAM と ROM の両方を節約するために文字列の隔離化を使います。"
+"これにより、同じ文字列のコピーを重複して保存する必要がなくなります。"
+
+#: micropython.qstr_info:6 of
+msgid ""
+"If any value is given, it also prints out the names of all RAM-interned "
+"strings."
+msgstr ""
+"何らかの値を指定すると、RAM に隔離化したすべての文字列の名前も出力されます。"
+
+#: micropython.stack_use:1 of
+msgid ""
+"Checks the amount of stack that is being used. This can be used to "
+"compute differences in stack usage at different points in a script."
+msgstr ""
+"使われているスタックの量をチェックします。これは、スクリプト内の異なるポイントでの"
+"スタック使用量の差を計算するのに使えます。"
+
+#: micropython.stack_use:4 of
+msgid "The amount of stack in use."
+msgstr "使用中のスタックの量。"
+
+#: ../../micropython/micropython.rst:30
+msgid "Using constants for efficiency"
+msgstr "定数を利用した効率化"
+
+#: ../../micropython/micropython.rst:32
+msgid ""
+"from micropython import const\n"
+"\n"
+"# This value can be used here. Other files can import it too.\n"
+"APPLES = const(123)\n"
+"\n"
+"# These values can only be used within this file.\n"
+"_ORANGES = const(1 << 8)\n"
+"_BANANAS = const(789 + _ORANGES)\n"
+"\n"
+"# You can read the constants as normal values. The compiler\n"
+"# will just insert the numeric values for you.\n"
+"fruit = APPLES + _ORANGES + _BANANAS\n"
+"print(fruit)\n"
+msgstr ""
+"from micropython import const\n"
+"\n"
+"# この値はここで使えます。他のファイルでもインポートできます。\n"
+"APPLES = const(123)\n"
+"\n"
+"# これらの値は、このファイル内でのみ使えます。\n"
+"_ORANGES = const(1 << 8)\n"
+"_BANANAS = const(789 + _ORANGES)\n"
+"\n"
+"# 定数は通常の値として読めます。コンパイラは、定数に代えて数値を\n"
+"# 挿入するだけです。\n"
+"fruit = APPLES + _ORANGES + _BANANAS\n"
+"print(fruit)\n"
+
+#: ../../micropython/micropython.rst:36
+msgid "Checking free RAM"
+msgstr "RAM の空き容量のチェック"
+
+#: ../../micropython/micropython.rst:38
+msgid ""
+"from micropython import mem_info\n"
+"\n"
+"# Print memory usage.\n"
+"mem_info()\n"
+msgstr ""
+"from micropython import mem_info\n"
+"\n"
+"# メモリの利用状況の表示。\n"
+"mem_info()\n"
+
+#: ../../micropython/micropython.rst:41
+msgid ""
+"This prints information in the format shown below. In this example for "
+"the SPIKE Prime Hub, there are 257696 bytes (251 KB) worth of memory "
+"remaining for the variables in your code. ::"
+msgstr ""
+"これは、以下に示すフォーマットで情報を表示します。"
+"この SPIKE プライム ラージハブの例では、コード内の変数に対して257696バイト"
+"(251KB)分のメモリが残っています。"
+
+#: ../../micropython/micropython.rst:45
+msgid ""
+"stack: 372 out of 40184\n"
+"GC: total: 258048, used: 352, free: 257696\n"
+"No. of 1-blocks: 4, 2-blocks: 2, max blk sz: 8, max free sz: 16103"
+msgstr ""
+
+#: ../../micropython/micropython.rst:51
+msgid "Getting more memory statistics"
+msgstr "より多くのメモリ統計情報の取得"
+
+#: ../../micropython/micropython.rst:53
+msgid ""
+"from micropython import const, opt_level, mem_info, qstr_info, stack_use\n"
+"\n"
+"# Get stack at start.\n"
+"stack_start = stack_use()\n"
+"\n"
+"# Print REPL compiler optimization level.\n"
+"print(\"level\", opt_level())\n"
+"\n"
+"# Print memory usage.\n"
+"mem_info()\n"
+"\n"
+"# Print memory usage and a memory map.\n"
+"mem_info(True)\n"
+"\n"
+"# Print interned string information.\n"
+"qstr_info()\n"
+"\n"
+"# Print interned string information and their names.\n"
+"APPLES = const(123)\n"
+"_ORANGES = const(456)\n"
+"qstr_info(True)\n"
+"\n"
+"\n"
+"def test_stack():\n"
+"    return stack_use()\n"
+"\n"
+"\n"
+"# Check the stack.\n"
+"print(\"Stack diff: \", test_stack() - stack_start)\n"
+msgstr ""
+"from micropython import const, opt_level, mem_info, qstr_info, stack_use\n"
+"\n"
+"# スタート時のスタックを取得。\n"
+"stack_start = stack_use()\n"
+"\n"
+"# REPL コンパイラの最適化レベルの表示。\n"
+"print(\"level\", opt_level())\n"
+"\n"
+"# メモリの使用状況を表示。\n"
+"mem_info()\n"
+"\n"
+"# メモリ使用状況とメモリマップを表示。\n"
+"mem_info(True)\n"
+"\n"
+"# 隔離化文字列の情報を表示。\n"
+"qstr_info()\n"
+"\n"
+"# 隔離化文字列の情報とその名前を表示。\n"
+"APPLES = const(123)\n"
+"_ORANGES = const(456)\n"
+"qstr_info(True)\n"
+"\n"
+"\n"
+"def test_stack():\n"
+"    return stack_use()\n"
+"\n"
+"\n"
+"# スタックをチェック。\n"
+"print(\"Stack diff: \", test_stack() - stack_start)\n"
+
+#: ../../micropython/uerrno.rst:2
+msgid ":mod:`uerrno <uerrno>` -- Error codes"
+msgstr ":mod:`uerrno <uerrno>` -- エラーコード"
+
+#: ../../micropython/uerrno.rst:6
+msgid ""
+"The ``errno`` attribute of an :ref:`OSError <OSError>` indicates why this"
+" exception was raised. This attribute has one of the following values. "
+"See also :ref:`this example <device_detection>`."
+msgstr ""
+":ref:`OSError <OSError>` の ``errno`` 属性は、この例外が発生した理由を示します。"
+"この属性は、次のいずれかの値を持ちます。 :ref:`この例 <device_detection>` も"
+"参照してください。"
+
+#: ../../../docstring of uerrno.EAGAIN:1
+msgid "The operation is not complete and should be tried again soon."
+msgstr "操作は完了していないので、すぐに再試行する必要があります。"
+
+#: ../../../docstring of uerrno.EBUSY:1
+msgid "The device or resource is busy and cannot be used right now."
+msgstr "デバイスやリソースはビジー状態であり、今は使えない。"
+
+#: ../../../docstring of uerrno.ECANCELED:1
+msgid "The operation was canceled."
+msgstr "操作がキャンセルされた。"
+
+#: ../../../docstring of uerrno.EINVAL:1
+msgid "An invalid argument was given. Usually ``ValueError`` is used instead."
+msgstr "無効な引数が渡された。通常は ``ValueError`` が代わりに使われる。"
+
+#: ../../../docstring of uerrno.EIO:1
+msgid "An unspecified error occurred."
+msgstr "不特定のエラーが発生した。"
+
+#: ../../../docstring of uerrno.ENODEV:1
+msgid ""
+"Device was not found. For example, a sensor or motor is not plugged in "
+"the correct port."
+msgstr ""
+"デバイスが見つからない。たとえば、センサーやモーターが正しいポートに接続されていない。"
+
+#: ../../../docstring of uerrno.EOPNOTSUPP:1
+msgid "The operation is not supported on this hub or on the connected device."
+msgstr "このハブまたは接続されたデバイスでは、この操作がサポートされていない。"
+
+#: ../../../docstring of uerrno.EPERM:1
+msgid "The operation cannot be performed in the current state."
+msgstr "現在の状態では、操作を実行できない。"
+
+#: ../../../docstring of uerrno.ETIMEDOUT:1
+msgid "The operation timed out."
+msgstr "操作はタイムアウトした。"
+
+#: ../../../docstring of uerrno.errorcode:1
+msgid ""
+"Dictionary that maps numeric error codes to strings with symbolic error "
+"code."
+msgstr ""
+"数値のエラーコードとシンボリックエラーコードの文字列を対応させる辞書。"
+
+#: ../../micropython/uio.rst:4
+msgid ":mod:`uio` -- Input/output streams"
+msgstr ":mod:`uio` -- 入出力ストリーム"
+
+#: of uio:1
+msgid "This module contains ``stream`` objects that behave like files."
+msgstr "このモジュールには、ファイルのように振る舞うストリームオブジェクトが含まれています。"
+
+#: of uio.BytesIO:1
+msgid "A binary stream using an in-memory bytes buffer."
+msgstr "メモリ内のバイトバッファを使ったバイナリストリームです。"
+
+#: of uio.BytesIO:3
+msgid "Optional bytes-like object that contains initial data."
+msgstr "初期データを格納するバイト列ライクなオブジェクト(オプション)。"
+
+#: of uio.BytesIO:6 uio.StringIO:5
+msgid ""
+"Optional number of preallocated bytes. This parameter is unique to "
+"MicroPython. It is not recommended to use it in end-user code."
+msgstr ""
+"事前に割り当てるバイト数(オプション)。このパラメータは MicroPython に特有のものです。"
+"エンドユーザのコードで使用することは推奨されません。"
+
+#: of uio.BytesIO.getvalue:1 uio.StringIO.getvalue:1
+msgid "Gets the contents of the underlying buffer."
+msgstr "基盤バッファの内容を取得します。"
+
+#: of uio.StringIO:1
+msgid "A stream using an in-memory string buffer."
+msgstr "インメモリ文字列バッファを使用したストリームです。"
+
+#: of uio.StringIO:3
+msgid "Optional string with initial data."
+msgstr "初期データを含む文字列(オプション)。"
+
+#: of uio.FileIO:1
+msgid ""
+"This type represents a file opened in binary mode with ``open(name, "
+"'rb')``. You should not instantiate this class directly."
+msgstr ""
+"この型は ``open(name, 'rb')`` でバイナリモードで開かれたファイルを表します。"
+"このクラスを直接インスタンス化するべきではありません。"
+
+#: ../../micropython/ujson.rst:4
+msgid ":mod:`ujson` -- JSON encoding and decoding"
+msgstr ":mod:`ujson` -- JSON のエンコードとデコード"
+
+#: of ujson:1
+msgid "Convert between Python objects and the JSON data format."
+msgstr "Python オブジェクトと JSON データ形式との変換を行います。"
+
+#: of ujson.dump:1
+msgid "Serializes an object to a JSON string and write it to a stream."
+msgstr "オブジェクトを JSON 文字列にシリアライズし、ストリームに書き込む。"
+
+#: of ujson.dump:3 ujson.dumps:3
+msgid "Object to serialize."
+msgstr "シリアライズするオブジェクト。"
+
+#: of ujson.dump:4
+msgid "Stream to write the output to."
+msgstr "出力の書き出し先となるストリーム。"
+
+#: of ujson.dump:5 ujson.dumps:4
+msgid ""
+"An ``(item_separator, key_separator)`` tuple to specify how elements "
+"should be separated."
+msgstr ""
+"``(item_separator, key_separator)`` のタプルで要素の区切り方を指定します。"
+
+#: of ujson.dumps:1
+msgid "Serializes an object to JSON and return it as a string"
+msgstr "オブジェクトを JSON にシリアライズし、文字列として返す。"
+
+#: of ujson.dumps:8
+msgid "The JSON string."
+msgstr "JSONの文字列。"
+
+#: of ujson.load:1
+msgid ""
+"Parses the stream to interpret and deserialize the JSON data to a "
+"MicroPython object."
+msgstr ""
+"JSON データを解釈し、MicroPython オブジェクトにデシリアライズするために"
+"ストリームをパースします。"
+
+#: of ujson.load:4
+msgid ""
+"Parsing continues until end-of-file is encountered. A ``ValueError`` is "
+"raised if the data in stream is not correctly formed."
+msgstr ""
+"パースはファイルの終端に遭遇するまで続けられます。ストリームのデータが正しく形成されて"
+"いない場合は ``ValueError`` が発生します。"
+
+#: of ujson.load:7
+msgid "Stream from which to read the JSON string."
+msgstr "JSON 文字列を読み込むストリームです。"
+
+#: of ujson.load:9 ujson.loads:9
+msgid "The deserialized MicroPython object."
+msgstr "デシリアライズされた MicroPython オブジェクトです。"
+
+#: of ujson.loads:1
+msgid ""
+"Parses the string to interpret and deserialize the JSON data to a "
+"MicroPython object."
+msgstr ""
+"JSON データを MicroPython オブジェクトに解釈し、デシリアライズするために"
+"文字列をパースします。"
+
+#: of ujson.loads:4
+msgid "A ``ValueError`` is raised if the string is not correctly formed."
+msgstr "文字列が正しく形成されていない場合は ``ValueError`` が発生します。"
+
+#: of ujson.loads:6
+msgid "JSON string to decode."
+msgstr "デコードする JSON 文字列。"
+
+#: ../../micropython/umath.rst:4
+msgid ":mod:`umath <umath>` -- Math functions"
+msgstr ":mod:`umath <umath>` -- 数学関数"
+
+#: ../../micropython/umath.rst:8
+msgid "This MicroPython module is similar to the `math module`_ in Python."
+msgstr "このMicroPythonモジュールは、Pythonの `math module`_ モジュールに似ています。"
+
+#: ../../micropython/umath.rst:10
+msgid ""
+"See also the :ref:`built-in math functions<builtinmath>` that can be used"
+" without importing anything."
+msgstr ""
+"何もインポートせずに使える :ref:`組込みの数学関数 <builtinmath>` "
+"も参照してください。"
+
+#: ../../micropython/umath.rst:14
+msgid "Rounding and sign"
+msgstr "丸め方と符号"
+
+#: of umath.ceil:1
+msgid "Rounds up."
+msgstr "切り上げます。"
+
+#: of umath.ceil:3 umath.floor:3
+msgid "The value to be rounded."
+msgstr "切り上げる値。"
+
+#: of umath.ceil:6
+msgid "Value rounded towards positive infinity."
+msgstr "正の無限大に向かって丸めた値。"
+
+#: of umath.floor:1
+msgid "Rounds down."
+msgstr "切り下げます。"
+
+#: of umath.floor:6
+msgid "Value rounded towards negative infinity."
+msgstr "負の無限大に向かって丸めた値。"
+
+#: of umath.trunc:1
+msgid "Truncates decimals to get the integer part of a value."
+msgstr "小数を切り捨てて整数部を取得します。"
+
+#: of umath.trunc:3
+msgid "This is the same as rounding towards ``0``."
+msgstr "これは0方向に丸めるのと同じです。"
+
+#: of umath.trunc:5
+msgid "The value to be truncated."
+msgstr "切り捨てる値。"
+
+#: of umath.trunc:8
+msgid "Integer part of the value."
+msgstr "値の整数部。"
+
+#: of umath.fmod:1
+msgid "Gets the remainder of ``x / y``."
+msgstr "``x / y`` の余りを取得します。"
+
+#: of umath.fmod:3
+msgid "Not to be confused with :func:`modf`."
+msgstr ":func:`modf` と混同しないでください。"
+
+#: of umath.fmod:5
+msgid "The numerator."
+msgstr "分子。"
+
+#: of umath.fmod:7
+msgid "The denominator."
+msgstr "分母。"
+
+#: of umath.fmod:10
+msgid "Remainder after division"
+msgstr "除算後の余り"
+
+#: of umath.fabs:1
+msgid "Gets the absolute value."
+msgstr "絶対値を取得します。"
+
+#: of umath.copysign:1
+msgid "Gets ``x`` with the sign of ``y``."
+msgstr "``x`` を ``y`` の符号にしたものを取得します。"
+
+#: of umath.copysign:3
+msgid "Determines the magnitude of the return value."
+msgstr "戻り値の大きさを決定します。"
+
+#: of umath.copysign:5
+msgid "Determines the sign of the return value."
+msgstr "戻り値の符号を決定します。"
+
+#: of umath.copysign:8
+msgid "``x`` with the sign of ``y``."
+msgstr "``x`` を ``y`` の符号で返します。"
+
+#: ../../micropython/umath.rst:29
+msgid "Powers and logarithms"
+msgstr "指数と対数"
+
+#: ../../../docstring of umath.e:1
+msgid "The mathematical constant e."
+msgstr "数学定数 e 。"
+
+#: of umath.exp:1
+msgid "Gets :attr:`e` raised to the power of ``x``."
+msgstr ":attr:`e` を ``x`` 乗したものを取得します。"
+
+#: of umath.exp:6
+msgid ":attr:`e` raised to the power of ``x``."
+msgstr ":attr:`e` を ``x`` 乗したもの。"
+
+#: of umath.pow:1
+msgid "Gets ``x`` raised to the power of ``y``."
+msgstr "``x`` を ``y`` 乗したものを取得します。"
+
+#: of umath.pow:3
+msgid "The base number."
+msgstr "基数。"
+
+#: of umath.pow:8
+msgid "``x`` raised to the power of ``y``."
+msgstr "``x`` を ``y`` 乗したもの。"
+
+#: of umath.log:1
+msgid "Gets the natural logarithm."
+msgstr "自然対数を取得します。"
+
+#: of umath.log:6
+msgid "The natural logarithm of ``x``."
+msgstr "``x`` の自然対数。"
+
+#: of umath.sqrt:1
+msgid "Gets the square root."
+msgstr "平方根を取得します。"
+
+#: of umath.sqrt:3
+msgid "The value ``x``."
+msgstr "値 ``x`` 。"
+
+#: of umath.sqrt:6
+msgid "The square root of ``x``."
+msgstr "``x`` の平方根。"
+
+#: ../../micropython/umath.rst:42
+msgid "Trigonometry"
+msgstr "三角法"
+
+#: ../../../docstring of umath.pi:1
+msgid "The mathematical constant π."
+msgstr "数学定数 π 。"
+
+#: of umath.degrees:1
+msgid "Converts an angle from radians to degrees."
+msgstr "角度をラジアンから度へ変換します。"
+
+#: of umath.cos:3 umath.degrees:3 umath.radians:6 umath.sin:3 umath.tan:3
+msgid "Angle in radians."
+msgstr "ラジアン単位の角度。"
+
+#: of umath.degrees:6 umath.radians:3
+msgid "Angle in degrees."
+msgstr "度数単位の角度。"
+
+#: of umath.radians:1
+msgid "Converts an angle from degrees to radians."
+msgstr "角度を度数からラジアンに変換します。"
+
+#: of umath.sin:1
+msgid "Gets the sine of an angle."
+msgstr "角度の正弦を取得します。"
+
+#: of umath.sin:6
+msgid "Sine of ``x``."
+msgstr "``x`` の正弦。"
+
+#: of umath.asin:1
+msgid "Applies the inverse sine operation."
+msgstr "逆正弦演算を適用します。"
+
+#: of umath.asin:3
+msgid "Opposite / hypotenuse."
+msgstr "対辺 / 斜辺。"
+
+#: of umath.asin:6
+msgid "Arcsine of ``x``, in radians."
+msgstr "``x`` の逆正弦(ラジアン単位)。"
+
+#: of umath.cos:1
+msgid "Gets the cosine of an angle."
+msgstr "角度の余弦を取得します。"
+
+#: of umath.cos:6
+msgid "Cosine of ``x``."
+msgstr "``x`` の余弦。"
+
+#: of umath.acos:1
+msgid "Applies the inverse cosine operation."
+msgstr "逆余弦演算を適用します。"
+
+#: of umath.acos:3
+msgid "Adjacent / hypotenuse."
+msgstr "隣辺 / 斜辺。"
+
+#: of umath.acos:6
+msgid "Arccosine of ``x``, in radians."
+msgstr "``x`` の逆余弦(ラジアン単位)。"
+
+#: of umath.tan:1
+msgid "Gets the tangent of an angle."
+msgstr "角度の正接を取得します。"
+
+#: of umath.tan:6
+msgid "Tangent of ``x``."
+msgstr "``x`` の正接。"
+
+#: of umath.atan:1
+msgid "Applies the inverse tangent operation."
+msgstr "逆正接演算を適用します。"
+
+#: of umath.atan:3
+msgid "Opposite / adjacent."
+msgstr "対辺 / 隣辺。"
+
+#: of umath.atan:6
+msgid "Arctangent of ``x``, in radians."
+msgstr "``x`` の逆正接(ラジアン単位)。"
+
+#: of umath.atan2:1
+msgid ""
+"Applies the inverse tangent operation on ``b / a``, and accounts for the "
+"signs of ``b`` and ``a`` to produce the expected angle."
+msgstr ""
+"``b / a`` に逆正接演算を適用し、 ``b`` と ``a`` の符号を考慮し、"
+"期待通りの角度を生成する。"
+
+#: of umath.atan2:4
+msgid "Opposite side of the triangle."
+msgstr "三角形の対辺。"
+
+#: of umath.atan2:6
+msgid "Adjacent side of the triangle."
+msgstr "三角形の隣辺。"
+
+#: of umath.atan2:9
+msgid "Arctangent of ``b / a``, in radians."
+msgstr "``b / a`` の逆逆正接(ラジアン単位)。"
+
+#: ../../micropython/umath.rst:65
+msgid "Other math functions"
+msgstr "その他の数学関数"
+
+#: of umath.isfinite:1
+msgid "Checks if a value is finite."
+msgstr "値が有限であるかどうかを調べます。"
+
+#: of umath.isfinite:3 umath.isinfinite:3 umath.isnan:3
+msgid "The value to be checked."
+msgstr "チェックする値。"
+
+#: of umath.isfinite:6
+msgid "``True`` if ``x`` is finite, else ``False``."
+msgstr "``x`` が有限であれば ``True`` 、そうでなければ ``False`` 。"
+
+#: of umath.isinfinite:1
+msgid "Checks if a value is infinite."
+msgstr "値が無限大かどうかをチェックする。"
+
+#: of umath.isinfinite:6
+msgid "``True`` if ``x`` is infinite, else ``False``."
+msgstr "``x`` が無限大なら ``True`` 、そうでなければ ``False`` 。"
+
+#: of umath.isnan:1
+msgid "Checks if a value is not-a-number."
+msgstr ""値が非数(not-a-number)であるかどうかをチェックします。"
+
+#: of umath.isnan:6
+msgid "``True`` if ``x`` is not-a-number, else ``False``."
+msgstr "``x`` が非数であれば ``True`` 、そうでなければ ``False`` 。"
+
+#: of umath.modf:1
+msgid ""
+"Gets the fractional and integral parts of ``x``, both with the same sign "
+"as ``x``."
+msgstr "``x`` の小数部分と整数部分を取得します。両方とも同じ符号を持ちます。"
+
+#: of umath.modf:4
+msgid "Not to be confused with :func:`fmod`."
+msgstr ":func:`fmod` と混同しないでください。"
+
+#: of umath.frexp:4 umath.modf:6
+msgid "The value to be decomposed."
+msgstr "分解される値。"
+
+#: of umath.modf:9
+msgid "Tuple of fractional and integral parts."
+msgstr "小数部分と整数部分のタプル。"
+
+#: of umath.frexp:1
+msgid ""
+"Decomposes a value ``x`` into a tuple ``(m, p)``, such that ``x == m * (2"
+" ** p)``."
+msgstr ""
+"値 ``x`` を ``x == m * (2 ** p)`` となるように、タプル ``(m, p)`` に分解します。"
+
+#: of umath.frexp:7
+msgid "Tuple of ``m`` and ``p``."
+msgstr "``m`` と ``p`` のタプル。"
+
+#: of umath.ldexp:1
+msgid "Computes ``m * (2 ** p)``."
+msgstr "``m * (2 ** p)`` を算出。"
+
+#: of umath.ldexp:8
+msgid "Result of ``m * (2 ** p)``."
+msgstr "``m * (2 ** p)`` の結果。"
+
+#: ../../micropython/urandom.rst:4
+msgid ":mod:`urandom` -- Pseudo-random numbers"
+msgstr ":mod:`urandom` -- 擬似乱数"
+
+#: of urandom:1
+msgid "This module implements pseudo-random number generators."
+msgstr "このモジュールは擬似乱数生成器を実装しています。"
+
+#: of urandom:3
+msgid ""
+"All functions in this module should be used with positional arguments. "
+"Keyword arguments are not supported."
+msgstr ""
+"このモジュールのすべての関数は位置引数で使う必要があります。"
+"キーワード引数はサポートされていません。"
+
+#: ../../micropython/urandom.rst:10
+msgid "Basic random numbers"
+msgstr "基本的な乱数"
+
+#: of urandom.randint:1
+msgid "Gets a random integer :math:`N` satisfying :math:`a \\leq N \\leq b`."
+msgstr ":math:`a \\leq N \\leq b` を満たす乱数整数 :math:`N` を取得します。"
+
+#: of urandom.randint:3
+msgid "Lowest value. This value *is* included in the range."
+msgstr "最小値。この値は範囲に *含まれます* 。"
+
+#: of urandom.randint:5
+msgid "Highest value. This value *is* included in the range."
+msgstr "最大値。この値も範囲に *含まれます* 。"
+
+#: of urandom.randint:8
+msgid "The random integer."
+msgstr "乱数の整数値。"
+
+#: of urandom.random:1
+msgid "Gets a random value :math:`x` satisfying :math:`0 \\leq x < 1`."
+msgstr ":math:`0 \\leq x < 1` を満たす乱数値 :math:`x` を取得します。"
+
+#: of urandom.random:3 urandom.uniform:8
+msgid "The random value."
+msgstr "乱数値。"
+
+#: ../../micropython/urandom.rst:16
+msgid "Random numbers from a range"
+msgstr "範囲指定の乱数"
+
+#: of urandom.getrandbits:1
+msgid ""
+"Gets a random integer :math:`N` satisfying :math:`0 \\leq N < "
+"2^{\\text{bits}}`."
+msgstr ""
+":math:`0 \\leq N < 2^{\\text{bits}}` を満たす乱数整数 :math:`N` を取得します。""
+
+#: of urandom.getrandbits:3
+msgid "How many bits to use for the result."
+msgstr "結果に何ビット使うかを指定します。"
+
+#: of urandom.randrange:1
+msgid "Returns a randomly selected element from ``range(start, stop, step)``."
+msgstr "``range(start, stop, step)`` からランダムに選択された要素を返します。"
+
+#: of urandom.randrange:3
+msgid ""
+"For example, ``randrange(1, 7, 2)`` returns random numbers from ``1`` up "
+"to (but excluding) ``7``, in increments of ``2``. In other words, it "
+"returns ``1``, ``3``, or ``5``."
+msgstr ""
+"たとえば、 ``randrange(1, 7, 2)`` は、  ``1`` から ``7`` まで(7 は除く)の乱数を、"
+"2刻みで返します。 つまり、 ``1``, ``3``, ``5`` を返します。"
+
+#: of urandom.randrange:8
+msgid "Lowest value. Defaults to ``0`` if only one argument is given."
+msgstr "最小値。引数がひとつだけの場合、デフォルトは0です。"
+
+#: of urandom.randrange:10
+msgid "Highest value. This value is *not* included in the range."
+msgstr "最大値。この値自体は範囲に含まれません。"
+
+#: of urandom.randrange:16
+msgid "The random number."
+msgstr "乱数。"
+
+#: of urandom.uniform:1
+msgid ""
+"Gets a random floating point value :math:`x` satisfying :math:`a \\leq x "
+"\\leq b`."
+msgstr ":math:`a \\leq x \\leq b` を満たす乱数の浮動小数点数を取得します。"
+
+#: of urandom.uniform:3
+msgid "Lowest value."
+msgstr "最小値。"
+
+#: of urandom.uniform:5
+msgid "Highest value."
+msgstr "最大値。"
+
+#: ../../micropython/urandom.rst:24
+msgid "Random elements from a sequence"
+msgstr "シーケンスからのランダムな要素"
+
+#: of urandom.choice:1
+msgid "Gets a random element from a sequence such as a tuple or list."
+msgstr "タプルやリストなどのシーケンスからランダムに要素を取得します。"
+
+#: of urandom.choice:3
+msgid "Sequence from which to select a random element."
+msgstr "ランダムな要素を選択するためのシーケンス。"
+
+#: of urandom.choice:5
+msgid "The randomly selected element."
+msgstr "ランダムに選択された要素。"
+
+#: of urandom.choice uselect.Poll.modify
+msgid "Raises"
+msgstr "例外"
+
+#: of urandom.choice:7
+msgid "If the sequence is empty."
+msgstr "シーケンスが空の場合。"
+
+#: ../../micropython/urandom.rst:28
+msgid "Updating the random seed"
+msgstr "乱数の種の更新"
+
+#: of urandom.seed:1
+msgid "Initializes the random number generator."
+msgstr "乱数発生器を初期化します。"
+
+#: of urandom.seed:3
+msgid ""
+"This gets called when the module is imported, so normally you do not need"
+" to call this."
+msgstr ""
+"これはモジュールがインポートされたときに呼ばれるので、通常はこれを呼ぶ必要はありません。"
+
+#: of urandom.seed:6
+msgid "Seed value. When using ``None``, the system timer will be used."
+msgstr "種の値。 ``None`` を指定した場合は、システムタイマーを使います。"
+
+#: ../../micropython/uselect.rst:4
+msgid ":mod:`uselect` -- Wait for events"
+msgstr ":mod:`uselect` -- イベントの待機"
+
+#: of uselect:1
+msgid ""
+"This module provides functions to efficiently wait for events on multiple"
+" streams."
+msgstr ""
+"このモジュールは、複数ストリームのイベント待機を効率的に行うための関数を提供します。"
+
+#: ../../micropython/uselect.rst:10
+msgid "Poll instance and class"
+msgstr "Pollbインスタンスとクラス"
+
+#: of uselect.poll:1
+msgid "Creates an instance of the :class:`Poll` class."
+msgstr ":class:`Poll` クラスのインスタンスを生成します。"
+
+#: of uselect.poll:3
+msgid "The :class:`Poll` instance."
+msgstr ":class:`Poll` インスタンス。"
+
+#: of uselect.Poll.register:1
+msgid ""
+"Register a stream object for polling. The stream object will now be "
+"monitored for events. If an event happens, it becomes part of the return "
+"value of :meth:`poll`."
+msgstr ""
+"ポーリングのためにストリームオブジェクトを登録します。"
+"これで、ストリームオブジェクトはイベントに対して監視されるようになります。"
+"イベントが発生した場合、それは :meth:`poll` の戻り値の一部となります。"
+
+#: of uselect.Poll.register:5
+msgid ""
+"If this method is called again for the same stream object, the object "
+"will not be registered again, but the ``eventmask`` flags will be "
+"updated, as if calling :meth:`modify()`."
+msgstr ""
+"このメソッドを同じストリームオブジェクトに対して再度呼び出すと、"
+"オブジェクトは再び登録されませんが、 :meth:`modify()` を呼び出す場合と同様に、 "
+"``eventmask`` フラグが更新されます。"
+
+#: of uselect.Poll.modify:3 uselect.Poll.register:9
+msgid "Stream to be registered for polling."
+msgstr "ポーリング用に登録されるストリーム。"
+
+#: of uselect.Poll.register:11
+msgid ""
+"Which events to use. Should be ``POLLIN``, ``POLLOUT``, or their logical "
+"disjunction: ``POLLIN | POLLOUT``."
+msgstr ""
+"どのイベントを使うか。 ``POLLIN``, ``POLLOUT`` あるいはその論理和 "
+"``POLLIN | POLLOUT`` でなければなりません。"
+
+#: of uselect.Poll.unregister:1
+msgid "Unregister an object from polling."
+msgstr "ポーリングからオブジェクトの登録を解除します。"
+
+#: of uselect.Poll.unregister:3
+msgid "Stream to be unregistered from polling."
+msgstr "ポーリングから登録解除されるストリーム。"
+
+#: of uselect.Poll.modify:1
+msgid "Modifies the event mask for the stream object."
+msgstr "ストリームオブジェクトのイベント・マスクを変更する。"
+
+#: of uselect.Poll.modify:5
+msgid "Which events to use."
+msgstr "どのイベントを使うか。"
+
+#: of uselect.Poll.modify:8
+msgid "If the object is not registered. The error is ``ENOENT``."
+msgstr "オブジェクトが登録されていない場合。エラーは ``ENOENT`` 。"
+
+#: of uselect.Poll.poll:1
+msgid ""
+"Wait until at least one of the registered objects has a new event or "
+"exceptional condition ready to be handled."
+msgstr ""
+"登録されたオブジェクトの少なくとも1つに、処理可能な新しいイベントや例外的な状態が"
+"発生するまで待ちます。"
+
+#: of uselect.Poll.ipoll:9 uselect.Poll.poll:4
+msgid ""
+"Timeout in milliseconds. Choose ``0`` to return immediately or choose "
+"``-1`` to wait indefinitely."
+msgstr ""
+"タイムアウトをミリ秒単位で指定します。 ``0`` を選ぶとすぐに戻り、 ``-1`` を選ぶと"
+"無期限に待ちます。"
+
+#: of uselect.Poll.poll:8
+msgid ""
+"A list of tuples. There is one (``object``, ``eventmask``, ...) tuple for"
+" each object with an event, or no tuples if there are no events to be "
+"handled. The ``eventmask`` value is a combination of poll flags to "
+"indicate what happened. This may include ``POLLERR`` and ``POLLHUP`` even"
+" if they were not registered."
+msgstr ""
+"タプルのリスト。イベントを持つオブジェクトごとに1つのタプル "
+"(``object``, ``eventmask``, ...) があり、処理すべきイベントがない場合は"
+"空のタプルになります。 ``eventmask`` の値は、何が起こったかを示すポーリングフラグ"
+"の組み合わせです。これは、たとえ登録されていなくても、 ``POLLERR`` と ``POLLHUP`` "
+"を含むことがあります。"
+
+#: of uselect.Poll.ipoll:1
+msgid ""
+"First, just like :meth:`poll`, wait until at least one of the registered "
+"objects has a new event or exceptional condition ready to be handled."
+msgstr ""
+"まず、 :meth:`poll` と同様に、登録されたオブジェクトの少なくともひとつに、"
+"処理可能な新しいイベントや例外状態が発生するまで待ちます。"
+
+#: of uselect.Poll.ipoll:4
+msgid ""
+"But instead of a list, this method returns an iterator for improved "
+"efficiency. The iterator yields one (``object``, ``eventmask``, ...) "
+"tuple at a time, and overwrites it when yielding the next value. If you "
+"need the values later, make sure to copy them explicitly."
+msgstr ""
+"しかし、このメソッドはリストの代わりに、効率を上げるためにイテレータを返します。"
+"イテレータは一度にひとつの (``object``, ``eventmask``, ...) タプルを生成し、"
+"次の値を生成する際にそれを上書きします。後で値が必要になった場合は、必ず明示的に"
+"コピーしてください。"
+
+#: of uselect.Poll.ipoll:12
+msgid ""
+"If set to ``1``, one-shot behavior for events is employed. This means "
+"that streams for which events happened will have their event masks "
+"automatically reset using ``poll.modify(obj, 0)``. This way, new events "
+"for such a stream won't be processed until a new mask is set with "
+":meth:`modify`, which is useful for asynchronous I/O schedulers."
+msgstr ""
+"``1`` に設定すると、イベントに対するワンショット動作が採用されます。"
+"これは、イベントが発生したストリームは ``poll.modify(obj, 0)`` を"
+"使ってイベントマスクが自動的にリセットされることを意味します。"
+"この方法では、そのようなストリームの新しいイベントは、新しいマスクが "
+":meth:`modify` で設定されるまで処理されないので、非同期 I/O "
+"スケジューラには便利です。"
+
+#: ../../micropython/uselect.rst:27
+msgid "Event mask flags"
+msgstr "イベントマスクフラグ"
+
+#: ../../../docstring of uselect.POLLIN:1
+msgid "Data is available for reading."
+msgstr "データを読み込むことができる。"
+
+#: ../../../docstring of uselect.POLLOUT:1
+msgid "More data can be written."
+msgstr "さらに多くのデータを書き込むことができる。"
+
+#: ../../../docstring of uselect.POLLERR:1
+msgid ""
+"Error condition happened on the associated stream. Should be handled "
+"explicitly or else further invocations of :meth:`poll` may return right "
+"away."
+msgstr ""
+"関連するストリームでエラー状態が発生した。"
+"明示的に処理しないと、それ以降に :meth:`poll` を起動したときにすぐに戻ってしまう"
+"可能性があります。"
+
+#: ../../../docstring of uselect.POLLHUP:1
+msgid ""
+"Hang up happened on the associated stream. Should be handled explicitly "
+"or else further invocations of :meth:`poll` may return right away."
+msgstr ""
+"関連するストリームでハングアップが起こった。明示的に処理するか、 :meth:`poll` を"
+"さらに呼び出すとすぐに戻ってくる可能性があります。"
+
+#: ../../micropython/uselect.rst:39
+msgid "See the `projects website`_ for a demo that uses this module."
+msgstr "このモジュールを使ったデモは `projects website`_ を参照してください。"
+
+#: ../../micropython/ustruct.rst:4
+msgid ":mod:`ustruct` -- Pack and unpack binary data"
+msgstr ":mod:`ustruct` -- バイナリデータのパックとアンパック"
+
+#: of ustruct:1
+msgid ""
+"This module provides functions to convert between Python values and "
+"C-like data structs."
+msgstr ""
+"このモジュールは、Pythonの値とCのようなデータ構造体との変換を行う関数を提供します。"
+
+#: of ustruct.calcsize:1
+msgid "Gets the data size corresponding to a format string"
+msgstr "フォーマット文字列に対応するデータサイズを取得します。"
+
+#: of ustruct.calcsize:3 ustruct.pack:3 ustruct.pack_into:3 ustruct.unpack:3
+#: ustruct.unpack_from:3
+msgid "Data format string."
+msgstr "データフォーマット文字列。"
+
+#: of ustruct.calcsize:6
+msgid "The number of bytes needed to represent this format."
+msgstr "このフォーマットを表現するために必要なバイト数。"
+
+#: of ustruct.pack:1
+msgid "Packs the values using the given format."
+msgstr "指定したフォーマットを使って値をパックします。"
+
+#: of ustruct.pack:6
+msgid "The data encoded as bytes."
+msgstr "バイト列にエンコードしたデータ。"
+
+#: of ustruct.pack_into:1
+msgid "Encode the values using the given format and write them to a given buffer."
+msgstr "指定したフォーマットで値をエンコードし、指定したバッファに書き込みます。"
+
+#: of ustruct.pack_into:5
+msgid "Buffer to store the encoded data."
+msgstr "エンコードしたデータを格納するためのバッファ。"
+
+#: of ustruct.pack_into:7
+msgid ""
+"Offset from the start of the buffer. Use a negative value to count from "
+"the end of the buffer."
+msgstr ""
+"バッファの開始点からのオフセット。バッファの終端からカウントする場合は負の値を指定します。"
+
+#: of ustruct.unpack:1
+msgid "Decodes the binary data using the given format."
+msgstr "指定したフォーマットを使ってバイナリデータをデコードします。"
+
+#: of ustruct.unpack:5
+msgid "Data to unpack."
+msgstr "アンパックするデータ。"
+
+#: of ustruct.unpack:8 ustruct.unpack_from:11
+msgid "The decoded data as a tuple of values."
+msgstr "デコードしたデータを値のタプルとして返します。"
+
+#: of ustruct.unpack_from:1
+msgid "Decodes binary data from a buffer using the given format."
+msgstr "指定したフォーマットでバッファからバイナリデータをデコードします。"
+
+#: of ustruct.unpack_from:5
+msgid "Data buffer to unpack."
+msgstr "アンパックするデータバッファ。"
+
+#: of ustruct.unpack_from:7
+msgid ""
+"Offset from the start of the data. Use a negative value to count from the"
+" end of the data."
+msgstr ""
+"データの開始点からのオフセット。データの終わりから数えるには負の値を指定します。"
+
+#: ../../micropython/ustruct.rst:8
+msgid "The following byte orders are supported:"
+msgstr "以下のバイトオーダーがサポートされています:"
+
+#: ../../micropython/ustruct.rst:11
+msgid "Character"
+msgstr "文字"
+
+#: ../../micropython/ustruct.rst:11
+msgid "Byte order"
+msgstr "バイトオーダ"
+
+#: ../../micropython/ustruct.rst:11
+msgid "Size"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:11
+msgid "Alignment"
+msgstr "アライメント"
+
+#: ../../micropython/ustruct.rst:13
+msgid "@"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:13
+msgid "native"
+msgstr "ネイティブ"
+
+#: ../../micropython/ustruct.rst:15
+msgid "<"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:15
+msgid "little-endian"
+msgstr "リトルエンディアン"
+
+#: ../../micropython/ustruct.rst:15 ../../micropython/ustruct.rst:17
+#: ../../micropython/ustruct.rst:19
+msgid "standard"
+msgstr "標準"
+
+#: ../../micropython/ustruct.rst:15 ../../micropython/ustruct.rst:17
+#: ../../micropython/ustruct.rst:19
+msgid "none"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:17
+msgid ">"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:17
+msgid "big-endian"
+msgstr "ビッグエンディアン"
+
+#: ../../micropython/ustruct.rst:19
+msgid "!"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:19
+msgid "network (= big-endian)"
+msgstr "ネットワーク (=ビッグエンディアン)"
+
+#: ../../micropython/ustruct.rst:22
+msgid "The following data types are supported:"
+msgstr "以下のデータ型がサポートされています:"
+
+#: ../../micropython/ustruct.rst:25
+msgid "Format"
+msgstr "フォーマット"
+
+#: ../../micropython/ustruct.rst:25
+msgid "C Type"
+msgstr "C 型"
+
+#: ../../micropython/ustruct.rst:25
+msgid "Python type"
+msgstr "Python 型"
+
+#: ../../micropython/ustruct.rst:25
+msgid "Standard size"
+msgstr "標準サイズ"
+
+#: ../../micropython/ustruct.rst:27
+msgid "b"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:27
+msgid "signed char"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:27 ../../micropython/ustruct.rst:29
+#: ../../micropython/ustruct.rst:31 ../../micropython/ustruct.rst:33
+#: ../../micropython/ustruct.rst:35 ../../micropython/ustruct.rst:37
+#: ../../micropython/ustruct.rst:53
+msgid "integer"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:27 ../../micropython/ustruct.rst:29
+msgid "1"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:29
+msgid "B"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:29
+msgid "unsigned char"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:31
+msgid "h"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:31
+msgid "short"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:31 ../../micropython/ustruct.rst:33
+msgid "2"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:33
+msgid "H"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:33
+msgid "unsigned short"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:35
+msgid "i"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:35
+msgid "int"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:35 ../../micropython/ustruct.rst:37
+#: ../../micropython/ustruct.rst:39 ../../micropython/ustruct.rst:41
+#: ../../micropython/ustruct.rst:47
+msgid "4"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:37
+msgid "I"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:37
+msgid "unsigned int"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:39
+msgid "l"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:39
+msgid "long"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:39 ../../micropython/ustruct.rst:41
+#: ../../micropython/ustruct.rst:43 ../../micropython/ustruct.rst:45
+msgid "integer (1)"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:41
+msgid "L"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:41
+msgid "unsigned long"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:43
+msgid "q"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:43
+msgid "long long"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:43 ../../micropython/ustruct.rst:45
+#: ../../micropython/ustruct.rst:49
+msgid "8"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:45
+msgid "Q"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:45
+msgid "unsigned long long"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:47
+msgid "f"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:47 ../../micropython/ustruct.rst:49
+msgid "float"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:49
+msgid "d"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:49
+msgid "double"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:51
+msgid "s"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:51
+msgid "char[]"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:51
+msgid "bytes"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:53
+msgid "P"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:53
+msgid "void *"
+msgstr ""
+
+#: ../../micropython/ustruct.rst:56
+msgid "\\(1\\) Supports values up to +/-1073741823"
+msgstr "\\(1\\) 最大 +/-1073741823 の値をサポートします"
+
+#: ../../micropython/usys.rst:4
+msgid ":mod:`usys` -- System specific functions"
+msgstr ":mod:`usys` -- システム固有の関数"
+
+#: ../../micropython/usys.rst:6
+msgid "This MicroPython module is a subset of the `sys module`_ in Python."
+msgstr ""
+"この MicroPython モジュールは、Python の `sys module`_ の"サブセットです。"
+
+#: ../../micropython/usys.rst:9
+msgid "Input and output streams"
+msgstr "入出力ストリーム"
+
+#: ../../../docstring of usys.stdin:1
+msgid ""
+"This is a stream object (:class:`uio.FileIO`) that receives input from a "
+"connected terminal, if any."
+msgstr ""
+"(接続されていれば)ターミナルからの入力を受け取るストリームオブジェクト"
+"(:class:`uio.FileIO`)です。"
+
+#: ../../../docstring of usys.stdin:4
+msgid ""
+"Also see :func:`kbd_intr <micropython.kbd_intr>` to disable "
+"``KeyboardInterrupt`` when passing binary data via ``stdin``."
+msgstr ""
+"また、 ``stdin`` 経由でバイナリデータを渡すときに ``KeyboardInterrupt`` "
+"を無効にするには、 :func:`kbd_intr <micropython.kbd_intr>` を"
+"参照してください。"
+
+#: ../../../docstring of usys.stdout:1
+msgid ""
+"This is a stream object (:class:`uio.FileIO`) that sends output to a "
+"connected terminal, if any."
+msgstr ""
+"(接続されていれば)ターミナルに出力を送るストリームオブジェクト"
+"(:class:`uio.FileIO`)です。"
+
+#: ../../../docstring of usys.stderr:1
+msgid "Alias for :data:`stdout`."
+msgstr ":data:`stdout` の別名です。"
+
+#: ../../micropython/usys.rst:22
+msgid "Version info"
+msgstr "バージョン情報"
+
+#: ../../../docstring of usys.implementation:1
+msgid "MicroPython version tuple. See format and example below."
+msgstr ""
+"MicroPython バージョンのタプル。"
+"後述のフォーマットとサンプルコードを参照してください。"
+
+#: ../../../docstring of usys.version:1
+msgid ""
+"Python compatibility version, Pybricks version, and build date. See "
+"format and example below."
+msgstr ""
+"Python 互換バージョン、Pybricksバージョン、ビルド日。"
+"後述のフォーマットとサンプルコードを参照してください。"
+
+#: ../../../docstring of usys.version_info:1
+msgid "Python compatibility version. See format and example below."
+msgstr ""
+"Python の互換バージョン。"
+"後述のフォーマットとサンプルコードを参照してください。"
+
+#: ../../micropython/usys.rst:36
+msgid "Version information"
+msgstr "バージョン情報"
+
+#: ../../micropython/usys.rst:38
+msgid ""
+"from pybricks import version\n"
+"\n"
+"# ('essentialhub', '3.2.0b5', 'v3.2.0b5 on 2022-11-11')\n"
+"print(version)\n"
+msgstr ""
+
+#: ../../micropython/usys.rst:41
+msgid ""
+"import usys\n"
+"\n"
+"# ('micropython', (1, 19, 1), 'SPIKE Essential Hub with STM32F413RG', 6)\n"
+"print(usys.implementation)\n"
+"\n"
+"# '3.4.0; Pybricks MicroPython v3.2.0b5 on 2022-11-11'\n"
+"print(usys.version)\n"
+"\n"
+"# (3, 4, 0)\n"
+"print(usys.version_info)\n"
+msgstr ""
+
+#: ../../micropython/usys.rst:45
+msgid "Standard input and output"
+msgstr "標準入出力"
+
+#: ../../micropython/usys.rst:47
+msgid ""
+"The ``stdin`` stream can be used to capture input via the Pybricks Code "
+"input/output window. See the `keyboard input`_ project to learn how this "
+"works. This approach can be extended to exchange data with any `other "
+"device`_ as well."
+msgstr ""
+"``stdin`` ストリームは、Pybricks Code の入出力ウィンドウから入力を取り込むのに"
+"使えます。この仕組みについてはキーボード入力のプロジェクト(`keyboard input`_)を"
+"参照してください。この方法は、他のデバイス とのデータ交換(`other device`_)にも"
+"同様に拡張できます。"
