@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-11 20:29+0900\n"
+"PO-Revision-Date: 2024-02-11 23:00+0900\n"
+"Last-Translator: Minoru INACHI\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../blocks/index.rst:4
+msgid "Other blocks"
+msgstr "その他のブロック"
+
+#: ../../blocks/index.rst:6
+msgid ""
+"Most blocks correspond directly to one of the documented Python commands."
+" This page lists the remaining blocks."
+msgstr ""
+"ほとんどのブロックは、ドキュメントにある Python 命令の１つに直接対応しています。"
+"このページには残りのブロックがリストされています。"
+
+#: ../../blocks/index.rst:9
+msgid "This page will be expanded with more details in the next release."
+msgstr "次のリリースでは、このページにさらに詳細を追加予定です。"
+
+#: ../../blocks/index.rst:12
+msgid "Math"
+msgstr "数学"
+
+#: ../../blocks/index.rst:14
+msgid "See also :mod:`umath` for other math operations."
+msgstr "その他の数学操作については :mod:`umath` も参照してください。"
+
+#: ../../blocks/index.rst:17
+msgid ".. image:: blockimg/pybricks_blockMathFormula.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:19
+msgid ".. image:: blockimg/pybricks_blockMathOp_modulo.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:21
+msgid ".. image:: blockimg/pybricks_blockMathArithmetic_add.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:23
+msgid ".. image:: blockimg/pybricks_blockMathArithmetic_minus.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:25
+msgid ".. image:: blockimg/pybricks_blockMathArithmetic_multiply.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:27
+msgid ".. image:: blockimg/pybricks_blockMathArithmetic_divide.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:29
+msgid ".. image:: blockimg/pybricks_blockMathArithmetic_power.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:31
+msgid "Logic"
+msgstr "論理演算"
+
+#: ../../blocks/index.rst:34
+msgid ".. image:: blockimg/pybricks_blockLogicCompareDouble.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:36
+msgid ".. image:: blockimg/pybricks_blockLogicCompare_eq.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:38
+msgid ".. image:: blockimg/pybricks_blockLogicCompare_gte.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:40
+msgid ".. image:: blockimg/pybricks_blockLogicCompare_gt.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:42
+msgid ".. image:: blockimg/pybricks_blockLogicCompare_lte.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:44
+msgid ".. image:: blockimg/pybricks_blockLogicCompare_lt.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:46
+msgid ".. image:: blockimg/pybricks_blockLogicCompare_neq.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:48
+msgid ".. image:: blockimg/pybricks_blockLogicIsNone_is_none.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:50
+msgid ".. image:: blockimg/pybricks_blockLogicIsNone_is_not_none.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:52
+msgid ".. image:: blockimg/pybricks_blockLogicIsNone_not.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:54
+msgid ".. image:: blockimg/pybricks_blockLogicOperation_and.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:56
+msgid ".. image:: blockimg/pybricks_blockLogicOperation_or.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:58
+msgid ".. image:: blockimg/pybricks_blockLogicTernary.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:60
+msgid "Flow"
+msgstr "制御構造"
+
+#: ../../blocks/index.rst:63
+msgid ".. image:: blockimg/pybricks_blockFlowBreakContinue_break.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:65
+msgid ".. image:: blockimg/pybricks_blockFlowBreakContinue_continue.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:67
+msgid ".. image:: blockimg/pybricks_blockFlowForEach_loop_for.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:69
+msgid ".. image:: blockimg/pybricks_blockFlowForEach_loop_for_list.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:71
+msgid ".. image:: blockimg/pybricks_blockFlowForEach_loop_for_range.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:73
+msgid ".. image:: blockimg/pybricks_blockFlowRepeat.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:75
+msgid ".. image:: blockimg/pybricks_blockFlowWhile_until.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:78
+msgid ".. image:: blockimg/pybricks_blockFlowWhile_while.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:80
+msgid ".. image:: blockimg/pybricks_blockIfElse_if_else.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:82
+msgid ".. image:: blockimg/pybricks_blockIfElse_if_else_else.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:85
+msgid ".. image:: blockimg/pybricks_blockIfElse_if_only.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:87
+msgid "Device and system setup"
+msgstr "デバイスとシステムセットアップ"
+
+#: ../../blocks/index.rst:90
+msgid ".. image:: blockimg/pybricks_blockGlobalSetup.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:92
+msgid "Waiting"
+msgstr "待機"
+
+#: ../../blocks/index.rst:95
+msgid ".. image:: blockimg/pybricks_blockWaitTime.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:97
+msgid ".. image:: blockimg/pybricks_blockWaitUntil.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:101
+msgid ".. image:: blockimg/pybricks_blockWaitForever.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:103
+msgid "Variables"
+msgstr "変数"
+
+#: ../../blocks/index.rst:106
+msgid ".. image:: blockimg/pybricks_variables_setup_any.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:108
+msgid ".. image:: blockimg/pybricks_blockVariableGetValue.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:110
+msgid ".. image:: blockimg/pybricks_blockVariableSetValue.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:112
+msgid "Multitasking"
+msgstr "マルチタスク"
+
+#: ../../blocks/index.rst:115
+msgid ".. image:: blockimg/pybricks_blockGlobalStart.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:117
+msgid ".. image:: blockimg/pybricks_blockMultiTask.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:119
+msgid "Your own tasks"
+msgstr "タスク定義"
+
+#: ../../blocks/index.rst:122
+msgid ".. image:: blockimg/pybricks_variables_setup_function_basic.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:124
+msgid ".. image:: blockimg/pybricks_variables_setup_function_with_args.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:126
+msgid ".. image:: blockimg/pybricks_blockTaskReturn.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:128
+msgid "External tasks"
+msgstr "外部タスク"
+
+#: ../../blocks/index.rst:131
+msgid ".. image:: blockimg/pybricks_variables_setup_imported_function.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:133
+msgid ".. image:: blockimg/pybricks_blockImportTaskCallStatement.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:134
+msgid ".. image:: blockimg/pybricks_blockImportTaskCallValue.svg"
+msgstr ""
+
