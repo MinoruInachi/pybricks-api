@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 10:05+0900\n"
-"PO-Revision-Date: 2023-10-31 18:49+0900\n"
+"POT-Creation-Date: 2024-02-11 20:29+0900\n"
+"PO-Revision-Date: 2024-02-11 21:36+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
@@ -297,7 +297,7 @@ msgstr "ドライブベースが失速していれば ``True`` 、失速して�
 
 #: ../../robotics.rst:57
 msgid "Driving with the gyro"
-msgstr "ジャイロセンサーを使った"
+msgstr "ジャイロセンサーの利用"
 
 #: of pybricks.robotics.DriveBase.use_gyro:1
 msgid ""
@@ -518,27 +518,116 @@ msgstr ""
 msgid "The :meth:`done` and :meth:`stalled` methods have been moved."
 msgstr ":meth:`done` と :meth:`stalled` メソッドは移動しました。"
 
+#: of pybricks.robotics.Car:1
+msgid "A vehicle with one steering motor, and one or more motors for driving."
+msgstr "一つの旋回モーターと、一つ以上の駆動モーターを備えた車両です。"
+
+#: of pybricks.robotics.Car:3
+#, python-format
+msgid ""
+"When you use this class, the steering motor will automatically find the "
+"center position. This also determines which angle corresponds to 100% "
+"steering."
+msgstr ""
+"このクラスを使うと、旋回モーターは自動的に中心位置を見つけます。"
+"これによって、どの角度が100％の旋回に対応するかも決定されます。"
+
+#: of pybricks.robotics.Car:7
+msgid "The motor that steers the front wheels."
+msgstr "前輪を旋回するモーター。"
+
+#: of pybricks.robotics.Car:9
+msgid "The motor that drives the wheels. Use a tuple for multiple motors."
+msgstr "車輪を駆動するモーター。複数のモーターを使う場合はタプルで指定してください。"
+
+#: ../../robotics.rst:188
+msgid ".. image:: blockimg/pybricks_blockCarSteer.svg"
+msgstr ""
+
+#: of pybricks.robotics.Car.steer:1
+#, python-format
+msgid ""
+"Steers the front wheels by a given amount. For 100% steering, it steers "
+"right by the angle that was determined on initialization. For -100% "
+"steering, it steers left and 0% means straight."
+msgstr ""
+"指定した量だけ前輪を旋回します。初期化時に決定された角度により、"
+"100% では右に、-100% では左に旋回し、0% では直進します。"
+
+#: of pybricks.robotics.Car.steer:5
+msgid "Amount to steer the front wheels."
+msgstr "前輪の旋回量。"
+
+#: ../../robotics.rst:192
+msgid ".. image:: blockimg/pybricks_blockCarDrive_car_drive_at_power.svg"
+msgstr ""
+
+#: of pybricks.robotics.Car.drive_power:1
+msgid ""
+"Drives the car at a given \"power\" level, as a percentage of the battery"
+" voltage. Positive values drive forward, negative values drive backward."
+msgstr ""
+"\"power\" に指定したレベルで車を駆動します。"
+"これはバッテリー電圧のパーセンテージです。正の値は前進、負の値は後進します。"
+
+#: of pybricks.robotics.Car.drive_power:5
+msgid ""
+"For ``power`` values below 30%, the car will coast the wheels in order to"
+" roll out smoothly instead of braking abruptly."
+msgstr ""
+"``power`` の値が 30% 未満の場合、急ブレーキではなく滑らかにロールアウトするために、"
+"車輪を惰走させます。"
+
+#: of pybricks.robotics.Car.drive_power:8
+msgid ""
+"This command is useful for remote control applications where you want "
+"instant response to button presses or joystick movements."
+msgstr ""
+"この命令は、ボタン押下やジョイスティックの動きに即座に反応が必要な"
+"リモートコントロールアプリケーションで役立ちます。"
+
+#: of pybricks.robotics.Car.drive_power:11
+msgid "Speed of the car."
+msgstr "車両の速度。"
+
+#: ../../robotics.rst:196
+msgid ".. image:: blockimg/pybricks_blockCarDrive_car_drive_at_speed.svg"
+msgstr ""
+
+#: of pybricks.robotics.Car.drive_speed:1
+msgid ""
+"Drives the car at a given motor speed. Positive values drive forward, "
+"negative values drive backward."
+msgstr ""
+"指定したモーター速度で車を駆動します。"
+"正の値は前進、負の値は後進します。"
+
+#: of pybricks.robotics.Car.drive_speed:4
+msgid ""
+"This command is useful for more precise driving with gentle acceleration "
+"and deceleration. This automatically increases the power to maintain "
+"speed as you drive across obstacles."
+msgstr ""
+"この命令は、緩やかな加速と減速でより精密な運転に役立ちます。"
+"これにより、障害物を横切る際の速度維持のために自動的に電力を増加させます。"
+
+#: of pybricks.robotics.Car.drive_speed:8
+msgid "Angular velocity of the drive motors."
+msgstr "駆動モーターの角速度。"
+
 #: ../../robotics.rst:147
 msgid "Examples"
 msgstr "サンプルコード"
 
-#: ../../robotics.rst:150
-msgid "Driving straight and turning in place"
-msgstr "直進とその場での旋回"
+#: ../../robotics.rst:203
+msgid "Driving straight and turning in place with a drive base"
+msgstr "ドライブベースでの直進とその場での旋回"
 
-#: ../../robotics.rst:152
-msgid "The following program shows the basics of driving and turning."
-msgstr "以下のプログラムでは、基本の走行と旋回を使った例を示しています。"
+#: ../../robotics.rst:205
+msgid "This program shows the basics of driving and turning."
+msgstr "このプログラムでは、基本の走行と旋回を使った例を示しています。"
 
-#: ../../robotics.rst:154
-msgid ""
-"To use the built-in gyro, just replace the two occurrences of "
-":class:`DriveBase` with :class:`GyroDriveBase`."
-msgstr ""
-"内蔵ジャイロを使うには :class:`DriveBase` の2つの出現箇所を "
-":class:`GyroDriveBase` に置き換えてください。"
-
-#: ../../robotics.rst:157
+#: ../../robotics.rst:207
 msgid ""
 "from pybricks.pupdevices import Motor\n"
 "from pybricks.parameters import Port, Direction\n"
@@ -599,3 +688,114 @@ msgstr ""
 "\n"
 "# 反時計回りに旋回させる。\n"
 "drive_base.turn(-180)\n"
+
+#: ../../robotics.rst:211
+msgid "Remote controlling a car with front wheel steering"
+msgstr "前輪で旋回する車両でのリモートコントロール"
+
+#: ../../robotics.rst:213
+msgid ""
+"This program shows how you can drive a car with front wheel steering "
+"using the :class:`remote control <pybricks.pupdevices.Remote>`."
+msgstr ""
+"このプログラムは、前輪で旋回する車両を "
+":class:`リモートコントロール <pybricks.pupdevices.Remote>` "
+"で運転する方法を示しています。"
+
+#: ../../robotics.rst:216
+msgid ""
+"In this program, the ports match those of the `LEGO Technic 42099 Off-"
+"Roader <https://pybricks.com/projects/sets/technic/42099-off-roader/>`_, "
+"but you can use any other car with front wheel steering. If your vehicle "
+"has only one drive motor, you can use a single motor instead of a tuple "
+"of the motors used below."
+msgstr ""
+"このプログラムでは、 `LEGO Technic 42099 Off-Roader "
+"<https://pybricks.com/projects/sets/technic/42099-off-roader/>`_ "
+"のポートに合わせていますが、前輪で旋回の他の車でも使えます。"
+"車両に1つの駆動モーターしかない場合、以下で使っている複数のモーターのタプルの"
+"代わりに単一のモーターを指定できます。"
+
+#: ../../robotics.rst:222
+msgid ""
+"from pybricks.parameters import Direction, Port, Button\n"
+"from pybricks.pupdevices import Motor, Remote\n"
+"from pybricks.robotics import Car\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Set up motors.\n"
+"front = Motor(Port.A, Direction.COUNTERCLOCKWISE)\n"
+"rear = Motor(Port.B, Direction.COUNTERCLOCKWISE)\n"
+"steer = Motor(Port.C, Direction.CLOCKWISE)\n"
+"\n"
+"# Connect to the remote.\n"
+"remote = Remote()\n"
+"\n"
+"# Set up the car.\n"
+"car = Car(steer, [front, rear])\n"
+"\n"
+"# The main program starts here.\n"
+"while True:\n"
+"    # Read remote state.\n"
+"    pressed = remote.buttons.pressed()\n"
+"\n"
+"    # Steer using the left pad. Steering is the percentage\n"
+"    # of the angle determined while initializing.\n"
+"    steering = 0\n"
+"    if Button.LEFT_PLUS in pressed:\n"
+"        steering += 100\n"
+"    elif Button.LEFT_MINUS in pressed:\n"
+"        steering -= 100\n"
+"    car.steer(steering)\n"
+"\n"
+"    # Drive using the right pad.\n"
+"    power = 0\n"
+"    if Button.RIGHT_PLUS in pressed:\n"
+"        power += 100\n"
+"    elif Button.RIGHT_MINUS in pressed:\n"
+"        power -= 100\n"
+"    car.drive_power(power)\n"
+"\n"
+"    # Wait briefly.\n"
+"    wait(10)\n"
+msgstr ""
+"from pybricks.parameters import Direction, Port, Button\n"
+"from pybricks.pupdevices import Motor, Remote\n"
+"from pybricks.robotics import Car\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# モーターをセットアップ。\n"
+"front = Motor(Port.A, Direction.COUNTERCLOCKWISE)\n"
+"rear = Motor(Port.B, Direction.COUNTERCLOCKWISE)\n"
+"steer = Motor(Port.C, Direction.CLOCKWISE)\n"
+"\n"
+"# リモート接続。\n"
+"remote = Remote()\n"
+"\n"
+"# 車両をセットアップ。\n"
+"car = Car(steer, [front, rear])\n"
+"\n"
+"# ここでメインプログラムをスタート。\n"
+"while True:\n"
+"    # リモート指示を読み取り。\n"
+"    pressed = remote.buttons.pressed()\n"
+"\n"
+"    # 左パッドで旋回。旋回量は初期化時に決定された角度のパーセンテージ。\n"
+"    steering = 0\n"
+"    if Button.LEFT_PLUS in pressed:\n"
+"        steering += 100\n"
+"    elif Button.LEFT_MINUS in pressed:\n"
+"        steering -= 100\n"
+"    car.steer(steering)\n"
+"\n"
+"    # 右パッドで駆動。\n"
+"    power = 0\n"
+"    if Button.RIGHT_PLUS in pressed:\n"
+"        power += 100\n"
+"    elif Button.RIGHT_MINUS in pressed:\n"
+"        power -= 100\n"
+"    car.drive_power(power)\n"
+"\n"
+"    # 少し待機。\n"
+"    wait(10)\n"
+
