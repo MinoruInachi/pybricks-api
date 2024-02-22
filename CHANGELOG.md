@@ -4,6 +4,16 @@
 
 ## Unreleased
 
+## 3.4.0b4 - 2024-02-14
+
+## Added
+
+- Added `pybricks.iodevices.XboxController` class.
+
+## Changed
+
+- Changed `buttons.pressed` return type to set.
+
 ## 3.4.0b3 - 2024-01-30
 
 ## Added
