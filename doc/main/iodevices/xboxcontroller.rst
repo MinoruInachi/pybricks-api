@@ -86,10 +86,7 @@ controller from the One S (``1708`` from 2016), the Elite Series 2 (``1797``
 from 2019), and the Series X/S (``1914`` from 2020), which is
 the latest model as of this writing.
 
-.. raw:: html
-
-  <p>See also <a href="https://en.wikipedia.org/wiki/Xbox_Wireless_Controller#Summary" target="_blank">
-  this overview</a> of model numbers including pictures of each controller.</p>
+See also `this overview <https://en.wikipedia.org/wiki/Xbox_Wireless_Controller#Summary>`_ of model numbers including pictures of each controller.
 
 Updating the Xbox Controller
 ============================
