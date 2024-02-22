@@ -9,10 +9,9 @@ msgstr ""
 "Project-Id-Version: pybricks v3.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-22 22:12+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ja\n"
-"Language-Team: ja <LL@li.org>\n"
+"PO-Revision-Date: 2024-02-23 00:03+0900\n"
+"Last-Translator: Minoru INACHI\n"
+"Language-Team: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -21,11 +20,11 @@ msgstr ""
 
 #: ../../iodevices/index.rst:4
 msgid ":mod:`iodevices <pybricks.iodevices>` -- Custom devices"
-msgstr ""
+msgstr ":mod:`iodevices <pybricks.iodevices>` -- カスタムデバイス"
 
-#: ../../iodevices/index.rst:16
+#: ../../iodevices/index.rst:15
 msgid "This module has classes for generic and custom input/output devices."
-msgstr ""
+msgstr "このモジュールは汎用およびカスタム入出力デバイス用クラスです。"
 
 #: ../../iodevices/index.rst
 msgid ".. image:: ../main/cad/output/iodevice-pupdevice.png"
@@ -41,67 +40,75 @@ msgstr ""
 
 #: ../../iodevices/lwp3device.rst:2
 msgid "LEGO Wireless Protocol v3 device"
-msgstr ""
+msgstr "LEGO 無線プロトコル v3 デバイス"
 
 #: ../../iodevices/lwp3device.rst:6
 msgid ""
 "This is an experimental class. It has not been well tested and may be "
 "changed in future."
 msgstr ""
+"これは試験的なクラスです。十分に検証されていないため、将来的に変更する可能性があります。"
 
 #: of pybricks.iodevices.LWP3Device:1
 msgid ""
 "Connects to a hub running official LEGO firmware using the `LEGO Wireless"
 " Protocol v3`_"
 msgstr ""
+"`LEGO Wireless Protocol v3`_ により、"
+"レゴ社公式ファームウェアを搭載したハブとの接続が可能です。"
 
 #: of pybricks.iodevices.LWP3Device pybricks.iodevices.LWP3Device.name
 #: pybricks.iodevices.LWP3Device.write pybricks.iodevices.PUPDevice
 #: pybricks.iodevices.PUPDevice.read pybricks.iodevices.PUPDevice.write
-msgid "パラメータ"
-msgstr ""
+msgid "Parameters"
+msgstr "パタメータ"
 
 #: of pybricks.iodevices.LWP3Device:7
 msgid "The `hub type identifier`_ of the hub to connect to."
-msgstr ""
+msgstr "接続するハブの `hub type identifier`_ 。"
 
 #: of pybricks.iodevices.LWP3Device:9
 msgid "The name of the hub to connect to or ``None`` to connect to any hub."
-msgstr ""
+msgstr "接続するハブの名前。任意のハブに接続する場合は ``None`` を指定します。"
 
 #: of pybricks.iodevices.LWP3Device:12
 msgid ""
 "The time, in milliseconds, to wait for a connection before raising an "
 "exception."
 msgstr ""
+"例外を発生させるまでの接続待ち時間をミリ秒単位で指定します。"
 
 #: of pybricks.iodevices.LWP3Device.name:1
 msgid "Sets or gets the Bluetooth name of the device."
-msgstr ""
+msgstr "デバイスの Bluetooth 名を設定または取得します。"
 
 #: of pybricks.iodevices.LWP3Device.name:3
 msgid ""
 "New Bluetooth name of the device. If no name is given, this method "
 "returns the current name."
 msgstr ""
+"デバイスの新しい Bluetooth 名。"
+"name を指定しない場合、このメソッドは現在の名前を返します。"
 
 #: of pybricks.iodevices.LWP3Device.write:1
 msgid "Sends a message to the remote hub."
-msgstr ""
+msgstr "リモートハブにメッセージを送信します。"
 
 #: of pybricks.iodevices.LWP3Device.write:3
 msgid "The raw binary message to send."
-msgstr ""
+msgstr "送信する生のバイナリーメッセージ。"
 
 #: of pybricks.iodevices.LWP3Device.read:1
 msgid "Retrieves the most recent message received from the remote hub."
-msgstr ""
+msgstr "リモートハブから受信した最新のメッセージを取得します。"
 
 #: of pybricks.iodevices.LWP3Device.read:3
 msgid ""
 "If a message has not been received since the last read, the method will "
 "block until a message is received."
 msgstr ""
+"最後の読み取り以降にメッセージを受信していない場合、このメソッドはメッセージが"
+"受信されるまでブロックされます。"
 
 #: ../../iodevices/xboxcontroller.rst of pybricks.iodevices.LWP3Device.read
 #: pybricks.iodevices.PUPDevice.info pybricks.iodevices.PUPDevice.read
@@ -110,63 +117,63 @@ msgstr ""
 #: pybricks.iodevices.XboxController.joystick_right
 #: pybricks.iodevices.XboxController.profile
 #: pybricks.iodevices.XboxController.triggers
-msgid "戻り値"
-msgstr ""
+msgid "Returns"
+msgstr "戻り値"
 
 #: of pybricks.iodevices.LWP3Device.read:6
 msgid "The raw binary message."
-msgstr ""
+msgstr "生のバイナリーメッセージ。"
 
 #: ../../iodevices/pupdevice.rst:4
 msgid "Powered Up Device"
-msgstr ""
+msgstr "Powered Up デバイス"
 
 msgid ".. image:: cad/output/iodevice-pupdevice.png"
 msgstr ""
 
 #: of pybricks.iodevices.PUPDevice:1
 msgid "Powered Up motor or sensor."
-msgstr ""
+msgstr "Powered Up モーターまたはセンサー。"
 
 #: of pybricks.iodevices.PUPDevice:3
 msgid "Port to which the device is connected."
-msgstr ""
+msgstr "デバイスが接続されているポート。"
 
 #: of pybricks.iodevices.PUPDevice.info:1
 msgid "Gets information about the device."
-msgstr ""
+msgstr "デバイスについての情報を取得します。"
 
 #: of pybricks.iodevices.PUPDevice.info:3
 msgid "Dictionary with information, such as the device ``id``."
-msgstr ""
+msgstr "デバイス ``id`` のような情報を持った辞書。"
 
 #: of pybricks.iodevices.PUPDevice.read:1
 msgid "Reads values from a given mode."
-msgstr ""
+msgstr "指定のモードで値を読み取ります。"
 
 #: of pybricks.iodevices.PUPDevice.read:3 pybricks.iodevices.PUPDevice.write:4
 msgid "Device mode."
-msgstr ""
+msgstr "デバイスモード。"
 
 #: of pybricks.iodevices.PUPDevice.read:6
 msgid "Values read from the sensor."
-msgstr ""
+msgstr "センサーから読み取った値。"
 
 #: of pybricks.iodevices.PUPDevice.write:1
 msgid "Writes values to the sensor. Only selected sensors and modes support this."
-msgstr ""
+msgstr "センサーに値を書き出します。一部のセンサーとモードのみ対応しています。"
 
 #: of pybricks.iodevices.PUPDevice.write:6
 msgid "Values to be written."
-msgstr ""
+msgstr "書き出す値。"
 
 #: ../../iodevices/pupdevice.rst:19
 msgid "Examples"
-msgstr ""
+msgstr "サンプルコード"
 
 #: ../../iodevices/pupdevice.rst:22
 msgid "Detecting devices"
-msgstr ""
+msgstr "デバイスの検出"
 
 #: ../../iodevices/pupdevice.rst:24
 msgid ""
@@ -246,10 +253,85 @@ msgid ""
 "    except KeyError:\n"
 "        print(port, \":\", \"Unknown device with ID\", id)\n"
 msgstr ""
+"from pybricks.iodevices import PUPDevice\n"
+"from pybricks.parameters import Port\n"
+"from uerrno import ENODEV\n"
+"\n"
+"# デバイスの識別子とその名称を並べた辞書。\n"
+"device_names = {\n"
+"    # pybricks.pupdevices.DCMotor\n"
+"    1: \"Wedo 2.0 Medium Motor\",\n"
+"    2: \"Powered Up Train Motor\",\n"
+"    # pybricks.pupdevices.Light\n"
+"    8: \"Powered Up Light\",\n"
+"    # pybricks.pupdevices.Motor\n"
+"    38: \"BOOST Interactive Motor\",\n"
+"    46: \"Technic Large Motor\",\n"
+"    47: \"Technic Extra Large Motor\",\n"
+"    48: \"SPIKE Medium Angular Motor\",\n"
+"    49: \"SPIKE Large Angular Motor\",\n"
+"    65: \"SPIKE Small Angular Motor\",\n"
+"    75: \"Technic Medium Angular Motor\",\n"
+"    76: \"Technic Large Angular Motor\",\n"
+"    # pybricks.pupdevices.TiltSensor\n"
+"    34: \"Wedo 2.0 Tilt Sensor\",\n"
+"    # pybricks.pupdevices.InfraredSensor\n"
+"    35: \"Wedo 2.0 Infrared Motion Sensor\",\n"
+"    # pybricks.pupdevices.ColorDistanceSensor\n"
+"    37: \"BOOST Color Distance Sensor\",\n"
+"    # pybricks.pupdevices.ColorSensor\n"
+"    61: \"SPIKE Color Sensor\",\n"
+"    # pybricks.pupdevices.UltrasonicSensor\n"
+"    62: \"SPIKE Ultrasonic Sensor\",\n"
+"    # pybricks.pupdevices.ForceSensor\n"
+"    63: \"SPIKE Force Sensor\",\n"
+"    # pybricks.pupdevices.ColorLightMatrix\n"
+"    64: \"SPIKE 3x3 Color Light Matrix\",\n"
+"}\n"
+"\n"
+"# 既知のポートのリストを作成。\n"
+"ports = [Port.A, Port.B]\n"
+"\n"
+"# 対応するハブでは、さらにポートを追加。\n"
+"try:\n"
+"    ports.append(Port.C)\n"
+"    ports.append(Port.D)\n"
+"except AttributeError:\n"
+"    pass\n"
+"\n"
+"# 対応するハブでは、さらにポートを追加。\n"
+"try:\n"
+"    ports.append(Port.E)\n"
+"    ports.append(Port.F)\n"
+"except AttributeError:\n"
+"    pass\n"
+"\n"
+"# 利用できるポートを巡回。\n"
+"for port in ports:\n"
+"\n"
+"    # デバイスが繋げられている場合は、そのの取得を試みます。\n"
+"    try:\n"
+"        device = PUPDevice(port)\n"
+"    except OSError as ex:\n"
+"        if ex.args[0] == ENODEV:\n"
+"            # このポートにはデバイスが見つからなかった。\n"
+"            print(port, \": ---\")\n"
+"            continue\n"
+"        else:\n"
+"            raise\n"
+"\n"
+"    # デバイス id を取得\n"
+"    id = device.info()[\"id\"]\n"
+"\n"
+"    # デバイス名を調べる。\n"
+"    try:\n"
+"        print(port, \":\", device_names[id])\n"
+"    except KeyError:\n"
+"        print(port, \":\", \"Unknown device with ID\", id)\n"
 
 #: ../../iodevices/xboxcontroller.rst:4
 msgid "Xbox Controller"
-msgstr ""
+msgstr "Xbox コントローラー"
 
 #: ../../iodevices/xboxcontroller.rst:10
 msgid ".. image:: blockimg/pybricks_variables_set_xbox_controller.svg"
@@ -260,18 +342,22 @@ msgid ""
 "Use the Microsoft® Xbox® controller as a sensor in your projects to "
 "control them remotely."
 msgstr ""
+"リモート制御のためのセンサーとして Microsoft® Xbox® "
+"コントローラーを使います。"
 
 #: of pybricks.iodevices.XboxController:4
 msgid ""
 "The hub will scan for the controller and connect to it. It will "
 "disconnect when the program ends."
 msgstr ""
+"ハブはコントローラーをスキャンして接続します。プログラムが終了すると切断します。"
 
 #: of pybricks.iodevices.XboxController:7
 msgid ""
 "For tips on connectivity and pairing, see :ref:`below <xbox-controller-"
 "pairing>`."
 msgstr ""
+"接続性とペアリングのヒントについては :ref:`後述 <xbox-controller-pairing>` します。"
 
 #: ../../iodevices/xboxcontroller.rst:15
 msgid ".. image:: blockimg/pybricks_blockButtonIsPressed_XboxController.svg"
@@ -279,33 +365,35 @@ msgstr ""
 
 #: of pybricks._common.Keypad.pressed:1
 msgid "Checks which buttons are currently pressed."
-msgstr ""
+msgstr "現在押されているボタンをチェックします。"
 
 #: of pybricks._common.Keypad.pressed:3
 msgid "Set of pressed buttons."
-msgstr ""
+msgstr "押されているボタンのセット。"
 
 #: ../../iodevices/xboxcontroller.rst:18
 msgid "Buttons include:"
-msgstr ""
+msgstr "ボタンには次のものがあります:"
 
 #: ../../iodevices/xboxcontroller.rst:20
 msgid "``\"A\"``, ``\"B\"``, ``\"X\"``, ``\"Y\"``."
-msgstr ""
+msgstr "``\"A\"``, ``\"B\"``, ``\"X\"``, ``\"Y\"``"
 
 #: ../../iodevices/xboxcontroller.rst:21
 msgid "``\"LB\"`` and ``\"RB\"`` (bumpers)."
-msgstr ""
+msgstr "``\"LB\"`` and ``\"RB\"`` (バンパー)"
 
 #: ../../iodevices/xboxcontroller.rst:22
 msgid "``\"LJ\"`` and ``\"RJ\"`` (pressing the joysticks)."
-msgstr ""
+msgstr "``\"LJ\"`` と ``\"RJ\"`` (ジョイスティックの押下)"
 
 #: ../../iodevices/xboxcontroller.rst:23
 msgid ""
 "``\"VIEW\"``, ``\"MENU\"``, ``\"GUIDE\"`` (the Xbox logo), and "
 "``\"UPLOAD\"``."
 msgstr ""
+"``\"VIEW\"``, ``\"MENU\"``, ``\"GUIDE\"`` (Xbox ロゴ), "
+"``\"UPLOAD\"``"
 
 #: ../../iodevices/xboxcontroller.rst:24
 msgid ""
@@ -313,6 +401,9 @@ msgid ""
 " Pressing the paddles may also be detected as other button presses, "
 "depending on the currently active profile."
 msgstr ""
+"``\"P1\"``, ``\"P2\"``, ``\"P3\"``, ``\"P4\"`` (Elite シリーズ 2 のみ)\n"
+"パドルの押下は、現在アクティブなプロファイルによっては他のボタンの押下として"
+"検出される場合があります。"
 
 #: ../../iodevices/xboxcontroller.rst:29
 msgid ".. image:: blockimg/pybricks_blockJoystickValue_lj_x.svg"
@@ -326,11 +417,13 @@ msgid ""
 "Gets the left joystick position as percentages between -100% and 100%. "
 "The center position is (0, 0)."
 msgstr ""
+"左のジョイスティックの位置を、-100% から 100% の割合で取得します。"
+"中心位置は (0, 0) です。"
 
 #: of pybricks.iodevices.XboxController.joystick_left:4
 #: pybricks.iodevices.XboxController.joystick_right:4
 msgid "Tuple of X (horizontal) and Y (vertical) position."
-msgstr ""
+msgstr "X (水平方向)および Y (垂直方向)位置のタプル。"
 
 #: ../../iodevices/xboxcontroller.rst:36
 msgid ".. image:: blockimg/pybricks_blockJoystickValue_rj_x.svg"
@@ -344,6 +437,8 @@ msgid ""
 "Gets the right joystick position as percentages between -100% and 100%. "
 "The center position is (0, 0)."
 msgstr ""
+"右のジョイスティックの位置を、-100% から 100% の割合で取得します。"
+"中心位置は (0, 0) です。"
 
 #: ../../iodevices/xboxcontroller.rst:43
 msgid ".. image:: blockimg/pybricks_blockJoystickValue_lt.svg"
@@ -357,10 +452,11 @@ msgid ""
 "Gets the left and right trigger positions as percentages between 0% and "
 "100%."
 msgstr ""
+"左右のトリガーの位置を、0% から 100% の割合で取得します。"
 
 #: of pybricks.iodevices.XboxController.triggers:4
 msgid "Tuple of left and right trigger positions."
-msgstr ""
+msgstr "左右のトリガー位置のタプル。"
 
 #: ../../iodevices/xboxcontroller.rst:50
 msgid ".. image:: blockimg/pybricks_blockJoystickValue_dpad.svg"
@@ -372,10 +468,13 @@ msgid ""
 " right, ``4`` is down-right, ``5`` is down, ``6`` is down-left, ``7`` is "
 "left, ``8`` is up-left, and ``0`` is not pressed."
 msgstr ""
+"方向パッドの位置を取得します。 ``1`` は上、 ``2`` は右上、 ``3`` は右、 "
+"``4`` は右下、 ``5`` は下、 ``6`` は左下、 ``7`` は左、 ``8`` は左上が
+"押されていることを示します。 ``0`` は押されていないことを示します。"
 
 #: of pybricks.iodevices.XboxController.dpad:5
 msgid "Direction-pad position."
-msgstr ""
+msgstr "方向パッドの位置。"
 
 #: ../../iodevices/xboxcontroller.rst:54
 msgid ".. image:: blockimg/pybricks_blockJoystickValue_profile.svg"
@@ -386,14 +485,16 @@ msgid ""
 "Gets the current profile of the controller. Only available on the Xbox "
 "Elite Controller Series 2."
 msgstr ""
+"コントローラーの現在のプロファイルを取得します。"
+"Xbox Elite コントローラー シリーズ 2 でのみ利用可能です。"
 
 #: of pybricks.iodevices.XboxController.profile:4
 msgid "Profile number."
-msgstr ""
+msgstr "プロファイル番号。"
 
 #: ../../iodevices/xboxcontroller.rst:60
 msgid "Xbox Controller Pairing Instructions"
-msgstr ""
+msgstr "Xbox コントローラーのペアリング手順"
 
 #: ../../iodevices/xboxcontroller.rst:61
 msgid ""
@@ -402,16 +503,22 @@ msgid ""
 "on the back of the controller for a few seconds. When you release it, the"
 " Xbox button starts flashing more rapidly. Then start your program."
 msgstr ""
+"コントローラーをハブに初めて繋げる場合、それらをペアリングする必要があります。"
+"コントローラーの電源を入れ、次にコントローラーの背面にあるペアリングボタンを"
+"数秒間押し続けます。押し続けるのを止めると、Xbox ボタンがより速く点滅し始めます。"
+"その後、プログラムを起動します。"
 
 #: ../../iodevices/xboxcontroller.rst:66
 msgid ""
 "When pairing and the connection is succesful, the Xbox button will stop "
 "flashing and stay on for as long as the program is running."
 msgstr ""
+"ペアリングが成功し、接続が確立されると、Xbox ボタンの点滅が停止し、"
+"プログラムが実行されている間は点灯し続けます。"
 
 #: ../../iodevices/xboxcontroller.rst:70
 msgid "Repeat Connections"
-msgstr ""
+msgstr "再接続"
 
 #: ../../iodevices/xboxcontroller.rst:72
 msgid ""
@@ -419,6 +526,9 @@ msgid ""
 "turn the controller on the next time and the hub will connect to it "
 "automatically when your program with this class runs."
 msgstr ""
+"同じコントローラーを同じハブで使用し続ける場合、次回以降は単にコントローラーの"
+"電源を入れるだけで、このクラスを使ったプログラムの実行時に、"
+"ハブが自動的にコントローラーに接続します。"
 
 #: ../../iodevices/xboxcontroller.rst:76
 msgid ""
@@ -427,10 +537,13 @@ msgid ""
 "or connect to another hub, you will need to pair them again as described "
 "above."
 msgstr ""
+"Xbox コントローラーが、この簡略化した接続を受け付けるのは、最後に接続したデバイスのみです。"
+"したがって、Xbox ゲーム機本体に接続するよう戻したり、別のハブに接続する場合は、"
+"前述の手順に従って再度ペアリングする必要があります。"
 
 #: ../../iodevices/xboxcontroller.rst:82
 msgid "Compatible Controllers"
-msgstr ""
+msgstr "利用できるコントローラー"
 
 #: ../../iodevices/xboxcontroller.rst:84
 msgid ""
@@ -439,10 +552,24 @@ msgid ""
 "(``1797`` from 2019), and the Series X/S (``1914`` from 2020), which is "
 "the latest model as of this writing."
 msgstr ""
+"2016年以降にリリースされたすべての Xbox コントローラーが利用できます。"
+"これには、One S のコントローラー (2016年の ``1708``)、Elite Series 2 "
+"(2019年の ``1797``)、執筆時点で最新のモデル Series X/S (2020年の ``1914``)が"
+"含まれます。"
+
+#: ../../iodevices/xboxcontroller.rst:91
+msgid ""
+"See also `this overview "
+"<https://en.wikipedia.org/wiki/Xbox_Wireless_Controller#Summary>`_ "
+"of model numbers including pictures of each controller."
+msgstr ""
+"各コントローラーのモデル番号と画像については `この概要 "
+"<https://en.wikipedia.org/wiki/Xbox_Wireless_Controller#Summary>`_ "
+"も参照してください。"
 
 #: ../../iodevices/xboxcontroller.rst:95
 msgid "Updating the Xbox Controller"
-msgstr ""
+msgstr "Xbox コントローラーの更新"
 
 #: ../../iodevices/xboxcontroller.rst:97
 msgid ""
@@ -450,6 +577,9 @@ msgid ""
 "controller is probably already up to date. If you have not used it for a "
 "while or if you bought one recently, you may need to update it."
 msgstr ""
+"Xbox コントローラーを頻繁にゲーム機本体に繋いで使っている場合、"
+"おそらくコントローラーはすでに最新の状態になっているでしょう。"
+"一時的に使っていなかった場合や最近購入した場合は更新が必要な場合があります。"
 
 #: ../../iodevices/xboxcontroller.rst:101
 msgid ""
@@ -458,10 +588,15 @@ msgid ""
 "Microsoft Store. Connect the controller via USB to the computer and "
 "follow the instructions in the app to click on \"Update now\"."
 msgstr ""
+"ゲーム機本体を使わずにコントローラーを更新するには "
+"Windows コンピューターで Xbox Accessories アプリを使います。"
+"これは Microsoft Store からダウンロードできます。"
+"コントローラーを USB 経由でコンピューターに接続し、アプリ内の \"Update now\" "
+"をクリックする指示にしたがってください。"
 
 #: ../../iodevices/xboxcontroller.rst:107
 msgid "Technic Hub Limitations"
-msgstr ""
+msgstr "テクニックハブの制限"
 
 #: ../../iodevices/xboxcontroller.rst:109
 msgid ""
@@ -470,4 +605,7 @@ msgid ""
 "be able to see output from the ``print`` command. Also, you'll have to "
 "connect to the computer again if you want to change your program."
 msgstr ""
-
+"テクニックハブの制限により、Xbox コントローラーを検索する際にハブが"
+"コンピューターから切断されます。これは、 ``print`` 命令からの出力を"
+"見れなくなることを意味します。また、プログラムを変更したい場合は、"
+"再びコンピューターに接続する必要があります。"
