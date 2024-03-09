@@ -4,6 +4,14 @@
 
 ## Unreleased
 
+## 3.4.0b5 - 2024-03-05
+
+## Changed
+
+- Updates for v3.4.0b3 firmware (out of sync with docs).
+- Changed `hub.button` to `hub.buttons` on single button hubs. Access via
+ `hub.button` will keep working in the firmware for backwards compatibility.
+
 ## 3.4.0b4 - 2024-02-14
 
 ## Added
