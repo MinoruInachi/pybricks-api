@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.3\n"
+"Project-Id-Version: pybricks v3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-11 20:29+0900\n"
-"PO-Revision-Date: 2024-02-11 21:36+0900\n"
+"POT-Creation-Date: 2024-03-09 12:19+0900\n"
+"PO-Revision-Date: 2024-03-09 12:45+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
@@ -248,7 +248,11 @@ msgstr "ロボットの速度。"
 msgid "Stops the robot by letting the motors spin freely."
 msgstr "モーターの動作を止め、惰性でロボットが停止するにまかせます。"
 
-#: ../../robotics.rst:43
+#: of pybricks.robotics.DriveBase.brake:1
+msgid "Stops the robot by passively braking the motors."
+msgstr "モーターに逆トルクをかけることで、ロボットを停止させます。"
+
+#: ../../robotics.rst:69
 msgid "Measuring"
 msgstr "計測"
 
@@ -540,7 +544,15 @@ msgstr "前輪を旋回するモーター。"
 msgid "The motor that drives the wheels. Use a tuple for multiple motors."
 msgstr "車輪を駆動するモーター。複数のモーターを使う場合はタプルで指定してください。"
 
-#: ../../robotics.rst:188
+#: of pybricks.robotics.Car:12
+msgid ""
+"The maximum torque limit used to find the endpoints for the steering "
+"mechanism, as a percentage of the maximum torque of the steering motor."
+msgstr ""
+"ステアリング機構のエンドポイント発見に使う最大トルク制限。"
+"ステアリングモーターの最大トルクに対する割合で指定します。"
+
+#: ../../robotics.rst:190
 msgid ".. image:: blockimg/pybricks_blockCarSteer.svg"
 msgstr ""
 
@@ -564,19 +576,21 @@ msgstr ""
 
 #: of pybricks.robotics.Car.drive_power:1
 msgid ""
-"Drives the car at a given \"power\" level, as a percentage of the battery"
-" voltage. Positive values drive forward, negative values drive backward."
+"Drives the car at a given power level. Positive values drive forward, "
+"negative values drive backward."
 msgstr ""
-"\"power\" に指定したレベルで車を駆動します。"
-"これはバッテリー電圧のパーセンテージです。正の値は前進、負の値は後進します。"
+"指定のパワーレベルで車を駆動します。"
+正の値は前進、負の値は後進します。"
 
 #: of pybricks.robotics.Car.drive_power:5
 msgid ""
-"For ``power`` values below 30%, the car will coast the wheels in order to"
+"The ``power`` value is used to set the motor voltage as a percentage of "
+"the battery voltage. Below 10%, the car will coast the wheels in order to"
 " roll out smoothly instead of braking abruptly."
 msgstr ""
-"``power`` の値が 30% 未満の場合、急ブレーキではなく滑らかにロールアウトするために、"
-"車輪を惰走させます。"
+"``power`` に指定した値は、バッテリー電圧に対する割合としてモーター電圧を設定"
+"するのに使います。これが 10% 以下の場合、車が突然ブレーキをかける代わりに、"
+"スムーズに転がるように車輪を惰性走行させます。"
 
 #: of pybricks.robotics.Car.drive_power:8
 msgid ""
