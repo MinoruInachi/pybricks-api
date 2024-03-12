@@ -11,12 +11,9 @@ build:
     python: "3.10"
   jobs:
     post_create_environment:
-      - pip install toml tomlkit
       - pip install poetry
-      - pip install sphinx-rtd-theme
-      - poetry config virtualenvs.create false
     post_install:
-      - poetry install --only=doc
+      - VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH poetry install --only=doc
 
 # Build documentation in the doc/main/ directory with Sphinx
 sphinx:

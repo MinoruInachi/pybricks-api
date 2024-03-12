@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.3\n"
+"Project-Id-Version: pybricks v3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 09:36+0900\n"
-"PO-Revision-Date: 2023-12-17 10:11+0900\n"
+"POT-Creation-Date: 2024-03-12 12:22+0900\n"
+"PO-Revision-Date: 2024-03-12 12:48+0900\n"
 "Last-Translator: Minoru INACHI\n"
-"Language-Team: ja\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../pupdevices/colordistancesensor.rst:4
 msgid "Color and Distance Sensor"
@@ -1761,39 +1762,48 @@ msgstr ""
 
 #: of pybricks.pupdevices.Motor:9
 msgid ""
-"List of gears linked to the motor.  For example: ``[12, 36]`` represents "
-"a gear train with a 12-tooth and a 36-tooth gear. Use a list of lists for"
-" multiple gear trains, such as ``[[12, 36], [20, 16, 40]]``.  When you "
-"specify a gear train, all motor commands and settings are automatically "
-"adjusted to account for the resulting gear ratio.  The motor direction "
-"remains unchanged by this."
+"List of gears linked to the motor. The gear connected to the motor comes "
+"first and the gear connected to the output comes last.  For example: "
+"``[12, 36]`` represents a gear train with a 12-tooth gear connected to "
+"the motor and a 36-tooth gear connected to the output. Use a list of "
+"lists for multiple gear trains, such as ``[[12, 36], [20, 16, 40]]``.  "
+"When you specify a gear train, all motor commands and settings are "
+"automatically adjusted to account for the resulting gear ratio. The motor"
+" direction remains unchanged by this."
 msgstr ""
-"モーターにリンクしているギアのリスト。"
-"たとえば ``[12, 36]`` は、12歯と36歯のギアを持つギアトレインを表します。"
-"複数のギアトレインには、[[12, 36], [20, 16, 40]] のようなリストを使用します。"
-"ギアトレインを指定すると、すべてのモーターコマンドと設定は、結果として生じるギア比を"
+"モーターに接続している歯車のリスト。"
+"モーターに直接接続している歯車をリストの最初に指定し、"
+"出力側に接続している歯車をリストの最後に指定します。"
+"たとえば ``[12, 36]`` は、モーターに直接接続している12歯の歯車と、"
+"出力側に接続している36歯の歯車を持つ歯車列を表します。"
+"複数の歯車列を扱う際には ``[[12, 36], [20, 16, 40]]`` のように"
+"リストのリストを使います。"
+"歯車列を指定すると、すべてのモーターコマンドと設定は、結果として生じる歯車比を"
 "考慮して自動的に調整されます。モータの方向はこれによって変更されません。"
 
 #: of pybricks.pupdevices.Motor:9
 msgid "List of gears linked to the motor."
-msgstr "モーターにリンクしているギアのリスト。"
+msgstr "モーターに接続している歯車のリスト。"
 
 #: of pybricks.pupdevices.Motor:11
 msgid ""
-"For example: ``[12, 36]`` represents a gear train with a 12-tooth and a "
-"36-tooth gear. Use a list of lists for multiple gear trains, such as "
-"``[[12, 36], [20, 16, 40]]``."
+"For example: ``[12, 36]`` represents a gear train with a 12-tooth gear "
+"connected to the motor and a 36-tooth gear connected to the output. Use a"
+" list of lists for multiple gear trains, such as ``[[12, 36], [20, 16, "
+"40]]``."
 msgstr ""
-"たとえば ``[12, 36]`` は、12歯と36歯のギアを持つギアトレインを表します。"
-"複数のギアトレインには、[[12, 36], [20, 16, 40]] のようなリストを使用します。"
+"たとえば ``[12, 36]`` は、モーターに直接接続している12歯の歯車と、"
+"出力側に接続している36歯の歯車を持つ歯車列を表します。"
+"複数の歯車列を扱う際には ``[[12, 36], [20, 16, 40]]`` のように"
+"リストのリストを使います。"
 
 #: of pybricks.pupdevices.Motor:15
 msgid ""
 "When you specify a gear train, all motor commands and settings are "
-"automatically adjusted to account for the resulting gear ratio.  The "
-"motor direction remains unchanged by this."
+"automatically adjusted to account for the resulting gear ratio. The motor"
+" direction remains unchanged by this."
 msgstr ""
-"ギアトレインを指定すると、すべてのモーターコマンドと設定は、結果として生じるギア比を"
+"歯車列を指定すると、すべてのモーターコマンドと設定は、結果として生じる歯車比を"
 "考慮して自動的に調整されます。モータの方向はこれによって変更されません。"
 
 #: of pybricks.pupdevices.Motor:19
