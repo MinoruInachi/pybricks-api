@@ -307,11 +307,11 @@ msgstr "ボタンとシステム制御"
 
 #: of pybricks._common.Keypad.pressed:1
 msgid "Checks which buttons are currently pressed."
-msgstr "ボタンが押されているかをチエックします。"
+msgstr "どのボタンが押されているかをチェックします。"
 
 #: of pybricks._common.Keypad.pressed:3
 msgid "Set of pressed buttons."
-msgstr "押されているボタンのセット。"
+msgstr "押されているボタンの集合。"
 
 #: of pybricks._common.System.set_stop_button:1
 msgid "Sets the button or button combination that stops a running script."

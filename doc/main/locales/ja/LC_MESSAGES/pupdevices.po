@@ -3184,11 +3184,11 @@ msgstr ""
 
 #: of pybricks._common.Keypad.pressed:1
 msgid "Checks which buttons are currently pressed."
-msgstr "現在、どのボタンが押されているかをチェックします。"
+msgstr "どのボタンが押されているかをチェックします。"
 
 #: of pybricks._common.Keypad.pressed:3
 msgid "Set of pressed buttons."
-msgstr "押されたボタンのセット。"
+msgstr "押されているボタンの集合。"
 
 #: ../../pupdevices/remote.rst:24
 msgid "Checking which buttons are pressed"
