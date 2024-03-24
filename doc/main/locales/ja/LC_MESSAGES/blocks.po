@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.4\n"
+"Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-11 20:29+0900\n"
-"PO-Revision-Date: 2024-02-11 23:00+0900\n"
+"POT-Creation-Date: 2024-03-24 09:32+0900\n"
+"PO-Revision-Date: 2024-03-24 09:46+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -256,5 +256,21 @@ msgstr ""
 
 #: ../../blocks/index.rst:134
 msgid ".. image:: blockimg/pybricks_blockImportTaskCallValue.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:137
+msgid "Comments"
+msgstr "コメント"
+
+#: ../../blocks/index.rst:140
+msgid ".. image:: blockimg/pybricks_blockComment.svg"
+msgstr ""
+
+#: ../../blocks/index.rst:142
+msgid "Stopping programs"
+msgstr "プログラム停止"
+
+#: ../../blocks/index.rst:144
+msgid ".. image:: blockimg/pybricks_blockProgramStop.svg"
 msgstr ""
 
