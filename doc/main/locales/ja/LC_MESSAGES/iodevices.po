@@ -380,14 +380,22 @@ msgid "``Button.A``, ``Button.B``, ``Button.X``, ``Button.Y``."
 msgstr "``Button.A``, ``Button.B``, ``Button.X``, ``Button.Y``"
 
 #: ../../iodevices/xboxcontroller.rst:21
+msgid ""
+"``Button.UP``, ``Button.DOWN``, ``Button.LEFT``, ``Button.RIGHT`` "
+"(direction pad). At most two of these can be pressed at the same time."
+msgstr ""
+"``Button.UP``, ``Button.DOWN``, ``Button.LEFT``, ``Button.RIGHT`` "
+"(方向パッド)。これらのうち最大で2つまで同時に押せます。"
+
+#: ../../iodevices/xboxcontroller.rst:23
 msgid "``Button.LB`` and ``Button.RB`` (bumpers)."
 msgstr "``Button.LB`` and ``Button.RB`` (バンパー)"
 
-#: ../../iodevices/xboxcontroller.rst:22
+#: ../../iodevices/xboxcontroller.rst:24
 msgid "``Button.LJ`` and ``Button.RJ`` (pressing the joysticks)."
 msgstr "``Button.LJ`` and ``Button.RJ`` (ジョイスティックの押下)"
 
-#: ../../iodevices/xboxcontroller.rst:23
+#: ../../iodevices/xboxcontroller.rst:25
 msgid ""
 "``Button.VIEW``, ``Button.MENU``, ``Button.GUIDE`` (the Xbox logo), and "
 "``Button.UPLOAD``."
@@ -395,7 +403,7 @@ msgstr ""
 "``Button.VIEW``, ``Button.MENU``, ``Button.GUIDE`` (the Xbox logo), "
 "``Button.UPLOAD``"
 
-#: ../../iodevices/xboxcontroller.rst:24
+#: ../../iodevices/xboxcontroller.rst:26
 msgid ""
 "``Button.P1``, ``Button.P2``, ``Button.P3``, and ``Button.P4`` (Elite "
 "Series 2 only). Pressing the paddles may also be detected as other button"
@@ -406,7 +414,7 @@ msgstr ""
 "パドルの押下は、現在アクティブなプロファイルによっては他のボタンの押下として"
 "検出される場合があります。"
 
-#: ../../iodevices/xboxcontroller.rst:29
+#: ../../iodevices/xboxcontroller.rst:31
 msgid ".. image:: blockimg/pybricks_blockJoystickValue_lj_x.svg"
 msgstr ""
 
