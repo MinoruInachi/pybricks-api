@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 10:05+0900\n"
-"PO-Revision-Date: 2023-10-31 18:50+0900\n"
+"POT-Creation-Date: 2024-04-05 21:14+0900\n"
+"PO-Revision-Date: 2024-04-05 21:42+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
@@ -89,13 +89,54 @@ msgstr "実行中であれば、実行中のままです(ただし、0 から再
 msgid "Input tools"
 msgstr "入力ツール"
 
-#: of pybricks.tools.read_input_byte:1
-msgid "Reads one byte from standard input without blocking."
-msgstr "標準入力からブロックなしで1バイトを読み込みます。"
+#: ../../tools/index.rst:41
+msgid ".. image:: blockimg/pybricks_blockReadInput_read_input_first_byte.svg"
+msgstr ""
 
-#: of pybricks.tools.read_input_byte:3
-msgid "The numeric value of the byte read or ``None`` if no data is available."
-msgstr "読み込んだバイトの値。データが利用できない場合は ``None`` 。
+msgid ".. image:: blockimg/pybricks_blockReadInput_read_input_first_char.svg"
+msgstr ""
+
+msgid ".. image:: blockimg/pybricks_blockReadInput_read_input_last_byte.svg"
+msgstr ""
+
+msgid ".. image:: blockimg/pybricks_blockReadInput_read_input_last_char.svg"
+msgstr ""
+
+#: of pybricks.tools.read_input_byte:1
+msgid ""
+"Reads one byte from standard input without blocking and removes it from "
+"the input buffer."
+msgstr ""
+"標準入力からブロックなしで1バイトを読み込み、"
+"読み込んだ分を入力バッファから除きます。"
+
+#: of pybricks.tools.read_input_byte:4
+msgid ""
+"Choose ``True`` to read the last (most recent) byte in the buffer and "
+"discard the rest. Choose ``False`` to read only the first (oldest) byte."
+msgstr ""
+"バッファ内の最後の(最も最近に入力された)バイトを読み込んで、残りを破棄する場合は ``True`` を"
+"指定します。最初の(最も以前に入力された)バイトのみを読み込む場合は ``False`` を指定します。"
+
+#: of pybricks.tools.read_input_byte:7
+msgid "Choose ``True`` to convert the result to a one-character string."
+msgstr "結果を1文字の文字列に変換する場合は ``True`` を指定します。"
+
+#: of pybricks.tools.read_input_byte:10
+msgid ""
+"The byte that was read, as a numeric value (``0`` to ``255``) or string "
+"(e.g. ``\"B\"``). Returns ``None`` if no data is available. If "
+"``chr=True``, it also return ``None`` if the byte that was read is not "
+"printable as a character."
+msgstr ""
+"読み込んだバイトを数値(0から255)または文字列(例: ``\"B\"``)として返します。"
+"データが利用できない場合は ``None`` を返します。 "
+"``chr=True`` としたとき、読み込んだバイトが文字として表示可能でない場合も "
+"``None`` を返します。"
+
+#: ../../tools/index.rst:55
+msgid "Added ``last`` and ``chr`` options."
+msgstr "オプション ``last`` と ``chr`` を追加。"
 
 #: of pybricks.tools.hub_menu:1
 msgid ""

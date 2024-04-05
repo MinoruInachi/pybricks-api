@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-24 09:32+0900\n"
-"PO-Revision-Date: 2024-03-24 09:55+0900\n"
+"POT-Creation-Date: 2024-04-05 21:14+0900\n"
+"PO-Revision-Date: 2024-04-05 23:24+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "MIME-Version: 1.0\n"
@@ -213,6 +213,14 @@ msgid "Retrieves the last observed data for a given channel."
 msgstr "指定したチャンネルで最後に観測されたデータを取得します。"
 
 #: of pybricks._common.BLE.observe:3
+msgid ""
+"Receiving data is more reliable when the hub is not connected to a "
+"computer or other devices at the same time."
+msgstr ""
+"ハブがコンピュータや他のデバイスに同時に接続しないようにすると、"
+"データを受信する信頼性が高くなります。"
+
+#: of pybricks._common.BLE.observe:6
 msgid "The channel to observe (0 to 255)."
 msgstr "観測するチャンネル(0から255)。"
 
