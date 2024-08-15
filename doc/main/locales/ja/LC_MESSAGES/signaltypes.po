@@ -562,3 +562,63 @@ msgstr "色相: deg"
 msgid "Hue of a color (0-359 degrees)."
 msgstr "色の色相(0～359度)。"
 
+#: ../../signaltypes.rst:267
+msgid "Reference frames"
+msgstr "基準座標系¶"
+
+#: ../../signaltypes.rst:269
+msgid "The Pybricks module and this documentation use the following conventions:"
+msgstr "Pybricks モジュールとこのドキュメントでは、以下の規約を使っています。"
+
+#: ../../signaltypes.rst:271
+msgid "X: Positive means forward. Negative means backward."
+msgstr "X: 正は前方を意味します。負は後方を意味します。"
+
+#: ../../signaltypes.rst:272
+msgid "Y: Positive means to the left. Negative means to the right."
+msgstr "Y: 正は左を意味します。負の値は右を意味します。"
+
+#: ../../signaltypes.rst:273
+msgid "Z: Positive means upward. Negative means downward."
+msgstr "Z: 正は上方向。負は下方向を意味します。"
+
+#: ../../signaltypes.rst:275
+msgid ""
+"To make sure that all hub measurements (such as acceleration) have the "
+"correct value and sign, you can specify how the hub is mounted in your "
+"creation. This adjust the measurements so that it is easy to see how your"
+" *robot* is moving, rather than how the *hub* is moving."
+msgstr ""
+"すべてのハブの計測値(加速度など)が正しい値と符号になるように、ハブの取り付け方を"
+"指定できます。これにより、「ハブ」の動きではなく「ロボット」の動きがわかりやすいように"
+"計測値を調整します。"
+
+#: ../../signaltypes.rst:280
+msgid ""
+"For example, the hub may be mounted upside down in your design. If you "
+"configure the settings as shown in :numref:`fig_imuexamples`, the hub "
+"measurements will be adjusted accordingly. This way, a positive "
+"acceleration value in the X direction means that your *robot* accelerates"
+" forward, even though the *hub* accelerates backward."
+msgstr ""
+"たとえば、ハブが上下逆さまに取り付けられているようなデザインも可能です。 "
+":numref:`fig_imuexamples` のように設定すると、それに応じてハブの"
+"計測値が調整されます。このようにすると、X方向の加速度が正の値であれば、"
+"ハブが後方に加速しても、ロボットは前方に加速することになります。"
+
+#: ../../signaltypes.rst:291
+msgid ".. image:: ../main/diagrams/imuexamples.png"
+msgstr ""
+
+#: ../../signaltypes.rst:291
+msgid ""
+"How to configure the ``top_side`` and ``front_side`` settings for three "
+"different robot designs. The same technique can be applied to other hubs "
+"and other creations, by noting which way the top and front :class:`Side "
+"<Side>` of the hub are pointing. The example on the left is the default "
+"configuration."
+msgstr ""
+"３つの異なるロボットデザインの ``top_side`` と ``front_side`` の設定方法。"
+"ハブの top と front の :class:`Side <Side>` がどちらを向いているかを確認する"
+"ことで、他のハブや他の作品にも同じ手法を適用できます。左の例は、デフォルトの設定です。"
+

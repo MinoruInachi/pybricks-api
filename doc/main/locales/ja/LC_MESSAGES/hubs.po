@@ -899,7 +899,7 @@ msgstr ""
 
 #: ../../hubs/essentialhub.rst:4
 msgid "Essential Hub"
-msgstr "スモールハブ"
+msgstr "Spike スモールハブ"
 
 #: ../../hubs/index.rst
 msgid ".. image:: ../main/cad/output/hub-essential.png"
@@ -2350,7 +2350,7 @@ msgstr ""
 
 #: ../../hubs/primehub.rst:4
 msgid "Prime Hub / Inventor Hub"
-msgstr "プライム ラージハブ / Inventor ハブ"
+msgstr "Spike ラージハブ / Inventor ハブ"
 
 msgid ".. image:: ../main/cad/output/hub-spike-inventor.png"
 msgstr ""

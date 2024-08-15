@@ -124,6 +124,10 @@ msgstr "戻り値"
 msgid "The raw binary message."
 msgstr "生のバイナリーメッセージ。"
 
+#: of pybricks.iodevices.LWP3Device.disconnect:1
+msgid "Disconnects the remote LWP3Device from the hub."
+msgstr "リモート LWP3Device をハブから切断します。"
+
 #: ../../iodevices/pupdevice.rst:4
 msgid "Powered Up Device"
 msgstr "Powered Up デバイス"
