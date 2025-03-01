@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.4\n"
+"Project-Id-Version: pybricks v3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-09 12:19+0900\n"
-"PO-Revision-Date: 2024-03-09 12:45+0900\n"
+"POT-Creation-Date: 2025-03-01 18:48+0900\n"
+"PO-Revision-Date: 2025-03-01 23:26+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../robotics.rst:2
 msgid ":mod:`robotics <pybricks.robotics>` -- Robotics and drive bases"
@@ -137,17 +138,74 @@ msgstr "指定の角度だけその場で回転し、停止する。"
 msgid "Angle of the turn."
 msgstr "回転する角度。"
 
-#: of pybricks.robotics.DriveBase.curve:1
-msgid "Drives an arc along a circle of a given radius, by a given angle."
-msgstr "指定の半径の円に沿って、指定の角度で円弧状に駆動します。"
+#: ../../robotics.rst:32
+msgid ""
+"The ``curve()`` Python method will be replaced by the :meth:`.arc` "
+"method. It can still make curves, but it uses different definitions for "
+"drive and turn direction. Existing code with ``curve()`` continues to "
+"work the same, but you should use :meth:`.arc` for new code. If you use "
+"block code, you can pick a new block from the palette to update your "
+"code. The old block will still work, but it displays a warning icon to "
+"remind you to upgrade. The updated `curve` option uses the direction "
+"definitions given below. The new `veer` option lets you drive along a "
+"circle by a given distance, which is useful for veering slightly in one "
+"direction."
+msgstr ""
+"``curve()`` Python メソッドは :meth:`.arc` メソッドに置き換えられます。"
+"どちらもカーブを描くことができますが、走行方向と旋回方向の定義が異なります。"
+"既存の ``curve()`` を使ったコードは引き続き同じように動作しますが、"
+"新しいコードでは :meth:`.arc` の利用を推奨します。"
+"ブロックコードを使っている場合は、パレットから新しいブロックを選択してコードを更新できます。"
+"古いブロックも動作しますが、アップグレードを促す警告アイコンが表示されます。"
+"更新された `curve` オプションは、以下に示す新しい方向の定義を使います。"
+"また、新しい `veer` オプションを使うと、特定の距離だけ円を描くように"
+"走行でき、わずかに方向を変えながら進むのに便利です。"
 
-#: of pybricks.robotics.DriveBase.curve:3
+#: of pybricks.robotics.DriveBase.arc:1
+msgid ""
+"Drives an arc (a partial circle) with a given radius. You can specify how"
+" far to drive using either an angle or a distance."
+msgstr ""
+"指定した半径で円弧(部分的な円)を描くように走行します。"
+"移動距離は角度(度)または距離(mm)で指定できます。"
+
+#: of pybricks.robotics.DriveBase.arc:4
+msgid ""
+"With a positive radius, the robot drives along a circle to its right. "
+"With a negative radius, the robot drives along a circle to its left."
+msgstr ""
+"正の半径を指定すると、ロボットは右方向の円弧を描いて走行します。"
+"負の半径を指定すると、ロボットは左方向の円弧を描いて走行します。"
+
+#: of pybricks.robotics.DriveBase.arc:7
+msgid ""
+"You can specify how far to travel along that circle as an angle (degrees)"
+" or distance (mm). A positive value means driving forward along the "
+"circle. Negative means driving in reverse."
+msgstr ""
+"円周上をどれだけ移動するかを、角度(度)または距離(mm)で指定できます。"
+"正の値を指定すると円に沿って前進し、負の値を指定すると後退します。"
+
+#: of pybricks.robotics.DriveBase.arc:11
 msgid "Radius of the circle."
 msgstr "円の半径。"
 
-#: of pybricks.robotics.DriveBase.curve:5
-msgid "Angle along the circle."
-msgstr "円に沿った角度。"
+#: of pybricks.robotics.DriveBase.arc:13
+msgid "Angle to drive along the circle."
+msgstr "円に沿って移動する角度。"
+
+#: of pybricks.robotics.DriveBase.arc:15
+msgid "Distance to drive along the circle, measured at the center of the robot."
+msgstr "ロボットの中心で測定された、円に沿って移動する距離。"
+
+#: of pybricks.robotics.DriveBase.arc:24
+msgid ""
+"You must specify ``angle`` or ``distance``, but not both. The     radius "
+"cannot be zero. Use :meth:`.turn` for in-place turns."
+msgstr ""
+"``angle`` または ``distance`` のいずれかを指定する必要がありますが、"
+"両方を指定することはできません。"
+"半径はゼロにできません。その場で回転する場合は :meth:`.turn` を使ってください。"
 
 #: of pybricks.robotics.DriveBase.settings:1
 msgid "Configures the drive base speed and acceleration."
@@ -280,9 +338,27 @@ msgstr "ロボットの状態を取得します。"
 msgid "Tuple of distance, drive speed, angle, and turn rate of the robot."
 msgstr "ロボットの距離、駆動速度、角度、旋回速度のタプル。"
 
+#: ../../robotics.rst:101
+msgid "Now stops the drive base. You can now use nonzero values."
+msgstr "ドライブベースが停止するようになりました。ゼロでない値を使えるようになりました。"
+
 #: of pybricks.robotics.DriveBase.reset:1
-msgid "Resets the estimated driven distance and angle to 0."
-msgstr "推定駆動距離と推定駆動角度を 0 にリセットします。"
+msgid "Resets the estimated driven distance and heading angle."
+msgstr "推定走行距離と向きの角度をリセットします。"
+
+#: of pybricks.robotics.DriveBase.reset:3
+msgid ""
+"This also calls :meth:`.stop` to stop ongoing movements. If your robot is"
+" controlled with :meth:`.use_gyro` set to ``True``, calling this method "
+"will `also` set the gyro to the given angle."
+msgstr ""
+"これにより、進行中の動作を停止するために :meth:`.stop` も呼び出されます。"
+"また、ロボットが :meth:`.use_gyro` を ``True`` に設定して制御されている場合、"
+"このメソッドを呼び出すとジャイロも指定した角度に設定されます。"
+
+#: of pybricks.robotics.DriveBase.reset:9
+msgid "Heading angle of the robot."
+msgstr "ロボットの向きの角度"
 
 #: of pybricks.robotics.DriveBase.stalled:1
 msgid "Checks if the drive base is currently stalled."
@@ -296,7 +372,7 @@ msgstr ""
 "最大限の動作量を与えても、目標速度や位置に到達できない場合に失速しているとみなされます。"
 
 #: of pybricks.robotics.DriveBase.stalled:6
-msgid "``True`` if the drivebase is stalled, ``False`` if not."
+msgid "``True`` if the drive base is stalled, ``False`` if not."
 msgstr "ドライブベースが失速していれば ``True`` 、失速していなければ ``False`` 。"
 
 #: ../../robotics.rst:57
@@ -312,10 +388,17 @@ msgstr ""
 "モーター内蔵の回転センサーに依存する場合は ``False`` を指定します。
 
 #: of pybricks.robotics.DriveBase.use_gyro:5
+msgid ""
+"This method will automatically call :meth:`.stop` to stop ongoing "
+"movements."
+msgstr ""
+"このメソッドは、進行中の動作を停止するために自動的に :meth:`.stop` を呼び出します。"
+
+#: of pybricks.robotics.DriveBase.use_gyro:5
 msgid "``True`` to enable, ``False`` to disable."
 msgstr "有効にするには ``True`` 、無効にするには ``False`` 。"
 
-#: ../../robotics.rst:60
+#: ../../robotics.rst:117
 msgid ""
 "If your hub is not mounted flat in your robot, make sure to specify the "
 "``top_side`` and ``front_side`` parameters when you initialize the "
@@ -334,7 +417,7 @@ msgstr ""
 "指定してください。こうすることで、ロボットが旋回するときにどの回転を測定すれば"
 "よいかがわかります。"
 
-#: ../../robotics.rst:68
+#: ../../robotics.rst:125
 msgid ""
 "The gyro in each hub is a bit different, which can cause it to be a few "
 "degrees off for big turns, or many small turns in the same direction. For"
@@ -347,7 +430,7 @@ msgstr ""
 ":meth:`turn(357) <pybricks.robotics.DriveBase.turn>` や :meth:`turn(362) "
 "<pybricks.robotics.DriveBase.turn>` などとする必要があるかもしれません。"
 
-#: ../../robotics.rst:75
+#: ../../robotics.rst:132
 msgid ""
 "By default, this class tries to maintain the robot's position after a "
 "move completes. This means the wheels will spin if you pick the robot up,"
@@ -355,14 +438,14 @@ msgid ""
 "choose ``then=Stop.COAST`` in your last :meth:`straight "
 "<pybricks.robotics.DriveBase.straight>`, :meth:`turn "
 "<pybricks.robotics.DriveBase.turn>`, or :meth:`curve "
-"<pybricks.robotics.DriveBase.curve>` command."
+"<pybricks.robotics.DriveBase.arc>` command."
 msgstr ""
 "デフォルトで、このクラスは移動が完了した後、ロボットの位置を維持しようとします。"
 "つまり、ロボットを持ち上げると、その方位角を維持するために車輪が回転することになります。"
 "これを避けるには、最後の "
 ":meth:`straight <pybricks.robotics.DriveBase.straight>`, :meth:`turn "
-"<pybricks.robotics.DriveBase.turn>`, :meth:`curve "
-"<pybricks.robotics.DriveBase.curve>` "
+"<pybricks.robotics.DriveBase.turn>`, :meth:`arc "
+"<pybricks.robotics.DriveBase.arc>` "
 "コマンドで ``then=Stop.COAST`` を指定します。"
 
 #: ../../robotics.rst:86

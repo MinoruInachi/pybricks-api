@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.5\n"
+"Project-Id-Version: pybricks v3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-05 21:14+0900\n"
-"PO-Revision-Date: 2024-04-05 23:24+0900\n"
+"POT-Creation-Date: 2025-03-01 18:48+0900\n"
+"PO-Revision-Date: 2025-03-01 22:09+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../hubs/cityhub.rst:4
 msgid "City Hub"
@@ -48,14 +49,14 @@ msgid "Parameters"
 msgstr "パラメータ"
 
 #: of pybricks.hubs.CityHub:3 pybricks.hubs.EssentialHub:14
-#: pybricks.hubs.MoveHub:3 pybricks.hubs.PrimeHub:14
+#: pybricks.hubs.MoveHub:9 pybricks.hubs.PrimeHub:14
 #: pybricks.hubs.TechnicHub:14
 msgid ""
-"A value from 0 to 255 indicating which channel ``hub.ble.broadcast()`` "
-"will use. Default is channel 0."
+"Channel number (0 to 255) used to broadcast data. Choose ``None`` when "
+"not using broadcasting."
 msgstr ""
-"``hub.ble.broadcast()`` が使うチャンネルを示す0から255の値。"
-"デフォルトのチャンネルは0です。"
+"ブロードキャストで使うチャンネル番号(0から255)。"
+"ブロードキャストを使わない場合は ``None`` を指定します。"
 
 #: of pybricks.hubs.CityHub:5 pybricks.hubs.EssentialHub:16
 #: pybricks.hubs.MoveHub:5 pybricks.hubs.PrimeHub:16
@@ -160,10 +161,10 @@ msgstr ""
 #: of pybricks._common.BLE.broadcast:4
 msgid ""
 "Data may be of type ``int``, ``float``, ``str``, ``bytes``, ``True``, or "
-"``False``, or a list thereof."
+"``False``. It can also be a list or tuple of these."
 msgstr ""
-"データには、型 ``int``, ``float``, ``str``, ``bytes``, ``True``, ``False`` "
-"のもの、もしくはそれらのリストを指定できます。"
+"データには、型が ``int``, ``float``, ``str``, ``bytes``, ``True``, ``False`` "
+"のものです。それらのリストやタプルも指定できます。"
 
 #: of pybricks._common.BLE.broadcast:7
 msgid ""
@@ -416,6 +417,10 @@ msgstr ""
 "このハブには最大128バイトのデータを保存できます。"
 "データは Pybricks のファームウェアをアップデートしたとき、"
 "または元のファームウェアに戻したときにクリアされます。"
+
+#: of pybricks._common.System.reset_storage:1
+msgid "Resets all user settings to default values and erases user programs."
+msgstr "すべてのユーザ設定をデフォルト値にリセットし、ユーザプログラムを消去します。"
 
 #: of pybricks._common.System.shutdown:1
 msgid "Stops your program and shuts the hub down."
@@ -939,6 +944,19 @@ msgstr "ボタンの利用"
 msgid "Using the IMU"
 msgstr "IMU の利用"
 
+#: ../../hubs/essentialhub.rst:46 ../../hubs/primehub.rst:92
+#: ../../hubs/technichub.rst:34
+msgid ""
+"The methods below now return calibrated data by default. Depending on the"
+" method used, this combines data from the accelerometer, gyroscope, with "
+"your calibration values. Use ``calibrated=False`` where applicable to get"
+" the raw data you got before."
+msgstr ""
+"以下のメソッドは、デフォルトで補正済みのデータを返すようになりました。"
+"使うメソッドによっては、加速度センサーやジャイロスコープのデータが"
+"補正値と組み合わされます。以前の生データを取得したい場合は、該当するメソッドで "
+"``calibrated=False`` を指定してください。"
+
 #: of pybricks._common.IMU.ready:1
 msgid "Checks if the device is calibrated and ready for use."
 msgstr "デバイスがキャリブレーションされ、使用可能な状態にあるかどうかをチェックします。"
@@ -970,7 +988,17 @@ msgstr "1秒以上静止している場合は ``True`` 、動いている場合�
 msgid "Checks which side of the hub currently faces upward."
 msgstr "現在、ハブのどちらの面を上に向けているかをチェックします。"
 
-#: of pybricks._common.SimpleAccelerometer.up:3
+#: of pybricks._common.IMU.up:3
+msgid ""
+"Choose ``True`` to use calibrated gyroscope and accelerometer data to "
+"determine which way is up. Choose ``False`` to use raw acceleration "
+"values."
+msgstr ""
+"どの方向が上かを判断するために、補正済みのジャイロスコープおよび加速度計のデータを"
+"使う場合は ``True`` を指定してください。生の加速度データを使用する場合は ``False`` "
+"を指定してください。"
+
+#: of pybricks._common.IMU.up:8 pybricks._common.SimpleAccelerometer.up:3
 msgid ""
 "``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``, "
 "``Side.FRONT`` or ``Side.BACK``."
@@ -995,7 +1023,15 @@ msgstr ""
 "回転の順序は、ピッチ角、ロール画です。"
 "これはロボットのY軸に沿った正回転と、X軸に沿った正回転に相当します。"
 
-#: of pybricks._common.Accelerometer.tilt:8
+#: of pybricks._common.IMU.tilt:8
+msgid ""
+"Choose ``True`` to use calibrated gyroscope and accelerometer data to "
+"determine the tilt. Choose ``False`` to use raw acceleration values."
+msgstr ""
+"傾きを判断するために、補正済みのジャイロスコープおよび加速度計のデータを使う場合は "
+"``True`` を指定します。生の加速度データを使用する場合は ``False`` を指定します。"
+
+#: of pybricks._common.IMU.tilt:13 pybricks._common.SimpleAccelerometer.tilt:8
 msgid "Tuple of pitch and roll angles in degrees."
 msgstr "ピッチ角とロール角のタプル(度単位)。"
 
@@ -1008,8 +1044,20 @@ msgstr ""
 "デバイスの加速度を取得します。"
 
 #: of pybricks._common.Accelerometer.acceleration:4
-msgid "Axis along which the acceleration should be measured."
-msgstr "加速度を計測する軸。"
+msgid ""
+"Axis along which the acceleration should be measured, or ``None`` to get "
+"a vector along all axes."
+msgstr ""
+"加速度を計測する軸。"
+"すべての軸に沿ったベクトルを得るには ``None`` を指定します。
+
+#: of pybricks._common.IMU.acceleration:7
+msgid ""
+"Choose ``True`` to use calibrated acceleration values. Choose ``False`` "
+"to use raw acceleration values."
+msgstr ""
+"補正された加速度値を使う場合は ``True`` を指定してください。
+"生の加速度値を使う場合は ``False`` を指定してください。"
 
 #: of pybricks._common.Accelerometer.acceleration:8
 msgid ""
@@ -1028,8 +1076,20 @@ msgstr ""
 "指定した軸に沿ったデバイスの角速度を取得します。"
 
 #: of pybricks._common.IMU.angular_velocity:4
-msgid "Axis along which the angular velocity should be measured."
-msgstr "角速度を計測する軸を指定します。"
+msgid ""
+"Axis along which the angular velocity should be measured, or ``None`` to "
+"get a vector along all axes."
+msgstr ""
+"角速度を測定する軸を指定します。すべての軸のベクトルを得る場合は ``None`` を"
+"指定してください。"
+
+#: of pybricks._common.IMU.angular_velocity:7
+msgid ""
+"Choose ``True`` to compensate for the estimated bias and configured scale"
+" of the gyroscope. Choose ``False`` to get raw angular velocity values."
+msgstr ""
+"補正済みの角速度値を使う場合は ``True`` を指定してください。"
+"生の角速度値を得る場合は ``False`` を指定してください。"
 
 #: of pybricks._common.IMU.angular_velocity:8
 msgid ""
@@ -1065,15 +1125,15 @@ msgstr ""
 #: of pybricks._common.IMU.heading:12
 msgid ""
 "This means that the value is no longer correct if you lift it from the "
-"table. To solve this, you can call ``reset_heading`` to reset the heading"
-" to a known value *after* you put it back down. For example, you could "
-"align your robot with the side of the competition table and reset the "
-"heading 90 degrees as the new starting point."
+"table or turn on a ramp. Try ``hub.imu.heading('3D')`` for a heading "
+"value that compensates for this. This will become the default in a future"
+" release. If you try it, please let us know on our forums!"
 msgstr ""
-"つまり、テーブルから持ち上げると、その値はもはや正しいものではありません。"
-"これを解決するには ``reset_heading`` を呼び出して、ロボットを置いた *後に* "
-"方位角を既知の値にリセットできます。たとえば、ロボットを競技テーブルの側面に"
-"合わせ、新しい出発点として方位角を 90 度にリセットできます。"
+"つまり、テーブルから持ち上げたり、傾斜のある場所で使った場合、"
+"その値はもはや正しいものではありません。"
+"この課題を解決するために ``hub.imu.heading('3D')`` を使ってみてください。"
+"この機能は将来のリリースでデフォルトになる予定です。"
+"試してみた場合は、ぜひフォーラムでフィードバックをお寄せください！"
 
 #: of pybricks._common.IMU.heading:19
 msgid "Heading angle relative to starting orientation."
@@ -1084,8 +1144,27 @@ msgid "Resets the accumulated heading angle of the robot."
 msgstr "ロボットの累積方位角をリセットします。"
 
 #: of pybricks._common.IMU.reset_heading:3
+msgid ""
+"This cannot be called while a drive base is using the gyro to drive or "
+"hold position. Use :meth:`DriveBase.reset() "
+"<pybricks.robotics.DriveBase.reset>` instead, which will stop the robot "
+"and then set the new heading value."
+msgstr ""
+"これは、ドライブベースがジャイロを使って走行または位置を保持している間は呼び出せません。"
+"代わりに :meth:`DriveBase.reset() <pybricks.robotics.DriveBase.reset>` "
+"を使ってください。このメソッドはロボットを停止し、新しい方位角値を設定します。"
+
+#: of pybricks._common.IMU.reset_heading:8
+msgid "Resetting the angle while driving is not allowed. Stop first."
+msgstr "走行中には角度をリセットできません。まず停止してください。"
+
+#: of pybricks._common.IMU.reset_heading:10
 msgid "Value to which the heading should be reset."
 msgstr "リセットする方位の値(deg)。"
+
+#: of pybricks._common.IMU.reset_heading:13
+msgid "There is a drive base that is currently using the gyro."
+msgstr "ジャイロを使っているドライブベースがあります。"
 
 #: of pybricks._common.IMU.rotation:1
 msgid ""
@@ -1112,7 +1191,15 @@ msgstr "値はこのクラスの初期化時に 0 からカウントを開始し
 msgid "Axis along which the rotation should be measured."
 msgstr "回転を測定する軸。"
 
-#: of pybricks._common.IMU.rotation:13
+#: of pybricks._common.IMU.rotation:10
+msgid ""
+"Choose ``True`` to compensate for configured scale of the gyroscope. "
+"Choose ``False`` to get unscaled values."
+msgstr ""
+"ジャイロスコープの設定されたスケールに対して補正された値を得るには ``True`` を指定します。"
+"生の値を得るには ``False`` を指定します。"
+
+#: of pybricks._common.IMU.rotation:14
 msgid "The rotation angle."
 msgstr "回転角度。"
 
@@ -1141,41 +1228,123 @@ msgstr "回転行列。"
 #: of pybricks._common.IMU.settings:1
 msgid ""
 "Configures the IMU settings. If no arguments are given, this returns the "
-"current values."
+"current values. Use keyword arguments for each value to ensure correct "
+"behavior because settings may be added or changed in future releases."
 msgstr ""
 "IMU の設定を行います。引数を与えない場合は現在の値を返します。"
+"キーワード引数を使って設定することで、将来のリリースで設定項目が追加・変更されても"
+"正しく動作するようになります。"
 
-#: of pybricks._common.IMU.settings:4
+#: of pybricks._common.IMU.settings:6
+msgid ""
+"These IMU settings are saved on the hub. They will keep their values "
+"until you change them again. The values will be reset to default values "
+"if you update the hub to a different firmware version or call the "
+"``hub.system.reset_storage`` method."
+msgstr ""
+"IMU 設定はハブに保存されます。この設定は値を変更するまで維持されます。"
+"設定値は、ハブのファームウェアを異なるバージョンに更新するか、 "
+"``hub.system.reset_storage`` メソッドを呼び出すと、デフォルト値に"
+"リセットされます。"
+
+#: of pybricks._common.IMU.settings:11
 msgid ""
 "The ``angular_velocity_threshold`` and ``acceleration_threshold`` define "
 "when the hub is considered stationary. If all measurements stay below "
-"these thresholds for one second, the IMU will recalibrate itself."
+"these thresholds for one second, the IMU will recalibrate itself. In a "
+"noisy room with high ambient vibrations (such as a competition hall), you"
+" can increase the thresholds slightly to give your robot the chance to "
+"calibrate. To verify that your settings are working as expected, test "
+"that the ``stationary()`` method gives ``False`` if your robot is moving,"
+" and ``True`` if it is sitting still."
 msgstr ""
 "``angular_velocity_threshold`` と ``acceleration_threshold`` は、"
 "ハブが静止しているとみなされるタイミングを定義します。"
 "すべての測定値がこれらの閾値を下回る状態が1秒間続くと、IMU は再キャリブレーションを行います。"
-
-#: of pybricks._common.IMU.settings:9
-msgid ""
-"In a noisy room with high ambient vibrations (such as a competition "
-"hall), it is recommended to increase the thresholds slightly to give your"
-" robot the chance to calibrate. To verify that your settings are working "
-"as expected, test that the ``stationary()`` method gives ``False`` if "
-"your robot is moving, and ``True`` if it is sitting still for at least a "
-"second."
-msgstr ""
 "周囲の振動が大きい騒がしい部屋(競技会場など)では、ロボットがキャリブレーションを行う"
-"機会を与えるために、しきい値を少し大きくすることをお勧めします。設定が期待通りに機能して"
-"いることを確認するには、 ``stationary()`` メソッドを使って、ロボットが動いているときに "
-"``False`` 、1秒以上静止しているときに ``True`` になることをテストします。"
+"機会を与えるために、しきい値を少し大きくしておくことができます。"
+"設定が期待通りに機能していることを確認するには、 ``stationary()`` メソッドを使って、"
+"ロボットが動いている間に ``False`` 、静止している間に ``True`` になることを"
+"テストします。"
 
-#: of pybricks._common.IMU.settings:16
-msgid "The threshold for angular velocity. The default value is 1.5 deg/s."
-msgstr "角速度のしきい値。デフォルトは 1.5 deg/s 。"
+#: of pybricks._common.IMU.settings:21
+msgid ""
+"The gyroscope measures how fast the hub rotates to estimate the total "
+"angle. Due to variations in the production process, each hub consistently"
+" reports a different value for a full rotation. For example, your hub "
+"might consistently report `357` degrees for every `360` degree turn. You "
+"can measure this value with ``hub.imu.rotation(-Axis.Z)`` and enter it as"
+" the ``heading_correction`` setting. Then, the ``hub.imu.heading()`` "
+"method will take it into account going forward, correctly scaling it to "
+"360 degrees for a full rotation."
+msgstr ""
+"ジャイロスコープはハブの回転速度を測定し、そこから合計回転角度を推定します。"
+"しかし、製品の誤差により、360度回転しても正確に360度と測定されない場合 があります。"
+"たとえば、ハブが実際には `360` 度回転しているのに `357` 度と測定されることがあります。 "
+"``hub.imu.rotation(-Axis.Z)`` を使って、ハブが1回転したときの測定値を確認し、"
+"その値を ``heading_correction`` に設定します。"
+"以降は ``hub.imu.heading()`` が自動的にスケール補正を行い、正しく360度として"
+"扱われるようになります。"
 
-#: of pybricks._common.IMU.settings:19
-msgid "The threshold for angular velocity. The default value is 250 mm/s²."
-msgstr "加速度のしきい値。デフォルト値は 250 mm/s² 。"
+#: of pybricks._common.IMU.settings:31
+msgid ""
+"The threshold for variations in the angular velocity below which the hub "
+"is considered stationary enough to calibrate. After a reset the value is "
+"2 deg/s."
+msgstr ""
+"ハブがキャリブレーションを行うのに十分静止しているとみなされる角速度の変動のしきい値。"
+"リセット後、この値は 2 deg/s に設定されます。"
+
+#: of pybricks._common.IMU.settings:36
+msgid ""
+"The threshold for variations in acceleration below which the hub is "
+"considered stationary enough to calibrate. After a reset the value is "
+"2500 mm/s²."
+msgstr ""
+"ハブがキャリブレーションを行うのに十分静止しているとみなされる加速度の変動のしきい値。"
+"リセット後、この値は2500mm/s²に設定されます。"
+
+#: of pybricks._common.IMU.settings:41
+msgid ""
+"Number of degrees reported by ``imu.rotation(-Axis.Z)`` for one full "
+"rotation of your robot. After a reset the value is 360 degrees."
+msgstr ""
+"ロボットが1回転したときに ``imu.rotation(-Axis.Z)`` によって報告される角度の数値。"
+"リセット後、この値は360度に設定されます。"
+
+#: of pybricks._common.IMU.settings:45
+msgid ""
+"Initial bias for angular velocity measurements along x, y, and z "
+"immediately after boot. After a reset the value is (0, 0, 0) deg/s."
+msgstr ""
+"起動直後の x、y、z 軸に沿った角速度測定の初期バイアス。"
+"リセット後の値は (0, 0, 0) deg/s となる。"
+
+#: of pybricks._common.IMU.settings:49
+msgid ""
+"Scale adjustment for x, y, and z rotation to account for manufacturing "
+"differences. After a reset the value is (360, 360, 360) deg/s. The "
+"correct values can be obtained using `hub.imu.rotation(Axis.X, "
+"calibrated=False)` and repeating it for each axis."
+msgstr ""
+"製造上の個体差を補正するための x、y、z 軸の回転スケール調整。"
+"リセット後の値は (360, 360, 360) deg/s となります。"
+"正しい値は `hub.imu.rotation(Axis.X, calibrated=False)` を使って、"
+"各軸について繰り返し測定することで取得できます。"
+
+#: of pybricks._common.IMU.settings:55
+msgid ""
+"Scale adjustment for x, y, and z gravity magnitude in both directions to "
+"account for manufacturing differences. After a reset the value is "
+"(9806.65, -9806.65, 9806.65, -9806.65, 9806.65, -9806.65) mm/s². The "
+"correct values can be obtained using `hub.imu.acceleration(Axis.X, "
+"calibrated=False)` and repeating it for all axes in both directions."
+msgstr ""
+"製造上の個体差を補正するための、x、y、z 軸の重力加速度の大きさに対するスケール調整"
+"(両方向)。リセット後の値は (9806.65, -9806.65, 9806.65, -9806.65, 9806.65, "
+"-9806.65) mm/s² となります。正しい値は "
+"`hub.imu.acceleration(Axis.X, calibrated=False)` を使って、すべての軸の"
+"両方向について繰り返し測定することで取得できます。"
 
 #: ../../hubs/essentialhub.rst:57 ../../hubs/primehub.rst:99
 msgid "Getting the charger status"
@@ -1227,13 +1396,76 @@ msgstr "充電に問題がある(黄色に点灯)。"
 msgid "Status value."
 msgstr "ステータス値。"
 
-#: ../../hubs/essentialhub.rst:65 ../../hubs/primehub.rst:107
+#: ../../hubs/essentialhub.rst:132 ../../hubs/primehub.rst:186
 msgid "System control"
 msgstr "システム制御"
 
-#: ../../hubs/essentialhub.rst:72 ../../hubs/primehub.rst:114
-msgid "You can store up to 512 bytes of data on this hub."
-msgstr "このハブには最大512バイトのデータを保存できます。"
+#: of pybricks._common.System.info:1
+msgid "Gets information about the hub as a dictionary with the following keys:"
+msgstr "ハブに関する情報を、以下のキーを持つ辞書として取得します:"
+
+#: of pybricks._common.System.info:3
+msgid ""
+"``\"name\"``: The hub name. This is the name you see when connecting via "
+"Bluetooth."
+msgstr ""
+"``\"name\"``: ハブの名前。これは Bluetooth 接続時に表示される名前です。"
+
+#: of pybricks._common.System.info:5
+msgid ""
+"``\"reset_reason\"``: Why the hub (re)booted. It is ``0`` if the hub was "
+"previously powered off normally. It is ``1`` if the hub rebooted "
+"automatically, like after a firmware update. It is ``2`` if the hub "
+"previously crashed due to a watchdog timeout, which indicates a firmware "
+"issue."
+msgstr ""
+"``\"reset_reason\"``: ハブが(再)起動した理由。"
+"通常の電源オフ後に起動した場合は ``0`` になります。"
+"ファームウェア更新後など、自動的に再起動した場合には ``1`` になります。"
+"ウォッチドッグタイムアウトによるクラッシュ(ファームウェアの問題を示唆)した場合には "
+"``2`` になります。"
+
+#: of pybricks._common.System.info:10
+msgid ""
+"``\"host_connected_ble\"``: Whether the hub is connected to a computer, "
+"tablet, or phone via Bluetooth."
+msgstr ""
+"``\"host_connected_ble\"``: ハブが Bluetooth 経由でコンピュータ、タブレット、"
+"またはスマートフォンに接続されているかどうか。"
+
+#: of pybricks._common.System.info:12
+msgid ""
+"``\"program_start_type\"``: It is ``1`` if the program started "
+"automatically when the hub was powered on. It is ``2`` if the program was"
+" started with the hub buttons. It is ``3`` if the program was started "
+"from your connected computer."
+msgstr ""
+"``\"program_start_type\"``: プログラムの開始方法。"
+"ハブの電源オン時に自動的に開始した場合には ``1`` になります。" 
+"ハブのボタンで開始された場合には ``2`` になります。"
+"接続されたコンピュータから開始された場合には ``3`` になります。"
+
+#: of pybricks._common.System.info:17
+msgid "A dictionary with system info."
+msgstr "システム情報を持つ辞書。"
+
+#: of pybricks._common.System.info:19
+msgid ""
+"The name and reset reason where previously available as separate methods."
+" Now they are included in the info dictionary. The methods are still "
+"available for compatibility."
+msgstr ""
+"名前とリセット理由は、以前は別々のメソッドとして提供されていましたが、"
+"現在は info 辞書に含まれています。 ただし、互換性のために従来のメソッドも"
+"引き続き利用可能です。"
+
+#: ../../hubs/essentialhub.rst:137 ../../hubs/primehub.rst:191
+msgid ""
+"You can store up to 512 bytes of data on this hub. The data is cleared "
+"when you update the Pybricks firmware."
+msgstr ""
+"このハブには最大512バイトのデータを保存できます。"
+"保存されているデータは Pybricks ファームウェア更新時に消去されます。"
 
 #: ../../hubs/essentialhub.rst:84
 msgid ""

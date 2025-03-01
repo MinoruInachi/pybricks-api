@@ -1,17 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.4\n"
+"Project-Id-Version: pybricks v3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-12 12:22+0900\n"
-"PO-Revision-Date: 2024-03-12 12:48+0900\n"
+"POT-Creation-Date: 2025-03-01 18:48+0900\n"
+"PO-Revision-Date: 2025-03-01 22:23+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -174,6 +175,10 @@ msgid "If you give no arguments, the currently chosen colors will be returned."
 msgstr "引数を与えない場合は、現在選択されている色が返されます。"
 
 #: of pybricks._common.CommonColorSensor.detectable_colors:9
+msgid "When coding with blocks, this is configured in the sensor setup block."
+msgstr "ブロックでのプログラミングの場合、これはセンサー設定ブロックで行います。"
+
+#: of pybricks._common.CommonColorSensor.detectable_colors:11
 msgid ""
 "List of :class:`Color <.parameters.Color>` objects: the colors that you "
 "want to detect. You can pick standard colors such as ``Color.MAGENTA``, "
@@ -1847,14 +1852,21 @@ msgstr "モータの累積回転角を任意の値に設定します。"
 
 #: of pybricks.pupdevices.Motor.reset_angle:3
 msgid ""
-"If you don't specify an angle, the absolute angle will be used if your "
-"motor supports it."
+"If this motor is also being used by a drive base, its distance and angle "
+"values will also be affected. You might want to use its :meth:`reset "
+"<pybricks.robotics.DriveBase.reset>` method instead."
 msgstr ""
-"角度を指定しない場合、モーターが対応していれば絶対角度が適用されます。"
+"このモーターがドライブベースでも使われている場合、"
+"その距離および角度の値にも影響を与えます。そのため、代わりに :meth:`reset "
+"<pybricks.robotics.DriveBase.reset>` メソッドの利用を推奨します。"
 
-#: of pybricks.pupdevices.Motor.reset_angle:6
-msgid "Value to which the angle should be reset."
-msgstr "リセットする角度の値。"
+#: of pybricks.pupdevices.Motor.reset_angle:8
+msgid ""
+"Value to which the angle should be reset. Choose ``None`` to reset it to "
+"the absolute value of the motor."
+msgstr ""
+"リセットする角度の値を指定します。モーターの絶対値にリセットするには ``None`` を"
+"指定します。"
 
 #: of pybricks._common.Motor.speed:1
 msgid "Gets the speed of the motor."
