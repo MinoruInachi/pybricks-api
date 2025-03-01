@@ -9,7 +9,6 @@ Technic Hub
 .. blockimg:: pybricks_variables_set_technic_hub_option0
 
 .. blockimg:: pybricks_variables_set_technic_hub_option4
-    :stack:
 
 .. autoclass:: pybricks.hubs.TechnicHub
     :no-members:
@@ -30,6 +29,13 @@ Technic Hub
 
     .. rubric:: Using the IMU
 
+    .. versionchanged:: 3.6
+
+        The methods below now return calibrated data by default. Depending on
+        the method used, this combines data from the accelerometer, gyroscope,
+        with your calibration values. Use ``calibrated=False`` where applicable
+        to get the raw data you got before.
+
     .. blockimg:: pybricks_blockImuStatus_TechnicHub_ready
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.ready
@@ -45,8 +51,7 @@ Technic Hub
     .. blockimg:: pybricks_blockTilt_TechnicHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_TechnicHub_imu.tilt.roll
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::TechnicHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_TechnicHub
@@ -71,6 +76,12 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.orientation
 
+    .. blockimg:: pybricks_blockImuConfigure_TechnicHub_imu.settings_heading_correction
+    
+    .. blockimg:: pybricks_blockImuConfigure_TechnicHub_imu.settings_angular_velocity_threshold
+    
+    .. blockimg:: pybricks_blockImuConfigure_TechnicHub_imu.settings_acceleration_threshold
+    
     .. automethod:: pybricks.hubs::TechnicHub.imu.settings
 
     .. rubric:: Using connectionless Bluetooth messaging
@@ -106,11 +117,8 @@ Technic Hub
     .. blockimg:: pybricks_blockHubStopButton_TechnicHub
 
     .. blockimg:: pybricks_blockHubStopButton_TechnicHub_none
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::TechnicHub.system.set_stop_button
-
-    .. automethod:: pybricks.hubs::TechnicHub.system.name
 
     .. automethod:: pybricks.hubs::TechnicHub.system.storage
 
@@ -118,11 +126,11 @@ Technic Hub
         when you update the Pybricks firmware or if you restore the original
         firmware.
 
+    .. automethod:: pybricks.hubs::TechnicHub.system.reset_storage
+
     .. blockimg:: pybricks_blockHubShutdown_TechnicHub
 
     .. automethod:: pybricks.hubs::TechnicHub.system.shutdown
-
-    .. automethod:: pybricks.hubs::TechnicHub.system.reset_reason
 
 Status light examples
 ---------------------

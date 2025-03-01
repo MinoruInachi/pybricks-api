@@ -9,7 +9,6 @@ Essential Hub
 .. blockimg:: pybricks_variables_set_essential_hub_option0
 
 .. blockimg:: pybricks_variables_set_essential_hub_option4
-    :stack:
 
 .. autoclass:: pybricks.hubs.EssentialHub
     :no-members:
@@ -37,11 +36,17 @@ Essential Hub
     .. blockimg:: pybricks_blockHubStopButton_EssentialHub
 
     .. blockimg:: pybricks_blockHubStopButton_EssentialHub_none
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::EssentialHub.system.set_stop_button
 
     .. rubric:: Using the IMU
+
+    .. versionchanged:: 3.6
+
+        The methods below now return calibrated data by default. Depending on
+        the method used, this combines data from the accelerometer, gyroscope,
+        with your calibration values. Use ``calibrated=False`` where applicable
+        to get the raw data you got before.
 
     .. blockimg:: pybricks_blockImuStatus_EssentialHub_ready
 
@@ -58,8 +63,7 @@ Essential Hub
     .. blockimg:: pybricks_blockTilt_EssentialHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_EssentialHub_imu.tilt.roll
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::EssentialHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_EssentialHub
@@ -84,6 +88,12 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.orientation
 
+    .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_heading_correction
+    
+    .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_angular_velocity_threshold
+    
+    .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_acceleration_threshold
+    
     .. automethod:: pybricks.hubs::EssentialHub.imu.settings
 
     .. rubric:: Using connectionless Bluetooth messaging
@@ -120,17 +130,18 @@ Essential Hub
 
     .. rubric:: System control
 
-    .. automethod:: pybricks.hubs::EssentialHub.system.name
+    .. automethod:: pybricks.hubs::EssentialHub.system.info
 
     .. automethod:: pybricks.hubs::EssentialHub.system.storage
 
-        You can store up to 512 bytes of data on this hub.
+        You can store up to 512 bytes of data on this hub. The data is cleared
+        when you update the Pybricks firmware.
+
+    .. automethod:: pybricks.hubs::EssentialHub.system.reset_storage
 
     .. blockimg:: pybricks_blockHubShutdown_EssentialHub
 
     .. automethod:: pybricks.hubs::EssentialHub.system.shutdown
-
-    .. automethod:: pybricks.hubs::EssentialHub.system.reset_reason
 
 Status light examples
 ---------------------

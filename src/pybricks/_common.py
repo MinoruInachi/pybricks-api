@@ -69,32 +69,6 @@ class System:
 
         Stops your program and shuts the hub down."""
 
-    def reset_reason(self) -> int:
-        """reset_reason() -> int
-
-        Finds out how and why the hub (re)booted. This can be useful to
-        diagnose some problems.
-
-        Returns:
-            * ``0`` if the hub was previously powered off
-              normally.
-            * ``1`` if the hub rebooted automatically, like
-              after a firmware update.
-            * ``2`` if the hub previously
-              crashed due to a watchdog timeout, which indicates a firmware
-              issue.
-        """
-
-    def name(self) -> str:
-        """name() -> str
-
-        Gets the hub name. This is the name you see when connecting
-        via Bluetooth.
-
-        Returns:
-            The hub name.
-        """
-
     @overload
     def storage(self, offset: int, *, read: int) -> bytes: ...
 
@@ -129,6 +103,40 @@ class System:
         Raises:
             ValueError:
                 If you try to read or write data outside of the allowed range.
+        """
+
+    def reset_storage(self) -> None:
+        """reset_storage()
+
+        Resets all user settings to default values and erases user programs.
+        """
+
+    def info(self) -> dict:
+        """info() -> dict
+
+        Gets information about the hub as a dictionary with the following keys:
+
+         - ``"name"``: The hub name. This is the name you see when connecting
+           via Bluetooth.
+         - ``"reset_reason"``: Why the hub (re)booted. It is ``0`` if the hub
+           was previously powered off normally. It is ``1`` if the hub rebooted
+           automatically, like after a firmware update. It is ``2`` if the hub
+           previously crashed due to a watchdog timeout, which indicates a
+           firmware issue.
+         - ``"host_connected_ble"``: Whether the hub is connected to a computer,
+           tablet, or phone via Bluetooth.
+         - ``"program_start_type"``: It is ``1`` if the program started
+           automatically when the hub was powered on. It is ``2`` if the program
+           was started with the hub buttons. It is ``3`` if the program was
+           started from your connected computer.
+
+        Returns:
+            A dictionary with system info.
+
+        .. versionchanged:: 3.6
+            The name and reset reason where previously available as separate
+            methods. Now they are included in the info dictionary. The methods
+            are still available for compatibility.
         """
 
 
@@ -470,6 +478,11 @@ class Motor(DCMotor):
         reset_angle(angle)
 
         Sets the accumulated rotation angle of the motor to a desired value.
+
+        If this motor is also being used by a drive base, its distance and
+        angle values will also be affected. You might want to
+        use its :meth:`reset <pybricks.robotics.DriveBase.reset>`
+        method instead.
 
         Arguments:
             angle (Number, deg): Value to which the angle should be reset.
@@ -1013,34 +1026,67 @@ class SimpleAccelerometer:
         """
 
 
-class Accelerometer(SimpleAccelerometer):
-    """Get measurements from an accelerometer."""
+class IMU:
+
+    def up(self, calibrated: bool = True) -> Side:
+        """up(calibrated=True) -> Side
+
+        Checks which side of the hub currently faces upward.
+
+        Arguments:
+            calibrated (bool): Choose ``True`` to use calibrated gyroscope and
+                accelerometer data to determine which way is up. Choose
+                ``False`` to use raw acceleration values.
+
+        Returns:
+            ``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``,
+            ``Side.FRONT`` or ``Side.BACK``.
+        """
+
+    def tilt(self, calibrated: bool = True) -> Tuple[int, int]:
+        """tilt(calibrated=True) -> Tuple[int, int]
+
+        Gets the pitch and roll angles. This is relative to the
+        :ref:`user-specified neutral orientation <robotframe>`.
+
+        The order of rotation is pitch-then-roll. This is equivalent to a
+        positive rotation along the robot y-axis and then a positive rotation
+        along the x-axis.
+
+        Arguments:
+            calibrated (bool): Choose ``True`` to use calibrated gyroscope and
+                accelerometer data to determine the tilt. Choose ``False``
+                to use raw acceleration values.
+
+        Returns:
+            Tuple of pitch and roll angles in degrees.
+        """
 
     @overload
-    def acceleration(self, axis: Axis) -> float: ...
+    def acceleration(self, axis: Axis = None, calibrated: bool = True) -> float: ...
 
     @overload
-    def acceleration(self) -> Matrix: ...
+    def acceleration(self, calibrated: bool = True) -> Matrix: ...
 
     def acceleration(self, *args):
         """
-        acceleration(axis) -> float: mm/s²
-        acceleration() -> vector: mm/s²
-
+        acceleration(axis, calibrated=True) -> float: mm/s²
+        acceleration(calibrated=True) -> vector: mm/s²
 
         Gets the acceleration of the device along a given axis in the
         :ref:`robot reference frame <robotframe>`.
 
         Arguments:
             axis (Axis): Axis along which the acceleration should be
-                         measured.
+                measured, or ``None`` to get a vector along all axes.
+            calibrated (bool): Choose ``True`` to use calibrated acceleration
+                values. Choose ``False`` to use raw acceleration values.
+
         Returns:
             Acceleration along the specified axis. If you specify no axis,
             this returns a vector of accelerations along all axes.
         """
 
-
-class IMU(Accelerometer):
     def ready(self) -> bool:
         """ready() -> bool
 
@@ -1068,38 +1114,89 @@ class IMU(Accelerometer):
     @overload
     def settings(
         self,
+        *,
         angular_velocity_threshold: float = None,
         acceleration_threshold: float = None,
+        heading_correction: float = None,
+        angular_velocity_bias: Tuple[float, float, float] = None,
+        angular_velocity_scale: Tuple[float, float, float] = None,
+        acceleration_correction: Tuple[float, float, float, float, float, float] = None,
     ) -> None: ...
 
     @overload
-    def settings(self) -> Tuple[float, float]: ...
+    def settings(
+        self,
+    ) -> Tuple[
+        float,
+        float,
+        float,
+        Tuple[float, float, float],
+        Tuple[float, float, float],
+        Tuple[float, float, float, float, float, float],
+    ]: ...
 
     def settings(self, *args):
         """
-        settings(angular_velocity_threshold, acceleration_threshold)
-        settings() -> Tuple[float, float]
+        settings(*, angular_velocity_threshold, acceleration_threshold, heading_correction, angular_velocity_bias, angular_velocity_scale, acceleration_correction)
+        settings() -> Tuple
 
         Configures the IMU settings. If no arguments are given,
-        this returns the current values.
+        this returns the current values. Use keyword arguments for each value
+        to ensure correct behavior because settings may be added or changed in
+        future releases.
+
+        These IMU settings are saved on the hub. They will keep their values
+        until you change them again. The values will be reset to default values
+        if you update the hub to a different firmware version or call the
+        ``hub.system.reset_storage`` method.
 
         The ``angular_velocity_threshold`` and ``acceleration_threshold``
         define when the hub is considered stationary. If all
         measurements stay below these thresholds for one second, the IMU
-        will recalibrate itself.
-
-        In a noisy room with high ambient vibrations (such as a
-        competition hall), it is recommended to increase the thresholds
+        will recalibrate itself. In a noisy room with high ambient vibrations (such as a
+        competition hall), you can increase the thresholds
         slightly to give your robot the chance to calibrate.
         To verify that your settings are working as expected, test that
         the ``stationary()`` method gives ``False`` if your robot is moving,
-        and ``True`` if it is sitting still for at least a second.
+        and ``True`` if it is sitting still.
+
+        The gyroscope measures how fast the hub rotates to estimate the total
+        angle. Due to variations in the production process, each
+        hub consistently reports a different value for a full rotation. For
+        example, your hub might consistently report `357` degrees for every
+        `360` degree turn. You can measure this value
+        with ``hub.imu.rotation(-Axis.Z)`` and enter it as
+        the ``heading_correction`` setting. Then, the ``hub.imu.heading()``
+        method will take it into account going forward, correctly scaling it
+        to 360 degrees for a full rotation.
 
         Arguments:
             angular_velocity_threshold (Number, deg/s): The threshold for
-                angular velocity. The default value is 1.5 deg/s.
-            acceleration_threshold (Number, mm/s²): The threshold for angular
-                velocity. The default value is 250 mm/s².
+                variations in the angular velocity below which the hub is
+                considered stationary enough to calibrate.
+                After a reset the value is 2 deg/s.
+            acceleration_threshold (Number, mm/s²): The threshold for
+                variations in acceleration below which the hub is considered
+                stationary enough to calibrate. After a reset the value
+                is 2500 mm/s².
+            heading_correction (Number, deg): Number of degrees reported by
+                ``imu.rotation(-Axis.Z)`` for one full rotation of your robot.
+                After a reset the value is 360 degrees.
+            angular_velocity_bias (tuple, deg/s): Initial bias for angular
+                velocity measurements along x, y, and z immediately after boot.
+                After a reset the value is (0, 0, 0) deg/s.
+            angular_velocity_scale (tuple, deg): Scale adjustment for x, y, and
+                z rotation to account for manufacturing differences. After a reset the
+                value is (360, 360, 360) deg/s. The correct values can be
+                obtained using `hub.imu.rotation(Axis.X, calibrated=False)` and
+                repeating it for each axis.
+            acceleration_correction (tuple, mm/s²): Scale adjustment for x, y,
+                and z gravity magnitude in both directions to account for
+                manufacturing differences. After a reset the
+                value is (9806.65, -9806.65, 9806.65, -9806.65, 9806.65, -9806.65) mm/s².
+                The correct values can be
+                obtained using `hub.imu.acceleration(Axis.X, calibrated=False)`
+                and repeating it for all axes in both directions.
         """
 
     def heading(self) -> float:
@@ -1117,11 +1214,11 @@ class IMU(Accelerometer):
                   the robot is on a flat surface.*
 
                   This means that the value is
-                  no longer correct if you lift it from the table. To solve
-                  this, you can call ``reset_heading`` to reset the heading to
-                  a known value *after* you put it back down. For example, you
-                  could align your robot with the side of the competition table
-                  and reset the heading 90 degrees as the new starting point.
+                  no longer correct if you lift it from the table or turn on
+                  a ramp. Try ``hub.imu.heading('3D')`` for a heading value
+                  that compensates for this. This will become the default in a
+                  future release. If you try it, please let us know on our
+                  forums!
 
         Returns:
             Heading angle relative to starting orientation.
@@ -1133,35 +1230,50 @@ class IMU(Accelerometer):
 
         Resets the accumulated heading angle of the robot.
 
+        This cannot be called while a drive base is using the gyro to drive or
+        hold position.
+        Use :meth:`DriveBase.reset() <pybricks.robotics.DriveBase.reset>`
+        instead, which will stop the robot and then set the new heading value.
+
+        .. versionchanged:: 3.6 Resetting the angle while driving is not allowed. Stop first.
+
         Arguments:
             angle (Number, deg): Value to which the heading should be reset.
+
+        Raises:
+            OSError:
+                There is a drive base that is currently using the gyro.
         """
 
     @overload
-    def angular_velocity(self, axis: Axis) -> float: ...
+    def angular_velocity(self, axis: Axis = None, calibrated: bool = True) -> float: ...
 
     @overload
-    def angular_velocity(self) -> Matrix: ...
+    def angular_velocity(self, calibrated: bool = True) -> Matrix: ...
 
     def angular_velocity(self, *args):
         """
-        angular_velocity(axis) -> float: deg/s
-        angular_velocity() -> vector: deg/s
+        angular_velocity(axis, calibrated=True) -> float: deg/s
+        angular_velocity(calibrated=True) -> vector: deg/s
 
         Gets the angular velocity of the device along a given axis in
         the :ref:`robot reference frame <robotframe>`.
 
         Arguments:
             axis (Axis): Axis along which the angular velocity should be
-                         measured.
+                measured, or ``None`` to get a vector along all axes.
+            calibrated (bool): Choose ``True`` to compensate for the estimated
+                bias and configured scale of the gyroscope. Choose ``False``
+                to get raw angular velocity values.
+
         Returns:
             Angular velocity along the specified axis. If you specify no axis,
             this returns a vector of accelerations along all axes.
         """
 
-    def rotation(self, axis: Axis) -> float:
+    def rotation(self, axis: Axis, calibrated: bool = True) -> float:
         """
-        rotation(axis) -> float: deg
+        rotation(axis, calibrated=True) -> float: deg
 
         Gets the rotation of the device along a given axis in
         the :ref:`robot reference frame <robotframe>`.
@@ -1170,10 +1282,11 @@ class IMU(Accelerometer):
         axis. For general three-dimensional motion, use the
         ``orientation()`` method instead.
 
-        The value starts counting from ``0`` when you initialize this class.
-
         Arguments:
             axis (Axis): Axis along which the rotation should be measured.
+            calibrated (bool): Choose ``True`` to compensate for configured
+                scale of the gyroscope. Choose ``False`` to get unscaled values.
+
         Returns:
             The rotation angle.
         """
@@ -1188,10 +1301,8 @@ class IMU(Accelerometer):
         It returns a rotation matrix whose columns represent the ``X``, ``Y``,
         and ``Z`` axis of the robot.
 
-        .. note:: This method is not yet implemented.
-
         Returns:
-            The rotation matrix.
+            The 3x3 rotation matrix.
         """
 
 
@@ -1335,14 +1446,14 @@ class BLE:
     .. versionadded:: 3.3
     """
 
-    def broadcast(self, data: Union[bool, int, float, str, bytes]) -> None:
+    def broadcast(self, data: Union[bool, int, float, str, bytes]) -> MaybeAwaitable:
         """broadcast(data)
 
         Starts broadcasting the given data on
         the ``broadcast_channel`` you selected when initializing the hub.
 
         Data may be of type ``int``, ``float``, ``str``, ``bytes``,
-        ``True``, or ``False``, or a list thereof.
+        ``True``, or ``False``. It can also be a list or tuple of these.
 
         Choose ``None`` to stop broadcasting. This helps improve performance
         when you don't need the broadcast feature, especially when observing
