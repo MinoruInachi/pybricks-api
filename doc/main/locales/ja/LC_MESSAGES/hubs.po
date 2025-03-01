@@ -1011,8 +1011,9 @@ msgid ""
 "Gets the pitch and roll angles. This is relative to the :ref:`user-"
 "specified neutral orientation <robotframe>`."
 msgstr ""
-"ピッチ角とロール角を取得します。これは、 :ref:`user-"
-"specified neutral orientation <robotframe>` からの相対的なものです。"
+"ピッチ角とロール角を取得します。これは、 "
+":ref:`ユーザー指定の基準となる向き <robotframe>` "
+"からの相対的なものです。"
 
 #: of pybricks._common.Accelerometer.tilt:4
 msgid ""
