@@ -5,9 +5,10 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Collection, Optional, Union, overload
+from typing import TYPE_CHECKING, Collection, Optional, Union
 
 from . import _common
+from .iodevices import LWP3Device
 from .parameters import Button, Color, Direction
 
 if TYPE_CHECKING:
@@ -98,7 +99,7 @@ class Motor(_common.Motor):
         """
 
 
-class Remote:
+class Remote(LWP3Device):
     """LEGO® Powered Up Bluetooth Remote Control."""
 
     light = _common.ExternalColorLight()
@@ -115,42 +116,238 @@ class Remote:
     )
     address: Union[str, None]
 
-    def __init__(self, name: Optional[str] = None, timeout: int = 10000):
-        """Remote(name=None, timeout=10000)
-
-        When you instantiate this class, the hub will search for a remote
-        and connect automatically.
-
-        The remote must be on and ready for a connection, as indicated by a
-        white blinking light.
+    def __init__(
+        self,
+        name: Optional[str] = None,
+        timeout: int = 10000,
+        connect: bool = True,
+    ):
+        """Remote(name=None, timeout=10000, connect=True)
 
         Arguments:
             name (str): Bluetooth name of the remote. If no name is given,
                 the hub connects to the first remote that it finds.
             timeout (Number, ms): How long to search for the remote.
+                Choose ``None`` to wait indefinitely.
+            connect (bool): Choose ``False`` to skip connecting.
+                ``connect()`` can be called later to connect.
+
+        Raises:
+            OSError: If the connection attempt fails or times out.
         """
 
-    @overload
-    def name(self, name: str) -> None: ...
 
-    @overload
-    def name(self) -> str: ...
+class TechnicMoveHub(LWP3Device):
+    """LEGO® Technic Move Hub (set 42176, 42214, 42239).
 
-    def name(self, *args):
-        """name(name)
-        name() -> str
+    This newer hub is found in the latest Technic Control+ sets. It requires
+    a special password to update the firmware, so Pybricks cannot be installed
+    on it. However, you can connect a supported hub running Pybricks to it
+    and control its motors that way.
+    """
 
-        Sets or gets the Bluetooth name of the remote.
+    def __init__(
+        self,
+        name: Optional[str] = None,
+        timeout: int = 10000,
+        connect: bool = True,
+    ):
+        """TechnicMoveHub(name=None, timeout=10000, connect=True)
 
         Arguments:
-            name (str): New Bluetooth name of the remote. If no name is given,
-                this method returns the current name.
+            name (str): Bluetooth name of the hub. If no name is given,
+                the hub connects to the first Technic Move Hub it finds.
+            timeout (Number, ms): How long to search for the hub.
+                Choose ``None`` to wait indefinitely.
+            connect (bool): Choose ``False`` to skip connecting.
+                ``connect()`` can be called later to connect.
+
+        Raises:
+            OSError: If the connection attempt fails or times out.
         """
 
-    def disconnect(self) -> MaybeAwaitable:
-        """disconnect()
+    def drive(self, speed: int, steering: int) -> MaybeAwaitable:
+        """drive(speed, steering)
 
-        Disconnects the remote from the hub.
+        Drives the hub's motor outputs at the given speed and steering.
+
+        Arguments:
+            speed (int): Drive speed as a percentage (-100 to 100).
+            steering (int): Steering as a percentage (-100 to 100). Positive
+                values steer right. Values exceeding ±97 are clamped to ±97
+                to avoid pushing against the mechanical constraint.
+
+        Raises:
+            OSError: If the hub is not connected.
+        """
+
+
+class MarioHub(LWP3Device):
+    """LEGO® Super Mario hub (sets 71360, 71387, 71441 and similar).
+
+    Connect a supported hub running Pybricks to a LEGO Mario, Luigi, or Peach
+    figure and reads its color sensor.
+    """
+
+    def __init__(
+        self,
+        name: Optional[str] = None,
+        timeout: int = 10000,
+        connect: bool = True,
+    ):
+        """MarioHub(name=None, timeout=10000, connect=True)
+
+        Arguments:
+            name (str): Bluetooth name of the hub. If no name is given,
+                the hub connects to the first Mario hub it finds.
+            timeout (Number, ms): How long to search for the hub.
+                Choose ``None`` to wait indefinitely.
+            connect (bool): Choose ``False`` to skip connecting.
+                ``connect()`` can be called later to connect.
+
+        Raises:
+            OSError: If the connection attempt fails or times out.
+        """
+
+    def color(self) -> Color:
+        """color() -> Color
+
+        Reads the color detected by the color sensor from the latest received
+        notification.
+
+        Returns:
+            Detected color.
+
+        Raises:
+            OSError: If the hub is not connected.
+        """
+
+    def hsv(self) -> Color:
+        """hsv() -> Color
+
+        Reads the hue, saturation, and brightness of the color detected by the
+        color sensor from the latest received notification, as a
+        :class:`Color <.parameters.Color>` object.
+
+        Returns:
+            Measured color.
+
+        Raises:
+            OSError: If the hub is not connected.
+        """
+
+    def detectable_colors(self, colors: Collection[Color] = None) -> None:
+        """detectable_colors(colors)
+
+        Configures the list of colors that :meth:`color` may return.
+
+        Only the colors in this list will be returned. This helps reduce
+        false positives when you only care about a specific subset of colors.
+
+        Arguments:
+            colors (list): List of :class:`Color <.parameters.Color>` objects
+                to detect, or ``None`` to restore the default list.
+        """
+
+
+class DuploTrain(LWP3Device):
+    """LEGO® Duplo Train hub (sets 10874, 10875, 10427, 10428 similar).
+
+    The Duplo Hub cannot be updated, so you cannot install Pybricks on it.
+    However, you can connect a supported hub running Pybricks to the Duplo Hub
+    and control the train that way.
+
+    You can you control the motor, sound, and headlights, and read the speed
+    and color sensors.
+    """
+
+    def __init__(
+        self,
+        name: Optional[str] = None,
+        timeout: int = 10000,
+        connect: bool = True,
+    ):
+        """DuploTrain(name=None, timeout=10000, connect=True)
+
+        Arguments:
+            name (str): Bluetooth name of the hub. If no name is given,
+                the hub connects to the first Duplo Train hub it finds.
+            timeout (Number, ms): How long to search for the hub.
+                Choose ``None`` to wait indefinitely.
+            connect (bool): Choose ``False`` to skip connecting.
+                ``connect()`` can be called later to connect.
+
+        Raises:
+            OSError: If the connection attempt fails or times out.
+        """
+
+    def drive(self, speed: int) -> MaybeAwaitable:
+        """drive(speed)
+
+        Drives the train motor at the given speed.
+
+        Arguments:
+            speed (int): Speed as a percentage (-100 to 100). Negative values
+                drive in reverse.
+
+        Raises:
+            OSError: If the hub is not connected.
+        """
+
+    def headlights(self, color: Color) -> MaybeAwaitable:
+        """headlights(color)
+
+        Sets the color of the train headlights. Not all colors are supported,
+        so the hub will choose the closest color it can produce.
+
+        Arguments:
+            color (Color): Color of the headlights.
+
+        Raises:
+            OSError: If the hub is not connected.
+        """
+
+    def sound(self, sound: str) -> MaybeAwaitable:
+        """sound(sound)
+
+        Plays one of the built-in train sounds.
+
+        For the newer (dark blue) train, we have not yet figured out the right
+        sound codes. Please open a discussion or pull request if you know how
+        to do it. Thanks!
+
+        Arguments:
+            sound (str): Name of the sound to play. Choose from
+                ``"brake"``, ``"depart"``, ``"water"``, ``"horn"``,
+                or ``"steam"``.
+
+        Raises:
+            OSError: If the hub is not connected.
+        """
+
+    def speed(self) -> int:
+        """speed() -> int: %
+
+        Reads the train speed from the latest received notification.
+
+        Returns:
+            Speed as a percentage (-100 to 100).
+
+        Raises:
+            OSError: If the hub is not connected.
+        """
+
+    def color(self) -> Color:
+        """color() -> Color
+
+        Reads the color detected by the color sensor from the latest received
+        notification.
+
+        Returns:
+            Detected color.
+
+        Raises:
+            OSError: If the hub is not connected.
         """
 
 
@@ -461,6 +658,7 @@ if TYPE_CHECKING:
     del Button
     del Color
     del Direction
+    del LWP3Device
     del MaybeAwaitable
     del MaybeAwaitableBool
     del MaybeAwaitableFloat

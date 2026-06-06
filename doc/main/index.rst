@@ -1,18 +1,23 @@
-Pybricks Documentation
+Pybricks Reference Manual
 ==================================================================
 
-`Pybricks <https://pybricks.com/>`_ is Python coding for smart LEGO® hubs.
-Run MicroPython scripts
-directly on the hub, and get full control of your motors and sensors.
+.. only:: ide
 
-Pybricks runs on LEGO® BOOST, City, Technic, MINDSTORMS®, and SPIKE®. You
-can code using Windows, Mac, Linux, Chromebook, and Android.
+   This documentation details all available functions and classes in Pybricks.
+   For example, you can find the meaning of specific function parameters like
+   motor speed.
 
-Click on any device below to see its documentation. Use the menu on the left
-to find documentation for additional modules. You may need to click the ☰ icon
-above to reveal this menu.
+   If you are new to Pybricks, we recommend starting with the `Pybricks learn`_
+   guide instead.
 
 .. only:: main
+
+   `Pybricks <https://pybricks.com/>`_ is Python coding for smart LEGO® hubs.
+   Run MicroPython scripts
+   directly on the hub, and get full control of your motors and sensors.
+
+   Pybricks runs on LEGO® BOOST, City, Technic, MINDSTORMS®, and SPIKE®. You
+   can code using Windows, Mac, Linux, Chromebook, and Android.
 
    .. note:: You are viewing the stand-alone version of the documentation. To
              learn more about Pybricks and to start coding, visit
@@ -21,8 +26,13 @@ above to reveal this menu.
    .. note:: Are you using LEGO MINDSTORMS EV3? Check out the
             `EV3 documentation`_ instead.
 
+Click on any device below to see its documentation. Use the menu on the left
+to find documentation for additional modules. You may need to click the ☰ icon
+above to reveal this menu.
+
 .. _EV3 documentation: https://pybricks.com/ev3-micropython/
 .. _Pybricks website: https://pybricks.com/
+.. _Pybricks learn: https://pybricks.com/learn/
 
 .. rubric:: Programmable hubs
 
@@ -60,14 +70,8 @@ above to reveal this menu.
    parameters/index
    tools/index
    robotics
+   messaging/index
    signaltypes
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Code with blocks
-   :hidden:
-
-   blocks/index
 
 .. toctree::
    :maxdepth: 1

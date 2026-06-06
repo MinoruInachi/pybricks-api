@@ -3,6 +3,8 @@
 Button
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. currentmodule:: pybricks.parameters
+
 .. class:: Button
 
     .. rubric:: Remote and hub buttons

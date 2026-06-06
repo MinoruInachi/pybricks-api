@@ -1,10 +1,10 @@
 {
   "name": "@pybricks/ide-docs",
-  "version": "2.20.0",
+  "version": "0.0.0",
   "description": "Special build of Pybricks API docs for embedding in an IDE.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pybricks/pybricks-api",
+    "url": "git+https://github.com/pybricks/pybricks-api.git",
     "directory": "npm/ide-docs"
   },
   "publishConfig": {
@@ -13,6 +13,10 @@
   },
   "author": "The Pybricks Authors",
   "license": "MIT",
+  "exports": {
+    "./package.json": "./package.json",
+    "./html/namespace_index.json": "./html/namespace_index.json"
+  },
   "files": [
     "html"
   ],

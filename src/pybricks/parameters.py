@@ -58,16 +58,12 @@ class _PybricksEnum(Enum, metaclass=_PybricksEnumMeta):
 
 
 class Axis:
-    """Unit axes of a coordinate system.
-
-    .. data:: X = vector(1, 0, 0)
-    .. data:: Y = vector(0, 1, 0)
-    .. data:: Z = vector(0, 0, 1)
-
-    """
+    """Unit axes of a coordinate system."""
 
     X: _Matrix = _vector(1, 0, 0)
+
     Y: _Matrix = _vector(0, 1, 0)
+
     Z: _Matrix = _vector(0, 0, 1)
 
 
@@ -112,6 +108,13 @@ class Color:
         The brightness value.
         """
 
+    def __setattr__(self, key, value):
+        if key not in ("h", "s", "v"):
+            raise AttributeError("Can't modify unknown attribute: " + key)
+        if hasattr(self, key):  # immutable after __init__
+            raise AttributeError("Can't modify immutable attribute: " + key)
+        super().__setattr__(key, value)
+
     def __iter__(self):
         """Allows unpacking of the Color instance into h, s, and v."""
         return iter((self.h, self.s, self.v))
@@ -119,11 +122,15 @@ class Color:
     def __repr__(self):
         return "Color(h={}, s={}, v={})".format(self.h, self.s, self.v)
 
-    def __eq__(self, other: Color) -> bool: ...
+    def __eq__(self, other: Color) -> bool:
+        return self.h == other.h and self.s == other.s and self.v == other.v
+
+    def __hash__(self) -> int:
+        return hash((self.h, self.s, self.v))
 
     def __mul__(self, scale: float) -> Color:
         v = max(0, min(self.v * scale, 100))
-        return Color(self.h, self.s, int(v), self.name)
+        return Color(self.h, self.s, int(v))
 
     def __rmul__(self, scale: float) -> Color:
         return self.__mul__(scale)
@@ -133,6 +140,12 @@ class Color:
 
     def __floordiv__(self, scale: int) -> Color:
         return self.__mul__(1 / scale)
+
+    def __lshift__(self, shift: int) -> Color:
+        return self.__rshift__(-shift)
+
+    def __rshift__(self, shift: int) -> Color:
+        return Color((self.h + shift) % 360, self.s, self.v)
 
 
 Color.NONE = Color(0, 0, 0)

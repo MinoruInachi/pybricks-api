@@ -54,7 +54,6 @@ This section lists all available exceptions in alphabetical order.
 .. _OSError:
 
 .. autoclass:: ubuiltins.OSError
-    :noindex:
 
 .. autoclass:: ubuiltins.OverflowError
     :no-members:

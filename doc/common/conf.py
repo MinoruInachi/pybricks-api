@@ -256,12 +256,6 @@ latex_documents = [
 exclude_patterns = [
     "ev3devices.rst",
     "hubs/ev3brick.rst",
-    "iodevices/analogsensor.rst",
-    "iodevices/dcmotor.rst",
-    "iodevices/ev3devsensor.rst",
-    "iodevices/i2cdevice.rst",
-    "iodevices/lumpdevice.rst",
-    "iodevices/uartdevice.rst",
     "media.rst",
     "messaging.rst",
     "nxtdevices.rst",
@@ -372,9 +366,35 @@ def on_missing_reference(
             return nodes.Text(f"{ret_type}: {ret_unit}")
 
 
+def on_build_finished(app: Sphinx, exception):
+    if exception or app.builder.name != "html":
+        return
+    import json
+    from sphinx.ext.intersphinx import InventoryFile
+
+    inv_path = os.path.join(app.outdir, "objects.inv")
+    if not os.path.exists(inv_path):
+        return
+
+    with open(inv_path, "rb") as f:
+        inv = InventoryFile.load(f, "", lambda base, uri: base + uri)
+
+    index = {}
+    for type_key, entries in inv.items():
+        if not type_key.startswith("py:"):
+            continue
+        for name, (project, version, url, display) in entries.items():
+            index[name] = url
+
+    out_path = os.path.join(app.outdir, "namespace_index.json")
+    with open(out_path, "w") as f:
+        json.dump(index, f, indent=2, sort_keys=True)
+
+
 def setup(app: Sphinx):
     app.add_directive("availability", AvailabilityDirective)
     app.connect("missing-reference", on_missing_reference)
+    app.connect("build-finished", on_build_finished)
 
 
 # -- Python domain hacks ---------------------------------------------------

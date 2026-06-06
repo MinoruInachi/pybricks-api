@@ -10,7 +10,7 @@ ev3 = EV3Brick()
 device = I2CDevice(Port.S2, 0xD2 >> 1)
 
 # Recommended for reading
-(result,) = device.read(reg=0x0F, length=1)
+result = device.read(reg=0x0F, length=1)
 
 # Read 1 byte from no particular register:
 device.read(reg=None, length=1)

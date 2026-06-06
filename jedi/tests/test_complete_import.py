@@ -61,6 +61,7 @@ def test_from_pybricks_import():
     assert [c["insertText"] for c in completions] == [
         "hubs",
         "iodevices",
+        "messaging",
         "parameters",
         "pupdevices",
         "robotics",
@@ -75,6 +76,7 @@ def test_from_pybricks_dot():
     assert [c["insertText"] for c in completions] == [
         "hubs",
         "iodevices",
+        "messaging",
         "parameters",
         "pupdevices",
         "robotics",
@@ -102,7 +104,6 @@ def test_from_pybricks_iodevices_import():
     assert [c["insertText"] for c in completions] == [
         "AnalogSensor",
         "DCMotor",
-        "Ev3devSensor",
         "I2CDevice",
         "LUMPDevice",
         "LWP3Device",
@@ -135,12 +136,15 @@ def test_from_pybricks_pupdevices_import():
         "ColorLightMatrix",
         "ColorSensor",
         "DCMotor",
+        "DuploTrain",
         "ForceSensor",
         "InfraredSensor",
         "Light",
+        "MarioHub",
         "Motor",
         "PFMotor",
         "Remote",
+        "TechnicMoveHub",
         "TiltSensor",
         "UltrasonicSensor",
     ]

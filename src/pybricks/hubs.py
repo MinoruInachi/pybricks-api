@@ -3,8 +3,6 @@
 
 """LEGO® Programmable Hubs."""
 
-from typing import Sequence
-
 from . import _common
 from .ev3dev import _speaker
 from .media.ev3dev import Image as _Image
@@ -41,28 +39,19 @@ class MoveHub:
     imu = _common.SimpleAccelerometer()
     system = _common.System()
     buttons = _common.Keypad([_Button.CENTER])
-    ble = _common.BLE()
 
     def __init__(
-        self, broadcast_channel: int = None, observe_channels: Sequence[int] = []
+        self,
+        top_side: Axis = Axis.Z,
+        front_side: Axis = Axis.X,
     ):
-        """MoveHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
+        """MoveHub(top_side=Axis.Z, front_side=Axis.X)
 
         Arguments:
             top_side (Axis): The axis that passes through the *top side* of
                 the hub.
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
-            broadcast_channel:
-                Channel number (0 to 255) used to broadcast data.
-                Choose ``None`` when not using broadcasting.
-            observe_channels:
-                A list of channels to listen to when ``hub.ble.observe()`` is
-                called. Listening to more channels requires more memory.
-                Default is an empty list (no channels).
-
-        .. versionchanged:: 3.3
-            Added *broadcast_channel* and *observe_channels* arguments.
         """
 
 
@@ -75,25 +64,9 @@ class CityHub:
     light = _common.ColorLight()
     system = _common.System()
     buttons = _common.Keypad([_Button.CENTER])
-    ble = _common.BLE()
 
-    def __init__(
-        self, broadcast_channel: int = None, observe_channels: Sequence[int] = []
-    ):
-        """CityHub(broadcast_channel=None, observe_channels=[])
-
-        Arguments:
-            broadcast_channel:
-                Channel number (0 to 255) used to broadcast data.
-                Choose ``None`` when not using broadcasting.
-            observe_channels:
-                A list of channels to listen to when ``hub.ble.observe()`` is
-                called. Listening to more channels requires more memory.
-                Default is an empty list (no channels).
-
-        .. versionchanged:: 3.3
-            Added *broadcast_channel* and *observe_channels* arguments.
-        """
+    def __init__(self):
+        """CityHub()"""
 
 
 class TechnicHub:
@@ -106,16 +79,13 @@ class TechnicHub:
     imu = _common.IMU()
     system = _common.System()
     buttons = _common.Keypad([_Button.CENTER])
-    ble = _common.BLE()
 
     def __init__(
         self,
         top_side: Axis = Axis.Z,
         front_side: Axis = Axis.X,
-        broadcast_channel: int = None,
-        observe_channels: Sequence[int] = [],
     ):
-        """TechnicHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
+        """TechnicHub(top_side=Axis.Z, front_side=Axis.X)
 
         Initializes the hub. Optionally, specify how the hub is
         :ref:`placed in your design <robotframe>` by saying in which
@@ -127,16 +97,6 @@ class TechnicHub:
                 the hub.
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
-            broadcast_channel:
-                Channel number (0 to 255) used to broadcast data.
-                Choose ``None`` when not using broadcasting.
-            observe_channels:
-                A list of channels to listen to when ``hub.ble.observe()`` is
-                called. Listening to more channels requires more memory.
-                Default is an empty list (no channels).
-
-        .. versionchanged:: 3.3
-            Added *broadcast_channel* and *observe_channels* arguments.
         """
 
 
@@ -151,16 +111,13 @@ class EssentialHub:
     light = _common.ColorLight()
     imu = _common.IMU()
     system = _common.System()
-    ble = _common.BLE()
 
     def __init__(
         self,
         top_side: Axis = Axis.Z,
         front_side: Axis = Axis.X,
-        broadcast_channel: int = None,
-        observe_channels: Sequence[int] = [],
     ):
-        """EssentialHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
+        """EssentialHub(top_side=Axis.Z, front_side=Axis.X)
 
         Initializes the hub. Optionally, specify how the hub is
         :ref:`placed in your design <robotframe>` by saying in which
@@ -172,16 +129,6 @@ class EssentialHub:
                 the hub.
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
-            broadcast_channel:
-                Channel number (0 to 255) used to broadcast data.
-                Choose ``None`` when not using broadcasting.
-            observe_channels:
-                A list of channels to listen to when ``hub.ble.observe()`` is
-                called. Listening to more channels requires more memory.
-                Default is an empty list (no channels).
-
-        .. versionchanged:: 3.3
-            Added *broadcast_channel* and *observe_channels* arguments.
         """
         pass
 
@@ -206,16 +153,13 @@ class PrimeHub:
     speaker = _common.Speaker()
     imu = _common.IMU()
     system = _common.System()
-    ble = _common.BLE()
 
     def __init__(
         self,
         top_side: Axis = Axis.Z,
         front_side: Axis = Axis.X,
-        broadcast_channel: int = None,
-        observe_channels: Sequence[int] = [],
     ):
-        """PrimeHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
+        """PrimeHub(top_side=Axis.Z, front_side=Axis.X)
 
         Initializes the hub. Optionally, specify how the hub is
         :ref:`placed in your design <robotframe>` by saying in which
@@ -227,16 +171,6 @@ class PrimeHub:
                 the hub.
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
-            broadcast_channel:
-                Channel number (0 to 255) used to broadcast data.
-                Choose ``None`` when not using broadcasting.
-            observe_channels:
-                A list of channels to listen to when ``hub.ble.observe()`` is
-                called. Listening to more channels requires more memory.
-                Default is an empty list (no channels).
-
-        .. versionchanged:: 3.3
-            Added *broadcast_channel* and *observe_channels* arguments.
         """
 
 

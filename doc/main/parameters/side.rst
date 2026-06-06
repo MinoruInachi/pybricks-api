@@ -3,6 +3,8 @@
 Side
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. currentmodule:: pybricks.parameters
+
 .. class:: Side
 
     Side of a hub or a sensor. These devices are

@@ -1,11 +1,10 @@
-# ThisHub = MoveHub CityHub TechnicHub PrimeHub EssentialHub
-from pybricks.hubs import ThisHub
 from pybricks.pupdevices import Motor
 from pybricks.parameters import Port
 from pybricks.tools import wait
+from pybricks.messaging import BLERadio
 
 # Initialize the hub.
-hub = ThisHub(broadcast_channel=1)
+radio = BLERadio(broadcast_channel=1)
 
 # Initialize the motors.
 left_motor = Motor(Port.A)
@@ -18,7 +17,7 @@ while True:
 
     # Set the broadcast data and start broadcasting if not already doing so.
     data = (left_angle, right_angle)
-    hub.ble.broadcast(data)
+    radio.broadcast(data)
 
     # Broadcasts are only sent every 100 milliseconds, so there is no reason
     # to call the broadcast() method more often than that.

@@ -3,6 +3,8 @@
 Stop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. currentmodule:: pybricks.parameters
+
 .. class:: Stop
 
     Action after the motor stops.

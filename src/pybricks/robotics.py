@@ -5,7 +5,7 @@
 
 from __future__ import annotations
 
-from typing import Tuple, Optional, overload, TYPE_CHECKING
+from typing import Tuple, Union, Optional, overload, TYPE_CHECKING
 
 from . import _common
 from .parameters import Stop
@@ -92,6 +92,12 @@ class DriveBase:
         Stops the robot by passively braking the motors.
         """
 
+    def hold(self) -> None:
+        """hold()
+
+        Stops the robot and actively holds it in place.
+        """
+
     def distance(self) -> int:
         """distance() -> int: mm
 
@@ -101,10 +107,14 @@ class DriveBase:
             Driven distance since last reset.
         """
 
-    def angle(self) -> int:
-        """angle() -> int: deg
+    def angle(self) -> float:
+        """angle() -> float: deg
 
         Gets the estimated rotation angle of the drive base.
+
+        When the gyro is used for this drive base, this gives the gyro angle.
+        Otherwise, it gives the estimated angle estimated from the motor
+        displacement.
 
         Returns:
             Accumulated angle since last reset.
@@ -114,6 +124,10 @@ class DriveBase:
         """state() -> Tuple[int, int, int, int]
 
         Gets the state of the robot.
+
+        As with the :meth:`.angle` methods, the reported angle and turn rate
+        are those of the gyro if the gyro is used. Otherwise they are
+        estimated from the motor displacement.
 
         Returns:
             Tuple of distance, drive speed, angle, and turn rate of the robot.
@@ -129,26 +143,29 @@ class DriveBase:
         calling this method will `also` set the gyro to the given angle.
 
         Arguments:
-            distance (Number, mm): Speed of the robot.
-            angle (Number, deg): Heading angle of the robot.
+            distance (Number, mm): New value of the driven distance.
+            angle (Number, deg): New heading angle of the robot.
         """
 
     @overload
     def settings(
         self,
         straight_speed: Optional[Number] = None,
-        straight_acceleration: Optional[Number] = None,
+        straight_acceleration: Optional[Union[Number, Tuple[Number, Number]]] = None,
         turn_rate: Optional[Number] = None,
-        turn_acceleration: Optional[Number] = None,
+        turn_acceleration: Optional[Union[Number, Tuple[Number, Number]]] = None,
     ) -> None: ...
 
     @overload
-    def settings(self) -> Tuple[int, int, int, int]: ...
+    def settings(
+        self,
+    ) -> Tuple[int, Union[int, Tuple[int, int]], int, Union[int, Tuple[int, int]]]: ...
 
     def settings(self, *args):
         """
         settings(straight_speed, straight_acceleration, turn_rate, turn_acceleration)
         settings() -> Tuple[int, int, int, int]
+        settings() -> Tuple[int, Tuple[int, int], int, Tuple[int, int]]
 
         Configures the drive base speed and acceleration.
 
@@ -161,15 +178,22 @@ class DriveBase:
         The speed values given here do not apply to the :meth:`.drive` method,
         since you provide your own speed values as arguments in that method.
 
+        Speed and rate values are treated as absolute; negative values are
+        converted to positive automatically.
+
         Arguments:
             straight_speed (Number, mm/s): Straight-line speed of the robot.
-            straight_acceleration (Number, mm/s²): Straight-line
-                acceleration and deceleration of the robot. Provide a tuple with
-                two values to set acceleration and deceleration separately.
+            straight_acceleration (Number or Tuple[Number, Number], mm/s²):
+                Straight-line acceleration and deceleration of the robot.
+                Provide a single value to use the same acceleration and
+                deceleration. Provide a tuple with two values to set them
+                separately.
             turn_rate (Number, deg/s): Turn rate of the robot.
-            turn_acceleration (Number, deg/s²): Angular acceleration and
-                deceleration of the robot. Provide a tuple with
-                two values to set acceleration and deceleration separately.
+            turn_acceleration (Number or Tuple[Number, Number], deg/s²):
+                Angular acceleration and deceleration of the robot.
+                Provide a single value to use the same acceleration and
+                deceleration. Provide a tuple with two values to set them
+                separately.
         """
 
     def straight(
@@ -187,9 +211,13 @@ class DriveBase:
         """
 
     def turn(
-        self, angle: Number, then: Stop = Stop.HOLD, wait: bool = True
+        self,
+        angle: Number,
+        then: Stop = Stop.HOLD,
+        wait: bool = True,
+        absolute: bool = False,
     ) -> MaybeAwaitable:
-        """turn(angle, then=Stop.HOLD, wait=True)
+        """turn(angle, then=Stop.HOLD, wait=True, absolute=False)
 
         Turns in place by a given angle and then stops.
 
@@ -198,6 +226,9 @@ class DriveBase:
             then (Stop): What to do after coming to a standstill.
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program.
+            absolute (bool): If ``False`` (default), the robot turns _by_ the
+                given angle relative to its current heading. If ``True``,
+                the robot turns to the given absolute heading angle.
         """
 
     def arc(
@@ -234,21 +265,6 @@ class DriveBase:
                 radius cannot be zero. Use :meth:`.turn` for in-place turns.
         """
 
-    def curve(
-        self, radius: Number, angle: Number, then: Stop = Stop.HOLD, wait: bool = True
-    ) -> MaybeAwaitable:
-        """curve(radius, angle, then=Stop.HOLD, wait=True)
-
-        Drives an arc along a circle of a given radius, by a given angle.
-
-        Arguments:
-            radius (Number, mm): Radius of the circle.
-            angle (Number, deg): Angle along the circle.
-            then (Stop): What to do after coming to a standstill.
-            wait (bool): Wait for the maneuver to complete before continuing
-                         with the rest of the program.
-        """
-
     def done(self) -> bool:
         """done() -> bool
 
@@ -268,6 +284,26 @@ class DriveBase:
 
         Returns:
             ``True`` if the drive base is stalled, ``False`` if not.
+        """
+
+    def move_by(self, dx: Number, dy: Number, then: Stop = Stop.HOLD) -> MaybeAwaitable:
+        """move_by(dx, dy, then=Stop.HOLD)
+
+        Moves the robot by an amount given as X-and-Y coordinates on the robot
+        drive area. The X-axis is what was forward when the program started.
+        The Y-axis is 90° left of that. You can reset this by resetting the heading.
+
+        The robot first turns to the required heading and then drives the
+        straight-line distance. Because the heading target is absolute, the
+        result is independent of the robot's current heading.
+
+        Arguments:
+            dx (Number, mm): X-distance on the drive area.
+            dy (Number, mm): Y-distance on the drive area.
+            then (Stop): What to do after coming to a standstill.
+
+        Raises:
+            ValueError: If one of the distances is more than 30 m.
         """
 
     def use_gyro(self, use_gyro: bool) -> None:

@@ -21,23 +21,19 @@ and ambient conditions.
 .. blockimg:: pybricks_variables_set_pf_motor
 
 .. autoclass:: pybricks.pupdevices.PFMotor
-    :noindex:
     :no-members:
 
     .. blockimg:: pybricks_blockMotorDuty_PFMotor
 
     .. automethod:: pybricks.pupdevices.PFMotor.dc
-        :noindex:
 
     .. blockimg:: pybricks_blockMotorStop_PFMotor_coast
 
     .. automethod:: pybricks.pupdevices.PFMotor.stop
-        :noindex:
 
     .. blockimg:: pybricks_blockMotorStop_PFMotor_brake
 
     .. automethod:: pybricks.pupdevices.PFMotor.brake
-        :noindex:
 
 Examples
 -------------------

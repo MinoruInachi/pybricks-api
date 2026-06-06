@@ -3,7 +3,7 @@
 
 """LEGO® MINDSTORMS® EV3 motors and sensors."""
 
-from typing import Optional, Tuple, List
+from typing import Optional, Tuple, List, Set
 
 from . import _common
 from .parameters import (
@@ -57,7 +57,7 @@ class ColorSensor:
         Returns:
             ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``,
             ``Color.YELLOW``, ``Color.RED``, ``Color.WHITE``, ``Color.BROWN``,
-            or ``None`` if no color is detected.
+            or ``Color.NONE`` if no color is detected.
 
         """
 
@@ -134,8 +134,8 @@ class InfraredSensor:
             a tuple of (``None``, ``None``) if no remote is detected.
         """
 
-    def buttons(self, channel: int) -> List[_Button]:
-        """buttons(channel) -> List[Button]
+    def buttons(self, channel: int) -> Set[_Button]:
+        """buttons(channel) -> Set[Button]
 
         Checks which buttons on the infrared remote are pressed.
 

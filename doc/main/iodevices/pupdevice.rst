@@ -15,6 +15,8 @@ Powered Up Device
 
     .. automethod:: pybricks.iodevices.PUPDevice.write
 
+    .. automethod:: pybricks.iodevices.PUPDevice.reset
+
 Examples
 -------------------
 

@@ -5,7 +5,6 @@
 Tests for correct code completion of the InventorHub class.
 """
 
-
 import json
 from pybricks_jedi import complete, CompletionItem
 

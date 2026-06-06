@@ -3,6 +3,8 @@
 Port
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. currentmodule:: pybricks.parameters
+
 .. class:: Port
 
     Input and output ports:

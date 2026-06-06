@@ -5,7 +5,6 @@
 Tests for correct signatures of the pupdevices.Motor class.
 """
 
-
 from itertools import zip_longest
 import json
 
@@ -86,12 +85,17 @@ CONSTRUCTOR_PARAMS = [
     pytest.param(
         "pybricks.hubs",
         "MoveHub",
-        [["broadcast_channel: int=None", "observe_channels: Sequence[int]=[]"]],
+        [
+            [
+                "top_side: Axis=Axis.Z",
+                "front_side: Axis=Axis.X",
+            ]
+        ],
     ),
     pytest.param(
         "pybricks.hubs",
         "CityHub",
-        [["broadcast_channel: int=None", "observe_channels: Sequence[int]=[]"]],
+        [[]],
     ),
     pytest.param(
         "pybricks.hubs",
@@ -100,8 +104,6 @@ CONSTRUCTOR_PARAMS = [
             [
                 "top_side: Axis=Axis.Z",
                 "front_side: Axis=Axis.X",
-                "broadcast_channel: int=None",
-                "observe_channels: Sequence[int]=[]",
             ]
         ],
     ),
@@ -112,8 +114,6 @@ CONSTRUCTOR_PARAMS = [
             [
                 "top_side: Axis=Axis.Z",
                 "front_side: Axis=Axis.X",
-                "broadcast_channel: int=None",
-                "observe_channels: Sequence[int]=[]",
             ]
         ],
     ),
@@ -124,8 +124,6 @@ CONSTRUCTOR_PARAMS = [
             [
                 "top_side: Axis=Axis.Z",
                 "front_side: Axis=Axis.X",
-                "broadcast_channel: int=None",
-                "observe_channels: Sequence[int]=[]",
             ]
         ],
     ),
@@ -170,7 +168,7 @@ CONSTRUCTOR_PARAMS = [
     pytest.param(
         "pybricks.pupdevices",
         "Remote",
-        [["name: Optional[str]=None", "timeout: int=10000"]],
+        [["name: Optional[str]=None", "timeout: int=10000", "connect: bool=True"]],
     ),
     # TODO: iodevices go here
     pytest.param(
@@ -935,7 +933,7 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "Remote",
         "name",
-        [(["name: str"], "None"), ([], "str")],
+        [(["name: str"], "MaybeAwaitable"), ([], "str")],
     ),
     pytest.param(
         "pybricks.pupdevices",
@@ -973,7 +971,12 @@ METHOD_PARAMS = [
         "turn",
         [
             (
-                ["angle: Number", "then: Stop=Stop.HOLD", "wait: bool=True"],
+                [
+                    "angle: Number",
+                    "then: Stop=Stop.HOLD",
+                    "wait: bool=True",
+                    "absolute: bool=False",
+                ],
                 "MaybeAwaitable",
             )
         ],
@@ -981,12 +984,13 @@ METHOD_PARAMS = [
     pytest.param(
         "pybricks.robotics",
         "DriveBase",
-        "curve",
+        "arc",
         [
             (
                 [
                     "radius: Number",
-                    "angle: Number",
+                    "angle: Number=None",
+                    "distance: Number=None",
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
@@ -1002,13 +1006,16 @@ METHOD_PARAMS = [
             (
                 [
                     "straight_speed: Optional[Number]=None",
-                    "straight_acceleration: Optional[Number]=None",
+                    "straight_acceleration: Optional[Union[Number, Tuple[Number, Number]]]=None",
                     "turn_rate: Optional[Number]=None",
-                    "turn_acceleration: Optional[Number]=None",
+                    "turn_acceleration: Optional[Union[Number, Tuple[Number, Number]]]=None",
                 ],
                 "None",
             ),
-            ([], "Tuple[int, int, int, int]"),
+            (
+                [],
+                "Tuple[int, Union[int, Tuple[int, int]], int, Union[int, Tuple[int, int]]]",
+            ),
         ],
     ),
     pytest.param(
@@ -1020,7 +1027,7 @@ METHOD_PARAMS = [
     pytest.param("pybricks.robotics", "DriveBase", "stop", [([], "None")]),
     pytest.param("pybricks.robotics", "DriveBase", "brake", [([], "None")]),
     pytest.param("pybricks.robotics", "DriveBase", "distance", [([], "int")]),
-    pytest.param("pybricks.robotics", "DriveBase", "angle", [([], "int")]),
+    pytest.param("pybricks.robotics", "DriveBase", "angle", [([], "float")]),
     pytest.param(
         "pybricks.robotics", "DriveBase", "state", [([], "Tuple[int, int, int, int]")]
     ),

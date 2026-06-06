@@ -22,6 +22,9 @@
    colorlightmatrix
    light
    remote
+   technicmovehub
+   mariohub
+   duplotrain
 
 .. pybricks-classlink:: DCMotor
 
@@ -94,3 +97,15 @@
 .. figure:: ../../main/cad/output/pupdevice-remote.png
    :width: 50 %
    :target: remote.html
+
+.. pybricks-requirements:: pybricks-iodevices ble-extra
+
+.. pybricks-classlink:: TechnicMoveHub
+
+.. pybricks-requirements:: pybricks-iodevices ble-extra
+
+.. pybricks-classlink:: MarioHub
+
+.. pybricks-requirements:: pybricks-iodevices ble-extra
+
+.. pybricks-classlink:: DuploTrain

@@ -8,7 +8,7 @@ Essential Hub
 
 .. blockimg:: pybricks_variables_set_essential_hub_option0
 
-.. blockimg:: pybricks_variables_set_essential_hub_option4
+.. blockimg:: pybricks_variables_set_essential_hub_option1
 
 .. autoclass:: pybricks.hubs.EssentialHub
     :no-members:
@@ -36,7 +36,7 @@ Essential Hub
     .. blockimg:: pybricks_blockHubStopButton_EssentialHub
 
     .. blockimg:: pybricks_blockHubStopButton_EssentialHub_none
-    
+
     .. automethod:: pybricks.hubs::EssentialHub.system.set_stop_button
 
     .. rubric:: Using the IMU
@@ -63,7 +63,7 @@ Essential Hub
     .. blockimg:: pybricks_blockTilt_EssentialHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_EssentialHub_imu.tilt.roll
-    
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_EssentialHub
@@ -89,26 +89,12 @@ Essential Hub
     .. automethod:: pybricks.hubs::EssentialHub.imu.orientation
 
     .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_heading_correction
-    
+
     .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_angular_velocity_threshold
-    
+
     .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_acceleration_threshold
-    
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.settings
-
-    .. rubric:: Using connectionless Bluetooth messaging
-
-    .. blockimg:: pybricks_blockBleBroadcast_EssentialHub
-
-    .. automethod:: pybricks.hubs::EssentialHub.ble.broadcast
-
-    .. blockimg:: pybricks_blockBleObserve_EssentialHub
-
-    .. automethod:: pybricks.hubs::EssentialHub.ble.observe
-
-    .. automethod:: pybricks.hubs::EssentialHub.ble.signal_strength
-
-    .. automethod:: pybricks.hubs::EssentialHub.ble.version
 
     .. rubric:: Using the battery
 
@@ -203,23 +189,6 @@ Reading acceleration and angular velocity on one axis
 
 .. literalinclude::
     ../../../examples/pup/hub_common/build/imu_read_scalar_essentialhub.py
-
-
-Bluetooth examples
-------------------
-
-Broadcasting data to other hubs
-*******************************
-
-.. literalinclude::
-    ../../../examples/pup/hub_common/build/ble_broadcast_essentialhub.py
-
-Observing data from other hubs
-******************************
-
-.. literalinclude::
-    ../../../examples/pup/hub_common/build/ble_observe_essentialhub.py
-
 
 System examples
 ----------------------------------

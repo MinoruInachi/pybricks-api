@@ -13,6 +13,8 @@ Remote Control
 .. autoclass:: pybricks.pupdevices.Remote
   :no-members:
 
+  .. automethod:: pybricks.pupdevices::Remote.connect
+
   .. automethod:: pybricks.pupdevices::Remote.name
 
   .. blockimg:: pybricks_blockLightOnColor_remote_on

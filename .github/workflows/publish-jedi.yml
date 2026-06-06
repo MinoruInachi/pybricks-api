@@ -2,22 +2,42 @@ name: Release @pybricks/jedi
 
 on:
   push:
-    tags: 
-    - '@pybricks/jedi/**'
+    tags:
+    - 'v4.*'
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   publish_jedi:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v3
-    # Setup .npmrc file to publish to npm
-    - uses: actions/setup-node@v3
+    - uses: actions/checkout@v6
+    - name: Get version from tag
+      run: |
+        VERSION="${GITHUB_REF_NAME#v}"
+        NPM_VERSION=$(echo "$VERSION" | sed 's/\([0-9]\)a\([0-9]\)/\1-alpha.\2/;s/\([0-9]\)b\([0-9]\)/\1-beta.\2/;s/\([0-9]\)rc\([0-9]\)/\1-rc.\2/')
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
+        echo "NPM_VERSION=$NPM_VERSION" >> $GITHUB_ENV
+        echo "NPM_TAG=$(echo "$NPM_VERSION" | grep -q '-' && echo 'next' || echo 'latest')" >> $GITHUB_ENV
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
-        node-version: '16.x'
+        python-version: '3.11'
+    - name: Install poetry
+      run: pipx install poetry
+    - name: Set pybricks-jedi version
+      run: poetry version "$VERSION"
+      working-directory: jedi
+    - name: Set pybricks version and update jedi dependency pin
+      run: |
+        poetry version "$VERSION"
+        sed -i "s/^pybricks = \".*\"/pybricks = \"$VERSION\"/" jedi/pyproject.toml
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24'
         registry-url: 'https://registry.npmjs.org'
-    - run: ./build.py
-      working-directory: npm/jedi
-    - run: yarn publish
-      working-directory: npm/jedi/build
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+    - run: python jedi/build.py "$NPM_VERSION"
+    - run: npm publish --tag "$NPM_TAG"
+      working-directory: jedi/npm-build

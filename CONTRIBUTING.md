@@ -163,6 +163,23 @@ Linting:
     poetry run flake8  # check Python
     poetry run doc8  # check Restructured Text
 
+Building all release artifacts (docs, jedi, npm packages):
+
+    # Linux/macOS only
+    ./build-all.sh
+
+** version notes **
+
+This repository is frequently updated to stay in sync with the firmware
+implementation.
+
+Major and minor versions are synchronized with `pybricks-micropython`, which
+leads. Patch versions and prerelease version numbers may differ, as they may
+be bumped for every small change or typo in the docs.
+
+The version for this repository is also used for the `@pybricks/jedi` and
+`@pybricks/ide-docs` npm packages.
+
 [vscode]: https://code.visualstudio.com/
 [git]: https://git-scm.com/
 [python]: https://www.python.org/

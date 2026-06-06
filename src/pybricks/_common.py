@@ -40,6 +40,8 @@ if TYPE_CHECKING:
 
     class MaybeAwaitableColor(Color, Awaitable[Color]): ...
 
+    class MaybeAwaitableBytes(bytes, Awaitable[bytes]): ...
+
 
 class System:
     """System control actions for a hub."""
@@ -123,12 +125,15 @@ class System:
            automatically, like after a firmware update. It is ``2`` if the hub
            previously crashed due to a watchdog timeout, which indicates a
            firmware issue.
-         - ``"host_connected_ble"``: Whether the hub is connected to a computer,
-           tablet, or phone via Bluetooth.
+         - ``"host_connected_ble"``: ``True`` if the hub is connected to a
+           computer, tablet, or phone via Bluetooth, and ``False`` otherwise.
+         - ``"host_connected_usb"``: ``True`` if the hub is connected to a computer
+           via USB and activated in the app. ``False`` otherwise.
          - ``"program_start_type"``: It is ``1`` if the program started
            automatically when the hub was powered on. It is ``2`` if the program
            was started with the hub buttons. It is ``3`` if the program was
            started from your connected computer.
+         - `"program_id"`: Program (slot) number of the currently running program.
 
         Returns:
             A dictionary with system info.
@@ -136,7 +141,7 @@ class System:
         .. versionchanged:: 3.6
             The name and reset reason where previously available as separate
             methods. Now they are included in the info dictionary. The methods
-            are still available for compatibility.
+            are still available for backwards compatibility.
         """
 
 
@@ -828,7 +833,7 @@ class LightMatrix:
         contents remain unchanged.
 
         Arguments:
-            top (Side): Which side of the light matrix display is "up" in your
+            up (Side): Which side of the light matrix display is "up" in your
                 design. Choose ``Side.TOP``, ``Side.LEFT``, ``Side.RIGHT``,
                 or ``Side.BOTTOM``.
         """
@@ -1211,17 +1216,6 @@ class IMU:
         even as the robot turns more than 180 degrees. It does not wrap around
         to -180 like it does in some apps.
 
-
-        .. note:: *For now, this method only keeps track of the heading while
-                  the robot is on a flat surface.*
-
-                  This means that the value is
-                  no longer correct if you lift it from the table or turn on
-                  a ramp. Try ``hub.imu.heading('3D')`` for a heading value
-                  that compensates for this. This will become the default in a
-                  future release. If you try it, please let us know on our
-                  forums!
-
         Returns:
             Heading angle relative to starting orientation.
 
@@ -1438,87 +1432,4 @@ class AmbientColorSensor(CommonColorSensor):
         Returns:
             Measured color. The color is described by a hue (0--359), a
             saturation (0--100), and a brightness value (0--100).
-        """
-
-
-class BLE:
-    """
-    Bluetooth Low Energy.
-
-    .. versionadded:: 3.3
-    """
-
-    def broadcast(self, data: Union[bool, int, float, str, bytes]) -> MaybeAwaitable:
-        """broadcast(data)
-
-        Starts broadcasting the given data on
-        the ``broadcast_channel`` you selected when initializing the hub.
-
-        Data may be of type ``int``, ``float``, ``str``, ``bytes``,
-        ``True``, or ``False``. It can also be a list or tuple of these.
-
-        Choose ``None`` to stop broadcasting. This helps improve performance
-        when you don't need the broadcast feature, especially when observing
-        at the same time.
-
-        The total data size is quite limited (26 bytes). ``True`` and
-        ``False`` take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to
-        5 bytes depending on how big the number is. ``str`` and ``bytes`` take
-        the number of bytes in the object plus one extra byte.
-
-        When multitasking, only one task can broadcast at a time. To broadcast
-        information from multiple tasks (or block stacks), you could use a
-        dedicated separate task that broadcast new values when one or more
-        variables change.
-
-        Args:
-            data: The value or values to be broadcast.
-
-        .. versionadded:: 3.3
-        """
-
-    def observe(
-        self, channel: int
-    ) -> Optional[Tuple[Union[bool, int, float, str, bytes], ...]]:
-        """observe(channel) -> bool | int | float | str | bytes | tuple | None
-
-        Retrieves the last observed data for a given channel.
-
-        Receiving data is more reliable when the hub is not connected
-        to a computer or other devices at the same time.
-
-        Args:
-            channel (int): The channel to observe (0 to 255).
-
-        Returns:
-            The received data in the same format as it was sent, or ``None``
-            if no recent data is available.
-
-        .. versionadded:: 3.3
-        """
-
-    def signal_strength(self, channel: int) -> int:
-        """signal_strength(channel) -> int: dBm
-
-        Gets the average signal strength in dBm for the given channel.
-
-        This indicates how near the broadcasting device is. Nearby devices
-        may have a signal strength around -40 dBm, while far away devices
-        might have a signal strength around -70 dBm.
-
-        Args:
-            channel (int): The channel number (0 to 255).
-
-        Returns:
-            The signal strength or ``-128`` if there is no recent observed data.
-
-        .. versionadded:: 3.3
-        """
-
-    def version(self) -> str:
-        """version() -> str
-
-        Gets the firmware version from the Bluetooth chip.
-
-        .. versionadded:: 3.3
         """

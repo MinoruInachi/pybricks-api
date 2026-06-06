@@ -64,13 +64,13 @@ Motors
 
     .. rubric:: Control settings
 
-    .. automethod:: pybricks.ev3devices.Motor.control.limits
+    .. automethod:: pybricks.ev3devices::Motor.control.limits
 
-    .. automethod:: pybricks.ev3devices.Motor.control.pid
+    .. automethod:: pybricks.ev3devices::Motor.control.pid
 
-    .. automethod:: pybricks.ev3devices.Motor.control.target_tolerances
+    .. automethod:: pybricks.ev3devices::Motor.control.target_tolerances
 
-    .. automethod:: pybricks.ev3devices.Motor.control.stall_tolerances
+    .. automethod:: pybricks.ev3devices::Motor.control.stall_tolerances
 
     .. attribute:: control.scale
 

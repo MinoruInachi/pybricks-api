@@ -3,6 +3,8 @@
 Direction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. currentmodule:: pybricks.parameters
+
 .. class:: Direction
 
     Rotational direction for positive speed or angle values.

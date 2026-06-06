@@ -21,20 +21,16 @@ Motors without rotation sensors
     .. blockimg:: pybricks_blockMotorDuty_DCMotor
 
     .. automethod:: pybricks.pupdevices.DCMotor.dc
-        :noindex:
 
     .. blockimg:: pybricks_blockMotorStop_DCMotor_coast
 
     .. automethod:: pybricks.pupdevices.DCMotor.stop
-        :noindex:
 
     .. blockimg:: pybricks_blockMotorStop_DCMotor_brake
 
     .. automethod:: pybricks.pupdevices.DCMotor.brake
-        :noindex:
 
     .. automethod:: pybricks.pupdevices.DCMotor.settings
-        :noindex:
 
 Examples
 -------------------

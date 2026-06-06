@@ -19,32 +19,27 @@
     This is measured using the internal rotation sensors. Because wheels may
     slip while moving, the traveled distance and angle are only estimates.
 
-    .. blockimg:: pybricks_blockDriveBaseDrive_drivebase_drive_straight
+    .. blockimg:: pybricks_blockDriveBaseMove_drivebase_move_straight
 
     .. automethod:: pybricks.robotics.DriveBase.straight
 
-    .. blockimg:: pybricks_blockDriveBaseDrive_drivebase_drive_turn
+    .. blockimg:: pybricks_blockDriveBaseMove_drivebase_move_turn_by
+
+    .. blockimg:: pybricks_blockDriveBaseMove_drivebase_move_turn_to
 
     .. automethod:: pybricks.robotics.DriveBase.turn
 
-    .. versionchanged:: 3.6
+    .. blockimg:: pybricks_blockDriveBaseMove_drivebase_move_arc_deg
 
-        The ``curve()`` Python method will be replaced by the :meth:`.arc`
-        method. It can still make curves, but it uses different definitions
-        for drive and turn direction. Existing code with ``curve()`` continues
-        to work the same, but you should use :meth:`.arc` for new code.
-        If you use block code, you can pick a new block from the palette to
-        update your code. The old block will still work, but it displays a
-        warning icon to remind you to upgrade. The updated `curve` option uses
-        the direction definitions given below. The new `veer` option lets
-        you drive along a circle by a given distance, which is useful for
-        veering slightly in one direction.
-
-    .. blockimg:: pybricks_blockDriveBaseDrive2_drivebase_drive_arc_angle
-
-    .. blockimg:: pybricks_blockDriveBaseDrive2_drivebase_drive_arc_distance
+    .. blockimg:: pybricks_blockDriveBaseMove_drivebase_move_arc_mm
 
     .. automethod:: pybricks.robotics.DriveBase.arc
+
+    .. pybricks-requirements:: stm32-float
+
+    .. blockimg:: pybricks_blockDriveBaseMove_drivebase_move_coordinates
+
+    .. automethod:: pybricks.robotics.DriveBase.move_by
 
     .. blockimg:: pybricks_blockDriveBaseConfigure_drivebase_straight_speed
 
@@ -66,7 +61,7 @@
     using :meth:`.drive` again. For example, you can drive until a
     sensor is triggered and then stop or turn around.
 
-    .. blockimg:: pybricks_blockDriveBaseDrive_drivebase_drive_forever
+    .. blockimg:: pybricks_blockDriveBaseStart
 
     .. automethod:: pybricks.robotics.DriveBase.drive
 
@@ -79,6 +74,8 @@
     .. automethod:: pybricks.robotics.DriveBase.brake
 
     .. blockimg:: pybricks_blockDriveBaseStop_hold
+
+    .. automethod:: pybricks.robotics.DriveBase.hold
 
     .. rubric:: Measuring
 
@@ -135,7 +132,7 @@
     ``then=Stop.COAST`` in your last
     :meth:`straight <pybricks.robotics.DriveBase.straight>`,
     :meth:`turn <pybricks.robotics.DriveBase.turn>`, or
-    :meth:`curve <pybricks.robotics.DriveBase.arc>` command.
+    :meth:`arc <pybricks.robotics.DriveBase.arc>` command.
 
     .. _measuring:
 

@@ -105,24 +105,24 @@ Motors with rotation sensors
     .. blockimg:: pybricks_blockMotorConfigure_motor_max_speed
 
     .. blockimg:: pybricks_blockMotorConfigure_motor_acceleration
-    
+
     .. blockimg:: pybricks_blockMotorConfigure_motor_max_torque
-    
-    .. automethod:: pybricks.pupdevices.Motor.control.limits
+
+    .. automethod:: pybricks.pupdevices::Motor.control.limits
 
     .. pybricks-requirements:: pybricks-common-control
 
-    .. automethod:: pybricks.pupdevices.Motor.control.pid
+    .. automethod:: pybricks.pupdevices::Motor.control.pid
 
     .. pybricks-requirements:: pybricks-common-control
 
     .. blockimg:: pybricks_blockMotorConfigure_motor_target_tolerances
 
-    .. automethod:: pybricks.pupdevices.Motor.control.target_tolerances
+    .. automethod:: pybricks.pupdevices::Motor.control.target_tolerances
 
     .. pybricks-requirements:: pybricks-common-control
 
-    .. automethod:: pybricks.pupdevices.Motor.control.stall_tolerances
+    .. automethod:: pybricks.pupdevices::Motor.control.stall_tolerances
 
     .. pybricks-requirements:: pybricks-common-control
 
@@ -139,11 +139,11 @@ Motors with rotation sensors
 
     .. pybricks-requirements:: pybricks-common-control
 
-    .. automethod:: pybricks.pupdevices.Motor.model.state
+    .. automethod:: pybricks.pupdevices::Motor.model.state
 
     .. pybricks-requirements:: pybricks-common-control
 
-    .. automethod:: pybricks.pupdevices.Motor.model.settings
+    .. automethod:: pybricks.pupdevices::Motor.model.settings
 
 Initialization examples
 -----------------------

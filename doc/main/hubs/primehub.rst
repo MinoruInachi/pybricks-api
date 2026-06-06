@@ -8,7 +8,9 @@ Prime Hub / Inventor Hub
 
 .. blockimg:: pybricks_variables_set_inventor_hub_option0
 
-.. blockimg:: pybricks_variables_set_inventor_hub_option4
+.. blockimg:: pybricks_variables_set_inventor_hub_option1
+
+.. currentmodule:: pybricks.hubs
 
 .. class:: InventorHub
 
@@ -19,7 +21,7 @@ Prime Hub / Inventor Hub
 
 .. blockimg:: pybricks_variables_set_prime_hub_option0
 
-.. blockimg:: pybricks_variables_set_prime_hub_option4
+.. blockimg:: pybricks_variables_set_prime_hub_option1
 
 .. autoclass:: pybricks.hubs.PrimeHub
     :no-members:
@@ -82,7 +84,7 @@ Prime Hub / Inventor Hub
     .. blockimg:: pybricks_blockHubStopButton_PrimeHub
 
     .. blockimg:: pybricks_blockHubStopButton_PrimeHub_none
-    
+
     .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
     .. rubric:: Using the IMU
@@ -109,7 +111,7 @@ Prime Hub / Inventor Hub
     .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.roll
-    
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_PrimeHub
@@ -135,11 +137,11 @@ Prime Hub / Inventor Hub
     .. automethod:: pybricks.hubs::PrimeHub.imu.orientation
 
     .. blockimg:: pybricks_blockImuConfigure_PrimeHub_imu.settings_heading_correction
-    
+
     .. blockimg:: pybricks_blockImuConfigure_PrimeHub_imu.settings_angular_velocity_threshold
-    
+
     .. blockimg:: pybricks_blockImuConfigure_PrimeHub_imu.settings_acceleration_threshold
-    
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.settings
 
     .. rubric:: Using the speaker
@@ -149,20 +151,6 @@ Prime Hub / Inventor Hub
     .. automethod:: pybricks.hubs::PrimeHub.speaker.beep
 
     .. automethod:: pybricks.hubs::PrimeHub.speaker.play_notes
-
-    .. rubric:: Using connectionless Bluetooth messaging
-
-    .. blockimg:: pybricks_blockBleBroadcast_PrimeHub
-
-    .. automethod:: pybricks.hubs::PrimeHub.ble.broadcast
-
-    .. blockimg:: pybricks_blockBleObserve_PrimeHub
-
-    .. automethod:: pybricks.hubs::PrimeHub.ble.observe
-
-    .. automethod:: pybricks.hubs::PrimeHub.ble.signal_strength
-
-    .. automethod:: pybricks.hubs::PrimeHub.ble.version
 
     .. rubric:: Using the battery
 
@@ -328,23 +316,6 @@ Reading acceleration and angular velocity on one axis
 
 .. literalinclude::
     ../../../examples/pup/hub_common/build/imu_read_scalar_primehub.py
-
-
-Bluetooth examples
-------------------
-
-Broadcasting data to other hubs
-*******************************
-
-.. literalinclude::
-    ../../../examples/pup/hub_common/build/ble_broadcast_primehub.py
-
-Observing data from other hubs
-******************************
-
-.. literalinclude::
-    ../../../examples/pup/hub_common/build/ble_observe_primehub.py
-
 
 System examples
 ----------------------------------

@@ -18,14 +18,23 @@ FEATURES_MEDIUM = FEATURES_SMALL | {
 }
 
 # Large feature set.
-FEATURES_LARGE = FEATURES_MEDIUM | set()
+FEATURES_LARGE = FEATURES_MEDIUM | {
+    "ble-extra",  # Extra features such as pairing or multiple connections.
+}
 
 # Features per hub.
 HUB_FEATURES = {
-    "movehub": {"movehub"} | FEATURES_SMALL,
-    "cityhub": {"cityhub"} | FEATURES_MEDIUM,
-    "technichub": {"technichub", "gyro", "xbox-controller"} | FEATURES_MEDIUM,
-    "primehub": {"primehub", "inventorhub", "light-matrix", "gyro", "xbox-controller"}
+    "movehub": {"movehub", "pup"} | FEATURES_SMALL,
+    "cityhub": {"cityhub", "pup"} | FEATURES_MEDIUM,
+    "technichub": {"technichub", "gyro", "xbox-controller", "pup"} | FEATURES_MEDIUM,
+    "primehub": {
+        "primehub",
+        "inventorhub",
+        "light-matrix",
+        "gyro",
+        "xbox-controller",
+        "pup",
+    }
     | FEATURES_LARGE,
     "inventorhub": {
         "primehub",
@@ -33,9 +42,10 @@ HUB_FEATURES = {
         "light-matrix",
         "gyro",
         "xbox-controller",
+        "pup",
     }
     | FEATURES_LARGE,
-    "essentialhub": {"essentialhub", "gyro", "xbox-controller"} | FEATURES_LARGE,
+    "essentialhub": {"essentialhub", "gyro", "xbox-controller", "pup"} | FEATURES_LARGE,
 }
 
 
@@ -94,9 +104,7 @@ class PybricksRequirementsStaticDirective(Directive):
                 </tbody>
             </table>
         </div>
-        """.format(
-            compat_row
-        )
+        """.format(compat_row)
 
         # Return the node.
         node = nodes.raw("", html, format="html")

@@ -1,11 +1,10 @@
-# ThisHub = MoveHub CityHub TechnicHub PrimeHub EssentialHub
-from pybricks.hubs import ThisHub
 from pybricks.pupdevices import Motor
-from pybricks.parameters import Color, Port
+from pybricks.parameters import Port
 from pybricks.tools import wait
+from pybricks.messaging import BLERadio
 
 # Initialize the hub.
-hub = ThisHub(observe_channels=[1])
+radio = BLERadio(observe_channels=[1])
 
 # Initialize the motors.
 left_motor = Motor(Port.A)
@@ -14,17 +13,12 @@ right_motor = Motor(Port.B)
 while True:
     # Receive broadcast from the other hub.
 
-    data = hub.ble.observe(1)
+    data = radio.observe(1)
 
-    if data is None:
-        # No data has been received in the last 1 second.
-        hub.light.on(Color.RED)
-    else:
+    if data is not None:
         # Data was received and is less that one second old.
-        hub.light.on(Color.GREEN)
-
-        # *data* contains the same values in the same order
-        # that were passed to hub.ble.broadcast() on the
+        # It contains the same values in the same order
+        # that were passed to radio.broadcast() on the
         # other hub.
         left_angle, right_angle = data
 
