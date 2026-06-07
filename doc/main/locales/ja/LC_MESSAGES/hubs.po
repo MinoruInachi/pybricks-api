@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.6\n"
+"Project-Id-Version: pybricks v4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 08:40+0900\n"
-"PO-Revision-Date: 2025-03-28 09:09+0900\n"
+"POT-Creation-Date: 2026-06-06 12:25+0900\n"
+"PO-Revision-Date: 2026-06-06 16:47+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -1429,13 +1429,21 @@ msgstr ""
 
 #: of pybricks._common.System.info:10
 msgid ""
-"``\"host_connected_ble\"``: Whether the hub is connected to a computer, "
-"tablet, or phone via Bluetooth."
+"``\"host_connected_ble\"``: ``True`` if the hub is connected to a "
+"computer, tablet, or phone via Bluetooth, and ``False`` otherwise."
 msgstr ""
 "``\"host_connected_ble\"``: ハブが Bluetooth 経由でコンピュータ、タブレット、"
-"またはスマートフォンに接続されているかどうか。"
+"スマートフォンなどに接続されていれば ``True`` 、さもなければ ``False`` 。"
 
 #: of pybricks._common.System.info:12
+msgid ""
+"``\"host_connected_usb\"``: ``True`` if the hub is connected to a "
+"computer via USB and activated in the app. ``False`` otherwise."
+msgstr ""
+"``\"host_connected_usb\"``: ハブが USB 経由でコンピュータ、タブレット、"
+"スマートフォンなどに接続されていれば ``True`` 、さもなければ ``False`` 。"
+
+#: of pybricks._common.System.info:14
 msgid ""
 "``\"program_start_type\"``: It is ``1`` if the program started "
 "automatically when the hub was powered on. It is ``2`` if the program was"
@@ -1447,18 +1455,22 @@ msgstr ""
 "ハブのボタンで開始された場合には ``2`` になります。"
 "接続されたコンピュータから開始された場合には ``3`` になります。"
 
-#: of pybricks._common.System.info:17
+#: of pybricks._common.System.info:18
+msgid "`\"program_id\"`: Program (slot) number of the currently running program."
+msgstr "`\"program_id\"`: 現在実行しているプログラムのプログラム(スロット)番号。"
+
+#: of pybricks._common.System.info:20
 msgid "A dictionary with system info."
 msgstr "システム情報を持つ辞書。"
 
-#: of pybricks._common.System.info:19
+#: of pybricks._common.System.info:22
 msgid ""
 "The name and reset reason where previously available as separate methods."
 " Now they are included in the info dictionary. The methods are still "
-"available for compatibility."
+"available for backwards compatibility."
 msgstr ""
 "名前とリセット理由は、以前は別々のメソッドとして提供されていましたが、"
-"現在は info 辞書に含まれています。 ただし、互換性のために従来のメソッドも"
+"現在は info 辞書に含まれています。 ただし、後方互換性のために従来のメソッドも"
 "引き続き利用可能です。"
 
 #: ../../hubs/essentialhub.rst:137 ../../hubs/primehub.rst:191

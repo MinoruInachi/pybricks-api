@@ -1,67 +1,633 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.5\n"
+"Project-Id-Version: pybricks v4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-24 09:32+0900\n"
-"PO-Revision-Date: 2024-03-24 10:20+0900\n"
+"POT-Creation-Date: 2026-06-06 12:25+0900\n"
+"PO-Revision-Date: 2026-06-07 11:46+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.13.0\n"
 
-#: ../../iodevices/index.rst:4
+#: ../../iodevices/analogsensor.rst:4
+msgid "Analog Sensor"
+msgstr "アナログセンサー"
+
+#: ../../iodevices/index.rst
+msgid ".. image:: ../main/cad/output/iodevice-rj12brown.png"
+msgstr ""
+
+#: of pybricks.iodevices.AnalogSensor:1
+msgid "Generic or custom analog sensor."
+msgstr "汎用/カスタムアナログセンサー。"
+
+#: of pybricks._common.DCMotor.dc pybricks._common.DCMotor.settings
+#: pybricks.iodevices.AnalogSensor pybricks.iodevices.DCMotor
+#: pybricks.iodevices.I2CDevice pybricks.iodevices.I2CDevice.read
+#: pybricks.iodevices.I2CDevice.write pybricks.iodevices.LUMPDevice
+#: pybricks.iodevices.LWP3Device pybricks.iodevices.LWP3Device.name
+#: pybricks.iodevices.LWP3Device.write pybricks.iodevices.PUPDevice
+#: pybricks.iodevices.PUPDevice.read pybricks.iodevices.PUPDevice.write
+#: pybricks.iodevices.UARTDevice pybricks.iodevices.UARTDevice.read
+#: pybricks.iodevices.UARTDevice.set_baudrate
+#: pybricks.iodevices.UARTDevice.wait_until pybricks.iodevices.UARTDevice.write
+#: pybricks.iodevices.XboxController pybricks.iodevices.XboxController.rumble
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: of pybricks.iodevices.AnalogSensor:3
+msgid "Port to which the sensor is connected."
+msgstr "センサーを繋いでいるポート。"
+
+#: of pybricks.iodevices.AnalogSensor:5
+msgid "Set to ``True`` if you are using a custom analog sensor."
+msgstr "カスタムアナログセンサーを使っているのであれば ``True`` を指定。"
+
+#: of pybricks.iodevices.AnalogSensor pybricks.iodevices.I2CDevice.write
+#: pybricks.iodevices.LWP3Device.connect
+#: pybricks.iodevices.LWP3Device.disconnect pybricks.iodevices.LWP3Device.name
+#: pybricks.iodevices.LWP3Device.write pybricks.iodevices.PUPDevice.read
+#: pybricks.iodevices.PUPDevice.reset pybricks.iodevices.PUPDevice.write
+#: pybricks.iodevices.UARTDevice pybricks.iodevices.UARTDevice.read
+#: pybricks.iodevices.UARTDevice.set_baudrate
+#: pybricks.iodevices.UARTDevice.wait_until pybricks.iodevices.UARTDevice.write
+#: pybricks.iodevices.XboxController.dpad
+#: pybricks.iodevices.XboxController.joystick_left
+#: pybricks.iodevices.XboxController.joystick_right
+#: pybricks.iodevices.XboxController.name
+#: pybricks.iodevices.XboxController.profile
+#: pybricks.iodevices.XboxController.triggers
+msgid "Raises"
+msgstr "例外"
+
+#: of pybricks.iodevices.AnalogSensor:9
+msgid ""
+"If no standard LEGO analog sensor is     detected on the port. Only "
+"applies if ``custom=False``."
+msgstr ""
+"ポートに標準 LEGOアナログセンサーが検出されない場合に発生。 "
+"``custom=False`` の場合にのみ適用されます。"
+
+#: of pybricks.iodevices.AnalogSensor.voltage:1
+msgid "Measures analog voltage."
+msgstr "アナログ電圧を計測。"
+
+#: ../../iodevices/xboxcontroller.rst of
+#: pybricks.iodevices.AnalogSensor.resistance
+#: pybricks.iodevices.AnalogSensor.voltage pybricks.iodevices.I2CDevice.read
+#: pybricks.iodevices.LWP3Device.read pybricks.iodevices.PUPDevice.info
+#: pybricks.iodevices.PUPDevice.read pybricks.iodevices.UARTDevice.read
+#: pybricks.iodevices.UARTDevice.read_all pybricks.iodevices.UARTDevice.waiting
+#: pybricks.iodevices.XboxController.dpad
+#: pybricks.iodevices.XboxController.joystick_left
+#: pybricks.iodevices.XboxController.joystick_right
+#: pybricks.iodevices.XboxController.name
+#: pybricks.iodevices.XboxController.profile
+#: pybricks.iodevices.XboxController.triggers
+msgid "Returns"
+msgstr "戻り値"
+
+#: of pybricks.iodevices.AnalogSensor.voltage:3
+msgid "Analog voltage."
+msgstr "アナログ電圧。"
+
+#: of pybricks.iodevices.AnalogSensor.resistance:1
+msgid "Measures resistance."
+msgstr "抵抗値を計測。"
+
+#: of pybricks.iodevices.AnalogSensor.resistance:3
+msgid ""
+"This value is only meaningful if the analog device is a passive load such"
+" as a resistor or thermistor. It is calculated assuming a 10 kΩ internal "
+"pull-up resistor forming a voltage divider."
+msgstr ""
+"この値は、アナログデバイスが抵抗器やサーミスタなどの受動負荷である場合にのみ意味を持ちます。"
+"これは、10 kΩの内部プルアップ抵抗が分圧器を形成していると仮定して計算されます。"
+
+#: of pybricks.iodevices.AnalogSensor.resistance:7
+msgid ""
+"If the circuit is open (no load connected), the maximum integer value is "
+"returned."
+msgstr ""
+"開放回路の場合(負荷が接続されていない場合)、最大整数値が返されます。"
+
+#: of pybricks.iodevices.AnalogSensor.resistance:10
+msgid ""
+"Resistance of the analog device, or the maximum integer value if the "
+"circuit is open."
+msgstr ""
+"アナログデバイスの抵抗値、開放回路の場合は最大整数値。"
+
+#: of pybricks.iodevices.AnalogSensor.active:1
+msgid "Sets sensor to active mode. This sets pin 5 of the sensor port to `high`."
+msgstr ""
+"センサーをアクティブモードに設定します。これにより、センサーポートのピン5が "
+"`high` になります。"
+
+#: of pybricks.iodevices.AnalogSensor.active:4
+msgid ""
+"This is used in some analog sensors to control a switch. For example, if "
+"you use the NXT Light Sensor as a custom analog sensor, this method will "
+"turn the light on. From then on, ``voltage()`` returns the raw reflected "
+"light value."
+msgstr ""
+"これは、一部のアナログセンサーでスイッチを制御するために使います。"
+"たとえば、NXTライトセンサーをカスタムアナログセンサーとして使う場合、"
+"このメソッドでライトが点灯します。その後 ``voltage()`` は生の反射光値を返します。"
+
+#: of pybricks.iodevices.AnalogSensor.passive:1
+msgid "Sets sensor to passive mode. This sets pin 5 of the sensor port to `low`."
+msgstr ""
+"センサーを受動モードに設定します。これにより、センサーポートのピン5が "
+"`low` になります。"
+
+#: of pybricks.iodevices.AnalogSensor.passive:4
+msgid ""
+"This is used in some analog sensors to control a switch. For example, if "
+"you use the NXT Light Sensor as a custom analog sensor, this method will "
+"turn the light off. From then on, ``voltage()`` returns the raw ambient "
+"light value."
+msgstr ""
+"これは、一部のアナログセンサーでスイッチを制御するために使います。"
+"たとえば、NXTライトセンサーをカスタムアナログセンサーとして使う場合、"
+"このメソッドはライトをオフにします。その後 ``voltage()`` は生の環境光値を返します。"
+
+#: ../../iodevices/dcmotor.rst:2
+msgid "DC Motor"
+msgstr ""
+
+#: ../../iodevices/dcmotor.rst:4
+msgid ""
+"This class is specifically for EV3 and NXT. This lets you drive motors "
+"that are not automatically detected as motors. This includes RCX motors "
+"and Power Function motors that are connected via the official converter "
+"cables. Note: Applying motor power to custom electronics may damage the "
+"hub or the device."
+msgstr ""
+"このクラスは EV3 と NXT 専用です。これにより、モーターとして自動的に検出されない"
+"モーターを駆動できます。これには、公式コンバーターケーブルを介して接続された RCX "
+"モーターとパワーファンクションモーターが含まれます。注: カスタム電子機器にモーター"
+"電源を供給すると、ハブまたはデバイスが損傷する可能性があります。"
+
+#: ../../iodevices/dcmotor.rst:9
+msgid ""
+"For Powered Up DC Motors, just use the :class:`DCMotor "
+"<pybricks.pupdevices.DCMotor>` class instead, which will automatically "
+"detect the motor and use the correct and safe settings."
+msgstr ""
+"Powered Up DC モーターの場合、代わりに :class:`DCMotor "
+"<pybricks.pupdevices.DCMotor>` クラスを使ってください。"
+"DCMotor クラスはモーターを自動的に検出し、適切で安全な設定を適用します。"
+
+#: of pybricks.iodevices.DCMotor:1
+msgid "DC Motor for LEGO® MINDSTORMS EV3."
+msgstr "LEGO® MINDSTORMS EV3 用 DC モーター。"
+
+#: of pybricks.iodevices.DCMotor:3
+msgid "Port to which the motor is connected."
+msgstr "モーターが接続されているポート。"
+
+#: of pybricks.iodevices.DCMotor:5
+msgid ""
+"Which direction the motor should turn when you give a positive duty cycle"
+" value."
+msgstr ""
+"正のデューティサイクル値を与えたときにモーターが回転する方向。"
+
+#: of pybricks._common.DCMotor.dc:1
+msgid "Rotates the motor at a given duty cycle (also known as \"power\")."
+msgstr ""
+"モーターを指定のデューティサイクル(「パワー」とも呼ばれる）で回転させます。"
+
+#: of pybricks._common.DCMotor.dc:3
+msgid "The duty cycle (-100.0 to 100)."
+msgstr "デューティサイクル(-100〜100)"
+
+#: of pybricks._common.DCMotor.brake:1
+msgid "Passively brakes the motor."
+msgstr "モーターを受動的にブレーキします。"
+
+#: of pybricks._common.DCMotor.brake:3
+msgid ""
+"The motor stops due to friction, plus the voltage that is generated while"
+" the motor is still moving."
+msgstr ""
+"摩擦と、モーターがまだ動いている間に発生する電圧によってモーターを停止させます。"
+
+#: of pybricks._common.DCMotor.stop:1
+msgid "Stops the motor and lets it spin freely."
+msgstr "モーターを停止しますが、惰性で回転させます。"
+
+#: of pybricks._common.DCMotor.stop:3
+msgid "The motor gradually stops due to friction."
+msgstr "摩擦によりモーターは徐々に停止します。"
+
+#: of pybricks._common.DCMotor.settings:1
+msgid ""
+"Configures motor settings. If no arguments are given, this returns the "
+"current values."
+msgstr ""
+"モーター設定を構成します。引数を指定しない場合は、現在の値を返します。"
+
+#: of pybricks._common.DCMotor.settings:4
+msgid "Maximum voltage applied to the motor during all motor commands."
+msgstr "すべてのモーターコマンドでモーターに適用される最大電圧。"
+
+#: ../../iodevices/i2cdevice.rst:2
+msgid "Generic I2C Device"
+msgstr "汎用 I2C デバイス"
+
+#: ../../iodevices/i2cdevice.rst:4
+msgid ""
+"EV3 and NXT support connecting generic I2C devices to the hub. See "
+":doc:`pinout here <uartdevice>`."
+msgstr ""
+"EV3 と NXT は、汎用 I2C デバイスをハブに接続することをサポートしています。 "
+":doc:`ここのピンアウト <uartdevice>` を参照してください。"
+
+#: ../../iodevices/index.rst
+msgid ".. image:: ../main/cad/output/iodevice-rj12cyan.png"
+msgstr ""
+
+#: of pybricks.iodevices.I2CDevice:1
+msgid "Generic or custom I2C device."
+msgstr "汎用/カスタム I2C デバイス。"
+
+#: of pybricks.iodevices.I2CDevice:3 pybricks.iodevices.UARTDevice:3
+msgid ""
+"Note: Use the ``power_pin`` option at your own risk. Applying power to "
+"the pins can damage your hub or device if you are not careful. When you "
+"use this option, you will be prompted to confirm that you understand the "
+"risks."
+msgstr ""
+"注: ``power_pin`` オプションは自己責任で使用してください。"
+"ピンに電源を供給する場合、注意しないとハブやデバイスが損傷する可能性があります。"
+"このオプションを使う場合、リスクを理解していることを確認するよう求められます。"
+
+#: of pybricks.iodevices.I2CDevice:7 pybricks.iodevices.LUMPDevice:9
+#: pybricks.iodevices.PUPDevice:3
+msgid "Port to which the device is connected."
+msgstr "デバイスが接続されているポート。"
+
+#: of pybricks.iodevices.I2CDevice:9
+msgid "I2C address of the client device. See :ref:`I2C Addresses <i2caddress>`."
+msgstr ""
+"クライアントデバイスの I2C アドレス。 :ref:`I2C Addresses <i2caddress>` を参照。"
+
+#: of pybricks.iodevices.I2CDevice:12
+msgid "Set to ``True`` if you are using a custom I2C device."
+msgstr "カスタム I2C デバイスを使う場合は ``True`` に設定。"
+
+#: of pybricks.iodevices.I2CDevice:14
+msgid ""
+"Power requirements for the device. Use ``0`` (default) for no power on "
+"the pins. On NXT and EV3, use ``1`` to apply battery power to pin 1. "
+"Other pins are not supported."
+msgstr ""
+"デバイスの電源要件。ピンに電源を供給しない場合は ``0`` (デフォルト)を指定してください。"
+"NXT および EV3 で、ピン1にバッテリー電源を供給するには ``1`` を指定してください。"
+"その他のピンはサポートされていません。"
+
+#: of pybricks.iodevices.I2CDevice:18
+msgid ""
+"Set to ``True`` for older NXT I2C sensors that need slower compatibility "
+"timing to communicate reliably, such as the old NXT Ultrasonic Sensor."
+msgstr ""
+"旧型の NXT 超音波センサーなど、信頼性高く通信するために低速な互換性タイミングを"
+"必要とする古い NXT I2C センサーの場合は、これを ``True`` に設定します。"
+
+#: of pybricks.iodevices.I2CDevice.read:1
+msgid "Reads bytes starting at a given register."
+msgstr "指定したレジスタから始まるバイト列を読み取ります。"
+
+#: of pybricks.iodevices.I2CDevice.read:3
+msgid ""
+"Register at which to begin reading: 0--255 or 0x00--0xFF. Use ``None`` to"
+" read without writing a register address first."
+msgstr ""
+"読み取りを開始するレジスタアドレス: 0～255 または 0x00～0xFF。"
+"レジスタアドレスを書き込まずに読み取る場合は ``None`` を指定します。"
+
+#: of pybricks.iodevices.I2CDevice.read:7
+msgid "How many bytes to read."
+msgstr "読み込むバイト数。"
+
+#: of pybricks.iodevices.I2CDevice.read:9
+msgid ""
+"Optional callable to convert the returned bytes. If given, it is called "
+"with the bytes as its argument and its return value is returned instead."
+msgstr ""
+"戻り値のバイト列を変換するためのオプションの呼び出し可能オブジェクト。"
+"指定した場合、バイト列を引数として呼び出され、その戻り値を代わりに返します。"
+
+#: of pybricks.iodevices.I2CDevice.read:14
+msgid ""
+"Bytes returned from the device, or the return value of ``map`` if a "
+"callable was provided."
+msgstr ""
+"デバイスから返されたバイト列。呼び出し可能なオブジェクトが指定されている場合は `map` "
+"の戻り値。"
+
+#: of pybricks.iodevices.I2CDevice.write:1
+msgid "Writes bytes, optionally starting at a given register."
+msgstr "指定したレジスタ(オプション)からバイト列を書き出します。"
+
+#: of pybricks.iodevices.I2CDevice.write:3
+msgid ""
+"Register at which to begin writing: 0--255 or 0x00--0xFF. Use ``None`` to"
+" write without a register prefix."
+msgstr ""
+"書き出し開始レジスタ: 0～255 または 0x00～0xFF。"
+"レジスタプレフィックスなしで書き込む場合は ``None`` を指定します。"
+
+#: of pybricks.iodevices.I2CDevice.write:6
+msgid "Bytes to be written. Use ``None`` to write nothing after the register."
+msgstr ""
+"書き出すバイト列。レジスタの後に何も書き出さない場合は ``None`` を指定します。"
+
+#: of pybricks.iodevices.I2CDevice.write:10
+msgid ""
+"If ``reg`` is given and ``data`` is more than 32 bytes.     To write more"
+" data, omit the ``reg`` argument and include the     register as the "
+"first byte of ``data``."
+msgstr ""
+"``reg`` が指定されていて、データが 32 バイトを超える場合に発生します。"
+"さらにデータを書き込むには ``reg`` 引数を省略し、レジスタを ``data`` の"
+"最初のバイトとして含めます。"
+
+#: ../../iodevices/i2cdevice.rst:12
+msgid "**Example: Read and write to an I2C device**"
+msgstr "**例: I2Cデバイスへの読み書き**"
+
+#: ../../iodevices/i2cdevice.rst:14
+msgid ""
+"#!/usr/bin/env pybricks-micropython\n"
+"from pybricks.hubs import EV3Brick\n"
+"from pybricks.iodevices import I2CDevice\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"# Initialize the EV3\n"
+"ev3 = EV3Brick()\n"
+"\n"
+"# Initialize I2C Sensor\n"
+"device = I2CDevice(Port.S2, 0xD2 >> 1)\n"
+"\n"
+"# Read one byte from the device.\n"
+"# For this device, we can read the Who Am I\n"
+"# register (0x0F) for the expected value: 211.\n"
+"if 211 not in device.read(0x0F):\n"
+"    raise ValueError(\"Unexpected I2C device ID\")\n"
+"\n"
+"# To write data, create a bytes object of one\n"
+"# or more bytes. For example:\n"
+"# data = bytes((1, 2, 3))\n"
+"\n"
+"# Write one byte (value 0x08) to register 0x22\n"
+"device.write(0x22, bytes((0x08,)))\n"
+msgstr ""
+"#!/usr/bin/env pybricks-micropython\n"
+"from pybricks.hubs import EV3Brick\n"
+"from pybricks.iodevices import I2CDevice\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"# EV3 の初期化\n"
+"ev3 = EV3Brick()\n"
+"\n"
+"# I2C センサーの初期化\n"
+"device = I2CDevice(Port.S2, 0xD2 >> 1)\n"
+"\n"
+"# デバイスから１バイト読み込む。\n"
+"# このデバイスの場合、Who Am I レジスタ (0x0F)から\n"
+"# 期待値である 211 を読み取れます。\n"
+"if 211 not in device.read(0x0F):\n"
+"    raise ValueError(\"Unexpected I2C device ID\")\n"
+"\n"
+"# データを書き出すには、1バイト以上のバイト列オブジェクトを\n"
+"# 作成します。例:\n"
+"# data = bytes((1, 2, 3))\n"
+"\n"
+"# レジスタ 0x22 に1バイト(値 0x08)を書き出す\n"
+"device.write(0x22, bytes((0x08,)))\n"
+
+#: ../../iodevices/i2cdevice.rst:19
+msgid "I2C Addresses"
+msgstr "I2C アドレス"
+
+#: ../../iodevices/i2cdevice.rst:20
+msgid ""
+"I2C addresses are 7-bit values. However, most vendors who make LEGO "
+"compatible sensors provide an 8-bit address in their documentation. To "
+"use those addresses, you must shift them by 1 bit. For example, if the "
+"documented address is ``0xD2``, you can do ``address = 0xD2 >> 1``."
+msgstr ""
+"I2C アドレスは7ビット値です。しかし、LEGO 互換センサーを製造しているほとんどの"
+"ベンダーは、ドキュメントに8ビットアドレスを記載しています。"
+"このようなアドレスを使うには、1ビットシフトする必要があります。"
+"たとえば、ドキュメントに記載されているアドレスが ``0xD2`` の場合、 "
+"``address = 0xD2 >> 1`` のように記述します。"
+
+#: ../../iodevices/i2cdevice.rst:27
+msgid "Advanced I2C Commands"
+msgstr "高度なI2Cコマンド"
+
+#: ../../iodevices/i2cdevice.rst:28
+msgid ""
+"Some rudimentary I2C devices do not require a register argument or even "
+"any data. You can achieve this behavior as shown in the examples below."
+msgstr ""
+"一部の基本的な I2C デバイスは、レジスタ引数やデータさえ必要としません。"
+"次の例に示すような動作を実現できます。"
+
+#: ../../iodevices/i2cdevice.rst:31
+msgid "**Example: Advanced I2C read and write techniques**"
+msgstr "**例: 高度なI2C読み書き技術**"
+
+#: ../../iodevices/i2cdevice.rst:33
+msgid ""
+"#!/usr/bin/env pybricks-micropython\n"
+"from pybricks.hubs import EV3Brick\n"
+"from pybricks.iodevices import I2CDevice\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"# Initialize the EV3\n"
+"ev3 = EV3Brick()\n"
+"\n"
+"# Initialize I2C Sensor\n"
+"device = I2CDevice(Port.S2, 0xD2 >> 1)\n"
+"\n"
+"# Recommended for reading\n"
+"result = device.read(reg=0x0F, length=1)\n"
+"\n"
+"# Read 1 byte from no particular register:\n"
+"device.read(reg=None, length=1)\n"
+"\n"
+"# Read 0 bytes from no particular register:\n"
+"device.read(reg=None, length=0)\n"
+"\n"
+"# I2C write operations consist of a register byte followed\n"
+"# by a series of data bytes. Depending on your device, you\n"
+"# can choose to skip the register or data as follows:\n"
+"\n"
+"# Recommended for writing:\n"
+"device.write(reg=0x22, data=b\"\\x08\")\n"
+"\n"
+"# Write 1 byte to no particular register:\n"
+"device.write(reg=None, data=b\"\\x08\")\n"
+"\n"
+"# Write 0 bytes to a particular register:\n"
+"device.write(reg=0x08, data=None)\n"
+"\n"
+"# Write 0 bytes to no particular register:\n"
+"device.write(reg=None, data=None)\n"
+msgstr ""
+"#!/usr/bin/env pybricks-micropython\n"
+"from pybricks.hubs import EV3Brick\n"
+"from pybricks.iodevices import I2CDevice\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"# EV3 の初期化\n"
+"ev3 = EV3Brick()\n"
+"\n"
+"# I2C Sensor の初期化\n"
+"device = I2CDevice(Port.S2, 0xD2 >> 1)\n"
+"\n"
+"# 推奨される読み込み方法\n"
+"result = device.read(reg=0x0F, length=1)\n"
+"\n"
+"# 特定のレジスタ指定なしに1バイトを読み込む:\n"
+"device.read(reg=None, length=1)\n"
+"\n"
+"# 特定のレジスタ指定なしに 0 バイトを読み込む:\n"
+"device.read(reg=None, length=0)\n"
+"\n"
+"# I2C 書き出し操作は、レジスタバイトに続いて一連のデータバイトで構成\n"
+"# されます。デバイスによっては、レジスタまたはデータをスキップすることも\n"
+"# できます:
+"\n"
+"# 推奨される書き出し方法:\n"
+"device.write(reg=0x22, data=b\"\\x08\")\n"
+"\n"
+"# 特定のレジスタ指定なしに 1 バイトを書き出す:\n"
+"device.write(reg=None, data=b\"\\x08\")\n"
+"\n"
+"# 特定のレジスタに 0 バイトを書き出す:\n"
+"device.write(reg=0x08, data=None)\n"
+"\n"
+"# 特定のレジスタ指定なしに 0 バイトを書き出す:\n"
+"device.write(reg=None, data=None)\n"
+
+#: ../../iodevices/i2cdevice.rst:35
+msgid "**Additional technical resources**"
+msgstr "**追加の技術リソース**"
+
+#: ../../iodevices/i2cdevice.rst:37
+msgid ""
+"The ``I2CDevice`` class methods call functions from the Linux SMBus "
+"driver. To find out which commands are called under the hood, check the "
+"`Pybricks source code`_. More details about using I2C without MicroPython"
+" can be found on the `ev3dev I2C`_ page."
+msgstr ""
+"``I2CDevice`` クラスのメソッドは Linux SMBus ドライバの関数を呼び出します。"
+"内部でどのコマンドが呼び出されているかを確認するには `Pybricks source code`_ "
+"を参照してください。MicroPython を使わずに I2C を使う方法の詳細については "
+"`ev3dev I2C`_ ページを参照してください。"
+
+#: ../../iodevices/index.rst:2
 msgid ":mod:`iodevices <pybricks.iodevices>` -- Custom devices"
 msgstr ":mod:`iodevices <pybricks.iodevices>` -- カスタムデバイス"
 
-#: ../../iodevices/index.rst:15
+#: ../../iodevices/index.rst:6
 msgid "This module has classes for generic and custom input/output devices."
 msgstr "このモジュールは汎用およびカスタム入出力デバイス用クラスです。"
 
+#: ../../iodevices/index.rst:9
+msgid "Wireless devices"
+msgstr "無線デバイス"
+
 #: ../../iodevices/index.rst
-msgid ".. image:: ../main/cad/output/iodevice-pupdevice.png"
+msgid ".. image:: ../main/diagrams_source/xboxcontroller.png"
 msgstr ""
+
+#: ../../iodevices/index.rst:26
+msgid "LEGO protocol devices"
+msgstr "LEGO プロトコルデバイス"
 
 #: ../../iodevices/index.rst
 msgid ".. image:: ../main/cad/output/hub-lwp3.png"
 msgstr ""
 
 #: ../../iodevices/index.rst
-msgid ".. image:: ../main/diagrams_source/xboxcontroller.png"
+msgid ".. image:: ../main/cad/output/iodevice-rj12green.png"
 msgstr ""
 
-#: ../../iodevices/lwp3device.rst:2
+#: ../../iodevices/index.rst
+msgid ".. image:: ../main/cad/output/iodevice-pupdevice.png"
+msgstr ""
+
+#: ../../iodevices/index.rst:61
+msgid "Generic protocols"
+msgstr "汎用プロトコル"
+
+#: ../../iodevices/index.rst
+msgid "uart-wired"
+msgstr ""
+
+#: ../../iodevices/index.rst
+msgid ".. image:: ../main/cad/output/iodevice-rj12grey.png"
+msgstr ""
+
+#: ../../iodevices/index.rst
+msgid "uart-wireless"
+msgstr ""
+
+#: ../../iodevices/index.rst:84
+msgid "|uart-wired| |uart-wireless|"
+msgstr ""
+
+#: ../../iodevices/lumpdevice.rst:4
+msgid "EV3 UART Device"
+msgstr "EV3 UART デバイス"
+
+#: of pybricks.iodevices.LUMPDevice:1
+msgid "Devices using the LEGO UART Messaging Protocol."
+msgstr "LEGO UART メッセージプロトコルを使っているデバイス。"
+
+#: of pybricks.iodevices.LUMPDevice:3
+msgid ""
+"See the equivalent :class:`PUPDevice() <pybricks.iodevices.PUPDevice>` "
+"for a description of available methods."
+msgstr ""
+"利用できるメソッドの説明は同等の "
+":class:`PUPDevice() <pybricks.iodevices.PUPDevice>` を参照してください。"
+
+#: of pybricks.iodevices.LUMPDevice:6
+msgid ""
+"On EV3, this class provides access to UART devices only. You can use "
+"other classes to interact with passive devices."
+msgstr ""
+"EV3 において、このクラスは UART デバイスへのアクセスのみを提供します。"
+"受動デバイスとのやり取りは、他のクラスを使います。"
+
+#: ../../iodevices/lwp3device.rst:4
 msgid "LEGO Wireless Protocol v3 device"
 msgstr "LEGO 無線プロトコル v3 デバイス"
-
-#: ../../iodevices/lwp3device.rst:6
-msgid ""
-"This is an experimental class. It has not been well tested and may be "
-"changed in future."
-msgstr ""
-"これは試験的なクラスです。十分に検証されていないため、将来的に変更する可能性があります。"
 
 #: of pybricks.iodevices.LWP3Device:1
 msgid ""
 "Connects to a hub running official LEGO firmware using the `LEGO Wireless"
-" Protocol v3`_"
+" Protocol v3`_."
 msgstr ""
 "`LEGO Wireless Protocol v3`_ により、"
 "レゴ社公式ファームウェアを搭載したハブとの接続が可能です。"
-
-#: of pybricks.iodevices.LWP3Device pybricks.iodevices.LWP3Device.name
-#: pybricks.iodevices.LWP3Device.write pybricks.iodevices.PUPDevice
-#: pybricks.iodevices.PUPDevice.read pybricks.iodevices.PUPDevice.write
-msgid "Parameters"
-msgstr "パタメータ"
 
 #: of pybricks.iodevices.LWP3Device:7
 msgid "The `hub type identifier`_ of the hub to connect to."
@@ -78,6 +644,50 @@ msgid ""
 msgstr ""
 "例外を発生させるまでの接続待ち時間をミリ秒単位で指定します。"
 
+#: of pybricks.iodevices.LWP3Device:15
+msgid ""
+"Whether to attempt pairing for a secure connection. This is required for "
+"some newer hubs."
+msgstr ""
+"安全な接続を確立するためにペアリングを試みるかを指定します。"
+"これは一部の新しいハブで必須です。"
+
+#: of pybricks.iodevices.LWP3Device:18
+msgid ""
+"Number of incoming messages from the remote hub to store before "
+"discarding older messages."
+msgstr ""
+"リモートハブから受信したメッセージのうち、古いメッセージを破棄する前に"
+"保存するメッセージの数。"
+
+#: of pybricks.iodevices.LWP3Device:21
+msgid ""
+"Choose ``False`` to skip connecting. ``connect()`` can be called later to"
+" connect."
+msgstr ""
+"接続をスキップするには ``False`` を指定してください。"
+"後で ``connect()`` を呼び出すことにより接続できます。"
+
+#: of pybricks.iodevices.LWP3Device:27
+msgid "Added ``pair`` parameter."
+msgstr "``pair`` パラメータを追加。"
+
+#: of pybricks.iodevices.LWP3Device:31
+msgid "Added ``num_notifications`` parameter."
+msgstr "``num_notifications`` パラメータを追加。"
+
+#: of pybricks.iodevices.LWP3Device.connect:1
+msgid ""
+"Connects to the device. Only needed if you disconnected or initialized "
+"with ``connect=False``."
+msgstr ""
+"デバイスに接続します。切断した場合、または ``connect=False`` で初期化した場合に"
+"のみ必要です。"
+
+#: of pybricks.iodevices.LWP3Device.connect:4
+msgid "If the connection attempt fails or times out."
+msgstr "接続試行が失敗またはタイムアウトした場合に発生します。"
+
 #: of pybricks.iodevices.LWP3Device.name:1
 msgid "Sets or gets the Bluetooth name of the device."
 msgstr "デバイスの Bluetooth 名を設定または取得します。"
@@ -90,43 +700,55 @@ msgstr ""
 "デバイスの新しい Bluetooth 名。"
 "name を指定しない場合、このメソッドは現在の名前を返します。"
 
+#: of pybricks.iodevices.LWP3Device.name:7
+msgid "If the device is not connected."
+msgstr "デバイスが接続されていない場合に発生します。"
+
 #: of pybricks.iodevices.LWP3Device.write:1
 msgid "Sends a message to the remote hub."
 msgstr "リモートハブにメッセージを送信します。"
 
 #: of pybricks.iodevices.LWP3Device.write:3
-msgid "The raw binary message to send."
-msgstr "送信する生のバイナリーメッセージ。"
+msgid "The raw binary message to send. Maximum 20 bytes."
+msgstr "送信する生のバイナリーメッセージ。最大 20 バイト。"
+
+#: of pybricks.iodevices.LWP3Device.write:6
+msgid "If the message exceeds 20 bytes."
+msgstr "メッセージが 20 バイトを超えている場合に発生します。"
+
+#: of pybricks.iodevices.LWP3Device.write:7
+msgid "If the device is not connected or the write fails."
+msgstr "デバイスが接続されていないか、書き出しが失敗した場合に発生します。"
 
 #: of pybricks.iodevices.LWP3Device.read:1
-msgid "Retrieves the most recent message received from the remote hub."
-msgstr "リモートハブから受信した最新のメッセージを取得します。"
+msgid "Retrieves the oldest buffered message received from the remote hub."
+msgstr ""
+"リモートハブから受信してバッファリングしているメッセージのうち、最も古いものを取得します。"
 
 #: of pybricks.iodevices.LWP3Device.read:3
-msgid ""
-"If a message has not been received since the last read, the method will "
-"block until a message is received."
+msgid "If all buffered messages have already been read, this returns ``None``."
 msgstr ""
-"最後の読み取り以降にメッセージを受信していない場合、このメソッドはメッセージが"
-"受信されるまでブロックされます。"
+"バッファリングされているメッセージが既にすべて読み込み済みの場合は ``None`` を返します。"
 
-#: ../../iodevices/xboxcontroller.rst of pybricks.iodevices.LWP3Device.read
-#: pybricks.iodevices.PUPDevice.info pybricks.iodevices.PUPDevice.read
-#: pybricks.iodevices.XboxController.dpad
-#: pybricks.iodevices.XboxController.joystick_left
-#: pybricks.iodevices.XboxController.joystick_right
-#: pybricks.iodevices.XboxController.profile
-#: pybricks.iodevices.XboxController.triggers
-msgid "Returns"
-msgstr "戻り値"
+#: of pybricks.iodevices.LWP3Device.read:5
+msgid "The oldest raw binary message or ``None`` if there are no more messages."
+msgstr "最も古い生のバイナリメッセージ。メッセージが他にない場合は ``None`` 。"
 
-#: of pybricks.iodevices.LWP3Device.read:6
-msgid "The raw binary message."
-msgstr "生のバイナリーメッセージ。"
+#: of pybricks.iodevices.LWP3Device.read:9
+msgid ""
+"Now supports reading multiple buffered messages instead of blocking until"
+" one new message was received."
+msgstr ""
+"新しいメッセージが1つ受信されるまでブロックするのではなく、複数のバッファリングされた"
+"メッセージを読み取ることができるようになりました。"
 
 #: of pybricks.iodevices.LWP3Device.disconnect:1
-msgid "Disconnects the remote LWP3Device from the hub."
-msgstr "リモート LWP3Device をハブから切断します。"
+msgid "Disconnects the device."
+msgstr "デバイスを切断します。"
+
+#: of pybricks.iodevices.LWP3Device.disconnect:3
+msgid "If disconnecting fails."
+msgstr "切断が失敗した場合に発生します。"
 
 #: ../../iodevices/pupdevice.rst:4
 msgid "Powered Up Device"
@@ -148,28 +770,100 @@ msgid "Gets information about the device."
 msgstr "デバイスについての情報を取得します。"
 
 #: of pybricks.iodevices.PUPDevice.info:3
-msgid "Dictionary with information, such as the device ``id``."
-msgstr "デバイス ``id`` のような情報を持った辞書。"
+msgid ""
+"For passive devices (such as DC motors or lights), returns a dictionary "
+"with only the ``id`` key."
+msgstr ""
+"受動デバイス(DCモーターやライトなど)の場合、 ``id`` キーのみを含む辞書を返します。"
+
+#: of pybricks.iodevices.PUPDevice.info:6
+msgid ""
+"For UART devices, returns a dictionary with an ``id`` key and a ``modes``"
+" key. The ``modes`` value is a tuple of tuples, one per mode, each "
+"containing the mode name, number of values, and data type."
+msgstr ""
+"UARTデバイスの場合、 ``id`` キーと ``modes`` キーを含む辞書を返します。 "
+"``modes`` の値はタプルのタプルで、モードごとに1つずつ含まれ、"
+"各タプルにはモード名、値の数、およびデータ型が含まれます。"
+
+#: of pybricks.iodevices.PUPDevice.info:11
+msgid "Dictionary with device information."
+msgstr "デバイス情報を持つ辞書。"
 
 #: of pybricks.iodevices.PUPDevice.read:1
 msgid "Reads values from a given mode."
 msgstr "指定のモードで値を読み取ります。"
+
+#: of pybricks.iodevices.PUPDevice.read:3
+msgid ""
+"For passive touch sensors, this returns a single boolean value indicating"
+" whether the sensor is pressed, regardless of the ``mode`` argument."
+msgstr ""
+"パッシブタッチセンサーの場合、 `mode` 引数に関係なく、センサーが押されているかどうかを示す"
+"単一のブール値を返します。
+
+#: of pybricks.iodevices.PUPDevice.read:7
+msgid ""
+"Raises an error for other passive devices such as DC motors and lights, "
+"which do not support reading."
+msgstr ""
+"読み取りをサポートしていない DC モーターやライトなどの他の受動デバイスではエラーが発生します。"
 
 #: of pybricks.iodevices.PUPDevice.read:3 pybricks.iodevices.PUPDevice.write:4
 msgid "Device mode."
 msgstr "デバイスモード。"
 
 #: of pybricks.iodevices.PUPDevice.read:6
-msgid "Values read from the sensor."
-msgstr "センサーから読み取った値。"
+msgid "Values read from the device."
+msgstr "デバイスから読み取った値。"
+
+#: of pybricks.iodevices.PUPDevice.read:15
+msgid ""
+"If the device is a passive device that does not     support reading (e.g."
+" a DC motor or light)."
+msgstr ""
+"デバイスが読み取りをサポートしない受動デバイス(例: DCモーターまたはライト)である場合"
+"に発生します。"
 
 #: of pybricks.iodevices.PUPDevice.write:1
-msgid "Writes values to the sensor. Only selected sensors and modes support this."
-msgstr "センサーに値を書き出します。一部のセンサーとモードのみ対応しています。"
+msgid ""
+"Writes values to the device. Only selected UART devices and modes support"
+" this."
+msgstr "デバイスに値を書き出します。一部の UART デバイスとモードのみがこれをサポートします。"
 
 #: of pybricks.iodevices.PUPDevice.write:6
-msgid "Values to be written."
-msgstr "書き出す値。"
+msgid ""
+"Values to be written. The number of values and their types must match "
+"what the device expects for the given mode."
+msgstr ""
+"書き出す値。値の数とその型は、指定されたモードでデバイスが想定するものと"
+"一致していなければなりません。"
+
+#: of pybricks.iodevices.PUPDevice.write:11
+msgid "If the device is a passive device that does not     support writing."
+msgstr "デバイスが書き込みをサポートしない受動デバイスである場合に発生します。"
+
+#: of pybricks.iodevices.PUPDevice.write:12
+msgid ""
+"If the mode is invalid, the mode is not writable,     the number of "
+"values does not match, or a value is out of     range for its data type."
+msgstr ""
+"モードが無効、モードが書き出し不可、値の数が一致しない、値がそのデータ型の"
+"範囲外である場合に発生します。"
+
+#: of pybricks.iodevices.PUPDevice.reset:1
+msgid ""
+"Resets the UART device. After this, it should automatically synchronize "
+"and be ready for use after a few seconds. This is useful to forcefully "
+"re-trigger what such a sensor does when plugged in."
+msgstr ""
+"UART デバイスをリセットします。リセット後、数秒後には自動的に同期して使用可能に"
+"なります。これは、センサーが接続されたときに動作することを強制的に再トリガーする"
+"場合に便利です。"
+
+#: of pybricks.iodevices.PUPDevice.reset:5
+msgid "If the device is a passive device that does not     support reset."
+msgstr "デバイスがリセットをサポートしていない受動デバイスである場合に発生します。"
 
 #: ../../iodevices/pupdevice.rst:19
 msgid "Examples"
@@ -333,13 +1027,316 @@ msgstr ""
 "    except KeyError:\n"
 "        print(port, \":\", \"Unknown device with ID\", id)\n"
 
+#: ../../iodevices/uartdevice.rst:4
+msgid "Generic UART Device"
+msgstr "汎用 UART デバイス"
+
+#: ../../iodevices/uartdevice.rst:6
+msgid ""
+"Powered Up and EV3 support connecting generic UART devices to the hub. "
+"The pinout is shown below. Note the orientation of the connector. For "
+"EV3, the internal wire colors match those on the diagram below."
+msgstr ""
+"Powered Up と EV3 は、汎用UARTデバイスをハブに接続することをサポートしています。"
+"ピン配置は以下に示します。コネクタの向きに注意してください。EV3の場合、内部配線の色は"
+"下の図と一致します。"
+
+msgid ".. image:: iodevices/pinout_numbered.jpg"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:16
+msgid "Pin"
+msgstr "ピン"
+
+#: ../../iodevices/uartdevice.rst:17
+msgid "Powered Up (UART)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:18
+msgid "EV3 (UART sensor)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:19
+msgid "EV3 (I2C sensor)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:20
+msgid "1 (white)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:21
+msgid "Motor Terminal 1"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:22 ../../iodevices/uartdevice.rst:23
+msgid "Optional battery power"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:24
+msgid "2 (black)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:25
+msgid "Motor Terminal 2"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:26 ../../iodevices/uartdevice.rst:27
+msgid "N/A"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:28
+msgid "3 (red)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:29 ../../iodevices/uartdevice.rst:30
+#: ../../iodevices/uartdevice.rst:31
+msgid "Ground"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:32
+msgid "4 (green)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:33
+msgid "VCC (3.3 V)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:34 ../../iodevices/uartdevice.rst:35
+msgid "VCC (5 V)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:36
+msgid "5 (yellow)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:37 ../../iodevices/uartdevice.rst:38
+msgid "Hub TX (Sensor RX) (3.3 V)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:39
+msgid "SCL (master) (3.3 V)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:40
+msgid "6 (blue)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:41 ../../iodevices/uartdevice.rst:42
+msgid "Hub RX (Sensor TX) (3.3 V)"
+msgstr ""
+
+#: ../../iodevices/uartdevice.rst:43
+msgid "SDA (master) (3.3 V)"
+msgstr ""
+
+#: of pybricks.iodevices.UARTDevice:1
+msgid "Generic UART device."
+msgstr "汎用 UART デバイス。"
+
+#: of pybricks.iodevices.UARTDevice:7
+msgid ""
+"Port to which the device is connected. On Powered UP hubs, all ports are "
+"supported. On EV3, only the sensor ports are supported."
+msgstr ""
+"デバイスが接続されているポート。Powered UPハブでは、すべてのポートを"
+"サポートしています。EV3では、センサーポートのみをサポートしています。"
+
+#: of pybricks.iodevices.UARTDevice:11
+msgid "Baudrate of the UART device."
+msgstr "UART デバイスのボーレート"
+
+#: of pybricks.iodevices.UARTDevice:13
+msgid ""
+"How long to wait during ``read`` and ``write`` before giving up. If you "
+"choose ``None``, it will wait forever."
+msgstr ""
+"`read` と `write` 中にどれくらいの時間待機してから諦めるかを指定します。 "
+"``None`` を指定すると永久に待機します。"
+
+#: of pybricks.iodevices.UARTDevice:17
+msgid ""
+"Power requirements for the device. Use ``0`` (default) for no power on "
+"the pins. On Powered UP hubs, use ``1`` or ``2`` for pin 1 or 2, "
+"respectively. This will apply battery power to the pin, equivalent to "
+"powering a motor. On EV3, use ``1`` to apply battery power to pin 1, "
+"though only minimal current is available."
+msgstr ""
+"デバイスの電源要件。ピンに電源を供給しない場合は 0 (デフォルト)を指定してください。"
+"Powered UP ハブでは、ピン 1 または 2 にそれぞれ ``1`` または ``2`` を指定"
+"してください。これにより、ピンにバッテリー電源が供給され、モーターを駆動するのと"
+"同等になります。EV3でピン 1 にバッテリー電源を供給するには ``1`` を指定して"
+"ください。ただし、利用できる電流は最小限です。"
+
+#: of pybricks.iodevices.UARTDevice:25
+msgid "If ``timeout`` is 0 or negative."
+msgstr "``timeout`` が 0 以下の場合に発生します。"
+
+#: of pybricks.iodevices.UARTDevice.read:1
+msgid "Reads a given number of bytes from the buffer."
+msgstr "バッファから指定したバイト数分を読み取ります。"
+
+#: of pybricks.iodevices.UARTDevice.read:3
+msgid ""
+"Your program will wait until the requested number of bytes are received. "
+"If this takes longer than ``timeout``, the ``ETIMEDOUT`` exception is "
+"raised."
+msgstr ""
+"プログラムは、要求したバイト数を受信するまで待機します。 "
+"``timeout`` 時間よりも長くかかる場合は ``ETIMEDOUT`` 例外が発生します。"
+
+#: of pybricks.iodevices.UARTDevice.read:7
+msgid "How many bytes to read. Must be at least 1."
+msgstr "読み込むバイト数。少なくとも1バイトの指定が必要です。"
+
+#: of pybricks.iodevices.UARTDevice.read:10
+msgid "Bytes returned from the device."
+msgstr "デバイスから返されたバイト列。"
+
+#: of pybricks.iodevices.UARTDevice.read:12
+msgid "If ``length`` is less than 1."
+msgstr "``length`` が 1 を下回っている場合に発生します。"
+
+#: of pybricks.iodevices.UARTDevice.read:13
+msgid "If the read takes longer than ``timeout``."
+msgstr "読み取りに ``timeout`` より時間がかかった場合に発生します。"
+
+#: of pybricks.iodevices.UARTDevice.read_all:1
+msgid ""
+"Reads all bytes currently in the buffer. Returns immediately without "
+"waiting, even if the buffer is empty."
+msgstr ""
+"バッファ内の現在すべてのバイト列を読み取ります。"
+"バッファが空であっても、待機せずにすぐに戻ります。"
+
+#: of pybricks.iodevices.UARTDevice.read_all:4
+msgid ""
+"Bytes currently in the buffer, or an empty bytes object if there is "
+"nothing to read."
+msgstr ""
+"バッファに現在格納されているバイト列。読み取るものがない場合は空のバイト列オブジェクト。"
+
+#: of pybricks.iodevices.UARTDevice.write:1
+msgid "Writes bytes to the device."
+msgstr "デバイスにバイト列を書き出します。"
+
+#: of pybricks.iodevices.UARTDevice.write:3
+msgid "Bytes to be written."
+msgstr "書き出すバイト列。"
+
+#: of pybricks.iodevices.UARTDevice.write:6
+msgid "If ``data`` is not ``bytes``, ``bytearray``, or ``str``."
+msgstr ""
+"``data`` が ``bytes``, ``bytearray``, ``str`` のどれでもない場合に発生します。"
+
+#: of pybricks.iodevices.UARTDevice.write:7
+msgid "If the write takes longer than ``timeout``."
+msgstr "書き出しに ``timeout`` より時間がかかった場合に発生します。"
+
+#: of pybricks.iodevices.UARTDevice.waiting:1
+msgid "Gets how many bytes are still waiting to be read."
+msgstr "読み取り待ちのバイト列サイズを取得します。"
+
+#: of pybricks.iodevices.UARTDevice.waiting:3
+msgid "Number of bytes in the buffer."
+msgstr "バッファ中のバイト列のサイズ。"
+
+#: of pybricks.iodevices.UARTDevice.set_baudrate:1
+msgid "Changes the baud rate of the UART device."
+msgstr "UART デバイスのボーレートを変更します。"
+
+#: of pybricks.iodevices.UARTDevice.set_baudrate:3
+msgid "Not all values may be supported."
+msgstr "すべての値がサポートされているとは限りません。"
+
+#: of pybricks.iodevices.UARTDevice.set_baudrate:6
+msgid "If  ``baudrate`` is less than 1."
+msgstr "``baudrate`` が 1 を下回っている場合に発生します。"
+
+#: of pybricks.iodevices.UARTDevice.wait_until:1
+msgid ""
+"Waits until a specific byte sequence is received. Bytes that do not match"
+" the pattern are discarded."
+msgstr ""
+"特定のバイトシーケンスが受信されるまで待機します。"
+"パターンに一致しないバイトは破棄されます。"
+
+#: of pybricks.iodevices.UARTDevice.wait_until:4
+msgid "Byte sequence to wait for. Must not be empty."
+msgstr "待機するバイトシーケンス。空であってはなりません。"
+
+#: of pybricks.iodevices.UARTDevice.wait_until:7
+msgid "If ``pattern`` is empty."
+msgstr "``pattern`` が空の場合に発生します。"
+
+#: of pybricks.iodevices.UARTDevice.wait_until:8
+msgid "If this method is already in progress."
+msgstr "このメソッドがすでに進行中である場合に発生します。"
+
+#: of pybricks.iodevices.UARTDevice.clear:1
+msgid "Empties the receive buffer."
+msgstr "受信バッファを空にします。"
+
+#: ../../iodevices/uartdevice.rst:48
+msgid "**Example: Read and write to a UART device**"
+msgstr "**例: UART デバイスへの読み書き**"
+
+#: ../../iodevices/uartdevice.rst:50
+msgid ""
+"#!/usr/bin/env pybricks-micropython\n"
+"from pybricks.hubs import EV3Brick\n"
+"from pybricks.iodevices import UARTDevice\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.media.ev3dev import SoundFile\n"
+"\n"
+"# Initialize the EV3\n"
+"ev3 = EV3Brick()\n"
+"\n"
+"# Initialize sensor port 2 as a uart device\n"
+"ser = UARTDevice(Port.S2, baudrate=115200)\n"
+"\n"
+"# Write some data\n"
+"ser.write(b\"\\r\\nHello, world!\\r\\n\")\n"
+"\n"
+"# Play a sound while we wait for some data\n"
+"for i in range(3):\n"
+"    ev3.speaker.play_file(SoundFile.HELLO)\n"
+"    ev3.speaker.play_file(SoundFile.GOOD)\n"
+"    ev3.speaker.play_file(SoundFile.MORNING)\n"
+"    print(\"Bytes waiting to be read:\", ser.waiting())\n"
+"\n"
+"# Read all data received while the sound was playing\n"
+"data = ser.read_all()\n"
+"print(data)\n"
+msgstr ""
+"#!/usr/bin/env pybricks-micropython\n"
+"from pybricks.hubs import EV3Brick\n"
+"from pybricks.iodevices import UARTDevice\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.media.ev3dev import SoundFile\n"
+"\n"
+"# EV3 の初期化\n"
+"ev3 = EV3Brick()\n"
+"\n"
+"# センサーポート 2 UART デバイスとして初期化\n"
+"ser = UARTDevice(Port.S2, baudrate=115200)\n"
+"\n"
+"# データを書き出し\n"
+"ser.write(b\"\\r\\nHello, world!\\r\\n\")\n"
+"\n"
+"# データが届くまで音を鳴らす\n"
+"for i in range(3):\n"
+"    ev3.speaker.play_file(SoundFile.HELLO)\n"
+"    ev3.speaker.play_file(SoundFile.GOOD)\n"
+"    ev3.speaker.play_file(SoundFile.MORNING)\n"
+"    print(\"Bytes waiting to be read:\", ser.waiting())\n"
+"\n"
+"# 音声再生中に受信したすべてのデータを読み取る\n"
+"data = ser.read_all()\n"
+"print(data)\n"
+
 #: ../../iodevices/xboxcontroller.rst:4
 msgid "Xbox Controller"
 msgstr "Xbox コントローラー"
-
-#: ../../iodevices/xboxcontroller.rst:10
-msgid ".. image:: blockimg/pybricks_variables_set_xbox_controller.svg"
-msgstr ""
 
 #: of pybricks.iodevices.XboxController:1
 msgid ""
@@ -363,9 +1360,65 @@ msgid ""
 msgstr ""
 "接続性とペアリングのヒントについては :ref:`後述 <xbox-controller-pairing>` します。"
 
-#: ../../iodevices/xboxcontroller.rst:15
-msgid ".. image:: blockimg/pybricks_blockButtonIsPressed_XboxController.svg"
+#: of pybricks.iodevices.XboxController:9
+msgid ""
+"Joystick deadzone (0 to 100). Values below this threshold in both axes "
+"will be reported as 0 to prevent stick drift."
 msgstr ""
+"ジョイスティックのデッドゾーン(0～100)。両軸ともこのしきい値以下の値は、"
+"スティックドリフトを防ぐために0として報告されます。"
+
+#: of pybricks.iodevices.XboxController:13
+msgid ""
+"The Bluetooth name of the Xbox controller to connect to, or ``None`` to "
+"connect to any available controller."
+msgstr ""
+"接続する Xbox コントローラーの Bluetooth 名。"
+"利用可能なコントローラーに接続する場合は ``None`` を指定します。"
+
+#: of pybricks.iodevices.XboxController:16
+msgid ""
+"How long to wait for a connection before giving up. Choose ``None`` to "
+"wait indefinitely."
+msgstr ""
+"接続が確立するまでの待ち時間。無期限に待つ場合は ``None`` を指定します。"
+
+#: of pybricks.iodevices.XboxController:19
+msgid ""
+"Choose ``False`` to skip connecting to the controller. ``connect()`` can "
+"be called later to connect."
+msgstr ""
+"コントローラーへの接続をスキップするには ``False`` を選択してください。"
+"後で ``connect()`` を呼び出すことで接続できます。"
+
+#: of pybricks.iodevices.XboxController.connect:1
+msgid ""
+"Connects to the Xbox controller. Only needed if you disconnected or "
+"initialized the controller with ``connect=False``."
+msgstr ""
+"Xbox コントローラーに接続します。コントローラーを切断した場合、または ``connect=False`` "
+"で初期化した場合にのみ必要です。"
+
+#: of pybricks.iodevices.XboxController.disconnect:1
+msgid "Disconnects the Xbox controller."
+msgstr "Xbox コントローラーの接続を解除します。"
+
+#: of pybricks.iodevices.XboxController.name:1
+msgid "Gets the Bluetooth name of the connected controller."
+msgstr "接続されているコントローラーの Bluetooth 名を取得します。"
+
+#: of pybricks.iodevices.XboxController.name:3
+msgid "Bluetooth name of the controller."
+msgstr "コントローラーの Bluetooth 名。"
+
+#: of pybricks.iodevices.XboxController.dpad:12
+#: pybricks.iodevices.XboxController.joystick_left:7
+#: pybricks.iodevices.XboxController.joystick_right:7
+#: pybricks.iodevices.XboxController.name:5
+#: pybricks.iodevices.XboxController.profile:6
+#: pybricks.iodevices.XboxController.triggers:6
+msgid "If the controller is not connected."
+msgstr "コントローラーが接続されていない場合に発生します。"
 
 #: of pybricks._common.Keypad.pressed:1
 msgid "Checks which buttons are currently pressed."
@@ -418,47 +1471,32 @@ msgstr ""
 "パドルの押下は、現在アクティブなプロファイルによっては他のボタンの押下として"
 "検出される場合があります。"
 
-#: ../../iodevices/xboxcontroller.rst:31
-msgid ".. image:: blockimg/pybricks_blockJoystickValue_lj_x.svg"
-msgstr ""
-
-msgid ".. image:: blockimg/pybricks_blockJoystickValue_lj_y.svg"
-msgstr ""
-
 #: of pybricks.iodevices.XboxController.joystick_left:1
 msgid ""
 "Gets the left joystick position as percentages between -100% and 100%. "
-"The center position is (0, 0)."
+"The center position is (0, 0). A square deadzone is applied: if both axes"
+" are within the deadzone, both are reported as 0."
 msgstr ""
 "左のジョイスティックの位置を、-100% から 100% の割合で取得します。"
 "中心位置は (0, 0) です。"
+"正方形のデッドゾーンが適用されます。両方の軸がデッドゾーン内にある場合、"
+"両方とも0として報告されます。"
 
 #: of pybricks.iodevices.XboxController.joystick_left:4
 #: pybricks.iodevices.XboxController.joystick_right:4
 msgid "Tuple of X (horizontal) and Y (vertical) position."
 msgstr "X (水平方向)および Y (垂直方向)位置のタプル。"
 
-#: ../../iodevices/xboxcontroller.rst:36
-msgid ".. image:: blockimg/pybricks_blockJoystickValue_rj_x.svg"
-msgstr ""
-
-msgid ".. image:: blockimg/pybricks_blockJoystickValue_rj_y.svg"
-msgstr ""
-
 #: of pybricks.iodevices.XboxController.joystick_right:1
 msgid ""
 "Gets the right joystick position as percentages between -100% and 100%. "
-"The center position is (0, 0)."
+"The center position is (0, 0). A square deadzone is applied: if both axes"
+" are within the deadzone, both are reported as 0."
 msgstr ""
 "右のジョイスティックの位置を、-100% から 100% の割合で取得します。"
 "中心位置は (0, 0) です。"
-
-#: ../../iodevices/xboxcontroller.rst:43
-msgid ".. image:: blockimg/pybricks_blockJoystickValue_lt.svg"
-msgstr ""
-
-msgid ".. image:: blockimg/pybricks_blockJoystickValue_rt.svg"
-msgstr ""
+"正方形のデッドゾーンが適用されます。両方の軸がデッドゾーン内にある場合、"
+"両方とも0として報告されます。"
 
 #: of pybricks.iodevices.XboxController.triggers:1
 msgid ""
@@ -515,16 +1553,6 @@ msgstr ""
 msgid "Profile number."
 msgstr "プロファイル番号。"
 
-#: ../../iodevices/xboxcontroller.rst:60
-msgid ".. image:: blockimg/pybricks_blockGamepadRumble_default.svg"
-msgstr ""
-
-msgid ".. image:: blockimg/pybricks_blockGamepadRumble_default_with_list.svg"
-msgstr ""
-
-msgid ".. image:: blockimg/pybricks_blockGamepadRumble_with_options.svg"
-msgstr ""
-
 #: of pybricks.iodevices.XboxController.rumble:1
 msgid "Makes the builtin actuators rumble, creating force feedback."
 msgstr "内蔵アクチュエーターを振動させ、フォースフィードバックを起こします。"
@@ -532,17 +1560,18 @@ msgstr "内蔵アクチュエーターを振動させ、フォースフィード
 #: of pybricks.iodevices.XboxController.rumble:3
 msgid ""
 "If you give a single ``power`` value, the left and right main actuators "
-"will both rumble with that power. For more fine-grained control, set "
-"``power`` as a tuple of four values, which control the left main "
-"actuator, right main actuator, left trigger actuator, and the right "
-"trigger actuator, respectively. For example, ``power=(0, 0, 100, 0)`` "
-"makes the left trigger rumble at full power."
+"will both rumble with that power while the trigger actuators stay off. "
+"For more fine-grained control, set ``power`` as a tuple of four values, "
+"which control the left main actuator, right main actuator, left trigger "
+"actuator, and the right trigger actuator, respectively. For example, "
+"``power=(0, 0, 100, 0)`` makes the left trigger rumble at full power."
 msgstr ""
-"単一の ``power`` 値を指定すると、そのパワーで左右のメインアクチュエーターが"
-"両方とも振動します。より細かい制御が必要な場合は、左メインアクチュエーター、"
-"右メインアクチュエーター、左トリガーアクチュエーター、右トリガーアクチュエーターを"
-"それぞれ制御する4つの値のタプルとしてパワーを設定します。たとえば "
-"``power=(0, 0, 100, 0)`` は左トリガーを全力で振動させます。"
+"単一の ``power`` 値を指定すると、そのパワーで左右のメインアクチュエータが"
+"両方とも振動しますが、トリガーアクチュエータはオフのままです。"
+"よりきめ細かな制御を行うには、パワーを4つの値のタプルとして設定します。"
+"これらの値は、それぞれ左メインアクチュエータ、右メインアクチュエータ、"
+"左トリガーアクチュエータ、右トリガーアクチュエータを制御します。たとえば "
+"``power=(0, 0, 100, 0)`` とすると、左トリガーが最大パワーで振動します。"
 
 #: of pybricks.iodevices.XboxController.rumble:10
 msgid ""
@@ -557,20 +1586,35 @@ msgstr ""
 "これは ``count * (duration + delay)`` と等しいです。"
 
 #: of pybricks.iodevices.XboxController.rumble:15
-msgid "Rumble power."
-msgstr "振動の強度。"
+msgid ""
+"This method does nothing if all actuator powers are zero, if ``duration``"
+" is zero, or if ``count`` is less than 1."
+msgstr ""
+"このメソッドは、アクチュエータのすべてのパワーがゼロの場合、 "
+"``duration`` がゼロの場合、 ``count`` が1未満の場合には何も行いません。"
 
-#: of pybricks.iodevices.XboxController.rumble:17
-msgid "Rumble duration."
-msgstr "振動の期間。"
+#: of pybricks.iodevices.XboxController.rumble:18
+msgid ""
+"Rumble power. A single value applies to both main actuators (0-100%). A "
+"tuple applies individually to (left handle, right handle, left trigger, "
+"right trigger)."
+msgstr ""
+"振動パワー。単一の値は両方のメインアクチュエータに適用されます(0～100%)。"
+"タプルは個別に(左ハンドル、右ハンドル、左トリガー、右トリガー)に適用されます。"
 
-#: of pybricks.iodevices.XboxController.rumble:19
-msgid "Rumble count."
-msgstr "振動の回数。"
+#: of pybricks.iodevices.XboxController.rumble:22
+msgid "Duration of each rumble. Capped at 2500 ms."
+msgstr "各振動の持続時間。最大2500ミリ秒。"
 
-#: of pybricks.iodevices.XboxController.rumble:21
-msgid "Delay before each rumble. Only if ``count > 1``."
-msgstr "各振動の前の遅延。 ``count > 1`` の場合のみ有効。"
+#: of pybricks.iodevices.XboxController.rumble:24
+msgid "Number of rumbles (0-100)."
+msgstr "振動の回数(0～100)"
+
+#: of pybricks.iodevices.XboxController.rumble:26
+msgid "Delay before each rumble. Only used if ``count > 1``. Capped at 2500 ms."
+msgstr ""
+"各振動の前に遅延時間を設けます。 ``count > 1`` である場合のみ適用します。"
+"最大遅延時間は2500ミリ秒です。"
 
 #: ../../iodevices/xboxcontroller.rst:60
 msgid "Xbox Controller Pairing Instructions"

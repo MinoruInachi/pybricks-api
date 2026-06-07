@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.6\n"
+"Project-Id-Version: pybricks v4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:48+0900\n"
-"PO-Revision-Date: 2025-03-01 23:26+0900\n"
+"POT-Creation-Date: 2026-06-06 12:25+0900\n"
+"PO-Revision-Date: 2026-06-06 16:16+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language-Team: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -138,28 +138,14 @@ msgstr "指定の角度だけその場で回転し、停止する。"
 msgid "Angle of the turn."
 msgstr "回転する角度。"
 
-#: ../../robotics.rst:32
+#: of pybricks.robotics.DriveBase.turn:10
 msgid ""
-"The ``curve()`` Python method will be replaced by the :meth:`.arc` "
-"method. It can still make curves, but it uses different definitions for "
-"drive and turn direction. Existing code with ``curve()`` continues to "
-"work the same, but you should use :meth:`.arc` for new code. If you use "
-"block code, you can pick a new block from the palette to update your "
-"code. The old block will still work, but it displays a warning icon to "
-"remind you to upgrade. The updated `curve` option uses the direction "
-"definitions given below. The new `veer` option lets you drive along a "
-"circle by a given distance, which is useful for veering slightly in one "
-"direction."
+"If ``False`` (default), the robot turns _by_ the given angle relative to "
+"its current heading. If ``True``, the robot turns to the given absolute "
+"heading angle."
 msgstr ""
-"``curve()`` Python メソッドは :meth:`.arc` メソッドに置き換えられます。"
-"どちらもカーブを描くことができますが、走行方向と旋回方向の定義が異なります。"
-"既存の ``curve()`` を使ったコードは引き続き同じように動作しますが、"
-"新しいコードでは :meth:`.arc` の利用を推奨します。"
-"ブロックコードを使っている場合は、パレットから新しいブロックを選択してコードを更新できます。"
-"古いブロックも動作しますが、アップグレードを促す警告アイコンが表示されます。"
-"更新された `curve` オプションは、以下に示す新しい方向の定義を使います。"
-"また、新しい `veer` オプションを使うと、特定の距離だけ円を描くように"
-"走行でき、わずかに方向を変えながら進むのに便利です。"
+``False`` (デフォルト)の場合、ロボットは現在の進行方向に対して指定した角度だけ"
+"回転します。 ``True`` の場合、ロボットは指定した絶対進行方向角度に回転します。"
 
 #: of pybricks.robotics.DriveBase.arc:1
 msgid ""
@@ -207,6 +193,37 @@ msgstr ""
 "両方を指定することはできません。"
 "半径はゼロにできません。その場で回転する場合は :meth:`.turn` を使ってください。"
 
+#: of pybricks.robotics.DriveBase.move_by:1
+msgid ""
+"Moves the robot by an amount given as X-and-Y coordinates on the robot "
+"drive area. The X-axis is what was forward when the program started. The "
+"Y-axis is 90° left of that. You can reset this by resetting the heading."
+msgstr ""
+"ロボットの駆動領域上にて、X座標とY座標で指定された量だけロボットを移動させます。"
+"X軸はプログラム開始時の進行方向、Y軸はそこから左に90°です。"
+"方位をリセットすることで、この方向をリセットできます。"
+
+#: of pybricks.robotics.DriveBase.move_by:5
+msgid ""
+"The robot first turns to the required heading and then drives the "
+"straight-line distance. Because the heading target is absolute, the "
+"result is independent of the robot's current heading."
+msgstr ""
+"ロボットはまず指定された方位に旋回し、その後直線距離を走行します。"
+"方位目標は絶対値であるため、結果はロボットの現在の方位に依存しません。"
+
+#: of pybricks.robotics.DriveBase.move_by:9
+msgid "X-distance on the drive area."
+msgstr "駆動エリアのX距離。"
+
+#: of pybricks.robotics.DriveBase.move_by:11
+msgid "Y-distance on the drive area."
+msgstr "駆動エリアのY距離。"
+
+#: of pybricks.robotics.DriveBase.move_by:16
+msgid "If one of the distances is more than 30 m."
+msgstr "いずれかの距離が30mを超える場合に発生。"
+
 #: of pybricks.robotics.DriveBase.settings:1
 msgid "Configures the drive base speed and acceleration."
 msgstr "ドライブベースの速度と加速度を設定します。"
@@ -234,29 +251,40 @@ msgstr ""
 "これで設定した速度値は適用されません。"
 
 #: of pybricks.robotics.DriveBase.settings:12
+msgid ""
+"Speed and rate values are treated as absolute; negative values are "
+"converted to positive automatically."
+msgstr ""
+"前進速度と旋回速度の値は絶対値として扱われ、負の値は自動的に正の値に変換されます。"
+
+#: of pybricks.robotics.DriveBase.settings:15
 msgid "Straight-line speed of the robot."
 msgstr "ロボットの前進速度。"
 
-#: of pybricks.robotics.DriveBase.settings:14
+#: of pybricks.robotics.DriveBase.settings:17
 msgid ""
-"Straight-line acceleration and deceleration of the robot. Provide a tuple"
-" with two values to set acceleration and deceleration separately."
+"Straight-line acceleration and deceleration of the robot. Provide a "
+"single value to use the same acceleration and deceleration. Provide a "
+"tuple with two values to set them separately."
 msgstr ""
-"ロボットの前進加速度および減速度。"
-"加速度と減速度を別々に設定するために、2つの値を持つタプルを指定します。"
+"ロボットの前進加速度と減速度。"
+"同じ加速度と減速度を使う場合は単一の値を指定します。"
+"２つの値を個別に設定する場合は、その2つの値を含むタプルを指定します。"
 
 #: of pybricks.robotics.DriveBase.drive:6
-#: pybricks.robotics.DriveBase.settings:18
+#: pybricks.robotics.DriveBase.settings:22
 msgid "Turn rate of the robot."
 msgstr "ロボットの旋回速度。"
 
-#: of pybricks.robotics.DriveBase.settings:20
+#: of pybricks.robotics.DriveBase.settings:24
 msgid ""
-"Angular acceleration and deceleration of the robot. Provide a tuple with "
-"two values to set acceleration and deceleration separately."
+"Angular acceleration and deceleration of the robot. Provide a single "
+"value to use the same acceleration and deceleration. Provide a tuple with"
+" two values to set them separately."
 msgstr ""
-"ロボットの角度加速度・減速度。"
-"加速度と減速度を別々に設定するために、2つの値を持つタプルを指定します。"
+"ロボットの角加速度と角減速度。"
+"同じ加速度と減速度を使う場合は単一の値を指定します。"
+"２つの値を個別に設定する場合は、その2つの値を含むタプルを指定します。"
 
 #: of pybricks.robotics.DriveBase.done:1
 msgid "Checks if an ongoing command or maneuver is done."
@@ -310,6 +338,10 @@ msgstr "モーターの動作を止め、惰性でロボットが停止するに
 msgid "Stops the robot by passively braking the motors."
 msgstr "モーターに逆トルクをかけることで、ロボットを停止させます。"
 
+#: of pybricks.robotics.DriveBase.hold:1
+msgid "Stops the robot and actively holds it in place."
+msgstr "ロボットを停止させ、その停止位置を積極的に維持します。"
+
 #: ../../robotics.rst:69
 msgid "Measuring"
 msgstr "計測"
@@ -324,9 +356,18 @@ msgstr "前回リセットしてからの走行距離。"
 
 #: of pybricks.robotics.DriveBase.angle:1
 msgid "Gets the estimated rotation angle of the drive base."
-msgstr "駆動基部の推定回転角度を取得します。"
+msgstr "ドライブベースの推定回転角度を取得します。"
 
 #: of pybricks.robotics.DriveBase.angle:3
+msgid ""
+"When the gyro is used for this drive base, this gives the gyro angle. "
+"Otherwise, it gives the estimated angle estimated from the motor "
+"displacement."
+msgstr ""
+"このドライブベースのジャイロを使う場合、ジャイロの角度が得られます。"
+"そうでない場合は、モーターの変位から推定された角度が得られます。"
+
+#: of pybricks.robotics.DriveBase.angle:7
 msgid "Accumulated angle since last reset."
 msgstr "前回のリセットからの累積角度。"
 
@@ -335,6 +376,15 @@ msgid "Gets the state of the robot."
 msgstr "ロボットの状態を取得します。"
 
 #: of pybricks.robotics.DriveBase.state:3
+msgid ""
+"As with the :meth:`.angle` methods, the reported angle and turn rate are "
+"those of the gyro if the gyro is used. Otherwise they are estimated from "
+"the motor displacement."
+msgstr ""
+":meth:`.angle` メソッドと同様に、ジャイロを使っている場合は、報告される角度と"
+"回転速度はジャイロの値になります。そうでない場合は、モーターの変位から推定されます。"
+
+#: of pybricks.robotics.DriveBase.state:7
 msgid "Tuple of distance, drive speed, angle, and turn rate of the robot."
 msgstr "ロボットの距離、駆動速度、角度、旋回速度のタプル。"
 
@@ -394,11 +444,11 @@ msgid ""
 msgstr ""
 "このメソッドは、進行中の動作を停止するために自動的に :meth:`.stop` を呼び出します。"
 
-#: of pybricks.robotics.DriveBase.use_gyro:5
+#: of pybricks.robotics.DriveBase.use_gyro:8
 msgid "``True`` to enable, ``False`` to disable."
 msgstr "有効にするには ``True`` 、無効にするには ``False`` 。"
 
-#: ../../robotics.rst:117
+#: ../../robotics.rst:114
 msgid ""
 "If your hub is not mounted flat in your robot, make sure to specify the "
 "``top_side`` and ``front_side`` parameters when you initialize the "
@@ -417,7 +467,7 @@ msgstr ""
 "指定してください。こうすることで、ロボットが旋回するときにどの回転を測定すれば"
 "よいかがわかります。"
 
-#: ../../robotics.rst:125
+#: ../../robotics.rst:122
 msgid ""
 "The gyro in each hub is a bit different, which can cause it to be a few "
 "degrees off for big turns, or many small turns in the same direction. For"
@@ -430,29 +480,29 @@ msgstr ""
 ":meth:`turn(357) <pybricks.robotics.DriveBase.turn>` や :meth:`turn(362) "
 "<pybricks.robotics.DriveBase.turn>` などとする必要があるかもしれません。"
 
-#: ../../robotics.rst:132
+#: ../../robotics.rst:129
 msgid ""
 "By default, this class tries to maintain the robot's position after a "
 "move completes. This means the wheels will spin if you pick the robot up,"
 " in an effort to maintain its heading angle. To avoid this, you can "
 "choose ``then=Stop.COAST`` in your last :meth:`straight "
 "<pybricks.robotics.DriveBase.straight>`, :meth:`turn "
-"<pybricks.robotics.DriveBase.turn>`, or :meth:`curve "
+"<pybricks.robotics.DriveBase.turn>`, or :meth:`arc "
 "<pybricks.robotics.DriveBase.arc>` command."
 msgstr ""
 "デフォルトで、このクラスは移動が完了した後、ロボットの位置を維持しようとします。"
 "つまり、ロボットを持ち上げると、その方位角を維持するために車輪が回転することになります。"
 "これを避けるには、最後の "
-":meth:`straight <pybricks.robotics.DriveBase.straight>`, :meth:`turn "
-"<pybricks.robotics.DriveBase.turn>`, :meth:`arc "
-"<pybricks.robotics.DriveBase.arc>` "
+":meth:`straight <pybricks.robotics.DriveBase.straight>`, "
+":meth:`turn <pybricks.robotics.DriveBase.turn>`, "
+":meth:`arc <pybricks.robotics.DriveBase.arc>` "
 "コマンドで ``then=Stop.COAST`` を指定します。"
 
-#: ../../robotics.rst:86
+#: ../../robotics.rst:140
 msgid "Measuring and validating the robot dimensions"
 msgstr "ロボットの寸法の計測と検証"
 
-#: ../../robotics.rst:87
+#: ../../robotics.rst:141
 msgid ""
 "As a first estimate, you can measure the ``wheel_diameter`` and the "
 "``axle_track`` with a ruler. Because it is hard to see where the wheels "
@@ -464,7 +514,7 @@ msgstr ""
 "車輪が効果的に地面に接している箇所を確認するのは難しいので、"
 "車輪の中点間の距離として ``axle_track`` を推定できます。"
 
-#: ../../robotics.rst:92
+#: ../../robotics.rst:146
 msgid ""
 "If you don't have a ruler, you can use a LEGO beam to measure. The "
 "center-to-center distance of the holes is 8 mm. For some tyres, the "
@@ -477,7 +527,7 @@ msgstr ""
 "たとえば、62.4 × 20 と印刷されていれば、直径が 62.4mm で、"
 "幅が 20mm であることを意味します。"
 
-#: ../../robotics.rst:97
+#: ../../robotics.rst:151
 msgid ""
 "In practice, most wheels compress slightly under the weight of your "
 "robot. To verify, make your robot drive 1000 mm using "
@@ -489,7 +539,7 @@ msgstr ""
 "1000mm 走行させ、実際にどの程度走行したかを計測してみましょう。"
 "以下のように補正してください:"
 
-#: ../../robotics.rst:101
+#: ../../robotics.rst:155
 msgid ""
 "If your robot drives **not far enough**, **decrease** the "
 "``wheel_diameter`` value slightly."
@@ -497,7 +547,7 @@ msgstr ""
 "ロボットの走行距離が **足りない** 場合は、 ``wheel_diameter`` の"
 "値を少し **小さく** してください。"
 
-#: ../../robotics.rst:103
+#: ../../robotics.rst:157
 msgid ""
 "If your robot drives **too far**, **increase** the ``wheel_diameter`` "
 "value slightly."
@@ -505,7 +555,7 @@ msgstr ""
 "ロボットの走行距離が **長すぎる** 場合は、 ``wheel_diameter`` の"
 "値を少し **大きく** してください。"
 
-#: ../../robotics.rst:106
+#: ../../robotics.rst:160
 msgid ""
 "Motor shafts and axles bend slightly under the load of the robot, causing"
 " the ground contact point of the wheels to be closer to the midpoint of "
@@ -516,7 +566,7 @@ msgstr ""
 "の中央寄りになります。確認するには、 ``my_robot.turn(360)`` を使って"
 "ロボットを360度回転させ、同じ場所に戻ってくるかどうかをチェックしてください:"
 
-#: ../../robotics.rst:111
+#: ../../robotics.rst:165
 msgid ""
 "If your robot turns **not far enough**, **increase** the ``axle_track`` "
 "value slightly."
@@ -524,14 +574,14 @@ msgstr ""
 "ロボットの旋回が **十分でない** 場合は、 ``axl_track`` の値を少し **大きく** "
 "してください。"
 
-#: ../../robotics.rst:113
+#: ../../robotics.rst:167
 msgid ""
 "If your robot turns **too far**, **decrease** the ``axle_track`` value "
 "slightly."
 msgstr ""
 "ロボットが曲がり **すぎる** 場合は、 ``axl_track`` の値を少し **小さく** します。"
 
-#: ../../robotics.rst:116
+#: ../../robotics.rst:170
 msgid ""
 "When making these adjustments, always adjust the ``wheel_diameter`` "
 "first, as done above. Be sure to test both turning and driving straight "
@@ -540,11 +590,11 @@ msgstr ""
 "これらの調整を行う際は、上記のように必ず ``wheel_diameter`` を先に調整します。"
 "調整が終わったら、旋回と直進の両方を必ずテストしてください。"
 
-#: ../../robotics.rst:121
+#: ../../robotics.rst:175
 msgid "Using the DriveBase motors individually"
 msgstr "DriveBase のモーターを個別に使う"
 
-#: ../../robotics.rst:122
+#: ../../robotics.rst:176
 msgid ""
 "After creating a :class:`.DriveBase` object, you can still use its two "
 "motors individually. If you start one motor, the other motor will "
@@ -557,11 +607,11 @@ msgstr ""
 "同様に、モータが既に動いている状態でドライブベースを動かすと、元の操作が"
 "キャンセルされ、ディードライブベースが引き継ぎます。"
 
-#: ../../robotics.rst:129
+#: ../../robotics.rst:183
 msgid "Advanced settings"
 msgstr "高度な設定"
 
-#: ../../robotics.rst:130
+#: ../../robotics.rst:184
 msgid ""
 "The :meth:`.settings` method is used to adjust commonly used settings "
 "like the default speed and acceleration for straight maneuvers and turns."

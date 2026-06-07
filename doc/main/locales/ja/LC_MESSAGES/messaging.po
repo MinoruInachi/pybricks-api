@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 12:25+0900\n"
+"PO-Revision-Date: 2026-06-07 18:38+0900\n"
+"Last-Translator: Minoru INACHI\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.0\n"
+
+#: ../../messaging/index.rst:2
+msgid ":mod:`messaging <pybricks.messaging>` -- Send and receive messages"
+msgstr ":mod:`messaging <pybricks.messaging>` -- メッセージの送受信"
+
+#: of pybricks.messaging:1
+msgid "Classes to send and receive messages from another device."
+msgstr "他のデバイスとの間でメッセージを送受信するためのクラス。"
+
+#: of pybricks.messaging.BLERadio:1
+msgid "Send and receive messages without a connection using Bluetooth Low Energy."
+msgstr "Bluetooth Low Energy を使って、接続なしでメッセージを送受信します。"
+
+#: of pybricks.messaging.BLERadio:5
+msgid "This used to be part of each hub class."
+msgstr "これは以前、各ハブクラスの一部でした。"
+
+#: of pybricks.messaging.AppData pybricks.messaging.AppData.configure
+#: pybricks.messaging.AppData.get_bytes pybricks.messaging.AppData.write_bytes
+#: pybricks.messaging.BLERadio pybricks.messaging.BLERadio.broadcast
+#: pybricks.messaging.BLERadio.observe
+#: pybricks.messaging.BLERadio.signal_strength
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: of pybricks.messaging.BLERadio:7
+msgid ""
+"Channel number (0 to 255) used to broadcast data. Choose ``None`` when "
+"not using broadcasting."
+msgstr ""
+"データ配信に使用するチャンネル番号(0～255)。"
+"ブロードキャストを使わない場合には ``None`` を指定してください。"
+
+#: of pybricks.messaging.BLERadio:9
+msgid ""
+"A list of channels to listen to when ``hub.ble.observe()`` is called. "
+"Listening to more channels requires more memory. Default is an empty list"
+" (no channels)."
+msgstr ""
+"``hub.ble.observe()`` 呼び出し時に観測するチャネルのリスト。"
+"監視するチャネル数を増やすと、より多くのメモリが必要になります。"
+"デフォルトは空のリスト(チャネルなし)です。"
+
+#: of pybricks.messaging.BLERadio.broadcast:1
+msgid ""
+"Starts broadcasting the given data on the previously selected "
+"``broadcast_channel``."
+msgstr ""
+"事前に選択してある ``broadcast_channel`` に指定したデータのブロードキャストを"
+"開始します。"
+
+#: of pybricks.messaging.BLERadio.broadcast:4
+msgid ""
+"Data may be of type ``int``, ``float``, ``str``, ``bytes``, ``True``, or "
+"``False``. It can also be a list or tuple of these."
+msgstr ""
+"データは、型が ``int``, ``float``, ``str``, ``bytes``, ``True``, ``False`` "
+"のものです。それらのリストやタプルも指定できます。"
+
+#: of pybricks.messaging.BLERadio.broadcast:7
+msgid ""
+"Choose ``None`` to stop broadcasting. This helps improve performance when"
+" you don't need the broadcast feature, especially when observing at the "
+"same time."
+msgstr ""
+"ブロードキャスト通信を停止するに ``None`` を指定します。"
+"ブロードキャスト通信が必要ない場合には、停止することにより"
+"パフォーマンスを向上させられます。同時にデータ観測をしている場合には特に便利です。"
+
+#: of pybricks.messaging.BLERadio.broadcast:11
+msgid ""
+"The total data size is quite limited (26 bytes). ``True`` and ``False`` "
+"take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to 5 bytes "
+"depending on how big the number is. ``str`` and ``bytes`` take the number"
+" of bytes in the object plus one extra byte."
+msgstr ""
+"合計データサイズはかなり制限されています(26バイト)。 ``True`` と ``False`` は"
+"それぞれ1バイトを占有します。 ``float`` は5バイトを占有します。 ``int`` は数値の"
+"大きさに応じて2から5バイトを占有します。 ``str`` と ``bytes`` はオブジェクトの"
+"バイト数に加えて1バイトを占有します。"
+
+#: of pybricks.messaging.BLERadio.broadcast:16
+msgid ""
+"When multitasking, only one task can broadcast at a time. To broadcast "
+"information from multiple tasks (or block stacks), you could use a "
+"dedicated separate task that broadcast new values when one or more "
+"variables change."
+msgstr ""
+"マルチタスクを行う場合、ブロードキャスト通信は一度に1つのタスクでしかできません。"
+"複数のタスク(またはブロックスタック)からの情報をブロードキャストするには、"
+"ブロードキャスト通信用の専用タスクを用意して、他の複数タスクからの情報を"
+"送信するようにできます。"
+
+#: of pybricks.messaging.BLERadio.broadcast:21
+msgid "The value or values to be broadcast."
+msgstr "ブロードキャストする値、もしくは値のリスト。"
+
+#: of pybricks.messaging.AppData pybricks.messaging.AppData.get_bytes
+#: pybricks.messaging.BLERadio.broadcast pybricks.messaging.BLERadio.observe
+#: pybricks.messaging.BLERadio.signal_strength
+msgid "Raises"
+msgstr "例外"
+
+#: of pybricks.messaging.BLERadio.broadcast:23
+msgid "If no ``broadcast_channel`` was configured."
+msgstr "``broadcast_channel`` が設定されていない場合に発生します。"
+
+#: of pybricks.messaging.BLERadio.broadcast:24
+msgid "If the encoded data exceeds 26 bytes."
+msgstr "エンコードしたデータが 26 バイトを超えた場合に発生します。"
+
+#: of pybricks.messaging.BLERadio.broadcast:25
+msgid ""
+"If ``data`` contains a value that is not ``bool``,     ``int``, "
+"``float``, ``str``, or ``bytes``."
+msgstr ""
+"``data`` が持つ値に ``bool``, ``int``, ``float``, ``str``, ``bytes`` "
+"以外のものがあった場合に発生します。"
+
+#: of pybricks.messaging.BLERadio.observe:1
+msgid "Retrieves the last observed data for a given channel."
+msgstr "指定したチャンネルで最後に観測されたデータを取得します。"
+
+#: of pybricks.messaging.BLERadio.observe:3
+msgid ""
+"Receiving data is more reliable when the hub is not connected to a "
+"computer or other devices at the same time."
+msgstr ""
+"ハブがコンピュータや他のデバイスに同時に接続しないようにすると、データを受信する"
+"信頼性が高くなります。"
+
+#: of pybricks.messaging.BLERadio.observe:6
+msgid ""
+"The channel to observe. Must be one of the channels given to "
+"``observe_channels`` when creating this object."
+msgstr ""
+"観測するチャンネル。"
+"このオブジェクトを作成する際に ``observe_channels`` に設定した"
+"チャネルのいずれかである必要があります。"
+
+#: of pybricks.messaging.AppData.get_bytes pybricks.messaging.BLERadio.observe
+#: pybricks.messaging.BLERadio.signal_strength
+msgid "Returns"
+msgstr "戻り値"
+
+#: of pybricks.messaging.BLERadio.observe:10
+msgid ""
+"The received data in the same format as it was sent, or ``None`` if no "
+"data has been received within the last second."
+msgstr ""
+"受信データは、送信した形式と同じ形式となります。"
+"最新のデータが利用できない場合は ``None`` が返ります。"
+
+#: of pybricks.messaging.BLERadio.observe:13
+#: pybricks.messaging.BLERadio.signal_strength:14
+msgid "If ``channel`` was not in ``observe_channels``."
+msgstr "``channel`` が ``observe_channels`` にない場合に発生します。"
+
+#: of pybricks.messaging.BLERadio.signal_strength:1
+msgid "Gets the average signal strength in dBm for the given channel."
+msgstr "指定したチャンネルの平均信号強度を dBm 単位で取得します。"
+
+#: of pybricks.messaging.BLERadio.signal_strength:3
+msgid ""
+"This indicates how near the broadcasting device is. Nearby devices may "
+"have a signal strength around -40 dBm, while far away devices might have "
+"a signal strength around -70 dBm."
+msgstr ""
+"これはブロードキャストデバイスがどれだけ近くにあるかを示します。"
+"近くのデバイスは約 -40 dBmの信号強度を持ち、遠くのデバイスは約 -70 dBm "
+"の信号強度を持ちます。"
+
+#: of pybricks.messaging.BLERadio.signal_strength:7
+msgid ""
+"The channel number. Must be one of the channels given to "
+"``observe_channels`` when creating this object."
+msgstr ""
+"チャンネル番号。"
+"このオブジェクトを作成する際に ``observe_channels`` に設定した"
+"チャネルのいずれかである必要があります。"
+
+#: of pybricks.messaging.BLERadio.signal_strength:11
+msgid ""
+"The signal strength, or ``-128`` if no data has been received within the "
+"last second."
+msgstr ""
+"最近の受信データがない場合、信号強度は ``-128`` となります。"
+
+#: of pybricks.messaging.BLERadio.version:1
+msgid "Gets the firmware version from the Bluetooth chip."
+msgstr "Bluetooth チップからファームウェアバージョンを取得します。"
+
+#: of pybricks.messaging.AppData:1
+msgid ""
+"Exchange raw data with the Pybricks Code host application over USB or "
+"Bluetooth. This is used by the smart sensor features like the vision "
+"processors."
+msgstr ""
+"Pybricks Code ホストアプリケーションと USB または Bluetooth 経由で生データを"
+"交換します。これは、ビジョンプロセッサなどのスマートセンサー機能で使われます。"
+
+#: of pybricks.messaging.AppData:5
+msgid ""
+"Each processor has on emode and produces a fixed amount of data. These "
+"are continuously sent to the hub as they change. The user code can read "
+"these buffered values at any time without blocking. All values are "
+"initially zero."
+msgstr ""
+"各プロセッサは1つの emode を持ち、一定量のデータを生成します。"
+"これらのデータは変化するたびにハブに継続的に送信します。"
+"ユーザーコードは、ブロックすることなくいつでもこれらのバッファリングされた"
+"値を読み取れます。すべての値は初期状態ではゼロです。"
+
+#: of pybricks.messaging.AppData:9
+msgid ""
+"From the hub's perspective, writing back to the host is an awaitable "
+"operation. Can be used to configure modes and mode settings."
+msgstr ""
+"ハブの観点から見ると、ホストへの書き込みは待機可能な操作です。"
+"モードとモード設定の構成に使えます。"
+
+#: of pybricks.messaging.AppData:12
+msgid ""
+"Only one instance may exist at a time. Must be created during program "
+"initialization. After that, all methods may be used while multi-tasking."
+msgstr ""
+"一度に存在できるインスタンスは1つだけです。"
+"プログラムの初期化中に作成する必要があります。"
+"その後、マルチタスク中にすべてのメソッドを使用できます。"
+
+#: of pybricks.messaging.AppData:15
+msgid ""
+"A list of ``(mode, size)`` tuples, where ``mode`` is a mode number (0 to "
+"255) and ``size`` is the number of bytes to allocate for that mode's "
+"receive buffer. Mode numbers must be unique. The list is sorted by mode "
+"number automatically."
+msgstr ""
+"``(mode, size)`` タプルのリスト。 "
+"``mode`` はモード番号(0～255)、 ``size`` はそのモードの受信バッファに割り当てる"
+"バイト数です。モード番号は一意である必要があります。"
+"リストはモード番号で自動的にソートされます。"
+
+#: of pybricks.messaging.AppData:20
+msgid "If an ``AppData`` instance already exists."
+msgstr "``AppData`` インスタンスが既に存在する場合に発生します。"
+
+#: of pybricks.messaging.AppData:21
+msgid ""
+"If ``modes`` is not a list, or if any element is not a     ``(mode, "
+"size)`` tuple with a mode value of 0 to 255."
+msgstr ""
+"``modes`` がリストでない場合、または要素のいずれかが、"
+"0から255のモード値を持つ ``(mode, size)`` タプルでない場合に発生します。"
+
+#: of pybricks.messaging.AppData:22
+msgid "If any mode number appears more than once."
+msgstr "モード番号が複数回出現する場合に発生します。"
+
+#: of pybricks.messaging.AppData.get_bytes:1
+msgid "Gets data received from the host for the given mode."
+msgstr "指定したモードについてホストから受信したデータを取得します。"
+
+#: of pybricks.messaging.AppData.get_bytes:3
+msgid "The mode number to read."
+msgstr "読み取るモード番号。"
+
+#: of pybricks.messaging.AppData.get_bytes:5
+msgid ""
+"If given, returns the single byte at this position within the mode's "
+"buffer as an integer. Otherwise returns the entire mode buffer as "
+"``bytes``."
+msgstr ""
+"指定した場合、モードのバッファ内のこの位置にある単一バイトを整数として返します。"
+"指定していない場合は、モードバッファ全体を ``bytes`` として返します。"
+
+#: of pybricks.messaging.AppData.get_bytes:10
+msgid ""
+"All received bytes for the mode, or a single byte as an integer if "
+"``index`` is given."
+msgstr ""
+"モードに対して受信したすべてのバイト列。 "
+"``index`` を指定している場合は整数としての1バイト。"
+
+#: of pybricks.messaging.AppData.get_bytes:13
+msgid "If ``mode`` was not configured, or if ``index`` is     out of range."
+msgstr "``mode`` が設定されていない場合、または ``index`` が範囲外の場合に発生します。"
+
+#: of pybricks.messaging.AppData.write_bytes:1
+msgid "Sends raw bytes to the host application."
+msgstr "生のバイト列をホストアプリケーションに送信します。"
+
+#: of pybricks.messaging.AppData.write_bytes:3
+msgid "The data to send."
+msgstr "送信するデータ。"
+
+#: of pybricks.messaging.AppData.configure:1
+msgid "Sends a configuration command to the host for the given mode."
+msgstr "指定したモードに対して、ホストに設定コマンドを送信します。"
+
+#: of pybricks.messaging.AppData.configure:3
+msgid ""
+"This is a wrapper around :meth:`write_bytes`. It prepends a ``[0x01, "
+"mode, parameter]`` header to configure mode settings."
+msgstr ""
+"これは :meth:`write_bytes` のラッパーです。"
+"モード設定を構成するために ``[0x01, mode, parameter]`` ヘッダーを先頭に追加します。"
+
+#: of pybricks.messaging.AppData.configure:6
+msgid "The mode number to configure."
+msgstr "設定するモード番号。"
+
+#: of pybricks.messaging.AppData.configure:8
+msgid "The parameter identifier within the mode."
+msgstr "モード内のパラメータ識別子。"
+
+#: of pybricks.messaging.AppData.configure:10
+msgid "The configuration value to send."
+msgstr "送信する設定値。"
+
+#: of pybricks.messaging.AppData.close:1
+msgid "Deactivates the data callback and releases the receive buffer."
+msgstr "データコールバックを無効にし、受信バッファを解放します。"
+
+#: of pybricks.messaging.AppData.close:3
+msgid "This is also called automatically when the object is garbage collected."
+msgstr "これは、オブジェクトがガベージコレクションされる際にも自動的に呼び出されます。"
+
+#: ../../messaging/index.rst:50
+msgid "BLERadio examples"
+msgstr "BLERadio の利用例"
+
+#: ../../messaging/index.rst:53
+msgid "Broadcasting data to other hubs"
+msgstr "他のハブへのデータのブロードキャスト"
+
+#: ../../messaging/index.rst:55
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"from pybricks.messaging import BLERadio\n"
+"\n"
+"# Initialize the hub.\n"
+"radio = BLERadio(broadcast_channel=1)\n"
+"\n"
+"# Initialize the motors.\n"
+"left_motor = Motor(Port.A)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"while True:\n"
+"    # Read the motor angles to be sent to the other hub.\n"
+"    left_angle = left_motor.angle()\n"
+"    right_angle = right_motor.angle()\n"
+"\n"
+"    # Set the broadcast data and start broadcasting if not already doing "
+"so.\n"
+"    data = (left_angle, right_angle)\n"
+"    radio.broadcast(data)\n"
+"\n"
+"    # Broadcasts are only sent every 100 milliseconds, so there is no "
+"reason\n"
+"    # to call the broadcast() method more often than that.\n"
+"    wait(100)\n"
+msgstr ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"from pybricks.messaging import BLERadio\n"
+"\n"
+"# ハブを初期化。\n"
+"radio = BLERadio(broadcast_channel=1)\n"
+"\n"
+"# モーターを初期化。\n"
+"left_motor = Motor(Port.A)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"while True:\n"
+"    # 他のハブに送るモーター回転角度の読取り。\n"
+"    left_angle = left_motor.angle()\n"
+"    right_angle = right_motor.angle()\n"
+"\n"
+"    # ブロードキャストするデータを設定。まだブロードキャストしていなければ開始。\n"
+"    data = (left_angle, right_angle)\n"
+"    radio.broadcast(data)\n"
+"\n"
+"    # ブロードキャストは100ミリ秒ごとにのみ送信するので、それ以上の頻度で\n"
+"    # broadcast() メソッドを呼び出す理由はありません。\n"
+"    wait(100)\n"
+
+#: ../../messaging/index.rst:59
+msgid "Observing data from other hubs"
+msgstr "他のハブからのデータ観測"
+
+#: ../../messaging/index.rst:61
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"from pybricks.messaging import BLERadio\n"
+"\n"
+"# Initialize the hub.\n"
+"radio = BLERadio(observe_channels=[1])\n"
+"\n"
+"# Initialize the motors.\n"
+"left_motor = Motor(Port.A)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"while True:\n"
+"    # Receive broadcast from the other hub.\n"
+"\n"
+"    data = radio.observe(1)\n"
+"\n"
+"    if data is not None:\n"
+"        # Data was received and is less that one second old.\n"
+"        # It contains the same values in the same order\n"
+"        # that were passed to radio.broadcast() on the\n"
+"        # other hub.\n"
+"        left_angle, right_angle = data\n"
+"\n"
+"        # Make the motors on this hub mirror the position of the\n"
+"        # motors on the other hub.\n"
+"        left_motor.track_target(left_angle)\n"
+"        right_motor.track_target(right_angle)\n"
+"\n"
+"    # Broadcasts are only sent every 100 milliseconds, so there is\n"
+"    # no reason to call the observe() method more often than that.\n"
+"    wait(100)\n"
+msgstr ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"from pybricks.messaging import BLERadio\n"
+"\n"
+"# ハブを初期化。\n"
+"radio = BLERadio(observe_channels=[1])\n"
+"\n"
+"# モーターを初期化。\n"
+"left_motor = Motor(Port.A)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"while True:\n"
+"    # 他のハブからのブロードキャストの受信。\n"
+"\n"
+"    data = radio.observe(1)\n"
+"\n"
+"    if data is not None:\n"
+"        # データは受信済みで、1秒未満前のもの。\n"
+"        # データには、他のハブで hub.ble.broadcast() に\n"
+"        # 指定したときと同じ順序で同じ値が含まれています。\n
+"        left_angle, right_angle = data\n"
+"\n"
+"        # 他のハブのモーターの位置をこのハブのモーターに反映します。\n"
+"        left_motor.track_target(left_angle)\n"
+"        right_motor.track_target(right_angle)\n"
+"\n"
+"    # ブロードキャストは100ミリ秒ごとにのみ送信されるので、それ以上の\n"
+"    # 頻度で observe() メソッドを呼び出す理由はありません。\n"
+"    wait(100)\n"

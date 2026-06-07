@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018-2023 The Pybricks Authors
 # This file is distributed under the same license as the pybricks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pybricks v3.6\n"
+"Project-Id-Version: pybricks v4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:48+0900\n"
-"PO-Revision-Date: 2025-03-01 22:23+0900\n"
+"POT-Creation-Date: 2026-06-06 12:25+0900\n"
+"PO-Revision-Date: 2026-06-07 20:20+0900\n"
 "Last-Translator: Minoru INACHI\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.13.0\n"
 
 #: ../../pupdevices/colordistancesensor.rst:4
 msgid "Color and Distance Sensor"
@@ -1117,14 +1117,14 @@ msgid ""
 "The motor stops due to friction, plus the voltage that is generated while"
 " the motor is still moving."
 msgstr ""
-"摩擦による停止に加え、モータが動いている間に発生した電圧で停止します。"
+"摩擦による停止に加え、モーターが動いている間に発生した電圧で停止します。"
 
 #: of pybricks._common.DCMotor.settings:1
 msgid ""
 "Configures motor settings. If no arguments are given, this returns the "
 "current values."
 msgstr ""
-"モータの設定を行います。"
+"モーターの設定を行います。"
 "引数を与えない場合は、現在の値を返します。"
 
 #: of pybricks._common.DCMotor.settings:4
@@ -1246,7 +1246,7 @@ msgstr ""
 "# とするように初期化。\n"
 "example_motor = DCMotor(Port.A, Direction.COUNTERCLOCKWISE)\n"
 "\n"
-"# 正の速度値を指定すると、モータは今度は反時計回りに回転。\n"
+"# 正の速度値を指定すると、モーターは今度は反時計回りに回転。\n"
 "example_motor.dc(70)\n"
 "\n"
 "# これは、モーター(トレイン)が逆向きに取り付けられている場合や、逆さまに取り付け\n"
@@ -1295,6 +1295,172 @@ msgstr ""
 "\n"
 "    example_motor.stop()\n"
 "    wait(1000)\n"
+
+#: ../../pupdevices/duplotrain.rst:4
+msgid "Duplo Train"
+msgstr "デュプロ列車"
+
+#: of pybricks.pupdevices.DuploTrain:1
+msgid "LEGO® Duplo Train hub (sets 10874, 10875, 10427, 10428 similar)."
+msgstr "LEGO® デュプロ列車ハブ(セット 10874, 10875, 10427, 10428 など)。"
+
+#: of pybricks.pupdevices.DuploTrain:3
+msgid ""
+"The Duplo Hub cannot be updated, so you cannot install Pybricks on it. "
+"However, you can connect a supported hub running Pybricks to the Duplo "
+"Hub and control the train that way."
+msgstr ""
+"デュプロハブは更新できないため、Pybricks をインストールできません。"
+"ただし、Pybricks が動作する対応ハブをデュプロハブに接続すれば、列車を制御できます。"
+
+#: of pybricks.pupdevices.DuploTrain:7
+msgid ""
+"You can you control the motor, sound, and headlights, and read the speed "
+"and color sensors."
+msgstr ""
+"モーター、サウンド、ヘッドライトを制御したり、速度センサーやカラーセンサーの値を"
+"読み取ったりできます。"
+
+#: of pybricks.pupdevices.DuploTrain:10
+msgid ""
+"Bluetooth name of the hub. If no name is given, the hub connects to the "
+"first Duplo Train hub it finds."
+msgstr ""
+"ハブの Bluetooth 名。名前が与えられていない場合、ハブは最初に見つかった"
+"デュプロ列車ハブに接続します。"
+
+#: of pybricks.pupdevices.DuploTrain:13 pybricks.pupdevices.MarioHub:9
+#: pybricks.pupdevices.TechnicMoveHub:11
+msgid "How long to search for the hub. Choose ``None`` to wait indefinitely."
+msgstr "ハブを検索する時間。無期限に待機するには ``None`` を指定します。"
+
+#: of pybricks.pupdevices.DuploTrain:16 pybricks.pupdevices.MarioHub:12
+#: pybricks.pupdevices.Remote:9 pybricks.pupdevices.TechnicMoveHub:14
+msgid ""
+"Choose ``False`` to skip connecting. ``connect()`` can be called later to"
+" connect."
+msgstr ""
+"接続をスキップするには ``False`` を指定します。"
+"後で ``connect()`` を呼び出すことで接続できます。"
+
+#: of pybricks.iodevices.LWP3Device.connect
+#: pybricks.iodevices.LWP3Device.disconnect pybricks.iodevices.LWP3Device.name
+#: pybricks.pupdevices.DuploTrain pybricks.pupdevices.DuploTrain.color
+#: pybricks.pupdevices.DuploTrain.drive
+#: pybricks.pupdevices.DuploTrain.headlights
+#: pybricks.pupdevices.DuploTrain.sound pybricks.pupdevices.DuploTrain.speed
+#: pybricks.pupdevices.MarioHub pybricks.pupdevices.MarioHub.color
+#: pybricks.pupdevices.MarioHub.hsv pybricks.pupdevices.Remote
+#: pybricks.pupdevices.TechnicMoveHub pybricks.pupdevices.TechnicMoveHub.drive
+msgid "Raises"
+msgstr "例外"
+
+#: of pybricks.iodevices.LWP3Device.connect:4 pybricks.pupdevices.DuploTrain:20
+#: pybricks.pupdevices.MarioHub:16 pybricks.pupdevices.Remote:13
+#: pybricks.pupdevices.TechnicMoveHub:18
+msgid "If the connection attempt fails or times out."
+msgstr "接続に失敗またはタイムアウトした場合に発生します。"
+
+#: of pybricks.iodevices.LWP3Device.connect:1
+msgid ""
+"Connects to the device. Only needed if you disconnected or initialized "
+"with ``connect=False``."
+msgstr ""
+"デバイスに接続します。切断した場合、または ``connect=False`` で"
+"初期化した場合にのみ必要です。"
+
+#: of pybricks.iodevices.LWP3Device.disconnect:1
+msgid "Disconnects the device."
+msgstr "デバイスを切断します。"
+
+#: of pybricks.iodevices.LWP3Device.disconnect:3
+msgid "If disconnecting fails."
+msgstr "切断に失敗した場合に発生します。"
+
+#: of pybricks.iodevices.LWP3Device.name:1
+msgid "Sets or gets the Bluetooth name of the device."
+msgstr "デバイスの Bluetooth 名を設定または取得します。"
+
+#: of pybricks.iodevices.LWP3Device.name:3
+msgid ""
+"New Bluetooth name of the device. If no name is given, this method "
+"returns the current name."
+msgstr ""
+"デバイスの新しい Bluetooth 名。名前を指定しない場合、"
+"このメソッドは現在の名前を返します。"
+
+#: of pybricks.iodevices.LWP3Device.name:7
+msgid "If the device is not connected."
+msgstr "デバイスが接続されていない場合に発生します。"
+
+#: of pybricks.pupdevices.DuploTrain.drive:1
+msgid "Drives the train motor at the given speed."
+msgstr "指定の速度で列車のモーターを駆動します。"
+
+#: of pybricks.pupdevices.DuploTrain.drive:3
+msgid "Speed as a percentage (-100 to 100). Negative values drive in reverse."
+msgstr "速度をパーセンテージ(-100～100)で表したもの。負の値は後退を意味します。"
+
+#: of pybricks.pupdevices.DuploTrain.color:6
+#: pybricks.pupdevices.DuploTrain.drive:7
+#: pybricks.pupdevices.DuploTrain.headlights:7
+#: pybricks.pupdevices.DuploTrain.sound:12
+#: pybricks.pupdevices.DuploTrain.speed:5 pybricks.pupdevices.MarioHub.color:6
+#: pybricks.pupdevices.MarioHub.hsv:7
+#: pybricks.pupdevices.TechnicMoveHub.drive:10
+msgid "If the hub is not connected."
+msgstr "ハブが接続されていない場合に発生します。"
+
+#: of pybricks.pupdevices.DuploTrain.headlights:1
+msgid ""
+"Sets the color of the train headlights. Not all colors are supported, so "
+"the hub will choose the closest color it can produce."
+msgstr ""
+"列車のヘッドライトの色を設定します。すべての色がサポートされているわけではないため、"
+"ハブは生成可能な最も近い色を選択します。"
+
+#: of pybricks.pupdevices.DuploTrain.headlights:4
+msgid "Color of the headlights."
+msgstr "ヘッドライトの色。"
+
+#: of pybricks.pupdevices.DuploTrain.sound:1
+msgid "Plays one of the built-in train sounds."
+msgstr "内蔵の列車の音の1つを再生します。"
+
+#: of pybricks.pupdevices.DuploTrain.sound:3
+msgid ""
+"For the newer (dark blue) train, we have not yet figured out the right "
+"sound codes. Please open a discussion or pull request if you know how to "
+"do it. Thanks!"
+msgstr ""
+"新しい(濃い青色の)列車については、まだ適切なサウンドコードが特定できていません。"
+"もしご存知でしたら、ディスカッションまたはプルリクエストを作成してください。"
+"よろしくお願いします。"
+
+#: of pybricks.pupdevices.DuploTrain.sound:7
+msgid ""
+"Name of the sound to play. Choose from ``\"brake\"``, ``\"depart\"``, "
+"``\"water\"``, ``\"horn\"``, or ``\"steam\"``."
+msgstr ""
+"再生する音の名前。"
+"``\"brake\"``, ``\"depart\"``, ``\"water\"``, ``\"horn\"``, ``\"steam\"`` "
+"から選択してください。"
+
+#: of pybricks.pupdevices.DuploTrain.speed:1
+msgid "Reads the train speed from the latest received notification."
+msgstr "最新の受信通知から列車の速度を読み取ります。"
+
+#: of pybricks.pupdevices.DuploTrain.speed:3
+msgid "Speed as a percentage (-100 to 100)."
+msgstr "速度をパーセンテージで表したもの(-100～100)。"
+
+#: of pybricks.pupdevices.DuploTrain.color:1
+#: pybricks.pupdevices.MarioHub.color:1
+msgid ""
+"Reads the color detected by the color sensor from the latest received "
+"notification."
+msgstr ""
+"受信した最新の通知からカラーセンサーが検出した色を読み取ります。"
 
 #: ../../pupdevices/forcesensor.rst:4
 msgid "Force Sensor"
@@ -1736,6 +1902,64 @@ msgstr ""
 "    light.on(brightness)\n"
 "    wait(10)\n"
 
+#: ../../pupdevices/mariohub.rst:4
+msgid "Mario Hub"
+msgstr "マリオハブ"
+
+#: of pybricks.pupdevices.MarioHub:1
+msgid "LEGO® Super Mario hub (sets 71360, 71387, 71441 and similar)."
+msgstr "LEGO® スーパーマリオハブ (セット 71360, 71387, 71441 など)。"
+
+#: of pybricks.pupdevices.MarioHub:3
+msgid ""
+"Connect a supported hub running Pybricks to a LEGO Mario, Luigi, or Peach"
+" figure and reads its color sensor."
+msgstr ""
+"Pybricksが動作する対応ハブを LEGO マリオ、ルイージ、ピーチのフィギュアに接続し、"
+"そのカラーセンサーを読み取ります。"
+
+#: of pybricks.pupdevices.MarioHub:6
+msgid ""
+"Bluetooth name of the hub. If no name is given, the hub connects to the "
+"first Mario hub it finds."
+msgstr ""
+"ハブの Bluetooth 名。名前が与えられていない場合、ハブは最初に見つかった"
+"マリオハブに接続します。"
+
+#: of pybricks.pupdevices.MarioHub.hsv:1
+msgid ""
+"Reads the hue, saturation, and brightness of the color detected by the "
+"color sensor from the latest received notification, as a :class:`Color "
+"<.parameters.Color>` object."
+msgstr ""
+"最新の通知からカラーセンサーによって検出された色の色相、彩度、明度を "
+":class:`Color <.parameters.Color>` オブジェクトとして読み取ります。"
+
+#: of pybricks.pupdevices.MarioHub.hsv:5
+msgid "Measured color."
+msgstr "検出した色。"
+
+#: of pybricks.pupdevices.MarioHub.detectable_colors:1
+msgid "Configures the list of colors that :meth:`color` may return."
+msgstr ""
+":meth:`color` が返す色のリストを設定します。"
+
+#: of pybricks.pupdevices.MarioHub.detectable_colors:3
+msgid ""
+"Only the colors in this list will be returned. This helps reduce false "
+"positives when you only care about a specific subset of colors."
+msgstr ""
+"このリストに含まれる色のみが返されます。特定の色のサブセットのみに関心がある場合、"
+"これにより誤検出を減らせます。"
+
+#: of pybricks.pupdevices.MarioHub.detectable_colors:6
+msgid ""
+"List of :class:`Color <.parameters.Color>` objects to detect, or ``None``"
+" to restore the default list."
+msgstr ""
+"検出する :class:`Color <.parameters.Color>` オブジェクトのリスト。"
+"デフォルトのリストに戻す場合は ``None`` を指定します。"
+
 #: ../../pupdevices/motor.rst:4
 msgid "Motors with rotation sensors"
 msgstr "回転センサー付モーター"
@@ -1784,7 +2008,7 @@ msgstr ""
 "複数の歯車列を扱う際には ``[[12, 36], [20, 16, 40]]`` のように"
 "リストのリストを使います。"
 "歯車列を指定すると、すべてのモーターコマンドと設定は、結果として生じる歯車比を"
-"考慮して自動的に調整されます。モータの方向はこれによって変更されません。"
+"考慮して自動的に調整されます。モーターの方向はこれによって変更されません。"
 
 #: of pybricks.pupdevices.Motor:9
 msgid "List of gears linked to the motor."
@@ -1809,7 +2033,7 @@ msgid ""
 " direction remains unchanged by this."
 msgstr ""
 "歯車列を指定すると、すべてのモーターコマンドと設定は、結果として生じる歯車比を"
-"考慮して自動的に調整されます。モータの方向はこれによって変更されません。"
+"考慮して自動的に調整されます。モーターの方向はこれによって変更されません。"
 
 #: of pybricks.pupdevices.Motor:19
 msgid ""
@@ -1848,7 +2072,7 @@ msgstr "モーターの回転角。"
 
 #: of pybricks.pupdevices.Motor.reset_angle:1
 msgid "Sets the accumulated rotation angle of the motor to a desired value."
-msgstr "モータの累積回転角を任意の値に設定します。"
+msgstr "モーターの累積回転角を任意の値に設定します。"
 
 #: of pybricks.pupdevices.Motor.reset_angle:3
 msgid ""
@@ -1880,8 +2104,8 @@ msgid ""
 " responsive, but more steady."
 msgstr ""
 "速度は、与えられたタイムウィンドウの間のモーター角度の変化として測定されます。"
-"ウィンドウを短くすると、速度値はモータの動きに反応しやすくなりますが、"
-"安定性は低下します。長いウィンドウを使用すると、速度値はモータの動きに"
+"ウィンドウを短くすると、速度値はモーターの動きに反応しやすくなりますが、"
+"安定性は低下します。長いウィンドウを使用すると、速度値はモーターの動きに"
 "反応しにくくなりますが、より安定した値になります。"
 
 #: of pybricks._common.Motor.speed:8
@@ -1902,7 +2126,7 @@ msgstr "負荷トルク。"
 
 #: of pybricks._common.Motor.stalled:1
 msgid "Checks if the motor is currently stalled."
-msgstr "現在、モータが失速状態なのかを確認します。"
+msgstr "現在、モーターが失速状態なのかを確認します。"
 
 #: of pybricks._common.Motor.stalled:3
 msgid ""
@@ -1913,7 +2137,7 @@ msgstr ""
 
 #: of pybricks._common.Motor.stalled:6
 msgid "``True`` if the motor is stalled, ``False`` if not."
-msgstr "モータが失速している場合は ``True`` 、失速していない場合は ``False`` 。"
+msgstr "モーターが失速している場合は ``True`` 、失速していない場合は ``False`` 。"
 
 #: ../../pupdevices/motor.rst:32
 msgid "Stopping"
@@ -1921,7 +2145,7 @@ msgstr "停止"
 
 #: of pybricks._common.Motor.hold:1
 msgid "Stops the motor and actively holds it at its current angle."
-msgstr "モータを停止し、現在の角度に能動的に維持します。"
+msgstr "モーターを停止し、現在の角度に能動的に維持します。"
 
 #: ../../pupdevices/motor.rst:40
 msgid "Running forever"
@@ -1950,7 +2174,7 @@ msgstr "一定量の動作"
 
 #: of pybricks._common.Motor.run_time:1
 msgid "Runs the motor at a constant speed for a given amount of time."
-msgstr "モータを一定速度で一定時間回転させます。"
+msgstr "モーターを一定速度で一定時間回転させます。"
 
 #: of pybricks._common.Motor.run_time:3
 msgid ""
@@ -2027,7 +2251,7 @@ msgstr "モーターが回転すべき目標角度。"
 
 #: of pybricks._common.Motor.run_until_stalled:1
 msgid "Runs the motor at a constant speed until it stalls."
-msgstr "モータが失速するまで一定速度で動作させます。"
+msgstr "モーターが失速するまで一定速度で動作させます。"
 
 #: of pybricks._common.Motor.run_until_stalled:7
 msgid ""
@@ -2036,7 +2260,7 @@ msgid ""
 "the duty limit won't be changed during this command."
 msgstr ""
 "このコマンドの実行中のデューティ比制限値(%)。"
-"ギヤ機構やレバー機構にモータトルクをフルにかけないようにする場合に有効です。 "
+"ギヤ機構やレバー機構にモータートルクをフルにかけないようにする場合に有効です。 "
 "``None`` の場合、このコマンド実行中のデューティ制限を変更しません。"
 
 #: of pybricks._common.Motor.run_until_stalled:13
@@ -2184,8 +2408,8 @@ msgid ""
 "output of the gear train. This is the gear ratio determined from the "
 "``gears`` argument when initializing the motor."
 msgstr ""
-"ギア列の出力で1度を完成させるためにモータが回転する度数。"
-"モータの初期化時に引数 ``gears`` から求めたギア比になります。"
+"ギア列の出力で1度を完成させるためにモーターが回転する度数。"
+"モーターの初期化時に引数 ``gears`` から求めたギア比になります。"
 
 #: ../../pupdevices/motor.rst:93
 msgid ""
@@ -2201,7 +2425,7 @@ msgid ""
 "updated faster than the real measurements, which can be useful when "
 "building your own PID controllers."
 msgstr ""
-"実際のモータを模倣したシミュレーションモデルを用いて、モータの角度、速度、電流、"
+"実際のモーターを模倣したシミュレーションモデルを用いて、モーターの角度、速度、電流、"
 "失速状態の推定値を取得します。これらの推定値は実際の測定値よりも高速に更新されるため、"
 "独自のPIDコントローラを構築する際に有用です。"
 
@@ -2356,7 +2580,7 @@ msgstr ""
 "# とするように初期化。\n"
 "example_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)\n"
 "\n"
-"# 正の速度値を指定すると、モータは今度は反時計回りに回転。\n"
+"# 正の速度値を指定すると、モーターは今度は反時計回りに回転。\n"
 "example_motor.run(500)\n"
 "\n"
 "# これは、モーターが逆向きに取り付けられている場合や、逆さまに取り付けられている\n"
@@ -2396,11 +2620,11 @@ msgstr ""
 "from pybricks.tools import wait\n"
 "\n"
 "# ポート A に繋いだモーターについて、反時計回りを正方向とするように初期化。\n"
-"# また、12歯と36歯のギアを持つギア列を1つ指定。12歯のギアはモータ軸に取り付け、\n"
+"# また、12歯と36歯のギアを持つギア列を1つ指定。12歯のギアはモーター軸に取り付け、\n"
 "# 36歯のギアは出力軸に取り付けている。"
 "geared_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE, [12, 36])\n"
 "\n"
-"# 出力軸は1秒間に100度回転するようにする。モータの回転数は、ギアを補正するために\n"
+"# 出力軸は1秒間に100度回転するようにする。モーターの回転数は、ギアを補正するために\n"
 "# 自動的に増加する。\n"
 "geared_motor.run(100)\n"
 "\n"
@@ -2579,7 +2803,7 @@ msgid ""
 "example_motor.stop()\n"
 "wait(1500)\n"
 "\n"
-"# Run at 70% duty cycle (\"power\") and then stop by coasting.\n"
+"# Run at 50% duty cycle (\"power\") and then stop by coasting.\n"
 "print(\"Demo of dc\")\n"
 "example_motor.dc(50)\n"
 "wait(1500)\n"
@@ -2616,7 +2840,7 @@ msgstr ""
 "from pybricks.parameters import Port\n"
 "from pybricks.tools import wait\n"
 "\n"
-"# ポート A に繋いだモーターを初期化。\n"
+"# ポート A のモーターを初期化。\n"
 "example_motor = Motor(Port.A)\n"
 "\n"
 "# 500°/s で動作後、惰性で停止。\n"
@@ -2626,7 +2850,7 @@ msgstr ""
 "example_motor.stop()\n"
 "wait(1500)\n"
 "\n"
-"# Run at 70% のデューティ比(\"パワー\")で動作後、惰性で停止。\n"
+"# 50% のデューティ比(\"パワー\")で動作後、惰性で停止。\n"
 "print(\"Demo of dc\")\n"
 "example_motor.dc(50)\n"
 "wait(1500)\n"
@@ -2790,7 +3014,7 @@ msgstr "失速に関する例"
 
 #: ../../pupdevices/motor.rst:178
 msgid "Running a motor until a mechanical endpoint"
-msgstr "機構的な終点までモータを回転させる"
+msgstr "機構的な終点までモーターを回転させる"
 
 #: ../../pupdevices/motor.rst:180
 msgid ""
@@ -2841,7 +3065,7 @@ msgstr ""
 "\n"
 "# 今度は、モーターをループで前後進させる。\n"
 "# 常に機械的な終点からスタートするので、\n"
-"# モータの初期角度に関係なく同じように動作する。\n"
+"# モーターの初期角度に関係なく同じように動作する。\n"
 "for count in range(10):\n"
 "    example_motor.run_target(speed, 180)\n"
 "    example_motor.run_target(speed, 90)\n"
@@ -3526,6 +3750,52 @@ msgstr ""
 "print(\"Connected!\")\n"
 "\n"
 "wait(2000)\n"
+
+#: ../../pupdevices/technicmovehub.rst:4
+msgid "Technic Move Hub"
+msgstr "テクニックムーブハブ"
+
+#: of pybricks.pupdevices.TechnicMoveHub:1
+msgid "LEGO® Technic Move Hub (set 42176, 42214, 42239)."
+msgstr "LEGO® テクニックムーブハブ (セット 42176, 42214, 42239)。"
+
+#: of pybricks.pupdevices.TechnicMoveHub:3
+msgid ""
+"This newer hub is found in the latest Technic Control+ sets. It requires "
+"a special password to update the firmware, so Pybricks cannot be "
+"installed on it. However, you can connect a supported hub running "
+"Pybricks to it and control its motors that way."
+msgstr ""
+"この新しいハブは、最新のテクニック Control+ セットに含まれています。"
+"ファームウェアのアップデートには特別なパスワードが必要なため、Pybricks を"
+"インストールできません。ただし、Pybricks が動作する対応ハブを接続して、"
+"そのハブのモーターを制御することは可能です。"
+
+#: of pybricks.pupdevices.TechnicMoveHub:8
+msgid ""
+"Bluetooth name of the hub. If no name is given, the hub connects to the "
+"first Technic Move Hub it finds."
+msgstr ""
+"ハブの Bluetooth 名。名前が与えられていない場合、ハブは最初に見つかった"
+"テクニックムーブハブに接続します。"
+
+#: of pybricks.pupdevices.TechnicMoveHub.drive:1
+msgid "Drives the hub's motor outputs at the given speed and steering."
+msgstr "指定の速度とステアリングでハブのモーター出力を駆動します。"
+
+#: of pybricks.pupdevices.TechnicMoveHub.drive:3
+msgid "Drive speed as a percentage (-100 to 100)."
+msgstr "走行速度をパーセンテージで表したもの(-100～100)"
+
+#: of pybricks.pupdevices.TechnicMoveHub.drive:5
+msgid ""
+"Steering as a percentage (-100 to 100). Positive values steer right. "
+"Values exceeding ±97 are clamped to ±97 to avoid pushing against the "
+"mechanical constraint."
+msgstr ""
+"ステアリング角度はパーセンテージ(-100～1000で表されます。"
+"正の値は右方向へのステアリングです。"
+"±97 を超える値は、機械的な制約に当たらないように ±97 に制限されます。"
 
 #: ../../pupdevices/tiltsensor.rst:4
 msgid "Tilt Sensor"
